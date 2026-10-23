@@ -1,0 +1,65 @@
+import Link from 'next/link';
+import { RiUserLine } from 'react-icons/ri';
+import { optionListMinimal } from '../../../../data/Custom';
+import { Fragment, useContext, useMemo } from 'react';
+import CartContext from '@/helper/cartContext';
+import ThemeOptionContext from '@/helper/themeOptionsContext';
+import HeaderCartData from '../rightSideHeader/HeaderCartData';
+
+const MinimalRightSidebar = () => {
+  const { cartProducts } = useContext(CartContext);
+  const { themeOption, cartCanvas, setCartCanvas } =
+    useContext(ThemeOptionContext);
+  const cartStyle = useMemo(() => {
+    return themeOption?.general?.cart_style
+      ? themeOption?.general?.cart_style
+      : 'cart_sidebar';
+  });
+  return (
+    <div className="rightside-menu">
+      <ul className="option-list-2">
+        {optionListMinimal.map((elem) => (
+          <Fragment key={elem.id}>
+            <li
+              className="onhover-dropdown"
+              onClick={() =>
+                elem?.isBadge &&
+                cartStyle == 'cart_sidebar' &&
+                setCartCanvas(!cartCanvas)
+              }
+            >
+              {elem?.path ? (
+                <Link
+                  href={`${elem?.path}`}
+                  className={`header-icon ${elem?.customClass ? elem?.customClass : ''}`}
+                >
+                  {elem.icon}
+                </Link>
+              ) : (
+                <a
+                  className={`header-icon ${elem?.customClass ? elem?.customClass : ''}`}
+                >
+                  {elem?.isBadge && cartProducts?.length > 0 && (
+                    <small className="badge-number badge-light">
+                      {cartProducts?.length}
+                    </small>
+                  )}
+                  {elem.icon}
+                </a>
+              )}
+              {elem.isBadge && <HeaderCartData cartStyle={cartStyle} />}
+            </li>
+          </Fragment>
+        ))}
+      </ul>
+
+      <Link href="/" className="user-box">
+        <span className="header-icon">
+          <RiUserLine />
+        </span>
+      </Link>
+    </div>
+  );
+};
+
+export default MinimalRightSidebar;

@@ -1,0 +1,45 @@
+.keywordsSection {
+  background-color: #f5f5f4;
+  width: 100%;
+}
+
+.keywordsList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.keywordItem {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #4b5563;
+  white-space: nowrap;
+}
+
+.keywordLink {
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+
+  &:hover {
+    color: #111827;
+    text-decoration: underline;
+  }
+}
+
+.keywordLabel {
+  color: #4b5563;
+  text-wrap: balance;
+}
+
+.separator {
+  margin-left: 12px;
+  color: #a3a3a3;
+  font-weight: 300;
+  user-select: none;
+}

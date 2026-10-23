@@ -1,0 +1,562 @@
+// UGC (User Generated Content) Section Styles
+// =====================================================
+@use '../utils/variables';
+@use '../utils/mixin/common';
+@use '../utils/mixin/breakpoints';
+
+/* ===========================
+   Section
+   =========================== */
+.ugc-section {
+  .ugc-grid {
+    margin-top: 20px;
+
+  .slick-track {
+      margin-left: 0;
+    }
+  }
+}
+
+/* ===========================
+   Card
+   =========================== */
+.ugc-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 1rem;
+
+  &:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  /* ---------- Thumbnail ---------- */
+  &__thumbnail {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+
+    &.is-ready {
+      opacity: 1;
+    }
+  }
+
+  &__skeleton {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(110deg, #eceff3 8%, #f8fafb 18%, #eceff3 33%);
+    background-size: 200% 100%;
+    animation: ugcVideoShimmer 1.2s linear infinite;
+    pointer-events: none;
+  }
+
+  // Gradient shadow at bottom behind user details
+  &__gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.35) 50%,
+      transparent 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* ---------- Play button ---------- */
+  &__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    background: var(--btn-primary-bg);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    svg {
+      width: 52px;
+      height: 52px;
+      color: #fff;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+    }
+
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+
+  /* ---------- User info overlay ---------- */
+  &__user-info {
+    position: absolute;
+    bottom: 12px;
+    left: 14px;
+    right: 14px;
+    z-index: 2;
+  }
+
+  &__name {
+    color: #fff;
+    font-size: 20px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 0 0 2px;
+    line-height: 1.3;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+    /* 2-line truncation */
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__meta {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+    font-weight: 400;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  /* ---------- Body ---------- */
+  &__body {
+    padding: 12px 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+  }
+
+  /* ---------- Mini product card ---------- */
+  &__product {
+    --ugc-card-product-bg: #E7F6F6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--ugc-card-product-bg, #E7F6F6);
+    padding: 10px 15px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  &__product-img {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+    border-radius: 12px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__product-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0; // for text truncation
+  }
+
+  &__product-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--title-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__product-pricing {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__sale-price {
+    font-size: 14px;
+    font-weight: 500;
+    color: #222222;
+  }
+
+  &__original-price {
+    font-size: 12px;
+    color: var(--product-card-selling-price, #6f6f6f);
+    text-decoration: line-through;
+  }
+
+  /* ---------- Review ---------- */
+  &__review {
+    font-size: 12px;
+    font-style: italic;
+    color: #222222;
+    line-height: 1.45;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  /* ---------- Add to cart (full-width green button) ---------- */
+  &__cart-box {
+    margin-top: auto;
+  }
+
+  &__add-btn {
+    width: 100%;
+    // height: 42px;
+    padding-block: 10px;
+    border-radius: 12px;
+    // border: none;
+    // background: var(--btn-add-cart-bg, var(--theme-color));
+    // color: var(--btn-add-cart-text, #fff);
+    font-size: 15px;
+    // font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    &:hover {
+      background: var(--btn-add-cart-bg-hover, var(--theme-color));
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+@keyframes ugcVideoShimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Quantity row inside UGC card */
+.ugc-cart-qty-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--btn-qty-border, #e0e0e0);
+  background: var(--white);
+  overflow: hidden;
+
+  .qty-btn {
+    @include common.flex_common;
+    width: 42px;
+    height: 100%;
+    border: none;
+    background: var(--btn-qty-bg);
+    color: var(--btn-qty-value-text);
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.85;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .qty-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--btn-qty-text);
+    min-width: 30px;
+    text-align: center;
+  }
+}
+
+/* ===========================
+   Star Rating
+   =========================== */
+.ugc-rating {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    color: var(--product-card-rating-star);
+  }
+}
+
+/* ===========================
+   Video Overlay
+   =========================== */
+.ugc-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: ugcFadeIn 0.2s ease;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 100vw;
+    max-height: 80vh;
+    padding: 20px;
+  }
+
+  /* Close */
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.80);
+    color: #fff;
+    cursor: pointer;
+    @include common.flex_common;
+    transition: background 0.2s;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, 1);
+    }
+  }
+
+  /* Navigation arrows */
+  &__nav {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    cursor: pointer;
+    @include common.flex_common;
+    transition: background 0.2s, opacity 0.2s;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    &:hover:not(:disabled) {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      opacity: 0.25;
+      cursor: not-allowed;
+    }
+
+    @include breakpoints.mq-max(sm) {
+      position: absolute;
+      z-index: 10;
+      width: 36px;
+      height: 36px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &--left {
+      @include breakpoints.mq-max(sm) {
+        left: 8px;
+      }
+    }
+
+    &--right {
+      @include breakpoints.mq-max(sm) {
+        right: 8px;
+      }
+    }
+  }
+
+  /* Video wrapper — 9:16 aspect ratio */
+  &__video-wrapper {
+    position: relative;
+    width: min(380px, 80vw);
+    aspect-ratio: 9 / 16;
+    border-radius: 16px;
+    background: #000;
+    height: -webkit-fill-available;
+    flex-shrink: 0;
+
+    @include breakpoints.mq-max(sm) {
+      width: 90vw;
+      border-radius: 12px;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+    display: block;
+    border-radius: 1rem;
+  }
+
+  /* Mute toggle */
+  &__mute {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 3;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    cursor: pointer;
+    @include common.flex_common;
+    transition: background 0.2s;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.65);
+    }
+  }
+
+  /* Info on top of video */
+  &__info {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__name {
+    color: #fff;
+    font-size: 16px;
+    white-space: nowrap;
+    font-weight: 600;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+    /* 2-line truncation */
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__handle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes ugcFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ugc-card__thumbnail {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 9 / 16;
+}
+
+.ugc-card__iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  pointer-events: none;
+}
+
+.ugc-card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ugc-card__gradient,
+.ugc-card__play-btn,
+.ugc-card__user-info {
+  z-index: 2;
+}
+
+.ugc-card__iframe,
+.ugc-card__image {
+  z-index: 1;
+}

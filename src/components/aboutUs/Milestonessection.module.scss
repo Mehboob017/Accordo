@@ -1,0 +1,373 @@
+// MilestonesSection.module.scss
+
+$ink: #1c3144;
+$brass: #1fa67a;
+$parchment: #f4efe4;
+$rail-bg: #141a14;
+$sage-text: #3a4a3d;
+$theme-color: var(--theme-color);
+
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 1023px;
+
+.container {
+  display: flex;
+  gap: 32px;
+  align-items: stretch;
+  width: 100%;
+
+  /* Mobile */
+  // height: 480px;
+  aspect-ratio: 16/16;
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    // height: 550px;
+    aspect-ratio: 16/12;
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    // height: calc(100vh - 120px);
+    aspect-ratio: 16/8;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+}
+
+.section {
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #12181c;
+  outline: none;
+  border-radius: 20px;
+  // border: 8px solid $theme-color;
+}
+
+.sliderWrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+}
+
+/* ---------- background images ---------- */
+
+.bgSlide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 900ms ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    // object-fit: cover;
+    object-fit: contain;
+  }
+}
+
+.bgOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  /* light blackish overlay */
+}
+
+/* ---------- desktop vertical rail ---------- */
+
+.rail {
+  position: relative;
+  width: 140px;
+  flex-shrink: 0;
+  overflow-y: auto;
+
+  /* Hide scrollbar for cleaner look */
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+.railInner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 32px 0 32px 24px;
+  min-height: 100%;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: row;
+    padding: 16px 24px;
+    gap: 32px;
+    align-items: flex-start;
+    min-width: 100%;
+    width: max-content;
+  }
+}
+
+.railLine {
+  position: absolute;
+  top: 32px;
+  bottom: 32px;
+  left: 35px;
+  /* 24px padding + 11px (half of 22px dot wrap) */
+  width: 1px;
+  background: #d3d3d3;
+  z-index: 1;
+
+  @media (max-width: $breakpoint-tablet) {
+    top: 27px;
+    /* 16px padding + 11px dot */
+    bottom: auto;
+    left: 24px;
+    right: 24px;
+    width: auto;
+    height: 1px;
+  }
+}
+
+.railItem {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  line-height: 1.15;
+  font-size: 14px;
+  color: #999;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+
+  &.active {
+    color: #333;
+    font-weight: 700;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+.railDotWrap {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  /* covers the line */
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+
+  .railItem.active & {
+    border-color: $theme-color;
+  }
+}
+
+.railDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d3d3d3;
+  transition: background-color 0.3s ease;
+
+  .railItem.active & {
+    background: $theme-color;
+  }
+}
+
+.railYear {
+  /* Optional specific styling for the year text */
+}
+
+/* ---------- content card ---------- */
+
+.cardWrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media (min-width: $breakpoint-mobile) {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+.cardTitleList {
+  margin: 0;
+  padding-left: 1.25rem;
+  // display: list-item;
+
+  li+li {
+    margin-top: 0.5rem;
+
+  }
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  display: list-item;
+}
+
+.card {
+  pointer-events: auto;
+  // margin: 16px;
+  max-width: none;
+  background: transparent;
+  padding: 22px;
+
+  @media (min-width: $breakpoint-mobile) {
+    margin: 24px;
+    max-width: 600px;
+    padding: 32px 0;
+  }
+}
+
+.cardYear {
+  font-family: var(--font-fraunces, serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 14px;
+
+  @media (min-width: $breakpoint-mobile) {
+    font-size: 56px;
+  }
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 12px;
+  line-height: 1.5;
+
+  // text-align: justify;
+  @media (min-width: $breakpoint-mobile) {
+    font-size: 20px;
+  }
+}
+
+.cardText {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+/* ---------- progress bar ---------- */
+
+.progress {
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+  right: 24px;
+  height: 2px;
+  background: rgba($parchment, 0.2);
+
+  @media (max-width: $breakpoint-mobile) {
+    display: none;
+  }
+}
+
+.progressFill {
+  height: 100%;
+  background: $brass;
+  transition: width 500ms ease-out;
+}
+
+/* ---------- navigation buttons ---------- */
+
+.navButtonLeft,
+.navButtonRight {
+  position: absolute;
+  top: 50%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    background: #f8f9fa;
+    transform: translateY(-50%) scale(1.05);
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.navButtonLeft {
+  left: 0;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+.navButtonRight {
+  right: 0;
+  transform: translate(50%, -50%);
+
+  &:hover {
+    transform: translate(50%, -50%) scale(1.05);
+  }
+}

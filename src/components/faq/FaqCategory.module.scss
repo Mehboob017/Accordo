@@ -1,0 +1,112 @@
+// FaqCategory.module.scss
+// (copied from collection ProductCategory styles for same design)
+
+// Variables
+$primary-color: var(--theme-color);
+$bg-white: var(--white);
+$text-dark: var(--title-color);
+$hover-bg: #f8f8f8;
+$active-bg: var(--light-gray);
+$border-radius-sm: 6px;
+$transition-speed: 0.2s;
+
+// Category Navigation
+.categoryNav {
+  background: $bg-white;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 0;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 92px;
+  z-index: 1;
+
+  // Scrollbar styling
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+
+    &:hover {
+      background: #9ca3af;
+    }
+  }
+}
+
+// Category List
+.categoryList {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 16px 0px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+// Category Item
+.categoryItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: $border-radius-sm;
+  transition: background $transition-speed;
+  position: relative;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  color: $text-dark;
+
+  &:hover {
+    background: #e9f9f4;
+  }
+
+  &.active {
+    background: #e9f9f4;
+    color: $primary-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: $primary-color;
+    }
+  }
+}
+
+// Category Icon
+.categoryIcon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .categoryList {
+    gap: 20px;
+    padding: 12px 0px;
+  }
+
+  .categoryItem {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+

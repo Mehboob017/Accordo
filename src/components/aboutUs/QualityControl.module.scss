@@ -1,0 +1,85 @@
+.section {
+  position: relative;
+}
+
+.subHeadingTitle {
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 20px;
+  font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.footerText {
+  color: var(--content-color);
+  font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+  // max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.description {
+  line-height: 1.8;
+  color: var(--content-color);
+  margin-bottom: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+
+  strong {
+    color: var(--title-color);
+    font-weight: 600;
+  }
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 18px;
+  padding: 24px 20px 26px;
+  text-align: center;
+  height: 100%;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+
+  &:hover {
+    border-color: var(--theme-color);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.16);
+    transform: translateY(-4px);
+  }
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.iconCircle {
+  width: 68px;
+  height: 68px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(132, 204, 22, 0.08); // subtle themed background
+  border: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+.icon {
+  font-size: 32px;
+  color: var(--theme-color);
+}
+
+.cardTitle {
+  font-size: calc(15px + 3 * (100vw - 320px) / 1600);
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.cardDescription {
+  color: var(--content-color);
+  line-height: 1.7;
+  margin: 0;
+}

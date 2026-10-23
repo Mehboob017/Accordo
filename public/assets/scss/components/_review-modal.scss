@@ -1,0 +1,362 @@
+/**=====================
+    Review Modal scss
+==========================**/
+@use '../utils/variables';
+
+// Review Modal Styles
+.review-modal,
+.review-offcanvas {
+  .review-header {
+    border-bottom: 1px solid variables.$order-border;
+    padding: 1rem;
+    
+    .modal-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: variables.$title-color;
+    }
+  }
+
+  .review-body {
+    padding: 0 !important;
+  }
+
+  .review-content {
+    padding: 1rem 1rem 0;
+  }
+
+  // Product Card (Styled like delivery-rating-card / product-rating-item)
+  .review-product-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--light-gray);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid variables.$order-border;
+
+    .review-product-image {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid variables.$order-border;
+      border-radius: 6px;
+      background: var(--white);
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .review-product-info {
+      flex: 1;
+      min-width: 0;
+
+      .product-name {
+        font-size: 14px;
+        font-weight: 600;
+        color: variables.$title-color;
+        margin: 0 0 4px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .product-type {
+        font-size: 12px;
+        color: variables.$text-muted;
+      }
+    }
+
+    .review-product-price {
+      font-size: 16px;
+      font-weight: 600;
+      color: variables.$title-color;
+      flex-shrink: 0;
+    }
+  }
+
+  // Review Rating Section
+  .review-rating-section {
+    margin-bottom: 20px;
+
+    .rating-label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: variables.$title-color;
+      margin-bottom: 12px;
+
+      .required {
+        color: variables.$danger-color;
+      }
+    }
+
+    .rating-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+    }
+
+    .rating-text {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--theme-color);
+    }
+
+    &.has-error {
+      .rating-row {
+        padding: 12px;
+        background: #fef2f2;
+        border: 1px solid variables.$danger-color;
+        border-radius: 8px;
+      }
+    }
+
+    .field-error {
+      color: variables.$danger-color;
+      font-size: 12px;
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+  }
+
+  // Star Rating Component (Matched precisely to rate-order)
+  .star-rating {
+    display: flex;
+    gap: 4px;
+
+    .star-btn {
+      background: none;
+      border: none;
+      padding: 2px;
+      cursor: pointer;
+      line-height: 1;
+      transition: transform 0.1s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+
+      .star {
+        color: #d4d4d4;
+        transition: color 0.2s ease;
+
+        &.filled {
+          color: #f5c518;
+        }
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.55;
+
+        &:hover,
+        &:active {
+          transform: none;
+        }
+      }
+    }
+  }
+
+  // Review Feedback Section
+  .feedback-section {
+    .feedback-content {
+      padding-top: 0.75em;
+    }
+
+    .feedback-question {
+      margin-bottom: 16px;
+
+      .question-text {
+        font-size: 13px;
+        font-weight: 500;
+        color: #555;
+        margin-bottom: 10px;
+      }
+
+      .options-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+    }
+  }
+
+  // Option Pills (Applied from rate-order)
+  .option-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: #ccc;
+      background: #f9f9f9;
+    }
+
+    // Includes !important just in case inline React styles were left behind
+    &.selected {
+      background: lighten($color: variables.$theme-color, $amount: 90) !important;
+      border-color: variables.$theme-color !important;
+      color: variables.$theme-color !important;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.65;
+    }
+  }
+
+  // Textarea Container
+  .review-feedback-section {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid variables.$order-border;
+
+    .feedback-label {
+      font-size: 14px;
+      font-weight: 500;
+      color: #666;
+      margin: 0 0 12px 0;
+      display: block;
+    }
+
+    .review-feedback-textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 16px;
+      resize: none;
+      background: #fff;
+      transition: border-color 0.2s ease;
+      line-height: 1.5;
+
+      &::placeholder {
+        color: #aaa !important;
+        opacity: 1 !important;
+      }
+
+      &:focus::placeholder {
+        color: #aaa !important;
+        opacity: 1 !important;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: var(--theme-color);
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.65;
+      }
+    }
+  }
+
+  // Submit Section (Theme colored button applied)
+  .submit-section {
+    padding: 1rem;
+    margin: 0 -1rem;
+    margin-top: 0.5rem;
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+
+    .btn-submit {
+      width: 100%;
+      padding: 14px 24px;
+      background: var(--theme-color);
+      border: none;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      outline: none;
+
+      &:hover:not(:disabled) {
+        background: darken($color: variables.$theme-color, $amount: 5);
+      }
+
+      &:active:not(:disabled) {
+        transform: scale(0.98);
+      }
+
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+// Bottom offcanvas specific styles
+.bottom-offcanvas.review-offcanvas {
+  .review-content {
+    padding-bottom: 0;
+  }
+
+  .submit-section {
+    padding: 1rem;
+    margin: 0 -1rem;
+    background: #fff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  }
+}
+
+// Hide scrollbar utility
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 767px) {
+  .review-modal,
+  .review-offcanvas {
+    .review-product-card {
+      .review-product-info {
+        .product-name {
+          white-space: normal;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+
+    .review-rating-section {
+      .rating-row {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

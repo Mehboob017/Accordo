@@ -1,0 +1,29 @@
+/**=====================
+    Common Scrollbar scss
+==========================**/
+
+// Reusable scrollbar class (works for both horizontal/vertical scroll containers)
+.common-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-color) var(--bg-secondary);
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    border-radius: 3px;
+
+    &:hover {
+      background: var(--theme-color-dark);
+    }
+  }
+}
+

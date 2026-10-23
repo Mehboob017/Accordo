@@ -1,0 +1,153 @@
+# Website: https://www.sdlindia.com
+# Updated: 2026-10-14
+
+
+# 1. ALL SEARCH ENGINES AND WEB CRAWLERS
+
+User-agent: *
+Allow: /
+
+# 2. GOOGLE SEARCH AND GOOGLE AI
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# 3. MICROSOFT BING AND COPILOT
+
+User-agent: bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+
+# 4. OPENAI - CHATGPT AND GPT CRAWLERS
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# 5. ANTHROPIC - CLAUDE
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+
+# 6. PERPLEXITY AI
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+
+
+# 8. OTHER SEARCH ENGINES
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+
+
+# 9. AI TRAINING, RESEARCH AND DISCOVERY CRAWLERS
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+
+
+# 10. SEO AND DISCOVERY CRAWLERS
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: DotBot
+Allow: /
+
+User-agent: MJ12bot
+Allow: /
+
+# 11. PUBLIC CONTENT ACCESS
+
+
+# All publicly accessible HTML pages, product pages,
+# collections, blog articles, company information,
+# FAQs, policies, images and other public resources
+# are permitted under the rules above.
+
+
+# 12. SITEMAP DISCOVERY
+
+
+Sitemap: https://www.sdlindia.com/sitemap.xml
+
+

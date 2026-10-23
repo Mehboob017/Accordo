@@ -1,0 +1,12 @@
+# Ignore build output
+.next/
+
+# Ignore specific files
+.prettierrc.json
+next.config.js
+package-lock.json
+jsconfig.json
+.env.local
+package.json
+/public/*
+README.md

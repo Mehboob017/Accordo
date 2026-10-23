@@ -1,0 +1,325 @@
+/**=====================
+  Herbs Page Styles
+==========================**/
+@use '../utils/variables';
+@use '../utils/mixin/common';
+@use '../utils/mixin/breakpoints';
+
+.description-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--content-color);
+}
+
+.info-section {
+  margin-top: 1.5rem;
+}
+
+.info-item {
+  margin-top: 1.5rem;
+  transition: all 0.3s ease-in-out;
+
+  h5 {
+    margin-bottom: 0.25rem;
+    color: var(--title-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .text-content {
+    color: var(--content-color);
+    line-height: 1.8;
+    margin-bottom: 0;
+    white-space: pre-line;
+  }
+}
+
+// Herb Image Slider Styles
+.product-left-box {
+  .bottom-slider-image {
+    &.left-slider {
+      .slick-list {
+        .slick-track {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+
+          .slick-slide {
+            padding: 0 calc(4px + (8 - 4) * ((100vw - 320px) / (1920 - 320)));
+
+            .sidebar-image {
+              border-radius: 8px;
+              overflow: hidden;
+              border: 2px solid var(--1fa67a);
+              transition: all 0.3s ease-in-out;
+              cursor: pointer;
+              // padding: 0.5rem;
+              aspect-ratio: 1;
+
+              img {
+                opacity: 0.6;
+                transition: all 0.3s ease-in-out;
+              }
+            }
+
+            &.slick-current {
+              .sidebar-image {
+                border-color: var(--theme-color);
+
+                img {
+                  opacity: 1;
+                }
+              }
+            }
+
+            &:hover {
+              .sidebar-image {
+                img {
+                  opacity: 0.9;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Navigation arrows
+      .slick-prev,
+      .slick-next {
+        @include common.pseudowh($width: calc(40px + (36 - 30) * ((100vw - 320px) / (1920 - 320))),
+          $height: calc(40px + (36 - 30) * ((100vw - 320px) / (1920 - 320))));
+        background-color: var(--white);
+        box-shadow: 0px 2px 6px rgba(variables.$title-color, 0.15);
+        border-radius: 50%;
+        z-index: 2;
+        transition: all 0.3s ease-in-out;
+
+        &::before {
+          @include common.remixicon;
+          color: var(--theme-color);
+          font-size: calc(22px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+        }
+
+        &:hover {
+          background-color: var(--theme-color);
+          box-shadow: 0px 3px 8px rgba(variables.$title-color, 0.25);
+
+          &::before {
+            color: var(--white);
+          }
+        }
+      }
+
+      .slick-prev {
+        left: -8px !important;
+
+        &::before {
+          content: '\ea64';
+        }
+
+        body[dir='rtl'] & {
+          left: unset;
+          right: -10px;
+        }
+      }
+
+      .slick-next {
+        right: -8px !important;
+
+        &::before {
+          content: '\ea6e';
+        }
+
+        body[dir='rtl'] & {
+          right: unset;
+          left: -10px;
+        }
+      }
+    }
+  }
+}
+
+// Product Cards - Match collection page styling
+.related-product-section,
+.other-herbs-section {
+
+  // Make sure slider cards align from the left (not centered)
+  .slick-slider {
+    .slick-list {
+      margin-left: 0;
+      margin-right: 0;
+
+      .slick-track {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  .product-box-3 {
+    height: 100%;
+  }
+}
+
+.placeholder-image {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+
+// .herb-container {
+//   display: flex;
+//   gap: 2rem;
+//   padding: 3rem;
+//   justify-content: center;
+//   min-height: 100vh;
+//   font-family: 'Inter', sans-serif;
+// }
+
+.herb-card {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-gray);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease-in-out;
+
+  &__image-container {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    transition: all 0.2s linear;
+  }
+
+  &__content {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1;
+    background: #fefefe;
+  }
+
+  &__title {
+    color: var(--title-color);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+
+    @include breakpoints.mq-max(sm) {
+      font-size: 14px;
+    }
+  }
+
+  &__subTitle {
+    color: var(--content-color);
+    // font-size: 1rem;
+    font-weight: 400;
+    margin: 0rem 0 0 0;
+    letter-spacing: 0.5px;
+    @include common.line(2)
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px;
+    // background-color: var(--theme-color);
+    // color: var(--white);
+    // border: none;
+    // border-radius: 6px;
+    // font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: auto;
+
+    .button-icon {
+      font-size: 18px;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover:not(:disabled) {
+      // background-color: var(--theme-color-dark);
+
+      .button-icon {
+        transform: translateX(4px);
+      }
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  &:hover &__image {
+    transform: scale(1.1);
+  }
+}
+
+.product-slider-note {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.herb-detail {
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  background-color: #fefefe;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+
+  .name {
+    color: var(--title-color);
+    font-size: calc(16px + (36 - 24) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .scientific-name {
+    color: var(--content-color);
+    font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (1920 - 320)));
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .herb-infos {
+    .title {
+      margin-bottom: 0;
+      color: var(--title-color);
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .description {
+      color: var(--content-color);
+      line-height: 1.5;
+      margin-bottom: 0;
+      word-break: break-all;
+    }
+  }
+
+  ol,
+  ul {
+    li {
+      display: list-item;
+    }
+  }
+}

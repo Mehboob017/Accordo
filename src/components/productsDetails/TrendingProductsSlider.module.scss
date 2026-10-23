@@ -1,0 +1,93 @@
+@use '../../../public/assets/scss/utils/mixin/breakpoints';
+
+.trending-wrapper {
+  position: relative;
+}
+
+.trending-title {
+  margin-bottom: 1rem;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2B2B2B;
+  font-weight: 600;
+}
+
+.slider-shell {
+  position: relative;
+  // padding: 0 18px;
+  // overflow: hidden;
+
+  :global(.slick-list) {
+    overflow: hidden;
+    margin: auto;
+  }
+
+  :global(.slick-track) {
+    margin-left: 0;  
+    margin-right: 0;
+    display: flex !important;
+    margin-left: 0 !important;
+  }
+
+  :global(.slick-slide > div) {
+    height: 100%;
+  }
+
+  :global(.slick-slide) {
+    height: auto;
+    padding-block-end: 1rem;
+  }
+}
+
+.slide-item {
+  height: 100%;
+  // margin-inline: 60px;
+  
+  @media screen and (min-width:1200px) {
+    margin-inline: auto;
+  }
+}
+
+.card-pad {
+  padding: 0 10px;
+}
+
+.trend-arrow {
+  position: absolute;
+  top: 50%;
+  // transform: translateY(-50%);
+  z-index: 6;
+  width: calc(34px + 6 * (100vw - 320px) / 1600);
+  height: calc(34px + 6 * (100vw - 320px) / 1600);
+  border-radius: 999px;
+  background: #fefefe;
+  color: #1FA67A;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+
+  &::before {
+    display: none;
+  }
+
+  &:hover {
+    border-color: #1FA67A;
+    background: #1FA67A;
+    color: #fefefe;
+  }
+  &:focus{
+  background: #fefefe;
+  color: #1FA67A;
+  }
+}
+
+.trend-arrow-prev {
+  left: 0;
+  // transform: translate(-50%, -50%);
+}
+
+.trend-arrow-next {
+  right: 0;
+  // transform: translate(50%, -50%);
+}

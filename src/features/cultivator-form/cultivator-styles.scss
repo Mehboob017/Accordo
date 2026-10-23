@@ -1,0 +1,314 @@
+/**=====================
+     Form scss
+  ==========================**/
+@use '../../../public/assets/scss/utils/variables';
+@use '../../../public/assets/scss/utils/mixin/common';
+
+/* -------------------------------------------------------------------------
+   1. YOUR EXISTING THEME STYLES
+   ------------------------------------------------------------------------- */
+input[type='number'] {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 11px;
+
+  .form-control {
+    background-color: transparent;
+    padding: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320)));
+
+    &::placeholder {
+      color: var(--white);
+      // font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+      font-size: 16px;
+    }
+  }
+}
+
+.normal-form {
+  .form-control {
+    border: none;
+
+    &:focus {
+      background-color: var(--white);
+    }
+  }
+}
+
+.theme-form-check {
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  input {
+    @include common.pseudowh($width: 20px, $height: 20px);
+    vertical-align: middle;
+    border-radius: 10px;
+    background: none;
+    border: 0;
+    box-shadow: inset 0 0 0 1.5px #9f9f9f;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+    pointer-events: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: inset 0 0 0 1.5px var(--theme-color);
+    }
+
+    &:hover {
+      box-shadow: inset 0 0 0 1.5px var(--theme-color);
+    }
+
+    &:checked {
+      box-shadow: inset 0 0 0 6px var(--theme-color);
+    }
+
+    label {
+      vertical-align: middle;
+      display: inline-block;
+      line-height: 20px;
+      padding: 0 8px;
+    }
+  }
+}
+
+.theme-form-floating {
+  > .form-control:focus,
+  > .form-control:not(:placeholder-shown),
+  > .form-select {
+    ~ label {
+      @include common.flex_common;
+      font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+      opacity: 0.95;
+      top: -5px;
+      left: 5px;
+      height: 31px;
+      background-color: var(--white);
+      white-space: nowrap;
+      opacity: 1;
+    }
+  }
+
+  .form-control,
+  .form-select {
+    height: calc(51px + (54 - 51) * ((100vw - 320px) / (1920 - 320)));
+    line-height: normal;
+  }
+
+  > .form-control {
+    &:focus,
+    &:not(:placeholder-shown) {
+      padding-top: 17px;
+      padding-bottom: 10px;
+      // font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  > .form-select {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 500;
+
+    &:focus {
+      border-color: var(--theme-color);
+      outline: 0;
+      box-shadow: 0 0 0 4px transparent;
+    }
+  }
+
+  .form-control {
+    &:focus {
+      background-color: var(--white);
+      border: 1px solid #ced4da;
+    }
+  }
+
+  label {
+    font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1920 - 320)));
+    color: var(--content-color);
+    border: none;
+  }
+}
+
+.form-control {
+  font-size: 14px; /* UPDATED: unified to 14px to match select fields */
+
+  &::placeholder,
+  &:placeholder-shown {
+    opacity: 0.7;
+    font-size: 16px !important;
+  }
+
+  &.subscribe-input {
+    border: none;
+    border-radius: 0;
+  }
+
+  &:focus {
+    box-shadow: none;
+    color: var(--black);
+    border-color: var(--theme-color, #198754); /* Added theme color focus */
+  }
+}
+
+.form-select {
+  font-size: 14px;
+
+  &.theme-form-select {
+    &:focus {
+      background-color: var(--white);
+      box-shadow: none;
+      color: var(--black);
+      border-color: var(--theme-color, #198754);
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------
+   2. CULTIVATOR WIZARD NORMALIZATION (Fixes for uneven fields & grids)
+   ------------------------------------------------------------------------- */
+
+.cultivator-wizard-container {
+  max-width: 900px;
+  background: var(--white, #fefefe);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #efefef;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+
+  /* Brand Colors applied to Progress and Buttons based on your screenshots */
+  .progress {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    height: 12px;
+
+    .progress-bar {
+      background-color: var(--theme-color, #198754);
+    }
+  }
+
+  .btn-success {
+    background-color: var(--theme-color, #198754);
+    border-color: var(--theme-color, #198754);
+    padding: 10px 24px;
+    font-weight: 500;
+
+    &:hover {
+      background-color: darken(#198754, 5%);
+    }
+  }
+}
+
+.cultivator-step-form {
+  animation: fadeIn 0.3s ease-in-out;
+
+  /* Force uniform spacing on Form Groups */
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+
+  label {
+    font-weight: 500;
+    color: var(--title-color, #212529);
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  /* UNIFY HEIGHTS: Force all inputs, selects, and groups to exact same height */
+  .form-control,
+  .form-select,
+  .input-group-text {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+  }
+
+  /* Specifically fix the Input Groups (km, kg, etc.) from squishing */
+  .input-group {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
+    .form-control {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .static-unit {
+      background-color: #f8f9fa;
+      color: #6c757d;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 0 16px;
+      // border-left: none; /* Merges cleanly with the input box */
+      // border-top-left-radius: 0;
+      // border-bottom-left-radius: 0;
+    }
+  }
+
+  /* Table normalization for Step 2 */
+  .table-responsive-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+
+    .table {
+      margin-bottom: 0;
+
+      tr {
+        border-width: 0 !important;
+      }
+
+      th {
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--title-color, #212529);
+        vertical-align: middle;
+        background-color: #f8f9fa;
+        border-bottom-width: 1px;
+      }
+
+      td {
+        vertical-align: middle;
+        // padding: 0.75rem;
+
+        /* Remove margin inside table form groups */
+        .form-group {
+          margin-bottom: 0;
+        }
+
+        /* Slightly smaller inputs inside the table so they don't bloat the rows */
+        .form-control,
+        .input-group-text {
+          height: 38px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,11 @@
+.facility-text {
+    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 1.8;
+    color: var(--content-color, #666);
+    // margin-bottom: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: 0;
+
+    em {
+        font-style: italic;
+    }
+}

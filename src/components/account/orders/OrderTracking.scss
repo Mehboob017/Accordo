@@ -1,0 +1,141 @@
+// Variables
+$success-green: var(--theme-color);
+$text-dark: var(--title-color);
+$text-muted: var(--content-color);
+$border-color: var(--border-color);
+
+.order-tracking {
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-step {
+    display: flex;
+    gap: 12px;
+    opacity: 0.42;
+    transition: opacity 0.2s;
+
+    &.completed {
+      opacity: 1;
+    }
+
+    &.active .step-indicator .circle {
+      box-shadow: 0 0 0 4px color-mix(in srgb, var(--step-color, rgba(13, 164, 135, 1)) 15%, transparent);
+    }
+
+    &.failed .step-indicator .circle {
+      background: var(--step-color, #ef4444);
+      color: #fff;
+    }
+
+    .step-indicator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      width: 22px;
+
+      .circle {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: $border-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: $text-muted;
+        transition: background 0.2s, color 0.2s;
+        z-index: 1;
+
+        svg {
+          font-size: 12px;
+          color: #fff;
+        }
+
+        .dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: $text-muted;
+          opacity: 0.55;
+        }
+      }
+
+      .line {
+        width: 2px;
+        flex: 1;
+        min-height: 20px;
+        background: $border-color;
+        margin: 2px 0;
+        transition: background 0.2s;
+
+        &.line-completed {
+          background: var(--step-color, $success-green);
+        }
+      }
+    }
+
+    .step-content {
+      padding-bottom: 20px;
+      flex: 1;
+      min-width: 0;
+      padding-top: 4px;
+
+      .step-label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        color: $text-dark;
+        margin: 0;
+        line-height: 1.35;
+      }
+
+      .step-date {
+        display: block;
+        font-size: 11px;
+        color: $text-muted;
+        margin-top: 2px;
+      }
+
+      .step-current {
+        display: inline-block;
+        margin-top: 3px;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 2px 8px;
+        border-radius: 10px;
+        background: rgba(13, 164, 135, 0.1);
+        color: var(--theme-color);
+      }
+
+      .step-note {
+        margin: 2px 0 0;
+        font-size: 12px;
+        line-height: 1.5;
+        color: $text-muted;
+      }
+    }
+
+    &.completed {
+      .step-indicator .circle {
+        background: var(--step-color, $success-green);
+        color: #fff;
+      }
+    }
+
+    &:last-child {
+      .step-content {
+        padding-bottom: 0;
+      }
+
+      .step-indicator .line {
+        display: none;
+      }
+    }
+  }
+}

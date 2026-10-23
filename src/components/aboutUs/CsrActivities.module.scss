@@ -1,0 +1,18 @@
+.csr-section {
+  background-color: #f8f9fa;
+}
+
+.csr-text {
+  line-height: 1.8;
+  color: var(--content-color, #666);
+  text-align: justify;
+  margin-bottom: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  em {
+    font-style: italic;
+  }
+}

@@ -1,0 +1,1161 @@
+.root {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.confettiLayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.section {
+  // border: 1px solid var(--e2e2e2);
+  // border-radius: 8px;
+  cursor: pointer;
+  background: var(--white, #fff);
+  overflow: hidden;
+}
+
+.triggerButton {
+  width: 100%;
+  border: 1px solid var(--e2e2e2);
+  background: var(--ffffff);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--2b2b2b);
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background: var(--e9f9f4);
+    border-color: var(--1fa67a);
+  }
+}
+
+.triggerLabel {
+  text-align: left;
+  font-size: 14px;
+}
+
+.triggerArrow {
+  font-size: 20px;
+  color: var(--9e9e9e);
+}
+
+.appliedCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--white, #fff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offerCard {
+  border-color: rgba(var(--theme-color-rgb), 0.35);
+  background: rgba(var(--theme-color-rgb), 0.06);
+}
+
+.appliedCardLeft {
+  min-width: 0;
+}
+
+.appliedBadge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--theme-color);
+  background: rgba(var(--theme-color-rgb), 0.12);
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin-bottom: 6px;
+}
+
+.appliedTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin: 0;
+}
+
+.appliedSubTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--theme-color);
+  margin: 4px 0 0;
+}
+
+.appliedCode {
+  font-size: 12px;
+  color: var(--content-color);
+  margin: 4px 0 0;
+}
+
+.removeButton {
+  border: 0;
+  background: #fff5f2;
+  color: var(--toastify-color-error, #ff4d4f);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px;
+  border-radius: 30px;
+  white-space: nowrap;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  aspect-ratio: 1;
+  line-height: 1;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.freeOptionMainRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.freeOptionInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.freeOptionToggleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  min-width: 84px;
+  height: 30px;
+
+  border: 1px solid #dcdcdc;
+  border-radius: 999px;
+
+  background: #fff;
+  color: #111;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  padding: 0 12px;
+
+  transition: all 0.2s ease;
+  white-space: nowrap;
+
+  svg {
+    font-size: 14px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.freeOptionToggleButton.selected {
+  color: var(--title-color);
+}
+
+.viewAllButton {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  border-top: 1px solid var(--border-color, #e5e7eb);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--title-color);
+
+  svg {
+    color: var(--9e9e9e);
+  }
+
+  &:hover {
+    background: rgba(var(--theme-color-rgb), 0.06);
+  }
+}
+
+.pulse {
+  animation: applyPulse 0.9s ease;
+}
+
+@keyframes applyPulse {
+  0% {
+    transform: scale(0.98);
+    box-shadow: 0 0 0 0 rgba(var(--theme-color-rgb), 0.24);
+  }
+
+  60% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(var(--theme-color-rgb), 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--theme-color-rgb), 0);
+  }
+}
+
+.modalBody {
+  background: #f7f9fb;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.tabs {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #eef2f5;
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 12px;
+}
+
+.tabIndicator {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  width: calc(50% - 4px);
+  border-radius: 8px;
+  background: var(--white, #fff);
+  box-shadow: 0 4px 12px rgba(20, 30, 40, 0.08);
+  transition: transform 0.24s ease;
+}
+
+.offersActive .tabIndicator {
+  transform: translateX(0);
+}
+
+.couponsActive .tabIndicator {
+  transform: translateX(100%);
+}
+
+.tabButton {
+  position: relative;
+  z-index: 1;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--content-color);
+  padding: 10px;
+  border-radius: 8px;
+  transition: color 0.2s ease;
+}
+
+.tabButtonActive {
+  color: var(--title-color);
+}
+
+.tabContent {
+  animation: panelIn 0.25s ease;
+}
+
+@keyframes panelIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.panel {
+  min-height: 140px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 8px;
+  padding: 9px 10px;
+  font-size: 15px;
+  color: var(--title-color);
+  background: var(--white, #fff);
+
+  &:focus {
+    outline: none;
+    border-color: var(--theme-color);
+  }
+}
+
+.primaryButton {
+  border: 1px solid var(--theme-color);
+  background: var(--theme-color);
+  color: var(--btn-primary-text);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0 14px;
+  transition: transform 0.2s ease;
+
+  &:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+.errorText {
+  color: var(--error-color, #f03e3e);
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+
+.listWrapper {
+  // max-height: 320px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 4px;
+}
+
+.listCard {
+  border: 1px solid var(--border-color, #e5e7eb);
+  background: var(--white, #fff);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.offerCardApplied {
+  border-color: rgba(var(--theme-color-rgb), 0.45);
+  box-shadow: 0 8px 20px rgba(var(--theme-color-rgb), 0.12);
+}
+
+.offerTicket {
+  position: relative;
+  width: 100%;
+}
+
+.offerTicketCard {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fefefe;
+  border-radius: 14px;
+  border: 1px solid #dce8e3;
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.05);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+
+  &:hover {
+    border-color: rgba(var(--theme-color-rgb), 0.34);
+    box-shadow: 0 14px 28px rgba(16, 24, 40, 0.08);
+  }
+}
+
+.offerTicketCardApplied {
+  border-color: rgba(var(--theme-color-rgb), 0.6);
+  box-shadow: 0 8px 20px rgba(var(--theme-color-rgb), 0.14);
+}
+
+.offerTicketMainRow {
+  display: flex;
+  align-items: stretch;
+  min-height: 102px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  overflow: hidden;
+}
+
+.offerTicketStrip {
+  position: relative;
+  flex: 0 0 34px;
+  background: linear-gradient(180deg,
+      rgba(var(--theme-color-rgb), 0.95) 0%,
+      rgba(var(--theme-color-rgb), 0.82) 100%);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 16px;
+    height: calc(100% - 0px);
+    background: radial-gradient(circle at center, #fefefe 0 6px, transparent 6.5px) center top / 16px 24px repeat-y;
+  }
+}
+
+.offerTicketContent {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 14px 12px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.offerTicketTextBlock {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.offerTicketTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1c2c28;
+}
+
+.offerTicketDescription {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: #75857f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.offerTicketBenefit {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--content-color);
+}
+
+.offerTicketMetaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.offerTicketCodeWrap {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.offerTicketCode {
+  font-size: 11px;
+  line-height: 1.3;
+  color: #6f6f6f;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.offerTicketValidity {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #889691;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.offerApplyButton {
+  border: 1px solid rgba(var(--theme-color-rgb), 0.22);
+  background: rgba(var(--theme-color-rgb), 0.08);
+  color: var(--theme-color);
+  border-radius: 999px;
+  // min-width: 90px;
+  // height: 36px;
+  padding: 5px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.12s ease;
+
+  &:hover {
+    background: rgba(var(--theme-color-rgb), 0.12);
+    border-color: rgba(var(--theme-color-rgb), 0.3);
+    box-shadow: 0 6px 14px rgba(var(--theme-color-rgb), 0.12);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+.offerApplyButtonApplied {
+  background: rgba(var(--theme-color-rgb), 0.13);
+  color: var(--theme-color);
+  border-color: rgba(var(--theme-color-rgb), 0.35);
+}
+
+.offerToggleButton {
+  all: unset;
+  cursor: pointer;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #51625d;
+  transition: color 0.18s ease, transform 0.18s ease;
+
+  &:hover {
+    color: var(--theme-color);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.offerToggleButtonExpanded {
+  margin-top: 2px;
+}
+
+.offerToggleIcon {
+  font-size: 16px;
+  transition: transform 0.26s ease;
+}
+
+.offerToggleIconOpen {
+  transform: rotate(90deg);
+}
+
+.offerAccordion {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.28s ease-in-out,
+    opacity 0.2s ease-in-out;
+}
+
+.offerAccordionOpen {
+  max-height: 260px;
+  opacity: 1;
+}
+
+.offerAccordionInner {
+  margin-left: 34px;
+  padding: 0 16px 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.offerAccordionLabel {
+  padding-top: 12px;
+  border-top: 1px solid #edf1ef;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1f2b28;
+}
+
+.offerAccordionText {
+  max-height: 108px;
+  overflow-y: auto;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #697873;
+  white-space: pre-wrap;
+
+  ol,
+  ul {
+    li {
+      display: list-item;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.cardTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.inlineAppliedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--theme-color);
+  background: rgba(var(--theme-color-rgb), 0.12);
+  border-radius: 999px;
+  padding: 3px 8px;
+  animation: popIn 0.25s ease;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.cardMeta {
+  margin: 7px 0 3px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--theme-color);
+}
+
+.couponDetailsBlock {
+  // margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #eef1f4;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.couponDetailsLine {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--content-color);
+  white-space: pre-wrap;
+
+  ol,
+  ul {
+    li {
+      display: list-item;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.couponDetailsLabel {
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.couponMoreButton {
+  all: unset;
+  cursor: pointer;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--content-color);
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: var(--theme-color);
+  }
+}
+
+.cardSubMeta {
+  margin: 0;
+  font-size: 12px;
+  color: var(--content-color);
+}
+
+.pendingSelectionBlock {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(var(--theme-color-rgb), 0.35);
+}
+
+.pendingSelectionTitle {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.pendingSelectionNote {
+  margin: 4px 0 0;
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--content-color);
+}
+
+.pendingOptionList {
+  margin-top: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pendingOptionChip {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--theme-color-rgb), 0.26);
+  background: rgba(var(--theme-color-rgb), 0.08);
+  color: var(--title-color);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 4px 8px;
+}
+
+.freeOptionRail {
+  margin-top: 8px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(300px, 1fr);
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.freeOptionCard {
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 10px;
+  background: var(--white, #fff);
+  padding: 10px;
+  min-width: 0;
+}
+
+.freeOptionMainRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.freeOptionThumbWrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color, #e5e7eb);
+  overflow: hidden;
+  flex: 0 0 48px;
+  background: var(--white, #fff);
+}
+
+.freeOptionThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.freeOptionInfo {
+  min-width: 0;
+  flex: 1;
+}
+
+.freeOptionTitle {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--title-color);
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.freeOptionMeta {
+  margin: 2px 0 0;
+  font-size: 11px;
+  line-height: 1.3;
+  color: var(--content-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.freeOptionPriceLine {
+  margin: 4px 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--content-color);
+
+  del {
+    opacity: 0.75;
+  }
+}
+
+.freeOptionFreePrice {
+  color: var(--theme-color);
+  font-weight: 700;
+}
+
+.freeOptionActions {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.freeOptionActionButton {
+  border: 1px solid var(--theme-color);
+  background: rgba(var(--theme-color-rgb), 0.08);
+  color: var(--theme-color);
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 7px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  &:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+}
+
+.freeOptionRemoveButton {
+  border-color: var(--border-color, #e5e7eb);
+  background: transparent;
+  color: var(--content-color);
+}
+
+.freeOptionSelectedCount {
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--content-color);
+}
+
+.selectedFreeProductsBlock {
+  margin-bottom: 16px;
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 10px;
+  background: var(--white, #fff);
+  overflow: hidden;
+}
+
+.selectedFreeProductsHeader {
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--title-color);
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
+  background: rgba(var(--theme-color-rgb), 0.06);
+}
+
+.selectedFreeProductsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectedFreeProductRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-color, #eef2f4);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.selectedFreeProductMain {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.selectedFreeThumbWrap {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 0 0 40px;
+}
+
+.selectedFreeThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.selectedFreeInfo {
+  min-width: 0;
+}
+
+.selectedFreeTitle {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--title-color);
+}
+
+.selectedFreeMeta {
+  margin: 2px 0 0;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--content-color);
+}
+
+.offerTicketHeaderRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.offerTypePill,
+.pendingTypePill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.offerTypePill {
+  color: var(--theme-color);
+  background: rgba(var(--theme-color-rgb), 0.1);
+}
+
+.pendingTypePill {
+  color: #9a6200;
+  background: #fff4e0;
+}
+
+.offerTicketPendingText {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.45;
+  color: #9a6200;
+}
+
+.cardFooter {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.codePill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px dashed rgba(var(--theme-color-rgb), 0.4);
+  color: var(--theme-color);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  max-width: 46%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardActions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.secondaryButton,
+.primaryButtonSmall {
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 14px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.secondaryButton {
+  color: var(--content-color);
+  background: #f4f6f8;
+  border-color: #e5e7eb;
+}
+
+.primaryButtonSmall {
+  border-color: var(--theme-color);
+  background: var(--theme-color);
+  color: var(--btn-primary-text);
+}
+
+.secondaryButton:disabled,
+.primaryButtonSmall:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.skeletonCard {
+  border-radius: 10px;
+  border: 1px solid #e9edf2;
+  background: #fff;
+  padding: 12px;
+}
+
+.skeletonLineLarge,
+.skeletonLineMedium,
+.skeletonLineSmall {
+  border-radius: 8px;
+  background: linear-gradient(90deg, #edf1f5 0%, #f5f8fa 40%, #edf1f5 80%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s linear infinite;
+}
+
+.skeletonLineLarge {
+  height: 14px;
+  width: 84%;
+  margin-bottom: 8px;
+}
+
+.skeletonLineMedium {
+  height: 12px;
+  width: 65%;
+  margin-bottom: 8px;
+}
+
+.skeletonLineSmall {
+  height: 12px;
+  width: 45%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.emptyState {
+  border: 1px dashed var(--border-color, #d8dde4);
+  border-radius: 8px;
+  color: var(--content-color);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 16px;
+}
+
+@media (max-width: 575px) {
+  .modalBody {
+    padding: 12px;
+  }
+
+  .cardFooter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .codePill {
+    max-width: 100%;
+  }
+
+  .cardActions {
+    justify-content: space-between;
+  }
+
+  .secondaryButton,
+  .primaryButtonSmall {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .offerTicketMetaRow {
+    align-items: center;
+  }
+
+  .offerApplyButton {
+    min-width: 82px;
+    padding: 4px;
+  }
+
+  .offerTicketMainRow {
+    min-height: 99px;
+  }
+
+  .offerTicketContent {
+    padding: 13px 12px 12px 16px;
+  }
+
+  .offerAccordionInner {
+    margin-left: 34px;
+    padding: 0 12px 12px 16px;
+  }
+
+  .freeOptionRail {
+    grid-auto-columns: minmax(220px, 1fr);
+  }
+
+  .selectedFreeProductRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,15 @@
+.namewrap {
+    padding: 12px;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    display: -webkit-box;
+    text-align: start;
+    line-height: unset;
+}

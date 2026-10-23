@@ -1,0 +1,247 @@
+.events-carousel-section {
+  position: relative;
+}
+
+.events-carousel__shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.events-carousel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.events-carousel__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid rgba(var(--theme-color-rgb), 0.2);
+  background-color: var(--bg-primary);
+  color: var(--theme-color);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+
+  &:hover {
+    color: var(--white);
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+  }
+}
+
+.events-carousel__slider-wrap {
+  position: relative;
+  padding: 0px 16px;
+
+  :global(.slick-track) {
+    display: flex;
+  }
+
+  :global(.slick-slide) {
+    height: inherit;
+  }
+
+  :global(.slick-slide > div) {
+    height: 100%;
+  }
+
+  :global(.slick-dots) {
+    position: static;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  :global(.slick-dots li) {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  :global(.slick-dots li button) {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border-radius: 999px;
+    background-color: rgba(var(--theme-color-rgb), 0.22);
+    transition:
+      width 0.25s ease,
+      background-color 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  :global(.slick-dots li button::before) {
+    display: none;
+  }
+
+  :global(.slick-dots li.slick-active button) {
+    width: 34px;
+    background-color: var(--theme-color);
+  }
+}
+
+.events-carousel__slide {
+  height: 100%;
+  padding-block-end: 1rem;
+
+  :global(.event-card) {
+    height: 100%;
+    border-color: rgba(var(--theme-color-rgb), 0.14);
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.06);
+  }
+
+  :global(.event-card:hover) {
+    border-color: var(--theme-color);
+    box-shadow: 0 18px 42px rgba(var(--theme-color-rgb), 0.18);
+  }
+
+  :global(.event-card__badge.badge--upcoming) {
+    background-color: var(--theme-color);
+  }
+
+  :global(.event-card__button) {
+    margin-top: auto;
+  }
+}
+
+.events-carousel__nav {
+  position: absolute;
+  top: calc(50% - 30px);
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(var(--theme-color-rgb), 0.18);
+  border-radius: 50%;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-primary);
+  color: var(--theme-color);
+  box-shadow: 0 14px 28px rgba(var(--theme-color-rgb), 0.12);
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+
+  svg {
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: var(--theme-color);
+    color: var(--white);
+    border-color: var(--theme-color);
+    box-shadow: 0 18px 34px rgba(var(--theme-color-rgb), 0.2);
+  }
+
+  &:global(.slick-disabled) {
+    opacity: 0.45;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &::before {
+    display: none;
+  }
+}
+
+.events-carousel__nav--prev {
+  left: -26px;
+}
+
+.events-carousel__nav--next {
+  right: -26px;
+}
+
+@media (max-width: 1199px) {
+  .events-carousel__shell {
+    padding-inline: 24px;
+  }
+
+  .events-carousel__nav--prev {
+    left: -16px;
+  }
+
+  .events-carousel__nav--next {
+    right: -16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .events-carousel__shell {
+    padding: 24px 20px 30px;
+    border-radius: 24px;
+  }
+
+  .events-carousel__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .events-carousel__nav {
+    top: calc(50% - 26px);
+    width: 46px;
+    height: 46px;
+  }
+
+  .events-carousel__nav--prev {
+    left: -8px;
+  }
+
+  .events-carousel__nav--next {
+    right: -8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .events-carousel__shell {
+    padding: 22px 16px 26px;
+    border-radius: 20px;
+  }
+
+  .events-carousel__header {
+    margin-bottom: 18px;
+  }
+
+  .events-carousel__link {
+    width: 100%;
+  }
+
+  .events-carousel__nav {
+    top: auto;
+    bottom: 74px;
+    width: 42px;
+    height: 42px;
+
+    svg {
+      font-size: 26px;
+    }
+  }
+
+  .events-carousel__nav--prev {
+    left: 0;
+  }
+
+  .events-carousel__nav--next {
+    right: 0;
+  }
+}

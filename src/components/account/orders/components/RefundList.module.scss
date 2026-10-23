@@ -1,0 +1,519 @@
+.refundList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.listTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--content-color);
+  margin: 0 0 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+// ─── Refund Card ──────────────────────────────────────────────────────────────
+
+.refundCard {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.refundCardOpen {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+// ─── Card Header ──────────────────────────────────────────────────────────────
+
+.cardHeader {
+  padding: 14px 16px;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+
+  &:hover {
+    background: var(--bg-light, #f9f9f9);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--theme-color);
+    outline-offset: -2px;
+  }
+}
+
+.headerTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.amountRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.amountValue {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--content-color);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.refundIdFloat {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  // border-radius: 20px;
+  // background: var(--bg-light, #f5f5f5);
+  // border: 1px dashed var(--border-color);
+  font-size: 11px;
+  // font-family: monospace;
+  color: var(--text-muted, #777);
+  max-width: 180px;
+  overflow: hidden;
+
+  .refundIdValue {
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 11px;
+  }
+
+  .copyBtn {
+    font-size: 12px;
+    padding: 0;
+    flex-shrink: 0;
+  }
+}
+
+// ─── Status Badge ─────────────────────────────────────────────────────────────
+
+.statusBadge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  &.refunded {
+    background: #d1fae5;
+    color: #059669;
+  }
+
+  &.processing {
+    background: #dbeafe;
+    color: #2563eb;
+  }
+
+  &.warning {
+    background: #fef3c7;
+    color: #d97706;
+  }
+
+  &.danger {
+    background: #fee2e2;
+    color: #dc2626;
+  }
+}
+
+// ─── Chevron ─────────────────────────────────────────────────────────────────
+
+.chevron {
+  font-size: 13px;
+  // color: var(--theme-color);
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+// ─── Header Meta Row ──────────────────────────────────────────────────────────
+
+.headerMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2px 16px;
+  flex-direction: column;
+}
+
+.metaText {
+  font-size: 12px;
+  color: var(--text-light, #888);
+
+  .metaHighlight {
+    color: var(--content-color);
+    font-weight: 600;
+  }
+}
+
+.refundIdRow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.refundIdLabel {
+  font-size: 12px;
+  color: var(--text-muted, #777);
+}
+
+.refundIdValue {
+  font-weight: 600;
+  // font-family: monospace;
+  color: var(--content-color);
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// ─── Copy Button ─────────────────────────────────────────────────────────────
+
+.copyBtn {
+  background: none;
+  border: none;
+  padding: 2px 4px;
+  cursor: pointer;
+  color: var(--text-light, #888);
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: var(--theme-color);
+  }
+}
+
+.copiedIcon {
+  color: #059669;
+}
+
+// ─── Coin Badge ───────────────────────────────────────────────────────────────
+
+.coinBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #fff8e7;
+  border: 1px solid #f5c518;
+  border-radius: 20px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #b45309;
+  line-height: normal;
+  // scale: 0.8;
+}
+
+.coinIcon {
+  flex-shrink: 0;
+}
+
+// ─── Card Body ────────────────────────────────────────────────────────────────
+
+.cardBody {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+  border-top: 0px solid var(--border-color);
+  transition:
+    grid-template-rows 0.3s ease,
+    border-top-width 0.3s ease;
+}
+
+.cardBodyOpen {
+  grid-template-rows: 1fr;
+  border-top-width: 1px;
+}
+
+.cardBodyInner {
+  overflow: hidden;
+  padding: 0 16px;
+
+  // give inner content its bottom padding only when visible
+  // so the closing animation doesn't show a gap at the bottom
+  > *:last-child {
+    margin-bottom: 16px;
+  }
+}
+
+// ─── Section ─────────────────────────────────────────────────────────────────
+
+.section {
+  padding-top: 14px;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted, #777);
+  margin: 0 0 10px;
+}
+
+// ─── Refund Items List ────────────────────────────────────────────────────────
+
+.itemsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.refundItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.itemThumb {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background: var(--bg-light, #f5f5f5);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.thumbPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: var(--border-color);
+}
+
+.itemInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.itemName {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--content-color);
+  margin: 0 0 3px;
+  line-height: 1.6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemMeta {
+  font-size: 12px;
+  color: var(--text-muted, #777);
+  margin: 0;
+}
+
+.itemPricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.itemPrice {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--content-color);
+}
+
+.itemMrp {
+  font-size: 12px;
+  color: var(--text-light, #aaa);
+  text-decoration: line-through;
+}
+
+// ─── Status Timeline ──────────────────────────────────────────────────────────
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineStep {
+  display: flex;
+  gap: 12px;
+  opacity: 0.42;
+  transition: opacity 0.2s;
+
+  &.completed {
+    opacity: 1;
+  }
+
+  &.active .stepCircle {
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--step-color, rgba(13, 164, 135, 1)) 15%, transparent);
+  }
+
+  &.completed .stepCircle {
+    background: var(--step-color, var(--theme-color));
+    color: #fff;
+  }
+}
+
+.stepIndicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 22px;
+}
+
+.stepCircle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--content-color);
+  transition: background 0.2s, color 0.2s;
+  z-index: 1;
+
+  svg {
+    font-size: 12px;
+    color: #fff;
+  }
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--content-color);
+  opacity: 0.55;
+}
+
+.stepLine {
+  width: 2px;
+  flex: 1;
+  min-height: 20px;
+  background: var(--border-color);
+  margin: 2px 0;
+  transition: background 0.2s;
+}
+
+.stepLineCompleted {
+  background: var(--step-color, var(--theme-color));
+}
+
+.stepContent {
+  padding-bottom: 20px;
+  flex: 1;
+  min-width: 0;
+  padding-top: 4px;
+}
+
+.stepLabel {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--title-color);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.stepNote {
+  margin: 2px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--content-color);
+}
+
+.stepDate {
+  display: block;
+  font-size: 11px;
+  color: var(--content-color);
+  margin-top: 2px;
+}
+
+// ─── RRN Box ──────────────────────────────────────────────────────────────────
+
+.rrnBox {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: var(--bg-light, #f9f9f9);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.rrnLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted, #777);
+  margin: 0 0;
+}
+
+.rrnRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rrnValue {
+  font-size: 13px;
+  // font-family: monospace;
+  font-weight: 600;
+  color: var(--content-color);
+  word-break: break-all;
+}
+
+// ─── Footer Note ──────────────────────────────────────────────────────────────
+
+.footerNote {
+  margin-top: 14px;
+  padding: 10px 12px;
+  background: #fffbeb;
+  border-left: 3px solid #f59e0b;
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+  color: var(--text-muted, #777);
+  line-height: 1.6;
+  margin-bottom: 0;
+}

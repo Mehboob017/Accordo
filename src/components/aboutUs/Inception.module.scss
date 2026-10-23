@@ -1,0 +1,58 @@
+/* Text Content Styling */
+.textContent {
+  padding-right: 2rem;
+
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    color: var(--4a4a4a);
+    line-height: 1.8;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--2b2b2b);
+      font-weight: 600;
+    }
+
+    em {
+      font-style: italic;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-right: 0;
+  }
+}
+
+/* Right Column with Divider */
+.imageColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border-left: 1px solid #e2e8f0;
+  padding-left: 2rem;
+
+  @media (max-width: 991px) {
+    border-left: none;
+    // border-top: 1px solid #e2e8f0;
+    padding-left: 0;
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+.imageWrapper {
+  max-width: 280px; /* Adjust based on your actual image size */
+  width: 100%;
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    /* Optional: If the original image doesn't have the frame, you can add border-radius: 50% here */
+  }
+}

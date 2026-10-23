@@ -1,0 +1,24 @@
+.section {
+  position: relative;
+  background-color: var(--white);
+  padding-bottom: 30px; 
+}
+
+.evalSection {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: var(--theme-font), serif;
+  font-weight: 600;
+  color: var(--title-color, #0a426f);
+  margin-bottom: 15px;
+  font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.description {
+  color: var(--content-color);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+}

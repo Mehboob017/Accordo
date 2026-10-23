@@ -1,0 +1,58 @@
+// @use '@/styles/abstracts/variables' as *;
+// @use '@/styles/abstracts/mixins' as *;
+
+.addressSearch {
+  width: 100%;
+  position: relative;
+  .label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  .input {
+    border: 1px solid var(--theme-color);
+    width: 100%;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s ease;
+
+    &:placeholder-shown {
+      color: var(--black);
+      opacity: 0.7;
+    }
+  }
+}
+
+/* Variants */
+.variant-outlined .input {
+  // border: 1px solid black;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.variant-filled .input {
+  border: none;
+  background: #a8a5a5;
+  border-radius: 6px;
+}
+
+.variant-underlined .input {
+  border: none;
+  // border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
+/* Sizes */
+.size-sm .input {
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+.size-md .input {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.size-lg .input {
+  padding: 14px 16px;
+  font-size: 16px;
+}

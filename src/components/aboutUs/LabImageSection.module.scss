@@ -1,0 +1,105 @@
+.section {
+  position: relative;
+}
+
+.sliderWrapper {
+  position: relative;
+}
+
+.section .title h2 {
+  font-size: clamp(1.75rem, 1.3vw + 1.4rem, 2.2rem);
+  font-weight: 700;
+}
+
+.heading {
+  font-size: clamp(1.75rem, 1.3vw + 1.4rem, 2.2rem);
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 6px;
+}
+
+.subHeading {
+  max-width: 640px;
+  margin: 0;
+  color: var(--content-color);
+  line-height: 1.6;
+}
+
+.navButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 1px solid var(--theme-color);
+  background-color: transparent;
+  color: var(--theme-color);
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: var(--theme-color);
+    color: var(--white);
+  }
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cardImageWrapper {
+  aspect-ratio: 3/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: all 0.2s ease-in;
+}
+
+@media (max-width: 767.98px) {
+  .subHeading {
+    margin-top: 4px;
+  }
+}
+
+.sliderWrapper {
+  position: relative;
+}
+
+.navButtonLeft,
+.navButtonRight {
+  @media (max-width: 767.98px) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+}
+
+.navButtonLeft {
+  @media (max-width: 767.98px) {
+    left: 0;
+  }
+}
+
+.navButtonRight {
+  @media (max-width: 767.98px) {
+    right: 0;
+  }
+}

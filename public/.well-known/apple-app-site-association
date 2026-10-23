@@ -1,0 +1,18 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "REPLACE_WITH_APPLE_TEAM_ID.com.sdlindia.app",
+        "paths": [
+          "/products/*",
+          "/videos/*",
+          "/podcasts/*",
+          "/blogs/*",
+          "/app/blogs/*",
+          "/authors/*"
+        ]
+      }
+    ]
+  }
+}

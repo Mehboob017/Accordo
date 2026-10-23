@@ -1,0 +1,237 @@
+// Variables
+$primary-green: var(--theme-color);
+$success-green: var(--success-color);
+$text-dark: var(--content-color);
+$text-muted: var(--text-muted);
+$text-light: var(--text-light);
+$border-color: var(--border-color);
+$bg-light: var(--bg-light);
+
+// Refund Status Card (Compact)
+.refund-status-card {
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  overflow: hidden;
+
+  .refund-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+
+    &:hover {
+      background: $bg-light;
+    }
+  }
+
+  .refund-info {
+    .amount {
+      font-size: 14px;
+      color: $text-dark;
+      margin: 0 0 4px;
+      font-weight: 500;
+
+      .value {
+        color: $success-green;
+        font-weight: 700;
+      }
+    }
+
+    .destination {
+      font-size: 13px;
+      color: $text-muted;
+      margin: 0 0 2px;
+    }
+
+    .date {
+      font-size: 12px;
+      color: $text-light;
+      margin: 0;
+    }
+  }
+
+  .refund-action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .status-badge {
+      padding: 3px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .chevron {
+      color: $primary-green;
+      font-size: 14px;
+    }
+  }
+
+  .refund-help {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px;
+    border-top: 1px dashed $border-color;
+    font-size: 13px;
+    color: $text-muted;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-green;
+    }
+
+    .info-icon {
+      font-size: 16px;
+      color: $text-light;
+    }
+  }
+}
+
+// Refund Status Timeline (Expanded)
+.refund-status-timeline {
+  padding: 0;
+
+  .refund-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .header-left {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+
+      .label {
+        font-size: 14px;
+        color: $text-dark;
+        font-weight: 500;
+      }
+
+      .amount {
+        font-size: 16px;
+        color: $success-green;
+        font-weight: 700;
+      }
+    }
+
+    .status-badge {
+      padding: 3px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .destination {
+    font-size: 13px;
+    color: $text-muted;
+    margin: 0 0 20px;
+  }
+
+  // Timeline
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .timeline-step {
+    display: flex;
+    gap: 14px;
+    position: relative;
+
+    .step-indicator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .circle {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: $border-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        svg {
+          font-size: 10px;
+          color: var(--step-color, $success-green);
+        }
+      }
+
+      .line {
+        width: 2px;
+        flex: 1;
+        min-height: 24px;
+        background: $border-color;
+        margin: 4px 0;
+      }
+    }
+
+    .step-content {
+      padding-bottom: 20px;
+      flex: 1;
+
+      .step-label {
+        font-size: 14px;
+        color: $text-dark;
+        margin: 0 0 -2px;
+        font-weight: 500;
+        line-height: 1.4;
+      }
+
+      .step-date {
+        font-size: 12px;
+        color: $text-light;
+      }
+    }
+
+    &.completed {
+      .step-indicator .circle {
+        background: transparent;
+      }
+
+      .step-indicator .line {
+        background: var(--step-color, $success-green);
+      }
+    }
+
+    &:last-child {
+      .step-content {
+        padding-bottom: 0;
+      }
+
+      .step-indicator .line {
+        display: none;
+      }
+    }
+  }
+
+  .refund-help-link {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px dashed $border-color;
+
+    span {
+      font-size: 13px;
+      color: $text-muted;
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-underline-offset: 3px;
+
+      &:hover {
+        color: $primary-green;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(17, 24, 39, 0.18);
+  backdrop-filter: blur(2px);
+}
+
+.icon {
+  font-size: 42px;
+  color: var(--theme-color);
+  animation: page-action-spin 0.9s linear infinite;
+}
+
+@keyframes page-action-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

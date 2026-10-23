@@ -1,0 +1,900 @@
+{
+  "success": true,
+  "message": "Products fetched Successfully",
+  "data": {
+    "product": [
+      {
+        "uid": "cmn8un039000vqnqj19hnyksl",
+        "name": "Musali Pak - Herbal Energy Booster",
+        "slug": "musali-pak-herbal-energy-booster",
+        "customerType": "doctorAndConsumer",
+        "gstPercent": 5,
+        "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1776249183699-wmremove-transformed (10).png",
+        "coverImageAlt": null,
+        "productVariants": [
+          {
+            "uid": "cmn8un03p000xqnqj3zkds8b2",
+            "name": "200 GM",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1776064060752-Musali-Pak-600x780.jpg.webp",
+            "coverImageAlt": null,
+            "mrp": 500,
+            "disPrice": 470,
+            "basePrice": 447.62,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 5,
+            "consumeDays": null,
+            "skuCode": "010035133"
+          }
+        ],
+        "department": {
+          "uid": "cmkqtptca00a0qn49kkwvmtyl",
+          "companyUuid": "cmljcue7b000iqnspveo3m1y1",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Department/1774252071313-Gemini_Generated_Image_rxfrp8rxfrp8rxfr.png",
+          "name": "Consumer Ayurved",
+          "slug": "consumer-ayurved",
+          "description": "All products that are available for sale only through online platforms, including the company website, mobile app, and third-party e-commerce portals.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T11:54:50.697Z",
+          "updated_at": "2026-03-23T15:00:02.110Z",
+          "imageAlt": "Online Product"
+        },
+        "category": {
+          "uid": "cmmyokrv5020wqn0k050ov64u",
+          "departmentUid": "cmkqtptca00a0qn49kkwvmtyl",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Category/1776159878958-amla-avla-juice-pickle-supari-murabba-chyawanprash.webp",
+          "name": "Avaleha pak",
+          "slug": "consumer-ayurved-avaleha-pak",
+          "description": null,
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-03-20T09:12:31.505Z",
+          "updated_at": "2026-04-14T09:44:39.133Z",
+          "imageAlt": null
+        },
+        "brand": {
+          "uid": "cmkqujigg00arqn49foe933hn",
+          "logo": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Brand/1776158770260-Dhootapapeshwar-Logo.png",
+          "imageAlt": "Dhootapapeshwar Brand",
+          "name": "Dhootapapeshwar",
+          "description": "Dhootapapeshwar is a trusted Ayurvedic brand offering a wide range of classical and proprietary formulations, wellness products, and consumer health solutions. The brand is known for its commitment to quality, authenticity, and the traditional principles of Ayurveda.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:17:56.272Z",
+          "updated_at": "2026-04-14T09:26:35.085Z"
+        },
+        "productReviews": [],
+        "isWishlisted": false,
+        "tags": [
+          {
+            "uid": "cmnn4i7vf000bqnzddkj7ehwe",
+            "name": "Popular",
+            "type": "tag"
+          }
+        ],
+        "labels": [
+          {
+            "uid": "cml0y9dq20007qnwo9zpvz3jo",
+            "name": "Best Seller",
+            "type": "tag"
+          }
+        ]
+      },
+      {
+        "uid": "cmn8uim5u0007qnqjkphfurw7",
+        "name": "Kaunch Pak - Natural Vata Care & Vitality Booster",
+        "slug": "kaunch-pak-natural-vata-care-vitality-booster",
+        "customerType": "doctorAndConsumer",
+        "gstPercent": 5,
+        "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1776249321091-wmremove-transformed (11).png",
+        "coverImageAlt": null,
+        "productVariants": [
+          {
+            "uid": "cmn8uim6z0009qnqjuc4e1y0a",
+            "name": "Kaunch Pak - Natural Vata Care & Vitality Booster",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1776274115964-wmremove-transformed (11).png",
+            "coverImageAlt": null,
+            "mrp": 284,
+            "disPrice": 256,
+            "basePrice": 243.81,
+            "inStockFlag": true,
+            "coinsCount": 33,
+            "stockQty": 15,
+            "consumeDays": null,
+            "skuCode": "010046133"
+          }
+        ],
+        "department": {
+          "uid": "cmkqtptca00a0qn49kkwvmtyl",
+          "companyUuid": "cmljcue7b000iqnspveo3m1y1",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Department/1774252071313-Gemini_Generated_Image_rxfrp8rxfrp8rxfr.png",
+          "name": "Consumer Ayurved",
+          "slug": "consumer-ayurved",
+          "description": "All products that are available for sale only through online platforms, including the company website, mobile app, and third-party e-commerce portals.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T11:54:50.697Z",
+          "updated_at": "2026-03-23T15:00:02.110Z",
+          "imageAlt": "Online Product"
+        },
+        "category": {
+          "uid": "cmmyokrv5020wqn0k050ov64u",
+          "departmentUid": "cmkqtptca00a0qn49kkwvmtyl",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Category/1776159878958-amla-avla-juice-pickle-supari-murabba-chyawanprash.webp",
+          "name": "Avaleha pak",
+          "slug": "consumer-ayurved-avaleha-pak",
+          "description": null,
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-03-20T09:12:31.505Z",
+          "updated_at": "2026-04-14T09:44:39.133Z",
+          "imageAlt": null
+        },
+        "brand": {
+          "uid": "cmkqujigg00arqn49foe933hn",
+          "logo": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Brand/1776158770260-Dhootapapeshwar-Logo.png",
+          "imageAlt": "Dhootapapeshwar Brand",
+          "name": "Dhootapapeshwar",
+          "description": "Dhootapapeshwar is a trusted Ayurvedic brand offering a wide range of classical and proprietary formulations, wellness products, and consumer health solutions. The brand is known for its commitment to quality, authenticity, and the traditional principles of Ayurveda.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:17:56.272Z",
+          "updated_at": "2026-04-14T09:26:35.085Z"
+        },
+        "productReviews": [],
+        "isWishlisted": false,
+        "tags": [
+          {
+            "uid": "cml0y9dq20007qnwo9zpvz3jo",
+            "name": "Best Seller",
+            "type": "tag"
+          }
+        ],
+        "labels": [
+          {
+            "uid": "cmo02u2el000jqnic3bcobpe3",
+            "name": "Ayurvedic",
+            "type": "label"
+          },
+          {
+            "uid": "cmo02susm000gqnici0p0sr0u",
+            "name": "Gluten Free",
+            "type": "label"
+          },
+          {
+            "uid": "cml0y916v0004qnwo2qou33uf",
+            "name": "Organic",
+            "type": "label"
+          }
+        ]
+      },
+      {
+        "uid": "cmn44pi66002bqnsvvqbbbzre",
+        "name": "Arjuna Tablets - Herbal Heart Strength Formula",
+        "slug": "arjuna-tablets-herbal-heart-strength-formula",
+        "customerType": "doctorAndConsumer",
+        "gstPercent": 5,
+        "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774331246265-Arjuna Tablet-Photoroom-Photoroom.png",
+        "coverImageAlt": null,
+        "productVariants": [
+          {
+            "uid": "cmn44pi7y002dqnsvni9s30hk",
+            "name": "60 Tablets",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774331246765-Arjuna Tablet-Photoroom-Photoroom.png",
+            "coverImageAlt": null,
+            "mrp": 120,
+            "disPrice": 108,
+            "basePrice": 102.86,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 100,
+            "consumeDays": null,
+            "skuCode": "270008405"
+          }
+        ],
+        "department": {
+          "uid": "cmkqtptca00a0qn49kkwvmtyl",
+          "companyUuid": "cmljcue7b000iqnspveo3m1y1",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Department/1774252071313-Gemini_Generated_Image_rxfrp8rxfrp8rxfr.png",
+          "name": "Consumer Ayurved",
+          "slug": "consumer-ayurved",
+          "description": "All products that are available for sale only through online platforms, including the company website, mobile app, and third-party e-commerce portals.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T11:54:50.697Z",
+          "updated_at": "2026-03-23T15:00:02.110Z",
+          "imageAlt": "Online Product"
+        },
+        "category": {
+          "uid": "cmmyopjs3021nqn0k29b0ht36",
+          "departmentUid": "cmkqtptca00a0qn49kkwvmtyl",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Category/1776160092262-nindia.2020.101_19310518.jpg",
+          "name": "Primary herbs",
+          "slug": "consumer-ayurved-primary-herbs",
+          "description": null,
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-03-20T09:16:14.307Z",
+          "updated_at": "2026-04-14T09:48:12.463Z",
+          "imageAlt": null
+        },
+        "brand": {
+          "uid": "cmkqujigg00arqn49foe933hn",
+          "logo": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Brand/1776158770260-Dhootapapeshwar-Logo.png",
+          "imageAlt": "Dhootapapeshwar Brand",
+          "name": "Dhootapapeshwar",
+          "description": "Dhootapapeshwar is a trusted Ayurvedic brand offering a wide range of classical and proprietary formulations, wellness products, and consumer health solutions. The brand is known for its commitment to quality, authenticity, and the traditional principles of Ayurveda.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:17:56.272Z",
+          "updated_at": "2026-04-14T09:26:35.085Z"
+        },
+        "productReviews": [],
+        "isWishlisted": false,
+        "tags": [],
+        "labels": [
+          {
+            "uid": "cmo02u2el000jqnic3bcobpe3",
+            "name": "Ayurvedic",
+            "type": "label"
+          },
+          {
+            "uid": "cmo02susm000gqnici0p0sr0u",
+            "name": "Gluten Free",
+            "type": "label"
+          },
+          {
+            "uid": "cml0y916v0004qnwo2qou33uf",
+            "name": "Organic",
+            "type": "label"
+          },
+          {
+            "uid": "cmo030exv0015qnicuwu66oje",
+            "name": "Lacto Vegetarianism",
+            "type": "label"
+          },
+          {
+            "uid": "cmo02vsu5000mqniceciqtu0w",
+            "name": "Vegan",
+            "type": "label"
+          }
+        ]
+      },
+      {
+        "uid": "cmn37qwe7000uqnuncdvkcnyo",
+        "name": "Ashwagandha + Guduchi + Tulasi Tablets",
+        "slug": "ashwagandha-guduchi-tulasi-tablets",
+        "customerType": "doctorAndConsumer",
+        "gstPercent": 5,
+        "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1776249510580-1774330816345-Gemini_Generated_Image_nwz6bjnwz6bjnwz6-ezremove.png",
+        "coverImageAlt": null,
+        "productVariants": [
+          {
+            "uid": "cmn37qwf4000wqnundd6utg2o",
+            "name": "60+60+60 Tablets",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1776249510869-1774330816345-Gemini_Generated_Image_nwz6bjnwz6bjnwz6-ezremove.png",
+            "coverImageAlt": null,
+            "mrp": 427,
+            "disPrice": 342,
+            "basePrice": 325.71,
+            "inStockFlag": false,
+            "coinsCount": null,
+            "stockQty": 0,
+            "consumeDays": null,
+            "skuCode": "00007890"
+          }
+        ],
+        "department": {
+          "uid": "cmkqtptca00a0qn49kkwvmtyl",
+          "companyUuid": "cmljcue7b000iqnspveo3m1y1",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Department/1774252071313-Gemini_Generated_Image_rxfrp8rxfrp8rxfr.png",
+          "name": "Consumer Ayurved",
+          "slug": "consumer-ayurved",
+          "description": "All products that are available for sale only through online platforms, including the company website, mobile app, and third-party e-commerce portals.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T11:54:50.697Z",
+          "updated_at": "2026-03-23T15:00:02.110Z",
+          "imageAlt": "Online Product"
+        },
+        "category": {
+          "uid": "cmkqu58ld00acqn49n9c7ag02",
+          "departmentUid": "cmkqtptca00a0qn49kkwvmtyl",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Category/1769170010096-download (1).png",
+          "name": "Consumer Ayurved",
+          "slug": "consumer-ayurved-consumer-ayurved",
+          "description": "Ayurvedic products meant for daily use by consumers to support general health, immunity, digestion, and wellness.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:06:50.305Z",
+          "updated_at": "2026-03-23T15:01:24.446Z",
+          "imageAlt": null
+        },
+        "brand": {
+          "uid": "cmkqujigg00arqn49foe933hn",
+          "logo": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Brand/1776158770260-Dhootapapeshwar-Logo.png",
+          "imageAlt": "Dhootapapeshwar Brand",
+          "name": "Dhootapapeshwar",
+          "description": "Dhootapapeshwar is a trusted Ayurvedic brand offering a wide range of classical and proprietary formulations, wellness products, and consumer health solutions. The brand is known for its commitment to quality, authenticity, and the traditional principles of Ayurveda.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:17:56.272Z",
+          "updated_at": "2026-04-14T09:26:35.085Z"
+        },
+        "productReviews": [],
+        "isWishlisted": false,
+        "tags": [],
+        "labels": [
+          {
+            "uid": "cml0y9dq20007qnwo9zpvz3jo",
+            "name": "Best Seller",
+            "type": "tag"
+          }
+        ]
+      },
+      {
+        "uid": "cmn372mdc0001qnunngtgow55",
+        "name": "Hemagarbha Pottali Ayurvedic Care ",
+        "slug": "hemagarbha-pottali-ayurvedic-care",
+        "customerType": "doctor",
+        "gstPercent": 5,
+        "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1776249753928-aiease_1776249716346.jpg",
+        "coverImageAlt": null,
+        "productVariants": [
+          {
+            "uid": "cmn372mgz0003qnunan9s446t",
+            "name": "1 Pottali",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1776249754204-aiease_1776249716346.jpg",
+            "coverImageAlt": null,
+            "mrp": 5155,
+            "disPrice": 4124,
+            "basePrice": 3927.62,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 100,
+            "consumeDays": null,
+            "skuCode": "260002800"
+          }
+        ],
+        "department": {
+          "uid": "cmkqtsb9n00a3qn49wjil3njy",
+          "companyUuid": "cmljcue7b000iqnspveo3m1y1",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Department/1774252037209-Gemini_Generated_Image_ab3kxkab3kxkab3k.png",
+          "name": "Exclusive for Physician",
+          "slug": "exclusive-for-physician",
+          "description": "Products that are exclusively developed and distributed for registered medical practitioners and physicians. This department includes prescription-based items, professional-use formulations, and physician-recommended products that are not available for general retail sale.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T11:56:47.244Z",
+          "updated_at": "2026-03-23T13:27:52.425Z",
+          "imageAlt": "Exclusive for Physicians"
+        },
+        "category": {
+          "uid": "cmkqu7n3t00afqn49khj025hd",
+          "departmentUid": "cmkqtsb9n00a3qn49wjil3njy",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Category/1769170122201-images.jfif",
+          "name": "Patent and Proprietary",
+          "slug": "exclusive-for-physicians-patent-and-proprietary",
+          "description": "atent and Proprietary products include Ayurvedic formulations developed using original compositions, proprietary blends, or modernized combinations of herbs that are not strictly based on classical Ayurvedic texts. These products are created for specific therapeutic or wellness purposes and are owned and marketed exclusively by the company.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:08:42.426Z",
+          "updated_at": "2026-03-23T13:08:10.526Z",
+          "imageAlt": "Patent and Proprietary"
+        },
+        "brand": {
+          "uid": "cmkqujigg00arqn49foe933hn",
+          "logo": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Brand/1776158770260-Dhootapapeshwar-Logo.png",
+          "imageAlt": "Dhootapapeshwar Brand",
+          "name": "Dhootapapeshwar",
+          "description": "Dhootapapeshwar is a trusted Ayurvedic brand offering a wide range of classical and proprietary formulations, wellness products, and consumer health solutions. The brand is known for its commitment to quality, authenticity, and the traditional principles of Ayurveda.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:17:56.272Z",
+          "updated_at": "2026-04-14T09:26:35.085Z"
+        },
+        "productReviews": [],
+        "isWishlisted": false,
+        "tags": [],
+        "labels": [
+          {
+            "uid": "cml0y9dq20007qnwo9zpvz3jo",
+            "name": "Best Seller",
+            "type": "tag"
+          }
+        ]
+      },
+      {
+        "uid": "cmn33qrwu0008qnh91fhalc81",
+        "name": "Vidangarishta - Ayurvedic Krumi Care Tonic",
+        "slug": "vidangarishta-ayurvedic-krumi-care-tonic",
+        "customerType": "doctorAndConsumer",
+        "gstPercent": 5,
+        "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774282755097-bottel 3.png",
+        "coverImageAlt": null,
+        "productVariants": [
+          {
+            "uid": "cmn33qs0s000eqnh9znnayzlh",
+            "name": "200 ML",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774282755858-bottel 2.png",
+            "coverImageAlt": null,
+            "mrp": 99,
+            "disPrice": 89,
+            "basePrice": 84.76,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 5,
+            "consumeDays": null,
+            "skuCode": "100026303"
+          },
+          {
+            "uid": "cmn33qrzi000aqnh9682df4tb",
+            "name": "450 ML",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774282755577-bottel 1.png",
+            "coverImageAlt": null,
+            "mrp": 217,
+            "disPrice": 195,
+            "basePrice": 185.71,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 5,
+            "consumeDays": null,
+            "skuCode": "100026303"
+          }
+        ],
+        "department": {
+          "uid": "cmkqtptca00a0qn49kkwvmtyl",
+          "companyUuid": "cmljcue7b000iqnspveo3m1y1",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Department/1774252071313-Gemini_Generated_Image_rxfrp8rxfrp8rxfr.png",
+          "name": "Consumer Ayurved",
+          "slug": "consumer-ayurved",
+          "description": "All products that are available for sale only through online platforms, including the company website, mobile app, and third-party e-commerce portals.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T11:54:50.697Z",
+          "updated_at": "2026-03-23T15:00:02.110Z",
+          "imageAlt": "Online Product"
+        },
+        "category": {
+          "uid": "cmmyoj7cn020oqn0kd68h3479",
+          "departmentUid": "cmkqtptca00a0qn49kkwvmtyl",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Category/1776160021378-Arishtams_and_Asavams_600x600.webp",
+          "name": "Arishta",
+          "slug": "consumer-ayurved-arishta",
+          "description": null,
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-03-20T09:11:18.261Z",
+          "updated_at": "2026-04-14T09:47:01.624Z",
+          "imageAlt": null
+        },
+        "brand": {
+          "uid": "cmkqujigg00arqn49foe933hn",
+          "logo": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Brand/1776158770260-Dhootapapeshwar-Logo.png",
+          "imageAlt": "Dhootapapeshwar Brand",
+          "name": "Dhootapapeshwar",
+          "description": "Dhootapapeshwar is a trusted Ayurvedic brand offering a wide range of classical and proprietary formulations, wellness products, and consumer health solutions. The brand is known for its commitment to quality, authenticity, and the traditional principles of Ayurveda.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:17:56.272Z",
+          "updated_at": "2026-04-14T09:26:35.085Z"
+        },
+        "productReviews": [],
+        "isWishlisted": false,
+        "tags": [],
+        "labels": []
+      },
+      {
+        "uid": "cmn332zi3003gqna49goz0pgk",
+        "name": "Saraswatarishta –Brahmi Based Mind Energizer Tonic",
+        "slug": "saraswatarishta-brahmi-based-mind-energizer-tonic",
+        "customerType": "doctorAndConsumer",
+        "gstPercent": 5,
+        "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774285739008-wmremove-transformed (5).png",
+        "coverImageAlt": null,
+        "productVariants": [
+          {
+            "uid": "cmn332zj6003iqna43w3ki8ih",
+            "name": "200 ML",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1776274285747-1774285739008-wmremove-transformed (5).png",
+            "coverImageAlt": null,
+            "mrp": 200,
+            "disPrice": 195,
+            "basePrice": 185.71,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 5,
+            "consumeDays": null,
+            "skuCode": "100051303"
+          },
+          {
+            "uid": "cmn332zkr003mqna475gxzkzn",
+            "name": "450 ML",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774325686468-Ayurvedic bottle lab.png",
+            "coverImageAlt": null,
+            "mrp": 250,
+            "disPrice": 234,
+            "basePrice": 222.86,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 5,
+            "consumeDays": null,
+            "skuCode": "100051303"
+          }
+        ],
+        "department": {
+          "uid": "cmkqtptca00a0qn49kkwvmtyl",
+          "companyUuid": "cmljcue7b000iqnspveo3m1y1",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Department/1774252071313-Gemini_Generated_Image_rxfrp8rxfrp8rxfr.png",
+          "name": "Consumer Ayurved",
+          "slug": "consumer-ayurved",
+          "description": "All products that are available for sale only through online platforms, including the company website, mobile app, and third-party e-commerce portals.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T11:54:50.697Z",
+          "updated_at": "2026-03-23T15:00:02.110Z",
+          "imageAlt": "Online Product"
+        },
+        "category": {
+          "uid": "cmmyoj7cn020oqn0kd68h3479",
+          "departmentUid": "cmkqtptca00a0qn49kkwvmtyl",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Category/1776160021378-Arishtams_and_Asavams_600x600.webp",
+          "name": "Arishta",
+          "slug": "consumer-ayurved-arishta",
+          "description": null,
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-03-20T09:11:18.261Z",
+          "updated_at": "2026-04-14T09:47:01.624Z",
+          "imageAlt": null
+        },
+        "brand": {
+          "uid": "cmkqujigg00arqn49foe933hn",
+          "logo": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Brand/1776158770260-Dhootapapeshwar-Logo.png",
+          "imageAlt": "Dhootapapeshwar Brand",
+          "name": "Dhootapapeshwar",
+          "description": "Dhootapapeshwar is a trusted Ayurvedic brand offering a wide range of classical and proprietary formulations, wellness products, and consumer health solutions. The brand is known for its commitment to quality, authenticity, and the traditional principles of Ayurveda.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:17:56.272Z",
+          "updated_at": "2026-04-14T09:26:35.085Z"
+        },
+        "productReviews": [],
+        "isWishlisted": false,
+        "tags": [],
+        "labels": []
+      },
+      {
+        "uid": "cmn32qyij002zqna4yon9u743",
+        "name": "Maha Swarna Brahma Yog – Child Wellness Tablets",
+        "slug": "maha-swarna-brahma-yog-child-wellness-tablets",
+        "customerType": "doctor",
+        "gstPercent": 5,
+        "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774330923644-gemini-2.5-flash-image_Enhanced_this_product_image_change_the_background_color_make_like_professional_A-0.jpg",
+        "coverImageAlt": null,
+        "productVariants": [
+          {
+            "uid": "cmn32qyln0031qna4y2fb1ifb",
+            "name": "30 Tablets ",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774330923852-gemini-2.5-flash-image_Enhanced_this_product_image_change_the_background_color_make_like_professional_A-0.jpg",
+            "coverImageAlt": null,
+            "mrp": 9100,
+            "disPrice": 3500,
+            "basePrice": 3333.33,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 100,
+            "consumeDays": null,
+            "skuCode": "070361424"
+          },
+          {
+            "uid": "cmn32qymt0035qna4sjqrutgl",
+            "name": "150 Tablets",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774330923965-gemini-2.5-flash-image_Enhanced_this_product_image_change_the_background_color_make_like_professional_A-0.jpg",
+            "coverImageAlt": null,
+            "mrp": 41990,
+            "disPrice": 3975,
+            "basePrice": 3785.71,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 100,
+            "consumeDays": null,
+            "skuCode": "070361402"
+          }
+        ],
+        "department": {
+          "uid": "cmkqtsb9n00a3qn49wjil3njy",
+          "companyUuid": "cmljcue7b000iqnspveo3m1y1",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Department/1774252037209-Gemini_Generated_Image_ab3kxkab3kxkab3k.png",
+          "name": "Exclusive for Physician",
+          "slug": "exclusive-for-physician",
+          "description": "Products that are exclusively developed and distributed for registered medical practitioners and physicians. This department includes prescription-based items, professional-use formulations, and physician-recommended products that are not available for general retail sale.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T11:56:47.244Z",
+          "updated_at": "2026-03-23T13:27:52.425Z",
+          "imageAlt": "Exclusive for Physicians"
+        },
+        "category": {
+          "uid": "cmkqu7n3t00afqn49khj025hd",
+          "departmentUid": "cmkqtsb9n00a3qn49wjil3njy",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Category/1769170122201-images.jfif",
+          "name": "Patent and Proprietary",
+          "slug": "exclusive-for-physicians-patent-and-proprietary",
+          "description": "atent and Proprietary products include Ayurvedic formulations developed using original compositions, proprietary blends, or modernized combinations of herbs that are not strictly based on classical Ayurvedic texts. These products are created for specific therapeutic or wellness purposes and are owned and marketed exclusively by the company.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:08:42.426Z",
+          "updated_at": "2026-03-23T13:08:10.526Z",
+          "imageAlt": "Patent and Proprietary"
+        },
+        "brand": {
+          "uid": "cmkqujigg00arqn49foe933hn",
+          "logo": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Brand/1776158770260-Dhootapapeshwar-Logo.png",
+          "imageAlt": "Dhootapapeshwar Brand",
+          "name": "Dhootapapeshwar",
+          "description": "Dhootapapeshwar is a trusted Ayurvedic brand offering a wide range of classical and proprietary formulations, wellness products, and consumer health solutions. The brand is known for its commitment to quality, authenticity, and the traditional principles of Ayurveda.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:17:56.272Z",
+          "updated_at": "2026-04-14T09:26:35.085Z"
+        },
+        "productReviews": [],
+        "isWishlisted": false,
+        "tags": [],
+        "labels": [
+          {
+            "uid": "cml65lcj3000vqnhh4s05d14e",
+            "name": "Top Selling",
+            "type": "tag"
+          }
+        ]
+      },
+      {
+        "uid": "cmmypluab0225qn0keto5zm4e",
+        "name": "Rohitakarishta -Ayurvedic Liver and Spleen Tonic",
+        "slug": "rohitakarishta-ayurvedic-liver-and-spleen-tonic",
+        "customerType": "doctorAndConsumer",
+        "gstPercent": 5,
+        "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774279794599-1774278916405-Gemini_Generated_Image_n1x0hon1x0hon1x0.jpg",
+        "coverImageAlt": "Rohitakarishta",
+        "productVariants": [
+          {
+            "uid": "cmmyplucm0227qn0k5zz5xo0s",
+            "name": "200 ML",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1776274344446-1774279794599-1774278916405-Gemini_Generated_Image_n1x0hon1x0hon1x0.jpg",
+            "coverImageAlt": null,
+            "mrp": 100,
+            "disPrice": 90,
+            "basePrice": 85.71,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 5,
+            "consumeDays": null,
+            "skuCode": "100030301"
+          },
+          {
+            "uid": "cmmyplue2022bqn0kaonmqb6g",
+            "name": "450 ML",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1776274344683-1774279794599-1774278916405-Gemini_Generated_Image_n1x0hon1x0hon1x0.jpg",
+            "coverImageAlt": null,
+            "mrp": 195,
+            "disPrice": 176,
+            "basePrice": 167.62,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 100,
+            "consumeDays": null,
+            "skuCode": "100030303"
+          }
+        ],
+        "department": {
+          "uid": "cmkqtptca00a0qn49kkwvmtyl",
+          "companyUuid": "cmljcue7b000iqnspveo3m1y1",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Department/1774252071313-Gemini_Generated_Image_rxfrp8rxfrp8rxfr.png",
+          "name": "Consumer Ayurved",
+          "slug": "consumer-ayurved",
+          "description": "All products that are available for sale only through online platforms, including the company website, mobile app, and third-party e-commerce portals.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T11:54:50.697Z",
+          "updated_at": "2026-03-23T15:00:02.110Z",
+          "imageAlt": "Online Product"
+        },
+        "category": {
+          "uid": "cmmyoj7cn020oqn0kd68h3479",
+          "departmentUid": "cmkqtptca00a0qn49kkwvmtyl",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Category/1776160021378-Arishtams_and_Asavams_600x600.webp",
+          "name": "Arishta",
+          "slug": "consumer-ayurved-arishta",
+          "description": null,
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-03-20T09:11:18.261Z",
+          "updated_at": "2026-04-14T09:47:01.624Z",
+          "imageAlt": null
+        },
+        "brand": {
+          "uid": "cmkqujigg00arqn49foe933hn",
+          "logo": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Brand/1776158770260-Dhootapapeshwar-Logo.png",
+          "imageAlt": "Dhootapapeshwar Brand",
+          "name": "Dhootapapeshwar",
+          "description": "Dhootapapeshwar is a trusted Ayurvedic brand offering a wide range of classical and proprietary formulations, wellness products, and consumer health solutions. The brand is known for its commitment to quality, authenticity, and the traditional principles of Ayurveda.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:17:56.272Z",
+          "updated_at": "2026-04-14T09:26:35.085Z"
+        },
+        "productReviews": [],
+        "isWishlisted": false,
+        "tags": [],
+        "labels": []
+      },
+      {
+        "uid": "cmmui47rq0073qnvbh0ix8x2g",
+        "name": "Nishamalaki Tablets – Metabolic Care Tablets",
+        "slug": "nishamalaki-tablets-metabolic-care-tablets",
+        "customerType": "doctorAndConsumer",
+        "gstPercent": 5,
+        "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774282841054-wmremove-transformed (3).png",
+        "coverImageAlt": null,
+        "productVariants": [
+          {
+            "uid": "cmmui47to0075qnvbbsvbfuwo",
+            "name": "60 Tablets ",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774282841290-wmremove-transformed (3).png",
+            "coverImageAlt": null,
+            "mrp": 173,
+            "disPrice": 156,
+            "basePrice": 148.57,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 100,
+            "consumeDays": null,
+            "skuCode": "310004405"
+          }
+        ],
+        "department": {
+          "uid": "cmkqtptca00a0qn49kkwvmtyl",
+          "companyUuid": "cmljcue7b000iqnspveo3m1y1",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Department/1774252071313-Gemini_Generated_Image_rxfrp8rxfrp8rxfr.png",
+          "name": "Consumer Ayurved",
+          "slug": "consumer-ayurved",
+          "description": "All products that are available for sale only through online platforms, including the company website, mobile app, and third-party e-commerce portals.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T11:54:50.697Z",
+          "updated_at": "2026-03-23T15:00:02.110Z",
+          "imageAlt": "Online Product"
+        },
+        "category": {
+          "uid": "cmkqu58ld00acqn49n9c7ag02",
+          "departmentUid": "cmkqtptca00a0qn49kkwvmtyl",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Category/1769170010096-download (1).png",
+          "name": "Consumer Ayurved",
+          "slug": "consumer-ayurved-consumer-ayurved",
+          "description": "Ayurvedic products meant for daily use by consumers to support general health, immunity, digestion, and wellness.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:06:50.305Z",
+          "updated_at": "2026-03-23T15:01:24.446Z",
+          "imageAlt": null
+        },
+        "brand": {
+          "uid": "cmkqujigg00arqn49foe933hn",
+          "logo": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Brand/1776158770260-Dhootapapeshwar-Logo.png",
+          "imageAlt": "Dhootapapeshwar Brand",
+          "name": "Dhootapapeshwar",
+          "description": "Dhootapapeshwar is a trusted Ayurvedic brand offering a wide range of classical and proprietary formulations, wellness products, and consumer health solutions. The brand is known for its commitment to quality, authenticity, and the traditional principles of Ayurveda.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:17:56.272Z",
+          "updated_at": "2026-04-14T09:26:35.085Z"
+        },
+        "productReviews": [],
+        "isWishlisted": false,
+        "tags": [
+          {
+            "uid": "cmn8ws2an005xqn4c7tq42spq",
+            "name": "Trending",
+            "type": "tag"
+          }
+        ],
+        "labels": [
+          {
+            "uid": "cml65lcj3000vqnhh4s05d14e",
+            "name": "Top Selling",
+            "type": "tag"
+          }
+        ]
+      },
+      {
+        "uid": "cmmuhdj2f0055qnvbitgyd687",
+        "name": "Swamala Compound SF – All Season Wellness Formula",
+        "slug": "swamala-compound-sf-all-season-wellness-formula",
+        "customerType": "doctor",
+        "gstPercent": 5,
+        "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774282944063-wmremove-transformed (1).png",
+        "coverImageAlt": null,
+        "productVariants": [
+          {
+            "uid": "cmmuhdj69005bqnvb4k2fcsck",
+            "name": "500 GM",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774329305618-Swamala SF jar with gooseberries.png",
+            "coverImageAlt": null,
+            "mrp": 2795,
+            "disPrice": 2516,
+            "basePrice": 2396.19,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 102,
+            "consumeDays": null,
+            "skuCode": "070381110"
+          },
+          {
+            "uid": "cmmuhdj4f0057qnvbpu6e50nz",
+            "name": "1 KG",
+            "coverImage": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Product/1774329305247-Swamala SF Compound with gooseberries.png",
+            "coverImageAlt": null,
+            "mrp": 5250,
+            "disPrice": 4725,
+            "basePrice": 4500,
+            "inStockFlag": true,
+            "coinsCount": null,
+            "stockQty": 105,
+            "consumeDays": null,
+            "skuCode": "070381200"
+          }
+        ],
+        "department": {
+          "uid": "cmkqtsb9n00a3qn49wjil3njy",
+          "companyUuid": "cmljcue7b000iqnspveo3m1y1",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Department/1774252037209-Gemini_Generated_Image_ab3kxkab3kxkab3k.png",
+          "name": "Exclusive for Physician",
+          "slug": "exclusive-for-physician",
+          "description": "Products that are exclusively developed and distributed for registered medical practitioners and physicians. This department includes prescription-based items, professional-use formulations, and physician-recommended products that are not available for general retail sale.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T11:56:47.244Z",
+          "updated_at": "2026-03-23T13:27:52.425Z",
+          "imageAlt": "Exclusive for Physicians"
+        },
+        "category": {
+          "uid": "cmkqu7n3t00afqn49khj025hd",
+          "departmentUid": "cmkqtsb9n00a3qn49wjil3njy",
+          "image": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Category/1769170122201-images.jfif",
+          "name": "Patent and Proprietary",
+          "slug": "exclusive-for-physicians-patent-and-proprietary",
+          "description": "atent and Proprietary products include Ayurvedic formulations developed using original compositions, proprietary blends, or modernized combinations of herbs that are not strictly based on classical Ayurvedic texts. These products are created for specific therapeutic or wellness purposes and are owned and marketed exclusively by the company.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:08:42.426Z",
+          "updated_at": "2026-03-23T13:08:10.526Z",
+          "imageAlt": "Patent and Proprietary"
+        },
+        "brand": {
+          "uid": "cmkqujigg00arqn49foe933hn",
+          "logo": "https://somewhrlightsail.s3.ap-south-1.amazonaws.com/Sdl/Brand/1776158770260-Dhootapapeshwar-Logo.png",
+          "imageAlt": "Dhootapapeshwar Brand",
+          "name": "Dhootapapeshwar",
+          "description": "Dhootapapeshwar is a trusted Ayurvedic brand offering a wide range of classical and proprietary formulations, wellness products, and consumer health solutions. The brand is known for its commitment to quality, authenticity, and the traditional principles of Ayurveda.",
+          "status": true,
+          "isDeleted": false,
+          "created_at": "2026-01-23T12:17:56.272Z",
+          "updated_at": "2026-04-14T09:26:35.085Z"
+        },
+        "productReviews": [],
+        "isWishlisted": false,
+        "tags": [],
+        "labels": [
+          {
+            "uid": "cml65lcj3000vqnhh4s05d14e",
+            "name": "Top Selling",
+            "type": "tag"
+          }
+        ]
+      }
+    ]
+  }
+}

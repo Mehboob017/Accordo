@@ -1,0 +1,161 @@
+// hero Carousel Styles
+// =====================================================
+@use '../utils/variables';
+@use '../utils/mixin/common';
+@use '../utils/mixin/breakpoints';
+
+// CSS Variables for hero Carousel
+:root {
+  --carousel-min-height: 25vh;
+  --carousel-overlay-gradient: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.5) 100%);
+  --carousel-arrow-size: 48px;
+  --carousel-arrow-bg: rgba(255, 255, 255, 0.95);
+  --carousel-arrow-hover-bg: var(--theme-color);
+  --carousel-dot-size: 12px;
+  --carousel-dot-active-width: 36px;
+  --carousel-transition-speed: 0.6s;
+}
+
+.newcss {
+  margin-top: -20px !important;
+
+  @include breakpoints.mq-max(md) {
+    margin-top: 0 !important;
+  }
+}
+
+.hero-carousel-section {
+  margin: 0px;
+  position: relative;
+
+  @include breakpoints.mq-max(md) {
+    margin-top: 0;
+  }
+
+  .slider-banner {
+    position: relative;
+  }
+
+  .hero-carousel-banner {
+    aspect-ratio: 10 / 3;
+    // min-height: clamp(220px, 28vw, 400px);
+    // background-color: var(--white);
+
+    @include breakpoints.mq-max(lg) {
+      // aspect-ratio: 16 / 8;
+      // min-height: clamp(240px, 38vw, 360px);
+    }
+
+    @include breakpoints.mq-max(md) {
+      aspect-ratio: 4 / 2;
+      // min-height: clamp(250px, 60vw, 340px);
+    }
+
+    @include breakpoints.mq-max(sm) {
+      aspect-ratio: 2 / 1;
+      // min-height: clamp(260px, 78vw, 320px);
+    }
+  }
+
+  .hero-carousel-image {
+    @include common.pseudowh;
+    display: block;
+    object-fit: fill;
+    object-position: center;
+  }
+
+  .slick-dots {
+    position: relative;
+    bottom: 0;
+    margin-top: 14px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    li {
+      width: auto;
+      height: auto;
+      margin: 0;
+
+      button {
+        width: 8px;
+        height: 8px;
+        padding: 0;
+        margin: 0;
+        border-radius: 4px;
+        background-color: rgba(var(--theme-color-rgb), 0.22);
+        transition: all 0.4s ease;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &.slick-active {
+        button {
+          width: 34px;
+          background-color: var(--theme-color);
+        }
+      }
+    }
+  }
+
+  .slick-list {
+    margin: 0;
+  }
+
+  .slick-prev,
+  .slick-next {
+    @include common.pseudowh($width: calc(40px + (36 - 30) * ((100vw - 320px) / (1920 - 320))),
+      $height: calc(40px + (36 - 30) * ((100vw - 320px) / (1920 - 320))));
+    background-color: var(--white);
+    box-shadow: 0px 2px 6px rgba(variables.$title-color, 0.15);
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+
+    &::before {
+      @include common.remixicon;
+      color: var(--theme-color);
+      font-size: calc(22px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    &:hover {
+      background-color: var(--theme-color);
+      box-shadow: 0px 3px 8px rgba(variables.$title-color, 0.25);
+
+      &::before {
+        color: var(--white);
+      }
+    }
+  }
+
+  .slick-prev {
+    left: 8px;
+
+    &::before {
+      content: '\ea64';
+    }
+
+    body[dir='rtl'] & {
+      left: unset;
+      right: 1rem;
+    }
+  }
+
+  .slick-next {
+    right: 8px;
+
+    &::before {
+      content: '\ea6e';
+    }
+
+    body[dir='rtl'] & {
+      right: unset;
+      left: 1rem;
+    }
+  }
+}

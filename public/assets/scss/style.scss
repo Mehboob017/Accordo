@@ -1,0 +1,476 @@
+@use 'sass:color';
+
+/* components */
+@use 'components/alert';
+@use 'components/accordion';
+@use 'components/breadscrumb';
+@use 'components/button';
+@use 'components/cookie_bar';
+@use 'components/counter';
+@use 'components/custom-dropdown';
+@use 'components/form';
+@use 'components/label';
+@use 'components/card';
+@use 'components/loader';
+@use 'components/modal';
+@use 'components/nav-tabs';
+@use 'components/pagination';
+@use 'components/ratio';
+@use 'components/slider';
+@use 'components/tab';
+@use 'components/tap-to-top';
+@use 'components/theme-setting';
+@use 'components/timer';
+@use 'components/title';
+@use 'components/tooltip';
+@use 'components/country-flag';
+@use 'components/confetti';
+@use 'components/enhanced-search';
+@use 'components/hero-carousel';
+@use 'components/home-page';
+@use 'components/events-carousel';
+@use 'components/events-search';
+@use 'components/herbs-search';
+@use 'components/events-filter';
+@use 'components/events-card';
+@use 'components/event-detail';
+@use 'components/rate-order-modal';
+@use 'components/review-modal';
+@use 'components/sidebar-order-items';
+@use 'components/alternative-products';
+@use 'components/otp-login-modal';
+@use 'components/image-magnifier';
+@use 'components/data-table';
+@use 'components/resources-tab-navigation';
+@use 'components/store-finder';
+@use 'components/clinic-finder';
+@use 'components/scrollbar';
+@use 'components/ugc-content';
+@use 'components/product-review-showcase';
+@use 'components/product_additional_info';
+
+// /* Base */
+@use 'base/reset';
+@use 'base/typography';
+
+// /* Layout */
+@use 'layout/banner';
+@use 'layout/blog';
+@use 'layout/category';
+@use 'layout/footer';
+@use 'layout/header';
+@use 'layout/home';
+@use 'layout/item';
+@use 'layout/nav';
+@use 'layout/newsletter';
+@use 'layout/offer';
+@use 'layout/product';
+@use 'layout/review';
+@use 'layout/service';
+
+// /* Pages *//
+@use 'pages/coming-soon';
+@use 'pages/inner_pages';
+@use 'pages/shop_page';
+@use 'pages/user-dashboard';
+@use 'pages/product_page';
+@use 'pages/checkout';
+@use 'pages/pos';
+@use 'pages/journal-publications';
+@use 'pages/practitioner-access';
+@use 'pages/events-page';
+@use 'pages/press-page';
+@use 'pages/herbs-page';
+@use 'pages/cultivators-page';
+
+// /* Themes */
+@use 'themes/rtl';
+
+/* utils */
+@use 'utils/mixin/animation';
+// @use 'utils/mixin/common';
+// @use 'utils/mixin/breakpoints';
+
+:root {
+  --subtle-text: #6f6f6f;
+  --6f6f6f: #6f6f6f;
+  --2b2b2b: #2b2b2b;
+  --e9f9f4: #e9f9f4;
+  --e2e2e2: #e2e2e2;
+  --fdecea: #fdecea;
+  --f5f5f0: #f5f5f0;
+  --ffffff: #fefefe;
+  --9e9e9e: #9e9e9e;
+  --fffbeb: #fffbeb;
+  --f59e0b: #f59e0b;
+  --9a9a9a: #9a9a9a;
+  --4a4a4a: #4a4a4a;
+  --1fa67a: #1fa67a;
+  --page-bg-color: #FAFAF9;
+
+  // product card variables
+  --product-card-bg: #fefefe;
+  --product-card-name: #2B2B2B;
+  --product-card-size: #6f6f6f;
+
+  --footer-title-color: #2b2b2b;
+  --footer-text-color: #6f6f6f;
+
+  // In Stock badge colors
+  --product-card-instock-bg: #E6F7F1;
+  --product-card-instock-text: #166A4C;
+  --product-card-instock-stroke: #A6E3CD;
+
+  // Out of Stock badge colors
+  --product-card-outstock-bg: rgba(220, 53, 69, 0.1);
+  --product-card-outstock-text: #dc3545;
+  --product-card-outstock-stroke: rgba(220, 53, 69, 0.2);
+
+  // ratings
+  --product-card-rating-count: #4A4A4A;
+  --product-card-rating-star: #FFC107;
+  --product-card-rating-total: #9E9E9E;
+
+  // price
+  --product-card-discounted-price: #2B2B2B;
+  --product-card-selling-price: #6f6f6f;
+  --product-card-disc-percent: #F57C00;
+  --product-card-disc-percent-bg: #FFF4E5;
+  --product-card-inclusive-tax: #6F6F6F;
+
+  // tags
+  --product-card-featured-text: #C17900;
+  --product-card-featured-bg: #FFF4E5;
+  --product-card-sale-text: #C17900;
+  --product-card-sale-bg: #FFF4E5;
+
+  // wishlist
+  --wishlist-border: #6F6F6F;
+  --wishlist-filled: #E53935;
+  --wishlist-filled-bg: #FDF3F2;
+
+  // Product action buttons
+  --btn-buy-now-bg: #FF8C42;
+  --btn-buy-now-bg-hover: #FF7829;
+  --btn-buy-now-shadow-hover: rgba(255, 120, 41, 0.25);
+  --btn-buy-now-text: #fefefe;
+  --btn-buy-now-border: #FF8C42;
+
+  --btn-add-cart-bg: #1FA67A;
+  --btn-add-cart-bg-hover: #168A6F;
+  --btn-add-cart-shadow-hover: rgba(13, 164, 134, 0.25);
+  --btn-add-cart-text: #fefefe;
+  --btn-add-cart-border: #1FA67A;
+
+  --btn-out-stock-bg: #F4F4F3;
+  --btn-out-stock-text: #9E9E9E;
+  --btn-out-stock-border: #E2E2E2;
+
+  --btn-notify-bg: #1FA67A;
+  --btn-notify-bg-hover: #0c9178;
+  --btn-notify-text: #fefefe;
+  --btn-notify-border: #1FA67A;
+
+  --btn-qty-bg: #E9F9F4;
+  --btn-qty-bg-hover: #0c9178;
+  --btn-qty-text: #2B2B2B;
+  --btn-qty-border: #1FA67A;
+  --btn-qty-value-bg: #fefefe;
+  --btn-qty-value-text: #168A6F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.theme-color-1 {
+  --theme-color: #d99f46;
+}
+
+.theme-color-2 {
+  --theme-color: #0baf9a;
+}
+
+.theme-color-3 {
+  --theme-color: #239698;
+}
+
+.theme-color-4 {
+  --theme-color: #6262a6;
+}
+
+.theme-color-5 {
+  --theme-color: #417394;
+}
+
+form {
+  label {
+    font-weight: 500;
+  }
+}
+
+/* Keep input text above placeholder */
+.form-control {
+  // background: transparent;
+  position: relative;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera (WebKit browsers) */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Chrome, Safari, Opera */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.stroke-w-1 {
+  stroke-width: 1px;
+}
+
+@media (min-width: 1200px) {
+  .overflow-xl-visible {
+    overflow: visible !important;
+  }
+}
+
+// Cross-browser normalization for product/cart action controls.
+// Safari and Firefox render native button sizing differently unless appearance,
+// height, and alignment are explicitly defined.
+.dual-cart-buttons {
+  // --dual-cart-control-height: clamp(38px, 2.6vw, 44px);
+  --dual-cart-control-height: 44px;
+  align-items: stretch;
+
+  >.btn-buy-now,
+  >.btn-add-cart,
+  >.qty-inline-box,
+  >.btn-out-of-stock,
+  >.btn-notify-me {
+    min-height: var(--dual-cart-control-height);
+    height: var(--dual-cart-control-height);
+    box-sizing: border-box;
+  }
+
+  >.btn-buy-now,
+  >.btn-add-cart,
+  >.btn-out-of-stock,
+  >.btn-notify-me {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font: inherit;
+    line-height: 1.2;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  >.qty-inline-box {
+    display: flex;
+    align-self: stretch;
+
+    .qty-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      font: inherit;
+      line-height: 1;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+  }
+
+  > :only-child {
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.text-wrap-2 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.success {
+  color: var(--1fa67a) !important;
+}
+
+/* Desktop */
+.responsive-toast-container {
+  width: auto;
+}
+
+.checkout-button-wrapper {
+  position: fixed;
+  bottom: 0;
+  inset-inline: 0;
+  padding: 0 14px 14px;
+  z-index: 1;
+  background: var(--ffffff);
+
+  button {
+    color: var(--ffffff);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 52px;
+    box-shadow: 0 4px 10px rgba(31, 166, 122, 0.25);
+    background: var(--1fa67a);
+    cursor: pointer;
+
+    :hover {
+      background: #178a65;
+    }
+
+    :disabled {
+      background-color: var(--e2e2e2);
+      color: var(--9e9e9e);
+      font-weight: 600;
+      box-shadow: none;
+      cursor: not-allowed;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .responsive-toast-container {
+    width: 100%;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+    padding: 0 12px;
+  }
+
+  .Toastify__toast-container--top-right {
+    top: 12px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .Toastify__toast {
+    margin-inline: auto;
+    max-width: 94%;
+    border-radius: 8px;
+  }
+}
+
+/* Hide Google Translate top banner */
+.goog-te-banner-frame,
+.skiptranslate {
+  display: none !important;
+}
+
+/* Remove the space Google adds */
+
+body {
+  top: 0 !important;
+}
+
+/* Hide translate tooltip */
+.goog-tooltip,
+.goog-tooltip:hover,
+.goog-text-highlight {
+  display: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Prevent text highlighting */
+.goog-text-highlight {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.btn-spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: btnSpin 0.8s linear infinite;
+  vertical-align: middle;
+}
+
+.btn-spinner-sm {
+  width: 14px;
+  height: 14px;
+  border-width: 2px;
+}
+
+@keyframes btnSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media print {
+  body {
+    display: none !important;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.no-hover:hover {
+  background-color: red !important;
+  /* Match your bg-danger color hex */
+  border-color: red !important;
+  /* Match your border-danger color hex */
+  transform: none !important;
+  /* Stops the button from moving/scaling */
+  box-shadow: none !important;
+  /* Stops any glow effects */
+  color: white !important;
+  /* Keeps original text color */
+  background: linear-gradient(90deg,
+      #FF8C42 0%,
+      #FF8C42 40%,
+      #ffd173 50%,
+      #FF8C42 60%,
+      #FF8C42 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}

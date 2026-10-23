@@ -1,0 +1,127 @@
+/**=====================
+     Resources Tab Navigation scss
+==========================**/
+@use '../utils/variables';
+@use '../utils/mixin/common';
+@use '../utils/mixin/breakpoints';
+
+.tabs-nav {
+  border-bottom: 1px solid var(--border-color);
+  margin: 0;
+
+  .tabs-list {
+    display: flex;
+    gap: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: rgba(85, 85, 85, 0.14);
+
+      html.dark & {
+        background-color: #1d1d22;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      height: 4px;
+      background-color: #f5f5f5;
+      border-radius: 100px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: rgba(85, 85, 85, 0.5);
+    }
+  }
+
+  .tabs-item {
+    position: relative;
+
+    &::after {
+      @include common.pos;
+      @include common.pseudowh($width: 0, $height: 3px);
+      bottom: 0;
+      left: 0;
+      background-color: transparent;
+      border-radius: 2px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all 0.3s ease-in-out;
+
+      body[dir='rtl'] & {
+        left: unset;
+        right: 0;
+        transform-origin: right;
+      }
+    }
+
+    &.is-active {
+      &::after {
+        width: 100%;
+        background: var(--theme-color);
+        transform: scaleX(1);
+      }
+
+      .tabs-link {
+        color: var(--title-color);
+        background-color: var(--white);
+      }
+    }
+  }
+
+  .tabs-link {
+    display: block;
+    padding: calc(10px + (12 - 10) * ((100vw - 320px) / (1920 - 320)))
+      calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320)));
+    text-decoration: none;
+    color: var(--content-color);
+    font-weight: 500;
+    border-radius: calc(4px + (6 - 4) * ((100vw - 320px) / (1920 - 320)));
+    border: none;
+    outline: none;
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+    letter-spacing: 0.4px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: var(--title-color);
+      background-color: var(--white);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--theme-color);
+      outline-offset: 2px;
+    }
+  }
+
+  .tabs-link-inner {
+    @include common.flex_common($dis: flex, $align: center, $justify: center);
+  }
+
+  .tabs-label {
+    white-space: nowrap;
+  }
+}
+
+/* Responsive */
+@include breakpoints.mq-max(sm) {
+  .tabs-nav {
+    .tabs-list {
+      gap: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    .tabs-link {
+      padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320)))
+        calc(6px + (8 - 6) * ((100vw - 320px) / (1920 - 320)));
+      font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));
+    }
+  }
+}

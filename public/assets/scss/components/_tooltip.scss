@@ -1,0 +1,37 @@
+/**=====================
+     Tooltip scss
+==========================**/
+@use '../utils/variables';
+.tooltip {
+  // Explicit z-index ensures tooltip floats above product cards in production.
+  // Bootstrap's --bs-tooltip-zindex CSS variable can fail to resolve when CSS
+  // is purged/optimized, so we set a hard value here.
+  z-index: 1080;
+  transition: opacity 0.15s linear;
+
+  // Arrow color for all placement directions
+  &.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--theme-color);
+  }
+  &.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: var(--theme-color);
+  }
+  &.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: var(--theme-color);
+  }
+  &.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: var(--theme-color);
+  }
+  // Fallback for auto placement
+  .tooltip-arrow {
+    &::before {
+      border-top-color: var(--theme-color);
+    }
+  }
+
+  .tooltip-inner {
+    font-weight: 500;
+    background-color: var(--theme-color);
+    color: var(--white);
+  }
+}

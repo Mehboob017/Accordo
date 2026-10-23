@@ -1,0 +1,215 @@
+.profile-section {
+    background-color: #f8f9fa;
+}
+
+.profile-text-wrapper {
+    border-radius: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320)));
+    background-color: var(--ffffff);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--e2e2e2);
+    padding: 20px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.profile-text {
+    // font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 1.8;
+    color: var(--content-color, #666);
+    text-align: justify;
+
+    margin-bottom: 0;
+
+    em {
+        font-style: italic;
+    }
+}
+
+.profile-quote {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--title-color, #333);
+    font-style: italic;
+    font-weight: 500;
+    border-left: 4px solid var(--theme-color);
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 16px 16px 16px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    p {
+        margin-bottom: 0;
+        line-height: 1.8;
+    }
+}
+
+.profile-bold-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--title-color);
+    text-align: center;
+    // margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: 0;
+
+    strong {
+        font-weight: 600;
+    }
+}
+
+.standing-header-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+
+    @media (min-width: 992px) {
+        margin: 10px 0px;
+    }
+}
+
+.standing-title {
+    // font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+    // color: #1c2b39;
+    // margin-bottom: 0;
+    // white-space: nowrap;
+    // margin-right: 20px;
+    font-size: calc(22px + 6 * (100vw - 320px) / 1600);
+    font-weight: 600;
+    line-height: 1;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.title-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #d3d3d3;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.info-label {
+    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 1.8;
+    color: var(--content-color, #666);
+    margin-bottom: 8px;
+    font-weight: 600;
+
+    @media (min-width: 768px) {
+        width: 20%;
+        margin-bottom: 0;
+        padding-right: 20px;
+    }
+}
+
+.info-value {
+    // font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+    color: #333333;
+    line-height: 1.8;
+
+    @media (min-width: 768px) {
+        width: 70%;
+    }
+
+    strong {
+        font-weight: 700;
+        color: #111;
+    }
+}
+
+.contact-item {
+    // margin-bottom: 8px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact-link {
+    color: var(--theme-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--theme-colorr);
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: var(--button-hover);
+        border-bottom-color: var(--button-hover);
+    }
+}
+
+.profile-list {
+    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 1.8;
+    color: var(--content-color, #666);
+    padding-left: 20px;
+    // margin-bottom: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: 0;
+
+    li {
+        margin-bottom: 0;
+        list-style: disc;
+        display: list-item;
+    }
+}
+
+.profile-video-wrapper {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320)));
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    @media (max-width: 991px) {
+        // margin-top: 20px;
+        // margin-bottom: 20px;
+        min-height: 250px;
+    }
+}
+
+.profile-video {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+}
+
+.profile-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    // object-fit: none;
+    display: block;
+}
+
+/* If you switch back to YouTube */
+.profile-video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.award-name {
+    text-align: left;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+    // line-height: 1.8;
+    color: var(--content-color, #666);
+}

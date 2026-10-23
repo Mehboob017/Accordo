@@ -1,0 +1,22 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "SDL India",
+    "identifier": "www.sdlindia.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:sdlindia.com:knowledge:llms-txt",
+      "displayName": "SDL India knowledge index (llms.txt)",
+      "type": "text/markdown",
+      "url": "https://www.sdlindia.com/llms.txt",
+      "description": "Curated index of SDL India's key pages for AI readers: Ayurvedic products, health concerns, herbs, research publications, and company information.",
+      "representativeQueries": [
+        "Ayurvedic products and classical formulations from SDL India",
+        "Shree Dhootapapeshwar medicine catalog and clinical information",
+        "Saiddhantik Ayurved healthcare, herbs and research publications",
+        "Ayurvedic healthcare products and collections by Shree Dhootapapeshwar Limited"
+      ]
+    }
+  ]
+}

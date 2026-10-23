@@ -1,0 +1,103 @@
+/* ==========================================================
+   HUMANS.TXT - SHREE DHOOTAPAPESHWAR LIMITED
+   ==========================================================
+
+   Official Website: https://www.sdlindia.com/
+   Last Updated: 2026-10-14
+
+   This file provides information about the organization,
+   people, heritage, and technology behind the website.
+
+   ========================================================== */
+
+
+/* ORGANIZATION */
+
+   Name: Shree Dhootapapeshwar Limited
+   Short Name: SDL India
+   Website: https://www.sdlindia.com/
+   Industry: Ayurvedic Medicines and Healthcare
+   Country: India
+
+   Established: 1872
+   Founder: Vaidyaraj Krushnashastri Puranik
+   Leadership: Shri Ranjit Anand Puranik
+
+   Mission: Serving Ayurved
+   Philosophy: Saiddhantik Ayurved
+
+/* ABOUT THE ORGANIZATION */
+
+Shree Dhootapapeshwar Limited is an Indian Ayurvedic medicine company established in 1872.  The company manufactures classical Ayurvedic medicines and Ayurvedic formulations. SDL's portfolio includes more than 350 classical Ayurvedic medicines.
+
+The company follows its philosophy of Saiddhantik Ayurved and maintains its own Shree Dhootapapeshwar    Standards (SDS).
+
+
+/* WEBSITE */
+
+Official Domain: https://www.sdlindia.com/
+
+   Company Profile:
+   https://www.sdlindia.com/about-us/company-profile
+
+   Product Catalogue:
+   https://www.sdlindia.com/collections
+
+   Contact:
+   https://www.sdlindia.com/contact-us
+
+   Frequently Asked Questions:
+   https://www.sdlindia.com/faqs
+
+/* TEAM */
+
+   Organization: Shree Dhootapapeshwar Limited
+   Founder: Vaidyaraj Krushnashastri Puranik
+   Current Leadership: Shri Ranjit Anand Puranik
+
+/* CONTACT */
+
+   Organization: Shree Dhootapapeshwar Limited
+
+   Administrative Office:
+   5th Floor, Vastu Central,
+   J. K. Sawant Marg,
+   Dadar (West),
+   Mumbai - 400028,
+   Maharashtra, India
+
+   Toll-Free: 1800-229-874
+   Alternative Helpline: +91-22-23829874
+   Email: healthcare@sdlindia.com
+
+   Contact Page:
+   https://www.sdlindia.com/contact-us
+
+
+/* POLICIES */
+
+   Privacy Policy:
+   https://www.sdlindia.com/privacy-policy
+
+   Return and Refund Policy:
+   https://www.sdlindia.com/return-policy
+
+   Grievance Policy:
+   https://www.sdlindia.com/grievance-policy
+
+   Terms and Conditions:
+   https://www.sdlindia.com/terms-and-conditions
+
+
+/* WEBSITE OWNERSHIP */
+
+   Website: https://www.sdlindia.com/
+   Organization: Shree Dhootapapeshwar Limited
+
+   Copyright:
+   2026 Shree Dhootapapeshwar Limited
+
+
+/* ==========================================================
+   END OF HUMANS.TXT
+   ========================================================== */

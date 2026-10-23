@@ -1,0 +1,80 @@
+.section {
+  position: relative;
+  background-color: var(--light-bg, #f8f9fa);
+  padding-top: 30px; // A bit of padding at the top if there is no heading
+}
+
+.evalSection {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 20px;
+  font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.description {
+  color: var(--content-color);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.list,
+.orderedList {
+  color: var(--content-color);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  padding-left: 32px;
+  /* Increased padding */
+  font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+
+  li {
+    margin-bottom: 8px;
+
+    &::marker {
+      color: #888;
+    }
+  }
+}
+
+.orderedList {
+  list-style-type: decimal !important;
+  list-style-position: outside !important;
+
+  li {
+    display: list-item !important;
+    list-style-type: decimal !important;
+  }
+}
+
+.list {
+  list-style-type: disc !important;
+  list-style-position: outside !important;
+
+  li {
+    display: list-item !important;
+    list-style-type: disc !important;
+    &::marker {
+      color: #a0a0a0;
+    }
+  }
+}
+
+.subList {
+  padding-left: 0;
+  margin-top: 4px;
+  margin-bottom: 8px;
+
+  div {
+    margin-bottom: 2px;
+  }
+}
+
+.footerText {
+  color: var(--content-color);
+  font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+  line-height: 1.6;
+}

@@ -1,0 +1,9 @@
+.as16 {
+    aspect-ratio: 16/7 !important;
+}
+
+@media (max-width: 768px) {
+    .as16 {
+        aspect-ratio: 16/9 !important;
+    }
+}

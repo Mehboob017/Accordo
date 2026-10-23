@@ -1,0 +1,28 @@
+// Store Finder Styles
+// =====================================================
+@use '../utils/variables';
+@use '../utils/mixin/common';
+@use '../utils/mixin/breakpoints';
+
+.desktop-banner {
+  display: none;
+}
+
+.mobile-banner {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .desktop-banner {
+    display: block;
+  }
+
+  .mobile-banner {
+    display: none;
+  }
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}

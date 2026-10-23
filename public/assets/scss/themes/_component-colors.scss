@@ -1,0 +1,336 @@
+// ============================================
+// COMPONENT COLOR SYSTEM
+// ============================================
+// Modular color definitions for HTML elements & components
+// Import this after _theme-variables.scss
+
+// --------------------------------------------
+// 🎯 TYPOGRAPHY COLORS
+// --------------------------------------------
+:root,
+.theme-customer {
+  // Headings
+  --heading-primary: var(--title-color);
+  --heading-secondary: var(--content-color);
+  --text-body: var(--content-color);
+  --text-muted: #8B95A5;
+  --text-inverse: var(--white);
+  
+  // Links
+  --text-link: var(--theme-color);
+  --text-link-hover: var(--theme-color-dark);
+  --text-link-visited: var(--theme-color-dark);
+}
+
+.theme-doctor {
+  --heading-primary: var(--title-color);
+  --heading-secondary: var(--content-color);
+  --text-body: var(--content-color);
+  --text-muted: #64748b;
+  --text-inverse: var(--white);
+  
+  --text-link: var(--theme-color);
+  --text-link-hover: var(--theme-color-dark);
+  --text-link-visited: var(--theme-color-dark);
+}
+
+// --------------------------------------------
+// 🔘 BUTTON COLORS
+// --------------------------------------------
+:root,
+.theme-customer {
+  // Primary Button
+  --btn-primary-bg: var(--theme-color);
+  --btn-primary-bg-hover: var(--theme-color-dark);
+  --btn-primary-text: var(--white);
+  --btn-primary-border: var(--theme-color);
+  
+  // Secondary Button
+  --btn-secondary-bg: transparent;
+  --btn-secondary-bg-hover: var(--theme-color);
+  --btn-secondary-text: var(--theme-color);
+  --btn-secondary-text-hover: var(--white);
+  --btn-secondary-border: var(--theme-color);
+  
+  // Outline Button
+  --btn-outline-bg: transparent;
+  --btn-outline-bg-hover: var(--theme-color);
+  --btn-outline-text: var(--theme-color);
+  --btn-outline-text-hover: var(--white);
+  --btn-outline-border: var(--theme-color);
+  
+  // Disabled Button
+  --btn-disabled-bg: #E2E8ED;
+  --btn-disabled-text: #8B95A5;
+  --btn-disabled-border: #E2E8ED;
+}
+
+.theme-doctor {
+  --btn-primary-bg: var(--theme-color);
+  --btn-primary-bg-hover: var(--theme-color-dark);
+  --btn-primary-text: var(--white);
+  --btn-primary-border: var(--theme-color);
+  
+  --btn-secondary-bg: transparent;
+  --btn-secondary-bg-hover: var(--theme-color);
+  --btn-secondary-text: var(--theme-color);
+  --btn-secondary-text-hover: var(--white);
+  --btn-secondary-border: var(--theme-color);
+  
+  --btn-outline-bg: transparent;
+  --btn-outline-bg-hover: var(--theme-color);
+  --btn-outline-text: var(--theme-color);
+  --btn-outline-text-hover: var(--white);
+  --btn-outline-border: var(--theme-color);
+  
+  --btn-disabled-bg: #e2e8f0;
+  --btn-disabled-text: #94a3b8;
+  --btn-disabled-border: #e2e8f0;
+}
+
+// --------------------------------------------
+// 📦 CARD COLORS
+// --------------------------------------------
+:root,
+.theme-customer {
+  --card-bg: var(--white);
+  --card-bg-hover: var(--light-gray);
+  --card-border: var(--border-color);
+  --card-shadow: rgba(8, 21, 66, 0.05);
+  --card-shadow-hover: rgba(8, 21, 66, 0.15);
+  --card-header-bg: var(--light-gray);
+  --card-footer-bg: var(--light-gray);
+}
+
+.theme-doctor {
+  --card-bg: var(--white);
+  --card-bg-hover: var(--light-gray);
+  --card-border: var(--border-color);
+  --card-shadow: rgba(37, 99, 235, 0.05);
+  --card-shadow-hover: rgba(37, 99, 235, 0.15);
+  --card-header-bg: var(--light-gray);
+  --card-footer-bg: var(--light-gray);
+}
+
+// --------------------------------------------
+// 📝 FORM COLORS
+// --------------------------------------------
+:root,
+.theme-customer {
+  // Input Fields
+  --input-bg: var(--white);
+  --input-border: var(--border-color);
+  --input-border-focus: var(--theme-color);
+  --input-text: var(--title-color);
+  --input-placeholder: #8B95A5;
+  --input-disabled-bg: var(--light-gray);
+  --input-disabled-text: #8B95A5;
+  
+  // Labels
+  --label-text: var(--title-color);
+  --label-required: var(--error-color);
+  
+  // Validation
+  --input-error-border: var(--error-color);
+  --input-error-text: var(--error-color);
+  --input-success-border: var(--success-color);
+  --input-success-text: var(--success-color);
+}
+
+.theme-doctor {
+  --input-bg: var(--white);
+  --input-border: var(--border-color);
+  --input-border-focus: var(--theme-color);
+  --input-text: var(--title-color);
+  --input-placeholder: #94a3b8;
+  --input-disabled-bg: var(--light-gray);
+  --input-disabled-text: #94a3b8;
+  
+  --label-text: var(--title-color);
+  --label-required: var(--error-color);
+  
+  --input-error-border: var(--error-color);
+  --input-error-text: var(--error-color);
+  --input-success-border: var(--success-color);
+  --input-success-text: var(--success-color);
+}
+
+// --------------------------------------------
+// 🔔 BADGE & TAG COLORS
+// --------------------------------------------
+:root,
+.theme-customer {
+  --badge-primary-bg: var(--theme-color);
+  --badge-primary-text: var(--white);
+  --badge-secondary-bg: var(--secondary-color);
+  --badge-secondary-text: var(--white);
+  --badge-success-bg: var(--success-color);
+  --badge-success-text: var(--white);
+  --badge-warning-bg: var(--warning-color);
+  --badge-warning-text: var(--white);
+  --badge-danger-bg: var(--error-color);
+  --badge-danger-text: var(--white);
+  --badge-info-bg: var(--info-color);
+  --badge-info-text: var(--white);
+}
+
+.theme-doctor {
+  --badge-primary-bg: var(--theme-color);
+  --badge-primary-text: var(--white);
+  --badge-secondary-bg: var(--secondary-color);
+  --badge-secondary-text: var(--white);
+  --badge-success-bg: var(--success-color);
+  --badge-success-text: var(--white);
+  --badge-warning-bg: var(--warning-color);
+  --badge-warning-text: var(--white);
+  --badge-danger-bg: var(--error-color);
+  --badge-danger-text: var(--white);
+  --badge-info-bg: var(--info-color);
+  --badge-info-text: var(--white);
+}
+
+// --------------------------------------------
+// 📊 TABLE COLORS
+// --------------------------------------------
+:root,
+.theme-customer {
+  --table-bg: var(--white);
+  --table-border: var(--border-color);
+  --table-header-bg: var(--light-gray);
+  --table-header-text: var(--title-color);
+  --table-row-hover: rgba(13, 164, 135, 0.05);
+  --table-row-striped: var(--light-gray);
+}
+
+.theme-doctor {
+  --table-bg: var(--white);
+  --table-border: var(--border-color);
+  --table-header-bg: var(--light-gray);
+  --table-header-text: var(--title-color);
+  --table-row-hover: rgba(37, 99, 235, 0.05);
+  --table-row-striped: var(--light-gray);
+}
+
+// --------------------------------------------
+// 🔔 ALERT COLORS
+// --------------------------------------------
+:root,
+.theme-customer {
+  --alert-success-bg: rgba(46, 204, 113, 0.1);
+  --alert-success-border: var(--success-color);
+  --alert-success-text: #1e8449;
+  
+  --alert-error-bg: rgba(231, 76, 60, 0.1);
+  --alert-error-border: var(--error-color);
+  --alert-error-text: #a93226;
+  
+  --alert-warning-bg: rgba(243, 156, 18, 0.1);
+  --alert-warning-border: var(--warning-color);
+  --alert-warning-text: #b9770e;
+  
+  --alert-info-bg: rgba(169, 39, 249, 0.1);
+  --alert-info-border: var(--info-color);
+  --alert-info-text: #7b2cbf;
+}
+
+.theme-doctor {
+  --alert-success-bg: rgba(16, 185, 129, 0.1);
+  --alert-success-border: var(--success-color);
+  --alert-success-text: #047857;
+  
+  --alert-error-bg: rgba(239, 68, 68, 0.1);
+  --alert-error-border: var(--error-color);
+  --alert-error-text: #b91c1c;
+  
+  --alert-warning-bg: rgba(245, 158, 11, 0.1);
+  --alert-warning-border: var(--warning-color);
+  --alert-warning-text: #b45309;
+  
+  --alert-info-bg: rgba(59, 130, 246, 0.1);
+  --alert-info-border: var(--info-color);
+  --alert-info-text: #1e40af;
+}
+
+// --------------------------------------------
+// 🎯 NAVIGATION COLORS
+// --------------------------------------------
+:root,
+.theme-customer {
+  --nav-bg: var(--white);
+  --nav-text: var(--title-color);
+  --nav-text-hover: var(--theme-color);
+  --nav-text-active: var(--theme-color);
+  --nav-border: var(--border-color);
+  --nav-dropdown-bg: var(--white);
+  --nav-dropdown-hover: var(--light-gray);
+}
+
+.theme-doctor {
+  --nav-bg: var(--white);
+  --nav-text: var(--title-color);
+  --nav-text-hover: var(--theme-color);
+  --nav-text-active: var(--theme-color);
+  --nav-border: var(--border-color);
+  --nav-dropdown-bg: var(--white);
+  --nav-dropdown-hover: var(--light-gray);
+}
+
+// --------------------------------------------
+// 🛒 E-COMMERCE SPECIFIC
+// --------------------------------------------
+:root,
+.theme-customer {
+  // Product Cards
+  --product-card-bg: var(--white);
+  --product-card-border: var(--border-color);
+  --product-card-shadow: rgba(8, 21, 66, 0.05);
+  --product-card-hover-shadow: rgba(8, 21, 66, 0.15);
+  
+  // Price
+  --price-color: var(--title-color);
+  --price-sale: var(--error-color);
+  --price-original: #8B95A5;
+  
+  // Wishlist
+  --wishlist-inactive: #E2E8ED;
+  --wishlist-active: #ff0000;
+  --wishlist-hover: var(--theme-color);
+  
+  // Rating
+  --rating-active: #ffb321;
+  --rating-inactive: #E2E8ED;
+  
+  // Stock Status
+  --stock-in: var(--success-color);
+  --stock-out: var(--error-color);
+  --stock-low: var(--warning-color);
+  
+  // Discount Badge
+  --discount-bg: var(--error-color);
+  --discount-text: var(--white);
+}
+
+.theme-doctor {
+  --product-card-bg: var(--white);
+  --product-card-border: var(--border-color);
+  --product-card-shadow: rgba(37, 99, 235, 0.05);
+  --product-card-hover-shadow: rgba(37, 99, 235, 0.15);
+  
+  --price-color: var(--title-color);
+  --price-sale: var(--error-color);
+  --price-original: #94a3b8;
+  
+  --wishlist-inactive: #e2e8f0;
+  --wishlist-active: #ef4444;
+  --wishlist-hover: var(--theme-color);
+  
+  --rating-active: #f59e0b;
+  --rating-inactive: #e2e8f0;
+  
+  --stock-in: var(--success-color);
+  --stock-out: var(--error-color);
+  --stock-low: var(--warning-color);
+  
+  --discount-bg: var(--error-color);
+  --discount-text: var(--white);
+}

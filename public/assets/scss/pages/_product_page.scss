@@ -562,7 +562,7 @@
 
       &:hover {
         border-color: #DADADA;
-        color: #1FA67A;
+        color: #234BF3;
         background: #FAFAF9;
       }
 
@@ -589,7 +589,7 @@
 
       &:hover {
         border-color: #E2E8ED;
-        color: #168A6F;
+        color: #2044CD;
         background: #E9F9F4;
       }
     }
@@ -658,7 +658,7 @@
 
     .variation-keyword-tag {
       background-color: #E9F9F4;
-      color: #168A6F;
+      color: #2044CD;
       padding: 4px 10px;
       border-radius: 999px;
       font-size: 11px;
@@ -741,7 +741,7 @@
         flex-wrap: wrap;
         gap: 8px;
         align-items: center;
-        color: #168A6F;
+        color: #2044CD;
         font-size: 26px;
         line-height: 22.6px;
 
@@ -1603,7 +1603,7 @@
         }
 
         &.active {
-          border: 2px solid #1FA67A;
+          border: 2px solid #234BF3;
           background-color: #E9F9F4;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         }
@@ -2243,7 +2243,7 @@
         border-color: #ececec;
 
         .delivery-checker-card__check-badge {
-          color: #1fa67a;
+          color: #234BF3;
         }
 
         .delivery-checker-card__meta-divider {
@@ -2329,7 +2329,7 @@
         height: clamp(38px, calc(38px + (44 - 38) * ((100vw - 320px) / (1920 - 320))), 44px);
 
         &:focus-within {
-          border-color: #1FA67A !important;
+          border-color: #234BF3 !important;
         }
 
         .pincode-input-icon {
@@ -2515,7 +2515,7 @@
         }
 
         svg.success {
-          color: var(--1fa67a);
+          color: var(--234BF3);
         }
       }
 
@@ -4677,7 +4677,7 @@
     height: clamp(38px, calc(38px + (44 - 38) * ((100vw - 320px) / (1920 - 320))), 44px);
 
     &:focus-within {
-      border-color: #1FA67A !important;
+      border-color: #234BF3 !important;
     }
 
     .pincode-input-icon {

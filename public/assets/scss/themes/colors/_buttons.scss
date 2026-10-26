@@ -12,13 +12,13 @@
   /* Core Palette */
   --green-900: #0E5A43;
   --green-800: #0F6B5A;
-  --green-700: #168A6F;
-  --green-600: #1FA67A;
+  --green-700: #2044CD;
+  --green-600: #234BF3;
   --green-500: #32C497;
   --green-400: #5ED6AE;
   --green-300: #A8E9D4;
   --green-100: #E9F9F4;
-  
+
   // Primary Button
   --btn-primary-bg: var(--green-600);
   --btn-primary-bg-hover: var(--green-700);
@@ -33,7 +33,7 @@
   --btn-primary-disabled-border: #E5E5E5;
   --btn-primary-disabled-cursor: not-allowed;
   --btn-primary-pill-bg: var(--green-300);
-  
+
   // Secondary Button
   --btn-secondary-bg: var(--white);
   --btn-secondary-bg-hover: var(--green-100);
@@ -47,7 +47,7 @@
   --btn-secondary-disabled-text: #8B95A5;
   --btn-secondary-disabled-border: #E5E5E5;
   --btn-secondary-disabled-cursor: not-allowed;
-  
+
   // Outline Button
   --btn-outline-bg: transparent;
   --btn-outline-bg-hover: var(--theme-color);
@@ -55,56 +55,56 @@
   --btn-outline-text-hover: var(--white);
   --btn-outline-border: var(--theme-color);
   --btn-outline-border-hover: var(--theme-color-dark);
-  
+
   // Ghost Button (no border)
   --btn-ghost-bg: transparent;
   --btn-ghost-bg-hover: rgba(13, 164, 135, 0.1);
   --btn-ghost-text: var(--theme-color);
   --btn-ghost-text-hover: var(--theme-color-dark);
-  
+
   // Disabled Button
   --btn-disabled-bg: #E2E8ED;
   --btn-disabled-text: #8B95A5;
   --btn-disabled-border: #E2E8ED;
   --btn-disabled-cursor: not-allowed;
-  
+
   // Link Button
   --btn-link-text: var(--theme-color);
   --btn-link-text-hover: var(--theme-color-dark);
   --btn-link-text-visited: var(--theme-color-dark);
   --btn-link-underline: none;
   --btn-link-underline-hover: underline;
-  
+
   // Icon Button
   --btn-icon-bg: transparent;
   --btn-icon-bg-hover: rgba(13, 164, 135, 0.1);
   --btn-icon-text: var(--theme-color);
   --btn-icon-text-hover: var(--theme-color-dark);
-  
+
   // Success Button
   --btn-success-bg: var(--success-color);
   --btn-success-bg-hover: #27ae60;
   --btn-success-text: var(--white);
   --btn-success-border: var(--success-color);
-  
+
   // Danger/Error Button
   --btn-danger-bg: var(--error-color);
   --btn-danger-bg-hover: #c0392b;
   --btn-danger-text: var(--white);
   --btn-danger-border: var(--error-color);
-  
+
   // Warning Button
   --btn-warning-bg: var(--warning-color);
   --btn-warning-bg-hover: #d68910;
   --btn-warning-text: var(--white);
   --btn-warning-border: var(--warning-color);
-  
+
   // Info Button
   --btn-info-bg: var(--info-color);
   --btn-info-bg-hover: #7b2cbf;
   --btn-info-text: var(--white);
   --btn-info-border: var(--info-color);
-  
+
   // Button Group
   --btn-group-border: var(--border-color);
   --btn-group-divider: var(--border-color);
@@ -122,7 +122,7 @@
   --btn-primary-border-hover: var(--theme-color-dark);
   --btn-primary-shadow: rgba(37, 99, 235, 0.2);
   --btn-primary-shadow-hover: rgba(37, 99, 235, 0.3);
-  
+
   // Secondary Button
   --btn-secondary-bg: transparent;
   --btn-secondary-bg-hover: var(--theme-color);
@@ -130,7 +130,7 @@
   --btn-secondary-text-hover: var(--white);
   --btn-secondary-border: var(--theme-color);
   --btn-secondary-border-hover: var(--theme-color-dark);
-  
+
   // Outline Button
   --btn-outline-bg: transparent;
   --btn-outline-bg-hover: var(--theme-color);
@@ -138,56 +138,56 @@
   --btn-outline-text-hover: var(--white);
   --btn-outline-border: var(--theme-color);
   --btn-outline-border-hover: var(--theme-color-dark);
-  
+
   // Ghost Button (no border)
   --btn-ghost-bg: transparent;
   --btn-ghost-bg-hover: rgba(37, 99, 235, 0.1);
   --btn-ghost-text: var(--theme-color);
   --btn-ghost-text-hover: var(--theme-color-dark);
-  
+
   // Disabled Button
   --btn-disabled-bg: #e2e8f0;
   --btn-disabled-text: #94a3b8;
   --btn-disabled-border: #e2e8f0;
   --btn-disabled-cursor: not-allowed;
-  
+
   // Link Button
   --btn-link-text: var(--theme-color);
   --btn-link-text-hover: var(--theme-color-dark);
   --btn-link-text-visited: var(--theme-color-dark);
   --btn-link-underline: none;
   --btn-link-underline-hover: underline;
-  
+
   // Icon Button
   --btn-icon-bg: transparent;
   --btn-icon-bg-hover: rgba(37, 99, 235, 0.1);
   --btn-icon-text: var(--theme-color);
   --btn-icon-text-hover: var(--theme-color-dark);
-  
+
   // Success Button
   --btn-success-bg: var(--success-color);
   --btn-success-bg-hover: #059669;
   --btn-success-text: var(--white);
   --btn-success-border: var(--success-color);
-  
+
   // Danger/Error Button
   --btn-danger-bg: var(--error-color);
   --btn-danger-bg-hover: #dc2626;
   --btn-danger-text: var(--white);
   --btn-danger-border: var(--error-color);
-  
+
   // Warning Button
   --btn-warning-bg: var(--warning-color);
   --btn-warning-bg-hover: #d97706;
   --btn-warning-text: var(--white);
   --btn-warning-border: var(--warning-color);
-  
+
   // Info Button
   --btn-info-bg: var(--info-color);
   --btn-info-bg-hover: #1d4ed8;
   --btn-info-text: var(--white);
   --btn-info-border: var(--info-color);
-  
+
   // Button Group
   --btn-group-border: var(--border-color);
   --btn-group-divider: var(--border-color);
@@ -203,8 +203,12 @@
   border: 1px solid var(--btn-primary-border);
   font-weight: 700;
   transition: all 0.25s ease-in;
-  
-  &:hover, &:active, &:focus, &:focus-within, &:focus-visible {
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-within,
+  &:focus-visible {
     background: var(--btn-primary-bg-hover) !important;
     color: var(--btn-primary-text-hover) !important;
     box-shadow: 0 4px 4px 0 var(--btn-primary-shadow-hover) !important;
@@ -227,8 +231,12 @@
   border: 1px solid var(--btn-secondary-border);
   font-weight: 700;
   transition: all 0.25s ease-in;
-  
-  &:hover, &:active, &:focus, &:focus-within, &:focus-visible {
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-within,
+  &:focus-visible {
     background: var(--btn-secondary-bg-hover) !important;
     color: var(--btn-secondary-text-hover) !important;
     box-shadow: 0 4px 4px 0 var(--btn-secondary-shadow-hover) !important;
@@ -242,7 +250,7 @@
     cursor: var(--btn-disabled-cursor);
     box-shadow: none;
   }
-  
+
   // &:hover {
   //   background: var(--btn-disabled-bg) !important;
   //   color: var(--btn-disabled-text) !important;

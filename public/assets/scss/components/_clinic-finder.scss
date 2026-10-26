@@ -41,26 +41,26 @@
 .clinic-finder-search {
   max-width: 100%;
   margin: 0 auto 30px;
-  
+
   // Make sure Row and Col work properly
   .row {
     align-items: flex-end;
   }
-  
+
   // Adjust dropdown for filter sort
   .category-dropdown {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    
+
     .text-content {
       display: none;
     }
-    
+
     .dropdown {
       width: -webkit-fill-available;
-      
+
       button {
         width: 100%;
         // background-color: var(--light-gray);
@@ -70,8 +70,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
           border-color: var(--theme-color);
           background-color: var(--light-gray);
         }
@@ -94,7 +95,7 @@
 .clinic-searchbar-box {
   position: relative;
   width: 100%;
-  
+
   &.is-open {
     .search-input-wrapper {
       border-bottom-left-radius: 0;
@@ -113,9 +114,9 @@
   overflow: hidden;
   transition: all 0.2s ease;
   padding: 0;
-  
+
   &:focus-within {
-    border-color: #1fa67a;
+    border-color: #234BF3;
     background-color: var(--input-bg-focus);
     // box-shadow: 0 0 0 3px rgba(var(--theme-color-rgb), 0.1);
   }
@@ -123,7 +124,7 @@
   .search-icon {
     margin-inline: 10px;
   }
-  
+
   .location-icon {
     display: flex;
     align-items: center;
@@ -131,13 +132,13 @@
     padding: 0 12px;
     color: var(--content-color);
     flex-shrink: 0;
-    
+
     svg {
       width: 18px;
       height: 18px;
     }
   }
-  
+
   .search-input {
     flex: 1;
     border: none;
@@ -146,16 +147,16 @@
     padding: 8px 0;
     font-size: 16px;
     color: var(--title-color);
-    
+
     &::placeholder {
       color: var(--content-color);
     }
-    
+
     &:focus {
       box-shadow: none;
     }
   }
-  
+
   .clear-button {
     display: flex;
     align-items: center;
@@ -168,13 +169,13 @@
     color: var(--content-color);
     border-radius: 50%;
     transition: all 0.2s ease;
-    
+
     &:hover,
     &:focus {
       background-color: rgba(0, 0, 0, 0.1);
       color: var(--title-color);
     }
-    
+
     svg {
       width: 18px;
       height: 18px;
@@ -207,6 +208,7 @@
     transform: translateY(8px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -227,16 +229,16 @@
   max-height: 350px;
   overflow-y: auto;
   z-index: 100;
-  
+
   // Custom scrollbar
   &::-webkit-scrollbar {
     width: 6px;
   }
-  
+
   &::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background-color: var(--border-color);
     border-radius: 3px;
@@ -245,8 +247,8 @@
 
 .search-section {
   padding: 8px 0;
-  
-  + .search-section {
+
+  +.search-section {
     border-top: 1px solid var(--border-color);
   }
 }
@@ -263,7 +265,7 @@
   letter-spacing: 0.5px;
   background-color: var(--light-gray);
   border-bottom: 1px solid var(--border-color);
-  
+
   .clear-recent-btn {
     display: flex;
     align-items: center;
@@ -277,12 +279,13 @@
     border-radius: 50%;
     margin-inline-start: auto;
     transition: all 0.2s ease;
-    
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       background-color: rgba(0, 0, 0, 0.1);
       color: var(--title-color);
     }
-    
+
     svg {
       font-size: 18px;
     }
@@ -295,16 +298,16 @@
   padding: 12px 16px;
   cursor: pointer;
   transition: background-color 0.15s ease;
-  
+
   &:not(:last-child) {
     border-bottom: 1px solid var(--border-color-light);
   }
-  
+
   &:hover,
   &.focused {
     background-color: #efefef;
   }
-  
+
   &.recent-item {
     .recent-icon {
       width: 16px;
@@ -312,13 +315,13 @@
       margin-right: 12px;
       color: var(--content-color);
     }
-    
+
     .recent-text {
       font-size: 14px;
       color: var(--title-color);
     }
   }
-  
+
   &.clinic-item {
     .clinic-icon {
       width: 20px;
@@ -327,12 +330,12 @@
       color: var(--theme-color);
       flex-shrink: 0;
     }
-    
+
     .clinic-result-content {
       flex: 1;
       min-width: 0;
     }
-    
+
     .clinic-result-name {
       font-size: 15px;
       font-weight: 500;
@@ -342,14 +345,14 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    
+
     .clinic-result-details {
       font-size: 13px;
       color: var(--content-color);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      
+
       .clinic-result-doctor,
       .clinic-result-specialization {
         font-weight: 500;
@@ -392,7 +395,7 @@
   padding: 3px 10px;
   border-radius: 6px;
   transition: background-color 0.2s;
-  
+
   &:hover {
     background-color: rgba(var(--theme-color-rgb), 0.1);
   }
@@ -410,20 +413,20 @@
   padding: 8px 0;
   scrollbar-width: thin;
   scrollbar-color: var(--theme-color) var(--bg-secondary);
-  
+
   &::-webkit-scrollbar {
     height: 6px;
   }
-  
+
   &::-webkit-scrollbar-track {
     background: var(--bg-secondary);
     border-radius: 3px;
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background: var(--theme-color);
     border-radius: 3px;
-    
+
     &:hover {
       background: var(--theme-color-dark);
     }
@@ -442,12 +445,12 @@
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
-  
+
   &:hover {
     border-color: var(--theme-color);
     background-color: rgba(var(--theme-color-rgb), 0.05);
   }
-  
+
   &.active {
     background-color: var(--theme-color);
     border-color: var(--theme-color);
@@ -484,10 +487,10 @@
   padding: 20px;
   box-shadow: 0px 0px 14px -6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  
+
   // &:hover {
   // }
-  
+
   &.is-selected {
     border-color: var(--theme-color);
     box-shadow: 0 4px 16px rgba(var(--theme-color-rgb), 0.2);
@@ -542,7 +545,7 @@
 }
 
 .clinic-card-phone,
-.clinic-card-email{
+.clinic-card-email {
   display: flex;
   align-items: flex-start;
   gap: 8px;
@@ -552,7 +555,7 @@
   line-height: 1.5;
   text-decoration: none;
   transition: color 0.2s ease;
-  
+
   .info-icon {
     width: 16px;
     height: 16px;
@@ -560,7 +563,7 @@
     margin-top: 2px;
     color: var(--theme-color);
   }
-  
+
   &:hover {
     color: var(--theme-color);
   }
@@ -576,7 +579,7 @@
   line-height: 1.5;
   text-decoration: none;
   transition: color 0.2s ease;
-  
+
   .info-icon {
     width: 16px;
     height: 16px;
@@ -589,7 +592,7 @@
 .clinic-card-phone,
 .clinic-card-email {
   cursor: pointer;
-  
+
   &:hover {
     text-decoration: underline;
   }
@@ -616,7 +619,7 @@
   font-size: 14px;
   cursor: pointer;
   transition: all 0.2s ease;
-  
+
   .btn-icon {
     width: 18px;
     height: 18px;
@@ -625,13 +628,13 @@
     justify-content: center;
     font-size: 18px;
   }
-  
+
   // &:hover {
   //   border-color: var(--theme-color);
   //   background-color: rgba(var(--theme-color-rgb), 0.05);
   //   color: var(--theme-color);
   // }
-  
+
   // &.direction-btn {
   //   background-color: var(--theme-color);
   //   color: white;
@@ -643,6 +646,7 @@
   0% {
     background-position: -200% 0;
   }
+
   100% {
     background-position: 200% 0;
   }
@@ -657,12 +661,10 @@
   .skeleton-pill,
   .skeleton-btn,
   .results-count-skeleton {
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.06) 25%,
-      rgba(0, 0, 0, 0.12) 37%,
-      rgba(0, 0, 0, 0.06) 63%
-    );
+    background: linear-gradient(90deg,
+        rgba(0, 0, 0, 0.06) 25%,
+        rgba(0, 0, 0, 0.12) 37%,
+        rgba(0, 0, 0, 0.06) 63%);
     background-size: 400% 100%;
     animation: clinic-skeleton-shimmer 1.25s ease-in-out infinite;
     border-radius: 8px;
@@ -714,7 +716,7 @@
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  
+
   .loading-spinner {
     width: 40px;
     height: 40px;
@@ -724,7 +726,7 @@
     animation: spin 0.8s linear infinite;
     margin-bottom: 16px;
   }
-  
+
   p {
     font-size: 14px;
     color: var(--content-color);
@@ -743,7 +745,7 @@
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  
+
   p {
     font-size: 16px;
     color: var(--content-color);
@@ -758,13 +760,13 @@
   margin-top: 40px;
   display: flex;
   justify-content: center;
-  
+
   .custome-pagination,
   nav {
     display: flex;
     justify-content: center;
   }
-  
+
   .pagination {
     display: flex;
     gap: 4px;
@@ -772,7 +774,7 @@
     padding: 0;
     margin: 0;
     align-items: center;
-    
+
     .page-item {
       &.disabled {
         .page-link {
@@ -781,7 +783,7 @@
           pointer-events: none;
         }
       }
-      
+
       .page-link {
         display: flex;
         align-items: center;
@@ -798,19 +800,19 @@
         cursor: pointer;
         transition: all 0.2s ease;
         text-decoration: none;
-        
+
         &:hover:not(.active) {
           background-color: var(--light-gray);
           border-color: var(--theme-color);
         }
-        
+
         &.active {
           background-color: var(--theme-color);
           border-color: var(--theme-color);
           color: var(--white);
           pointer-events: none;
         }
-        
+
         svg {
           font-size: 16px;
         }
@@ -831,16 +833,16 @@
   .clinic-finder-title {
     font-size: 20px;
   }
-  
+
   .clinic-list {
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  
+
   .specialization-scroll-container {
     gap: 8px;
   }
-  
+
   .specialization-filter-btn {
     padding: 8px 16px;
     font-size: 13px;
@@ -851,28 +853,28 @@
   .clinic-finder-section {
     padding-top: 20px;
   }
-  
+
   .clinic-finder-title {
     font-size: 18px;
     margin-bottom: 16px;
   }
-  
+
   .clinic-search-container .search-input-wrapper {
     .search-input {
       font-size: 16px; // Prevent zoom on iOS
     }
   }
-  
+
   .filters-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
   }
-  
+
   .clinic-card-actions {
     flex-direction: column;
     gap: 8px;
-    
+
     .clinic-action-btn {
       width: 100%;
     }
@@ -884,24 +886,24 @@
   .clinic-finder-section {
     background-color: var(--dark-bg);
   }
-  
+
   .clinic-card,
   .search-input-wrapper,
   .search-results-dropdown {
     background-color: var(--dark-card-bg);
     border-color: var(--dark-border, #3a3a3a);
   }
-  
+
   .clinic-card-image-placeholder {
     background-color: var(--dark-border, #3a3a3a);
   }
-  
+
   .specialization-badge {
     background-color: rgba(var(--theme-color-rgb), 0.15);
   }
 }
 
-.clinic-disclaimer-content{
+.clinic-disclaimer-content {
   border-radius: 18px;
   border: 1px solid #e2e2e2;
   padding: 20px;
@@ -914,6 +916,7 @@
     color: var(--title-color);
     margin-bottom: 8px;
   }
+
   .clinic-disclaimer-text {
     font-size: 14px;
     color: #6f6f6f;

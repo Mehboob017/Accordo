@@ -4,6 +4,7 @@
 @use '../utils/variables';
 @use '../utils/mixin/common';
 @use '../utils/mixin/breakpoints';
+
 .checkout {
   .checkout-details {
     background-color: #f9f9f9;
@@ -194,12 +195,12 @@
     }
 
     .checkout-detail-box {
-      > ul {
+      >ul {
         display: flex;
         flex-wrap: wrap;
         gap: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
 
-        > li {
+        >li {
           position: relative;
           width: 100%;
 
@@ -222,7 +223,7 @@
             background-color: #fefefe;
             @include common.flex_common;
             color: var(--theme-color);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 
             svg {
               font-size: 20px;
@@ -244,7 +245,7 @@
             border: 1px solid #e2e2e2;
             background-color: #fefefe;
             border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
             margin-left: 66px;
             position: relative;
 
@@ -267,9 +268,7 @@
               top: 25px;
               left: -42px;
               width: 0;
-              height: calc(
-                100% + calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)))
-              );
+              height: calc(100% + calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320))));
               z-index: -1;
               border-left: 1px dashed rgba(variables.$title-color, 0.18);
 
@@ -330,18 +329,14 @@
             }
 
             .checkout-title {
-              margin-bottom: calc(
-                9px + (17 - 9) * ((100vw - 320px) / (1920 - 320))
-              );
+              margin-bottom: calc(9px + (17 - 9) * ((100vw - 320px) / (1920 - 320)));
               display: flex;
               align-items: center;
               justify-content: space-between;
 
               h4 {
                 font-weight: 600;
-                font-size: calc(
-                  16px + (19 - 16) * ((100vw - 320px) / (1920 - 320))
-                );
+                font-size: calc(16px + (19 - 16) * ((100vw - 320px) / (1920 - 320)));
               }
             }
 
@@ -349,10 +344,8 @@
               .delivery-address-box {
                 border-radius: 12px;
                 border: 1px solid #e2e2e2;
-                box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-                padding: calc(
-                  12px + (24 - 12) * ((100vw - 320px) / (1920 - 320))
-                );
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+                padding: calc(12px + (24 - 12) * ((100vw - 320px) / (1920 - 320)));
                 box-shadow: unset;
                 height: 100%;
 
@@ -365,7 +358,7 @@
                   padding-left: 0;
                 }
 
-                > div {
+                >div {
                   display: flex;
                   position: relative;
 
@@ -396,9 +389,7 @@
                     flex-wrap: wrap;
                     gap: 10px;
                     margin-left: 10px;
-                    width: calc(
-                      85% + (75 - 85) * ((100vw - 320px) / (1920 - 320))
-                    );
+                    width: calc(85% + (75 - 85) * ((100vw - 320px) / (1920 - 320)));
 
                     .address-label {
                       color: var(--2b2b2b);
@@ -445,9 +436,7 @@
               }
 
               .delivery-option {
-                padding: calc(
-                  17px + (26 - 17) * ((100vw - 320px) / (1920 - 320))
-                );
+                padding: calc(17px + (26 - 17) * ((100vw - 320px) / (1920 - 320)));
                 background-color: var(--white);
                 border-radius: 12px;
 
@@ -487,17 +476,11 @@
                   min-height: auto;
 
                   .form-check-label {
-                    font-size: calc(
-                      15px + (17 - 15) * ((100vw - 320px) / (1920 - 320))
-                    );
+                    font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
                     padding-left: 12px;
                     font-weight: 500;
                     margin-bottom: 0;
-                    width: calc(
-                      100% - calc(
-                          15px + (17 - 15) * ((100vw - 320px) / (1920 - 320))
-                        )
-                    );
+                    width: calc(100% - calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320))));
 
                     [dir='rtl'] & {
                       padding-left: unset;
@@ -507,9 +490,7 @@
                 }
 
                 .delivery-date {
-                  font-size: calc(
-                    14px + (15 - 14) * ((100vw - 320px) / (1920 - 320))
-                  );
+                  font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
                   font-weight: 500;
                   border: 1px solid var(--border-color);
                   background-color: var(--white);
@@ -517,15 +498,10 @@
                   align-items: center;
                   color: var(--content-color);
                   width: 100%;
-                  padding: calc(
-                      8px + (10 - 8) * ((100vw - 320px) / (1920 - 320))
-                    )
-                    calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+                  padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320))) calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
 
                   input {
-                    font-size: calc(
-                      14px + (15 - 14) * ((100vw - 320px) / (1920 - 320))
-                    );
+                    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
                     font-weight: 500;
                     border: none;
                     background-color: var(--white);
@@ -542,9 +518,7 @@
                   height: 100%;
 
                   .dropdown-toggle {
-                    font-size: calc(
-                      14px + (15 - 14) * ((100vw - 320px) / (1920 - 320))
-                    );
+                    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
                     font-weight: 500;
                     border: 1px solid var(--border-color);
                     background-color: var(--white);
@@ -584,7 +558,7 @@
                         }
                       }
 
-                      + li {
+                      +li {
                         margin-top: 5px;
                       }
                     }
@@ -600,9 +574,7 @@
                 }
 
                 .future-option {
-                  padding: calc(
-                    17px + (26 - 17) * ((100vw - 320px) / (1920 - 320))
-                  );
+                  padding: calc(17px + (26 - 17) * ((100vw - 320px) / (1920 - 320)));
                   background-color: rgba(26, 164, 136, 0.05);
                   border-radius: 12px;
 
@@ -611,7 +583,7 @@
                     display: flex;
                     align-items: center;
 
-                    > div {
+                    >div {
                       width: 100%;
                     }
 
@@ -666,13 +638,8 @@
               }
 
               .payment-button {
-                padding: calc(
-                    14px + (20 - 14) * ((100vw - 320px) / (1920 - 320))
-                  )
-                  calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
-                font-size: calc(
-                  14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
-                );
+                padding: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320))) calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+                font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
                 font-weight: 500;
               }
 
@@ -693,17 +660,13 @@
 
               .credit-info {
                 label {
-                  font-size: calc(
-                    14px + (15 - 14) * ((100vw - 320px) / (1920 - 320))
-                  );
+                  font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
                   font-weight: 500;
                 }
               }
 
               .payment-option {
-                padding: calc(
-                  14px + (20 - 14) * ((100vw - 320px) / (1920 - 320))
-                );
+                padding: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
                 border-radius: 12px;
                 position: relative;
                 background-color: var(--white);
@@ -712,17 +675,11 @@
                 .form-check {
                   label {
                     cursor: pointer;
-                    font-size: calc(
-                      15px + (17 - 15) * ((100vw - 320px) / (1920 - 320))
-                    );
+                    font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
                     padding-left: 12px;
                     font-weight: 500;
                     margin-bottom: 0;
-                    width: calc(
-                      100% - calc(
-                          15px + (17 - 15) * ((100vw - 320px) / (1920 - 320))
-                        )
-                    );
+                    width: calc(100% - calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320))));
 
                     body[dir='rtl'] & {
                       padding-left: unset;
@@ -798,9 +755,7 @@
                           display: flex;
                           align-items: center;
                           width: 100%;
-                          font-size: calc(
-                            15px + (18 - 15) * ((100vw - 320px) / (1920 - 320))
-                          );
+                          font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
                           padding: 16px 20px;
                           margin-bottom: 0;
 
@@ -813,15 +768,10 @@
                           }
 
                           .form-check-input {
-                            margin-right: calc(
-                              6px + (10 - 6) * ((100vw - 320px) / (1920 - 320))
-                            );
+                            margin-right: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
 
                             [dir='rtl'] & {
-                              margin-left: calc(
-                                6px + (10 - 6) *
-                                  ((100vw - 320px) / (1920 - 320))
-                              );
+                              margin-left: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
                               margin-right: unset;
                             }
                           }
@@ -848,9 +798,7 @@
                       }
 
                       .custom-form-check {
-                        margin-bottom: calc(
-                          5px + (8 - 5) * ((100vw - 320px) / (1920 - 320))
-                        );
+                        margin-bottom: calc(5px + (8 - 5) * ((100vw - 320px) / (1920 - 320)));
                         display: flex;
                         align-items: center;
 
@@ -862,9 +810,7 @@
                         label {
                           display: flex;
                           align-items: center;
-                          font-size: calc(
-                            14px + (17 - 14) * ((100vw - 320px) / (1920 - 320))
-                          );
+                          font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (1920 - 320)));
                         }
 
                         input {
@@ -1000,7 +946,7 @@
 
 .empty-box {
   text-align: center;
-  
+
   img {
     width: 40px;
     opacity: 1;
@@ -1017,7 +963,7 @@
 }
 
 .coupon-sec {
-  > div {
+  >div {
     width: 100%;
   }
 
@@ -1045,7 +991,7 @@
       margin-bottom: 0;
     }
 
-    > div {
+    >div {
       display: flex;
       align-items: flex-start;
       gap: 6px;
@@ -1096,7 +1042,7 @@
 
 
 .pill-css {
-  border: 1px solid var(--1fa67a);
+  border: 1px solid var(--234BF3);
   border-radius: 30px;
   padding: 6px 10px;
   background-color: var(--e9f9f4);

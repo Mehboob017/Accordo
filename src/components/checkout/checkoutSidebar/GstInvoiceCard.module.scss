@@ -13,7 +13,7 @@
   user-select: none;
 
   &:hover {
-    border-color: #1fa67a;
+    border-color: #234BF3;
   }
 }
 
@@ -25,7 +25,7 @@
   padding: 14px 16px;
 
   // &:hover {
-  //   border-color: var(--1fa67a);
+  //   border-color: var(--234BF3);
   // }
 }
 
@@ -85,7 +85,7 @@
   font-size: 12px;
   line-height: 1.2;
   font-weight: 500;
-  color: var(--1fa67a);
+  color: var(--234BF3);
 }
 
 .title {
@@ -125,7 +125,7 @@
   border-radius: 999px;
   background: transparent;
   flex-shrink: 0;
-  
+
   &:hover {
     background: rgba(var(--theme-color-rgb), 0.1);
     color: var(--theme-color);

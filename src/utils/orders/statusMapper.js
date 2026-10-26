@@ -358,16 +358,16 @@ const toStatusLabel = (value) => {
 };
 
 const STATUS_COLORS = {
-  pending: '#1fa67a',
-  placed: '#1fa67a',
-  confirmed: '#1fa67a',
-  processing: '#1fa67a',
-  packed: '#1fa67a',
-  shipping: '#1fa67a',
-  success: '#1fa67a',
+  pending: '#234BF3',
+  placed: '#234BF3',
+  confirmed: '#234BF3',
+  processing: '#234BF3',
+  packed: '#234BF3',
+  shipping: '#234BF3',
+  success: '#234BF3',
   warning: '#d97706',
   danger: '#dc3545',
-  refunded: '#1fa67a',
+  refunded: '#234BF3',
   default: 'var(--theme-color)',
 };
 
@@ -518,7 +518,7 @@ export const canReviewOrder = (status) =>
   );
 
 // Color						                      Semantic Meaning						 ClassNames						            Example Statuses
-// 🟢 Green ( #1fa67a / #d1fae5)		 Success/Completion				    confirmed, success, refunded	✅ Delivered, Completed, Refunded
+// 🟢 Green ( #234BF3 / #d1fae5)		 Success/Completion				    confirmed, success, refunded	✅ Delivered, Completed, Refunded
 // 🔵 Blue ( #2563eb / #dbeafe)		   Processing/In Transit				processing, packed, shipping	📦 Shipped, In Transit, Processing
 // 🟠 Amber ( #d97706 / #fef3c7)		 Pending/Warning					    pending, warning			        ⏳ Pending, Undelivered, Waiting
 // 🔴 Red ( #dc3545 / #fee2e2)		   Danger/Failed/Cancelled		  danger						            ❌ Cancelled, Failed, Lost  

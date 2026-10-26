@@ -28,7 +28,7 @@
     width: 100%;
   }
 
-  li + li {
+  li+li {
     margin-top: 0.125rem;
   }
 }
@@ -46,7 +46,7 @@
   transition: all 0.2s ease;
 
   &:hover {
-    background: var(--1fa67a, #1fa67a);
+    background: var(--234BF3, #234BF3);
     color: #fff;
   }
 }
@@ -65,7 +65,7 @@
   font-weight: 500;
   text-align: center;
 
-  color: var(--flame, #1fa67a);
+  color: var(--flame, #234BF3);
   background: var(--flame-50, #1fa67923);
 
   border: 1px solid var(--e2e2e2);

@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import ThemeOptionContext from '@/helper/themeOptionsContext';
 import Avatar from '@/components/common/Avatar';
-import Dhootapapeshwar from '../../../../../public/assets/images/logo/sdl_logo.gif';
+import Dhootapapeshwar from '../../../../../public/assets/images/logo/ac-logo-white.png';
 import { RiMenuLine } from 'react-icons/ri';
 import { usePathname } from 'next/navigation';
 
@@ -29,14 +29,14 @@ const HeaderLogo = () => {
           <RiMenuLine />
         </span>
       </button>
-      <a href="/" className="web-logo nav-logo py-1">
+      <a href="/" className="web-logo nav-logo ">
         <Avatar
           data={logo}
           placeHolder={Dhootapapeshwar}
           name={'Header'}
           customImageClass={'img-fluid'}
-          height={28}
-          width={162}
+          height={32}
+          width={160}
           unoptimized
         />
       </a>

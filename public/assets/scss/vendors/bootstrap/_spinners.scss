@@ -10,7 +10,7 @@
   width: var(--#{$prefix}spinner-width);
   height: var(--#{$prefix}spinner-height);
   vertical-align: var(--#{$prefix}spinner-vertical-align);
-  color: #1fa67a !important;
+  color: #234BF3 !important;
   // stylelint-disable-next-line property-disallowed-list
   border-radius: 50%;
   animation: var(--#{$prefix}spinner-animation-speed) linear infinite var(--#{$prefix}spinner-animation-name);
@@ -35,7 +35,7 @@
   --#{$prefix}spinner-animation-name: spinner-border;
   // scss-docs-end spinner-border-css-vars
 
-  border: var(--#{$prefix}spinner-border-width) solid #1fa67a !important;
+  border: var(--#{$prefix}spinner-border-width) solid #234BF3 !important;
   border-right-color: transparent;
 }
 

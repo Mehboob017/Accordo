@@ -1,7 +1,7 @@
 import '../../public/assets/scss/app.scss';
 // import NoSSR from '@/utils/NoSSR';
 import LenisProvider from '@/providers/LenisProvider';
-import { Poppins } from "next/font/google"
+import { Montserrat } from "next/font/google"
 import Script from 'next/script'
 import {
   // GoogleAnalytics,
@@ -9,10 +9,9 @@ import {
 } from '@next/third-parties/google'
 import { Preconnect } from './preconnect';
 
-// Variable font: single woff2 covers all weights (400–700) → 1 request instead of 4
-const poppins = Poppins({
+const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
   display: 'swap',
   preload: true,
   fallback: ['system-ui', 'sans-serif'],
@@ -55,7 +54,7 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className} suppressHydrationWarning={true}>
+      <body className={montserrat.className} suppressHydrationWarning={true}>
         <Preconnect />
         <LenisProvider>
           {children}

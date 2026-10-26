@@ -105,8 +105,10 @@ header {
   }
 
   .primary-nav-bar {
-    background-color: #fafaf9;
-    border-top: 1px solid var(--border-color);
+    // background-color: #fafaf9;
+    background-color: #07112C;
+    // border-top: 1px solid var(--border-color);
+    border-top: 1px solid #3B455B;
     // padding: 4px 0;
     position: relative;
     // z-index: 9;
@@ -241,7 +243,8 @@ header {
           }
 
           .nav-link {
-            color: var(--title-color);
+            // color: var(--title-color);
+            color: #F3F7FF;
             font-size: 15px;
             font-weight: 500;
             padding: 0;
@@ -256,7 +259,8 @@ header {
             position: relative;
 
             &:hover {
-              color: var(--theme-color);
+              // color: var(--theme-color);
+              color: #AAB9F7;
             }
 
             &.dropdown-toggle {
@@ -557,7 +561,8 @@ header {
             }
 
             &:hover {
-              background-color: transparent;
+              background-color: transparent !important;
+              border-color: transparent !important;
             }
 
             &::after {
@@ -819,13 +824,18 @@ header {
       }
 
       .web-logo {
+        padding: 16px 0px;
+
         img {
-          @include common.pseudowh($width: calc(75px + (162 - 120) * ((100vw - 320px) / (1920 - 320))),
+          @include common.pseudowh($width: calc(120px + (160 - 120) * ((100vw - 320px) / (1920 - 320))),
             $height: auto);
+          max-height: 32px;
           object-fit: contain;
 
           @include breakpoints.mq-max(md) {
             margin: 0 auto;
+            width: 125px;
+            max-height: 26px;
           }
         }
       }
@@ -1310,8 +1320,8 @@ header {
                 .header-icon,
                 svg {
                   font-size: 22px;
-                  // color: var(--content-color);
-                  color: #4A4A4A;
+                  color: #B8C4DF;
+                  // color: #4A4A4A;
                 }
 
                 .header-icon-badge {
@@ -1337,8 +1347,8 @@ header {
               .header-icon-label {
                 font-size: 14px;
                 font-weight: 500;
-                // color: var(--content-color);
-                color: #4A4A4A;
+                color: #B8C4DF;
+                // color: #4A4A4A;
               }
 
               // Hover: make cart & wishlist icon/label/badge use primary color
@@ -1368,7 +1378,7 @@ header {
               cursor: pointer;
               font-size: 14px;
               font-weight: 500;
-              color: #168a6f;
+              color: #2044CD;
               transition: all 0.3s ease;
               height: 44px;
 
@@ -6230,7 +6240,8 @@ header {
 /* Basic header redesign, scoped to avoid side effects on other pages/components */
 header.basic-header-redesign {
   .top-nav.top-header.sticky-header {
-    background: linear-gradient(180deg, #fefefe 0%, #fcfdfb 100%);
+    // background: linear-gradient(180deg, #fefefe 0%, #fcfdfb 100%);
+    background: linear-gradient(180deg, #07112C 0%, #07112C 100%);
     // border-bottom: 1px solid rgba(variables.$title-color, 0.06);
     box-shadow: 0 12px 28px rgba(variables.$title-color, 0.05);
     // padding: 8px 0 0;
@@ -6249,6 +6260,18 @@ header.basic-header-redesign {
   .web-logo.nav-logo {
     display: inline-flex;
     align-items: center;
+
+    img {
+      width: calc(120px + (160 - 120) * ((100vw - 320px) / (1920 - 320)));
+      max-height: 32px;
+      height: auto;
+      object-fit: contain;
+
+      @include breakpoints.mq-max(md) {
+        width: 125px;
+        max-height: 26px;
+      }
+    }
   }
 
   .header-menu-trigger {

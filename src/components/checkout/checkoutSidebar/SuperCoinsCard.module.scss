@@ -19,14 +19,14 @@
 
   &.checked {
     background-color: var(--e9f9f4);
-    border: 2px solid var(--1fa67a);
+    border: 2px solid var(--234BF3);
   }
-  
+
   &:hover:not(:disabled) {
     background: var(--light-gray);
     border-color: var(--theme-color);
     background: var(--e9f9f4);
-    border-color: var(--1fa67a);
+    border-color: var(--234BF3);
   }
 
   &:focus {
@@ -229,7 +229,7 @@
 .supercoinsRightAmount {
   font-size: 14px;
   font-weight: 700;
-  color: var(--1fa67a);
+  color: var(--234BF3);
 }
 
 .supercoinsRightMeta {

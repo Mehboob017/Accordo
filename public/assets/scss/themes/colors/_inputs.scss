@@ -13,10 +13,10 @@
   --input-shadow: none;
 
   // Hover State
-//   --input-border-hover: var(--green-500);
+  //   --input-border-hover: var(--green-500);
 
   // Focus State
-  --input-border-focus: #1FA67A;
+  --input-border-focus: #234BF3;
   --input-bg-focus: #fefefe;
   --input-text-focus: #2B2B2B;
   --input-placeholder-focus: #111111;
@@ -43,7 +43,7 @@
   // Helper Text
   --input-helper-text: var(--text-secondary);
   --input-helper-error: var(--error-color);
-  
+
 }
 
 
@@ -54,23 +54,23 @@
 
 .theme-doctor {
 
-    // Focus
-    --input-border-focus: var(--theme-color);
-    --input-shadow-focus: 0 0 0 3px rgba(37, 99, 235, 0.15);
-  
-    // Filled
-    --input-bg-filled: rgba(37, 99, 235, 0.05);
-    --input-border-filled: var(--theme-color);
-  
-    // Hover
-    --input-border-hover: var(--theme-color);
+  // Focus
+  --input-border-focus: var(--theme-color);
+  --input-shadow-focus: 0 0 0 3px rgba(37, 99, 235, 0.15);
+
+  // Filled
+  --input-bg-filled: rgba(37, 99, 235, 0.05);
+  --input-border-filled: var(--theme-color);
+
+  // Hover
+  --input-border-hover: var(--theme-color);
 }
 
-  
-  // ============================================
-  // Applied to Bootstrap inputs/selects using `.input` class
-  // 🧩 INPUT COMPONENT STYLES
-  // ============================================
+
+// ============================================
+// Applied to Bootstrap inputs/selects using `.input` class
+// 🧩 INPUT COMPONENT STYLES
+// ============================================
 
 .input-common {
   // border: 1px solid var(--input-border);
@@ -149,12 +149,12 @@
   }
 }
 
-.message-error{
+.message-error {
   color: #E74C3C !important;
 }
 
 select.input-common:focus,
 .form-select.input-common:focus {
-  border: 1px solid #1FA67A !important;
-  
+  border: 1px solid #234BF3 !important;
+
 }

@@ -62,7 +62,7 @@ export const openRazorpayCheckout = async ({
         ondismiss: async () => {
           // console.log({razorpayData, trxUid})
           try {
-          // console.log("on dismiss ran");
+            // console.log("on dismiss ran");
             await onCancelled?.({
               razorpay_order_id: razorpayData.orderId,
               // razorpay_payment_id, 
@@ -74,7 +74,7 @@ export const openRazorpayCheckout = async ({
         },
       },
       theme: {
-        color: '#1FA67A',
+        color: '#234BF3',
       },
       ...options,
     };

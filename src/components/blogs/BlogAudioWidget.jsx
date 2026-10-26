@@ -463,7 +463,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
         position: 'relative',
         background: `
           linear-gradient(#fefefe, #fefefe),
-          linear-gradient(90deg, #1fa67a 0%, #5eead4 50%, #0d6efd 100%)
+          linear-gradient(90deg, #234BF3 0%, #5eead4 50%, #0d6efd 100%)
         `,
         border: '1.5px solid transparent',
         borderRadius: '10px',
@@ -491,10 +491,10 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
             !isReady
               ? 'Loading audio'
               : hasEnded
-              ? 'Restart audio'
-              : isPlaying
-              ? 'Pause audio'
-              : 'Play audio'
+                ? 'Restart audio'
+                : isPlaying
+                  ? 'Pause audio'
+                  : 'Play audio'
           }
           style={{
             width: '40px',
@@ -503,7 +503,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
             alignItems: 'center',
             justifyContent: 'center',
             // background: !isSupported ? '#cbd5e1' : themeColor,
-            background: '#1fa67a',
+            background: '#234BF3',
             border: 'none',
             borderRadius: '50%',
             cursor: isReady && isSupported ? 'pointer' : 'not-allowed',

@@ -5,21 +5,21 @@
 :root,
 .theme-customer {
   // Primary Colors
-  --theme-color: #1FA67A;
+  --theme-color: #234BF3;
   --theme-color-light: #1FBFA1;
   --theme-color-dark: #0F6B5A;
   --theme-color-rgb: 22, 138, 111;
-  
+
   // Secondary Colors
   --secondary-color: #ff7e5f;
   --secondary-color-light: #ff9575;
   --secondary-color-dark: #ff6545;
-  
+
   // Accent Colors
   --accent-color: #F39C12;
   --accent-light: #ffb84d;
   --accent-dark: #ff9510;
-  
+
   // Base Colors
   --white: #fefefe;
   --black: #2b2b2b;
@@ -28,13 +28,13 @@
   --light-gray: #f8f8f8;
   --border-color: #E2e2e2;
   --hover-bg: #eeeeee;
-  
+
   // Semantic Colors
   --success-color: #2ECC71;
   --error-color: #E74C3C;
   --warning-color: #F39C12;
   --info-color: #a927f9;
-  
+
   // Button Colors
   --btn-primary-bg: var(--theme-color);
   --btn-primary-hover: var(--theme-color-dark);
@@ -42,32 +42,32 @@
   --btn-secondary-bg: var(--secondary-color);
   --btn-secondary-hover: var(--secondary-color-dark);
   --btn-secondary-text: var(--white);
-  
+
   // Link Colors
   --link-color: var(--theme-color);
   --link-hover: var(--theme-color-dark);
-  
+
   // Background Colors
   --bg-primary: #fefefe;
   --bg-secondary: #f8f9fa;
   --bg-tertiary: #f1f3f5;
-  
+
   // Card Colors
   --card-bg: var(--white);
   --card-border: var(--border-color);
   --card-shadow: rgba(8, 21, 66, 0.05);
-  
+
   // Badge Colors
   --badge-success: #0da487;
   --badge-warning: #F39C12;
   --badge-danger: #E74C3C;
   --badge-info: #a927f9;
-  
+
   // Special Elements
   --wishlist-active-color: #ff0000;
   --rating-color: #ffb321;
   --discount-badge: #E74C3C;
-  
+
   // Toastify
   --toastify-color-success: var(--theme-color);
   --toastify-color-error: var(--error-color);
@@ -84,17 +84,17 @@
   --theme-color-light: #3b82f6;
   --theme-color-dark: #1d4ed8;
   --theme-color-rgb: 37, 99, 235;
-  
+
   // Secondary Colors - Professional Teal
   --secondary-color: #06b6d4;
   --secondary-color-light: #22d3ee;
   --secondary-color-dark: #0891b2;
-  
+
   // Accent Colors - Medical Green
   --accent-color: #10b981;
   --accent-light: #34d399;
   --accent-dark: #059669;
-  
+
   // Base Colors
   --white: #fefefe;
   --black: #2B2B2B;
@@ -103,13 +103,13 @@
   --light-gray: #f1f5f9;
   --border-color: #e2e2e2;
   --hover-bg: #f8fafc;
-  
+
   // Semantic Colors
   --success-color: #2ECC71;
   --error-color: #ef4444;
   --warning-color: #f59e0b;
   --info-color: #3b82f6;
-  
+
   // Button Colors
   --btn-primary-bg: var(--theme-color);
   --btn-primary-hover: var(--theme-color-dark);
@@ -117,32 +117,32 @@
   --btn-secondary-bg: var(--secondary-color);
   --btn-secondary-hover: var(--secondary-color-dark);
   --btn-secondary-text: var(--white);
-  
+
   // Link Colors
   --link-color: var(--theme-color);
   --link-hover: var(--theme-color-dark);
-  
+
   // Background Colors
   --bg-primary: #fefefe;
   --bg-secondary: #f8fafc;
   --bg-tertiary: #f1f5f9;
-  
+
   // Card Colors
   --card-bg: var(--white);
   --card-border: var(--border-color);
   --card-shadow: rgba(37, 99, 235, 0.05);
-  
+
   // Badge Colors
   --badge-success: #10b981;
   --badge-warning: #f59e0b;
   --badge-danger: #ef4444;
   --badge-info: #3b82f6;
-  
+
   // Special Elements
   --wishlist-active-color: #ef4444;
   --rating-color: #f59e0b;
   --discount-badge: #ef4444;
-  
+
   // Toastify
   --toastify-color-success: var(--success-color);
   --toastify-color-error: var(--error-color);
@@ -196,7 +196,7 @@
 //   --text-body: var(--content-color);
 //   --text-muted: #8B95A5;
 //   --text-inverse: var(--white);
-  
+
 //   // Links
 //   --text-link: var(--theme-color);
 //   --text-link-hover: var(--theme-color-dark);
@@ -209,7 +209,7 @@
 //   --text-body: var(--content-color);
 //   --text-muted: #64748b;
 //   --text-inverse: var(--white);
-  
+
 //   --text-link: var(--theme-color);
 //   --text-link-hover: var(--theme-color-dark);
 //   --text-link-visited: var(--theme-color-dark);
@@ -252,11 +252,11 @@
 //   --input-placeholder: #8B95A5;
 //   --input-disabled-bg: var(--light-gray);
 //   --input-disabled-text: #8B95A5;
-  
+
 //   // Labels
 //   --label-text: var(--title-color);
 //   --label-required: var(--error-color);
-  
+
 //   // Validation
 //   --input-error-border: var(--error-color);
 //   --input-error-text: var(--error-color);
@@ -272,10 +272,10 @@
 //   --input-placeholder: #94a3b8;
 //   --input-disabled-bg: var(--light-gray);
 //   --input-disabled-text: #94a3b8;
-  
+
 //   --label-text: var(--title-color);
 //   --label-required: var(--error-color);
-  
+
 //   --input-error-border: var(--error-color);
 //   --input-error-text: var(--error-color);
 //   --input-success-border: var(--success-color);
@@ -346,15 +346,15 @@
 //   --alert-success-bg: rgba(46, 204, 113, 0.1);
 //   --alert-success-border: var(--success-color);
 //   --alert-success-text: #1e8449;
-  
+
 //   --alert-error-bg: rgba(231, 76, 60, 0.1);
 //   --alert-error-border: var(--error-color);
 //   --alert-error-text: #a93226;
-  
+
 //   --alert-warning-bg: rgba(243, 156, 18, 0.1);
 //   --alert-warning-border: var(--warning-color);
 //   --alert-warning-text: #b9770e;
-  
+
 //   --alert-info-bg: rgba(169, 39, 249, 0.1);
 //   --alert-info-border: var(--info-color);
 //   --alert-info-text: #7b2cbf;
@@ -364,15 +364,15 @@
 //   --alert-success-bg: rgba(16, 185, 129, 0.1);
 //   --alert-success-border: var(--success-color);
 //   --alert-success-text: #047857;
-  
+
 //   --alert-error-bg: rgba(239, 68, 68, 0.1);
 //   --alert-error-border: var(--error-color);
 //   --alert-error-text: #b91c1c;
-  
+
 //   --alert-warning-bg: rgba(245, 158, 11, 0.1);
 //   --alert-warning-border: var(--warning-color);
 //   --alert-warning-text: #b45309;
-  
+
 //   --alert-info-bg: rgba(59, 130, 246, 0.1);
 //   --alert-info-border: var(--info-color);
 //   --alert-info-text: #1e40af;
@@ -412,26 +412,26 @@
 //   --product-card-border: var(--border-color);
 //   --product-card-shadow: rgba(8, 21, 66, 0.05);
 //   --product-card-hover-shadow: rgba(8, 21, 66, 0.15);
-  
+
 //   // Price
 //   --price-color: var(--title-color);
 //   --price-sale: var(--error-color);
 //   --price-original: #8B95A5;
-  
+
 //   // Wishlist
 //   --wishlist-inactive: #E2E8ED;
 //   --wishlist-active: #ff0000;
 //   --wishlist-hover: var(--theme-color);
-  
+
 //   // Rating
 //   --rating-active: #ffb321;
 //   --rating-inactive: #E2E8ED;
-  
+
 //   // Stock Status
 //   --stock-in: var(--success-color);
 //   --stock-out: var(--error-color);
 //   --stock-low: var(--warning-color);
-  
+
 //   // Discount Badge
 //   --discount-bg: var(--error-color);
 //   --discount-text: var(--white);
@@ -442,22 +442,22 @@
 //   --product-card-border: var(--border-color);
 //   --product-card-shadow: rgba(37, 99, 235, 0.05);
 //   --product-card-hover-shadow: rgba(37, 99, 235, 0.15);
-  
+
 //   --price-color: var(--title-color);
 //   --price-sale: var(--error-color);
 //   --price-original: #94a3b8;
-  
+
 //   --wishlist-inactive: #e2e8f0;
 //   --wishlist-active: #ef4444;
 //   --wishlist-hover: var(--theme-color);
-  
+
 //   --rating-active: #f59e0b;
 //   --rating-inactive: #e2e8f0;
-  
+
 //   --stock-in: var(--success-color);
 //   --stock-out: var(--error-color);
 //   --stock-low: var(--warning-color);
-  
+
 //   --discount-bg: var(--error-color);
 //   --discount-text: var(--white);
 // }
@@ -473,21 +473,21 @@
   --btn-primary-bg-hover: var(--theme-color-dark);
   --btn-primary-text: var(--white);
   --btn-primary-border: var(--theme-color);
-  
+
   // Secondary Button
   --btn-secondary-bg: transparent;
   --btn-secondary-bg-hover: var(--theme-color);
   --btn-secondary-text: var(--theme-color);
   --btn-secondary-text-hover: var(--white);
   --btn-secondary-border: var(--theme-color);
-  
+
   // Outline Button
   --btn-outline-bg: transparent;
   --btn-outline-bg-hover: var(--theme-color);
   --btn-outline-text: var(--theme-color);
   --btn-outline-text-hover: var(--white);
   --btn-outline-border: var(--theme-color);
-  
+
   // Disabled Button
   --btn-disabled-bg: #E2E8ED;
   --btn-disabled-text: #8B95A5;
@@ -499,19 +499,19 @@
   --btn-primary-bg-hover: var(--theme-color-dark);
   --btn-primary-text: var(--white);
   --btn-primary-border: var(--theme-color);
-  
+
   --btn-secondary-bg: transparent;
   --btn-secondary-bg-hover: var(--theme-color);
   --btn-secondary-text: var(--theme-color);
   --btn-secondary-text-hover: var(--white);
   --btn-secondary-border: var(--theme-color);
-  
+
   --btn-outline-bg: transparent;
   --btn-outline-bg-hover: var(--theme-color);
   --btn-outline-text: var(--theme-color);
   --btn-outline-text-hover: var(--white);
   --btn-outline-border: var(--theme-color);
-  
+
   --btn-disabled-bg: #e2e8f0;
   --btn-disabled-text: #94a3b8;
   --btn-disabled-border: #e2e8f0;

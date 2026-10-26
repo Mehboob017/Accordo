@@ -1135,7 +1135,7 @@
           // line-height: 1.3;
 
           background-color: #e9f9f4;
-          color: #168a6f;
+          color: #2044CD;
           padding: 3px 9px;
           border-radius: 999px;
           font-size: 11px;
@@ -4877,7 +4877,7 @@
             // border: 1px solid var(--border-color);
             // line-height: 1.3;
             background-color: #e9f9f4;
-            color: #168a6f;
+            color: #2044CD;
             padding: 3px 9px;
             border-radius: 999px;
             font-size: 11px;
@@ -6970,13 +6970,13 @@
 
             &.active,
             &[aria-pressed='true'] {
-              border: 2px solid #1FA67A !important;
+              border: 2px solid #234BF3 !important;
               background-color: #E9F9F4 !important;
               box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08) !important;
 
               .variation-radio-title,
               .variation-price-strong {
-                // color: #1FA67A !important;
+                // color: #234BF3 !important;
               }
             }
           }

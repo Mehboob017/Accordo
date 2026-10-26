@@ -138,14 +138,14 @@
     padding: 0;
     border: none;
     background: none;
-    color: #1fa67a;
+    color: #234BF3;
     font-weight: 500;
     font-size: 15px;
     text-decoration: underline;
     cursor: pointer;
 
     &:hover {
-      color: #168a6f;
+      color: #2044CD;
     }
   }
 
@@ -268,6 +268,7 @@
   }
 
   @include breakpoints.mq-max(md) {
+
     &__label,
     &__value {
       display: block;
@@ -312,7 +313,8 @@
     border-color: rgba(255, 255, 255, 0.08);
   }
 
-  p, a {
+  p,
+  a {
     margin: 0;
   }
 
@@ -322,12 +324,12 @@
     color: var(--footer-title-color);
     margin-bottom: 2px !important;
   }
-  
+
   &__address {
     color: var(--content-color);
     word-break: break-word;
   }
-  
+
   &__meta {
     color: var(--footer-text-color);
     word-break: break-word;
@@ -348,4 +350,3 @@
     margin-top: 2px !important;
   }
 }
-

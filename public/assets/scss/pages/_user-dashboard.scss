@@ -315,7 +315,7 @@
 
           .user-round {
             background-color: var(--e9f9f4, #e9f9f4);
-            border: 4px solid var(--1fa67a, #1fa67a);
+            border: 4px solid var(--234BF3, #234BF3);
             width: fit-content;
             margin-inline: auto;
             border-radius: 50%;
@@ -337,7 +337,7 @@
               background-color: var(--light-gray, #f5f5f5);
               font-size: fluid-scale(24, 28);
               font-weight: 700;
-              color: var(--1fa67a, #1fa67a);
+              color: var(--234BF3, #234BF3);
               border-radius: 50%;
               box-shadow: 0 4px 10px rgba(variables.$title-color, 0.1);
               margin: 0 auto;
@@ -451,28 +451,28 @@
 
           &:hover {
             background-color: var(--e9f9f4, #e9f9f4);
-            color: var(--1fa67a, #1fa67a);
+            color: var(--234BF3, #234BF3);
 
             svg {
-              color: var(--1fa67a, #1fa67a);
+              color: var(--234BF3, #234BF3);
             }
           }
 
           // Fixed Active State Nesting Rule Selector Bug
           &.active,
           &.show {
-            border-left-color: var(--1fa67a, #1fa67a);
+            border-left-color: var(--234BF3, #234BF3);
             font-weight: 600;
             background-color: var(--e9f9f4, #e9f9f4);
-            color: var(--1fa67a, #1fa67a);
+            color: var(--234BF3, #234BF3);
 
             body[dir='rtl'] & {
               border-left-color: transparent;
-              border-right-color: var(--1fa67a, #1fa67a);
+              border-right-color: var(--234BF3, #234BF3);
             }
 
             svg {
-              color: var(--1fa67a, #1fa67a);
+              color: var(--234BF3, #234BF3);
             }
           }
 
@@ -506,10 +506,10 @@
 
         &:hover {
           background-color: var(--e9f9f4, #e9f9f4);
-          color: var(--1fa67a);
+          color: var(--234BF3);
 
           .icon-wrapper svg {
-            color: var(--1fa67a);
+            color: var(--234BF3);
           }
         }
 
@@ -519,7 +519,7 @@
         }
 
         &:focus-visible {
-          outline: 1px solid var(--1fa67a);
+          outline: 1px solid var(--234BF3);
           outline-offset: 2px;
         }
 
@@ -662,7 +662,7 @@
             }
 
             &:nth-child(1) span {
-              background-color: var(--1fa67a); // Earned
+              background-color: var(--234BF3); // Earned
             }
 
             &:nth-child(2) span {
@@ -714,11 +714,11 @@
         /* Green Chips */
         .green-chip {
           background-color: var(--e9f9f4);
-          border: 1px solid var(--1fa67a);
+          border: 1px solid var(--234BF3);
 
           .chip-label,
           .chip-value {
-            color: var(--1fa67a);
+            color: var(--234BF3);
           }
         }
 
@@ -833,7 +833,7 @@
             font-weight: 700;
 
             &.amount-earned {
-              color: var(--1fa67a);
+              color: var(--234BF3);
             }
 
             &.amount-redeemed {
@@ -863,8 +863,8 @@
 
               &.status-earned {
                 background-color: #e9f9f4;
-                border: 1px solid var(--1fa67a);
-                color: var(--1fa67a);
+                border: 1px solid var(--234BF3);
+                color: var(--234BF3);
               }
 
               &.status-redeemed {
@@ -930,14 +930,14 @@
 
             &:hover {
               background-color: #e9f9f4;
-              border: 1px solid var(--1fa67a);
-              color: var(--1fa67a);
+              border: 1px solid var(--234BF3);
+              color: var(--234BF3);
             }
           }
 
           &.active .page-link {
-            background-color: var(--1fa67a) !important;
-            border-color: var(--1fa67a) !important;
+            background-color: var(--234BF3) !important;
+            border-color: var(--234BF3) !important;
             color: #fefefe !important;
             font-weight: 700 !important;
           }
@@ -1088,8 +1088,8 @@
               .spinner-border {
                 width: 14px;
                 height: 14px;
-                color: #1fa67a;
-                border-color: #1fa67a;
+                color: #234BF3;
+                border-color: #234BF3;
               }
             }
           }
@@ -1152,13 +1152,13 @@
             }
 
             background-color: var(--e9f9f4, #e9f9f4);
-            color: var(--1fa67a, #1fa67a);
-            border: 1px solid var(--1fa67a, #1fa67a);
+            color: var(--234BF3, #234BF3);
+            border: 1px solid var(--234BF3, #234BF3);
 
             &.approved {
               background-color: #e9f9f4;
-              color: #1fa67a;
-              border: 1px solid #1fa67a;
+              color: #234BF3;
+              border: 1px solid #234BF3;
             }
 
             &.pending {
@@ -1273,11 +1273,11 @@
 
             &.green-chip {
               background-color: var(--e9f9f4);
-              border: 1px solid var(--1fa67a);
+              border: 1px solid var(--234BF3);
 
               .stat-label,
               .stat-value {
-                color: var(--1fa67a);
+                color: var(--234BF3);
               }
             }
           }
@@ -1455,7 +1455,7 @@
           border-radius: 8px;
 
           &.active {
-            background-color: var(--1fa67a);
+            background-color: var(--234BF3);
             color: var(--ffffff);
             font-weight: 600;
             box-shadow: 0 4px 10px rgba(31, 166, 122, 0.25);
@@ -2131,7 +2131,7 @@
         }
 
         .add-new-btn {
-          background: var(--1fa67a);
+          background: var(--234BF3);
           color: #fefefe;
           font-weight: 600;
           font-size: 13px;
@@ -2168,13 +2168,13 @@
 
         /* Non-default Hover State */
         &:not(.active-address):hover {
-          border: 1px solid var(--1fa67a);
+          border: 1px solid var(--234BF3);
           box-shadow: 0 4px 10px rgba(31, 166, 122, 0.15);
         }
 
         /* Active / Default State */
         &.active-address {
-          border: 1.5px solid var(--1fa67a);
+          border: 1.5px solid var(--234BF3);
           box-shadow: 0 4px 10px rgba(31, 166, 122, 0.15);
         }
 
@@ -2200,11 +2200,11 @@
             /* Default Card Badge */
             &.active {
               background: var(--e9f9f4);
-              border: 1px solid var(--1fa67a);
-              color: var(--1fa67a);
+              border: 1px solid var(--234BF3);
+              color: var(--234BF3);
 
               svg {
-                color: var(--1fa67a);
+                color: var(--234BF3);
               }
             }
           }
@@ -2216,7 +2216,7 @@
             font-size: 10px;
             font-weight: 500;
             background: var(--e9f9f4);
-            color: var(--1fa67a);
+            color: var(--234BF3);
             display: flex;
             align-items: center;
           }
@@ -2244,8 +2244,8 @@
 
                 &:hover {
                   background: var(--e9f9f4);
-                  border: 1px solid var(--1fa67a);
-                  color: var(--1fa67a);
+                  border: 1px solid var(--234BF3);
+                  color: var(--234BF3);
                 }
               }
 
@@ -2312,8 +2312,8 @@
 
             &:hover {
               background: #e9f9f4;
-              border: 1px solid #1fa67a;
-              color: #1fa67a;
+              border: 1px solid #234BF3;
+              color: #234BF3;
             }
           }
         }
@@ -2336,7 +2336,7 @@
         height: 100%;
 
         &:hover {
-          border: 1.5px dashed #1fa67a;
+          border: 1.5px dashed #234BF3;
           background: #e9f9f4;
         }
 
@@ -2351,13 +2351,13 @@
           margin-bottom: 12px;
 
           svg {
-            color: #1fa67a;
+            color: #234BF3;
             font-size: 18px;
           }
         }
 
         .add-new-text {
-          color: #1fa67a;
+          color: #234BF3;
           font-weight: 600;
           font-size: 13px;
           margin-bottom: 4px;
@@ -2401,7 +2401,7 @@
 
       /* Empty State CTA Button Override */
       .btn-primary {
-        background: #1fa67a !important;
+        background: #234BF3 !important;
         color: #fefefe !important;
         font-weight: 700;
         font-size: 14px;
@@ -3824,12 +3824,12 @@
 
           &:hover {
             background: var(--e9f9f4);
-            border: 1px solid var(--1fa67a);
+            border: 1px solid var(--234BF3);
           }
 
           &.active {
             background: var(--e9f9f4);
-            border: 1px solid var(--1fa67a);
+            border: 1px solid var(--234BF3);
           }
 
           .address-option-title {
@@ -3848,7 +3848,7 @@
         }
 
         .add-new {
-          color: var(--1fa67a);
+          color: var(--234BF3);
           font-weight: 600;
           font-size: 14px;
           border-radius: 8px;

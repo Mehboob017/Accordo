@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Col } from 'reactstrap';
 import Avatar from '@/components/common/Avatar';
-import Dhootapapeshwar from '../../../../public/assets/images/logo/sdl_logo.gif';
+import Dhootapapeshwar from '../../../../public/assets/images/logo/ac-logo.png';
 
 const FooterLogoContent = () => {
   const [logoAbc, setLogo] = useState('');

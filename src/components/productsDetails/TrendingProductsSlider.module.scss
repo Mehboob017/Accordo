@@ -23,7 +23,7 @@
   }
 
   :global(.slick-track) {
-    margin-left: 0;  
+    margin-left: 0;
     margin-right: 0;
     display: flex !important;
     margin-left: 0 !important;
@@ -42,7 +42,7 @@
 .slide-item {
   height: 100%;
   // margin-inline: 60px;
-  
+
   @media screen and (min-width:1200px) {
     margin-inline: auto;
   }
@@ -61,7 +61,7 @@
   height: calc(34px + 6 * (100vw - 320px) / 1600);
   border-radius: 999px;
   background: #fefefe;
-  color: #1FA67A;
+  color: #234BF3;
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -72,13 +72,14 @@
   }
 
   &:hover {
-    border-color: #1FA67A;
-    background: #1FA67A;
+    border-color: #234BF3;
+    background: #234BF3;
     color: #fefefe;
   }
-  &:focus{
-  background: #fefefe;
-  color: #1FA67A;
+
+  &:focus {
+    background: #fefefe;
+    color: #234BF3;
   }
 }
 

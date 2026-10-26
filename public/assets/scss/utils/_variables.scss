@@ -6,7 +6,7 @@
 
 // SCSS Variables (for backward compatibility where CSS variables can't be used)
 // Where possible, use var(--variable-name) instead of these SCSS variables
-$theme-color: #1FA67A; // Fallback - prefer var(--theme-color)
+$theme-color: #234BF3; // Fallback - prefer var(--theme-color)
 $black: #2B2B2B;
 $title-color: #1F2D3D;
 $danger-color: #E74C3C;
@@ -43,7 +43,7 @@ $card-footer-bg-color: var(--white);
 $card-hover-box-shadow: 0 0 40px rgba(8, 21, 66, 0.05);
 
 /* font family */
-$public-sans: 'Inter', sans-serif;
+$public-sans: 'Montserrat', sans-serif;
 
 /* Font Awesome Font Family */
 $fontawesome: 'Font Awesome 6 Free';

@@ -13,7 +13,7 @@
     }
 
     strong {
-      color: var(--2b2b2b);
+      color: var(--07112C);
       font-weight: 600;
     }
 
@@ -45,9 +45,10 @@
 }
 
 .imageWrapper {
-  max-width: 280px; /* Adjust based on your actual image size */
+  max-width: 280px;
+  /* Adjust based on your actual image size */
   width: 100%;
-  
+
   img {
     width: 100%;
     height: auto;

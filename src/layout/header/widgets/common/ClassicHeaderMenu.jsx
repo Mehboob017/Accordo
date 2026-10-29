@@ -8,7 +8,7 @@ import Avatar from '@/components/common/Avatar';
 import Link from 'next/link';
 import playstoreImage from '../../../../../public/assets/images/playstore.svg';
 import appstoreImage from '../../../../../public/assets/images/appstore.svg';
-import Dhootapapeshwar from '../../../../../public/assets/images/logo/sdl_logo.gif';
+import Dhootapapeshwar from '../../../../../public/assets/images/logo/ac-logo.png';
 import CartContext from '@/helper/cartContext';
 
 

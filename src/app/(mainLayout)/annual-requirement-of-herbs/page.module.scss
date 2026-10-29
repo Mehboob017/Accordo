@@ -127,6 +127,7 @@
 
 // Keep "Herb Name" column left-aligned; others centered
 .herbs-table {
+
   thead tr th:nth-child(2),
   tbody tr td:nth-child(2) {
     text-align: left;
@@ -241,6 +242,7 @@
   0% {
     background-position: -400px 0;
   }
+
   100% {
     background-position: 400px 0;
   }
@@ -248,12 +250,10 @@
 
 .herbs-skeleton-cell {
   border-radius: 6px;
-  background: linear-gradient(
-    90deg,
-    var(--skeleton-base, #e9ecef) 25%,
-    var(--skeleton-highlight, #f8f9fa) 50%,
-    var(--skeleton-base, #e9ecef) 75%
-  );
+  background: linear-gradient(90deg,
+      var(--skeleton-base, #e9ecef) 25%,
+      var(--skeleton-highlight, #f8f9fa) 50%,
+      var(--skeleton-base, #e9ecef) 75%);
   background-size: 800px 100%;
   animation: skeleton-shimmer 1.4s ease infinite;
 }
@@ -371,7 +371,7 @@
   }
 
   .annual-herbs-section {
-    background-color: var(--dark-color, #2b2b2b);
+    background-color: var(--dark-color, #07112C);
   }
 
   .herbs-table-container {

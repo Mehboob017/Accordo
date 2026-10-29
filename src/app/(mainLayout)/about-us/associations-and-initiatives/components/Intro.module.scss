@@ -12,7 +12,7 @@
 .title {
   // font-size: clamp(1.75rem, 1.3vw + 1.4rem, 2.2rem);
   font-weight: 700;
-  color: #2b2b2b;
+  color: #07112C;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -25,13 +25,13 @@
     color: var(--4a4a4a);
     line-height: 1.8;
     text-align: justify;
-    
+
     &:last-child {
       margin-bottom: 0;
     }
 
     strong {
-      color: var(--2b2b2b);
+      color: var(--07112C);
     }
   }
 }
@@ -115,6 +115,7 @@
   .box {
     padding: 16px 16px;
   }
+
   .imgWrap {
     max-height: 300px;
     margin-inline: auto;

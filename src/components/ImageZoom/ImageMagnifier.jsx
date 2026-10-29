@@ -24,7 +24,7 @@ import { getOptimizedCdnImageUrl } from '@/utils/helpers';
  * @param {number} props.magnifierConfig.gap - Gap between image and magnifier container (default: 20)
  * @param {number} props.magnifierConfig.mobileBreakpoint - Screen width below which zoom is disabled (default: 992)
  * @param {string} props.magnifierConfig.lensColor - Lens background color (default: 'rgba(0, 0, 0, 0.2)')
- * @param {string} props.magnifierConfig.lensBorderColor - Lens border color (default: '#2b2b2b')
+ * @param {string} props.magnifierConfig.lensBorderColor - Lens border color (default: '#07112C')
  */
 const ImageMagnifier = ({
   src,

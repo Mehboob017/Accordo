@@ -105,10 +105,10 @@ header {
   }
 
   .primary-nav-bar {
-    // background-color: #fafaf9;
-    background-color: #07112C;
+    // background-color: #F7F9FE;
+    background-color: #F7F9FE;
     // border-top: 1px solid var(--border-color);
-    border-top: 1px solid #3B455B;
+    border-top: 1px solid #D4DEF3;
     // padding: 4px 0;
     position: relative;
     // z-index: 9;
@@ -209,7 +209,7 @@ header {
               margin: 0 0 12px;
               font-size: 12px;
               line-height: 1.4;
-              color: #6f6f6f;
+              color: var(--subtitle-color);
             }
 
             .shop-by-category-image-wrap {
@@ -244,7 +244,7 @@ header {
 
           .nav-link {
             // color: var(--title-color);
-            color: #F3F7FF;
+            color: #07112C;
             font-size: 15px;
             font-weight: 500;
             padding: 0;
@@ -259,8 +259,8 @@ header {
             position: relative;
 
             &:hover {
-              // color: var(--theme-color);
-              color: #AAB9F7;
+              color: var(--theme-color);
+              // color: #AAB9F7;
             }
 
             &.dropdown-toggle {
@@ -1320,7 +1320,7 @@ header {
                 .header-icon,
                 svg {
                   font-size: 22px;
-                  color: #B8C4DF;
+                  color: #07112C;
                   // color: #4A4A4A;
                 }
 
@@ -1335,7 +1335,7 @@ header {
                   display: flex;
                   align-items: center;
                   justify-content: center;
-                  background-color: #FF6B5A;
+                  background-color: #EF2D2E;
                   color: var(--white);
                   font-size: 11px;
                   font-weight: 600;
@@ -1344,10 +1344,38 @@ header {
                 }
               }
 
+              &.header-cart-box .header-icon-wrap .header-icon-badge,
+              .header-cart-box .header-icon-wrap .header-icon-badge {
+                background-color: #c9f24d;
+                color: #07112C;
+                border: 1.5px solid #07112C;
+                font-weight: 700;
+                font-size: 10px;
+                box-sizing: border-box;
+                padding: 0 3px;
+                min-width: 16px;
+                height: 16px;
+                min-height: 16px;
+                border-radius: 999px;
+
+                &--empty {
+                  width: 16px;
+                  height: 16px;
+                  padding: 0;
+
+                  .header-badge-plus {
+                    width: 9px;
+                    height: 9px;
+                    stroke: #07112C;
+                    stroke-width: 3.5;
+                  }
+                }
+              }
+
               .header-icon-label {
                 font-size: 14px;
                 font-weight: 500;
-                color: #B8C4DF;
+                color: #07112C;
                 // color: #4A4A4A;
               }
 
@@ -1373,7 +1401,8 @@ header {
             // Login/Signup pill button
             .login-signup-pill {
               padding: 8px 6px;
-              background: #e9f9f4;
+              // background: var(--btn-qty-bg);
+              background: var(--theme-color);
               border-radius: 10px;
               cursor: pointer;
               font-size: 14px;
@@ -1383,19 +1412,19 @@ header {
               height: 44px;
 
               &:hover {
-                background: #A8E9D4;
+                background: #2044CD;
               }
 
               .delivery-icon {
                 .login-signup-icon {
                   font-size: 20px;
-                  color: var(--theme-color-dark, #0F6B5A);
+                  color: var(--btn-primary-text);
                 }
 
                 .login-signup-text {
                   font-size: 14px;
                   font-weight: 500;
-                  color: var(--theme-color-dark, #0F6B5A);
+                  color: var(--btn-primary-text);
                 }
               }
             }
@@ -5546,7 +5575,7 @@ header {
 
   h5 {
     font-size: 16px;
-    color: var(--2b2b2b);
+    color: var(--07112C);
     font-weight: 600;
     margin-bottom: 0;
   }
@@ -6171,7 +6200,7 @@ header {
 .top-nav .navbar-top .rightside-box .right-side-menu {
   .delivery-login-box.header-user-chip {
     background: var(--theme-color, #0da487);
-    border-radius: 10px;
+    border-radius: var(--btn-add-cart-border-radius);
     padding: 8px 10px;
     // box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
     cursor: pointer;
@@ -6241,7 +6270,7 @@ header {
 header.basic-header-redesign {
   .top-nav.top-header.sticky-header {
     // background: linear-gradient(180deg, #fefefe 0%, #fcfdfb 100%);
-    background: linear-gradient(180deg, #07112C 0%, #07112C 100%);
+    background: linear-gradient(180deg, #F7F9FE 0%, #F7F9FE 100%);
     // border-bottom: 1px solid rgba(variables.$title-color, 0.06);
     box-shadow: 0 12px 28px rgba(variables.$title-color, 0.05);
     // padding: 8px 0 0;
@@ -6483,6 +6512,7 @@ header.basic-header-redesign {
           }
 
           .dropdown-item {
+            color: var(--subtitle-color);
 
             &:hover,
             &:focus {

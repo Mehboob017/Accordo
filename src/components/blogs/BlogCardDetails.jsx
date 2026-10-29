@@ -76,7 +76,7 @@ const BlogCardDetails = ({ Blog, sidebarType, categorySlug, rawBlog, onVideoSele
     borderRadius: '12px',
     overflow: 'hidden',
     border: '1px solid #e0e0e0',
-    // backgroundColor: '#2b2b2b',
+    // backgroundColor: '#07112C',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

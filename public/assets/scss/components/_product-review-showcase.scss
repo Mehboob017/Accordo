@@ -50,8 +50,9 @@
 .productReviewsSection .starLabel span {
   font-size: clamp(16px, 2vw, 20px);
   font-weight: 700;
-  color: #2b2b2b;
+  color: #07112C;
 }
+
 .productReviewsSection .starLabel svg {
   color: #ffc107;
   font-size: 14px;
@@ -194,7 +195,7 @@
   border-radius: 24px;
   padding: 28px 24px 30px;
   background-color: #fefefe;
-  box-shadow:  0 8px 8px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.09);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -204,11 +205,11 @@
 
 .productReviewsSection .quoteMark {
   position: absolute;
-  font-size: 60px;        // Much larger
-  color: #d6ece5;          // Slightly more visible
+  font-size: 60px; // Much larger
+  color: #d6ece5; // Slightly more visible
   pointer-events: none;
   line-height: 1;
-  font-family: Georgia, 'Times New Roman', serif;  // Serif gives the classic curly quote look
+  font-family: Georgia, 'Times New Roman', serif; // Serif gives the classic curly quote look
   font-weight: 700;
 }
 
@@ -281,4 +282,3 @@
   max-width: 260px;
   z-index: 1;
 }
-

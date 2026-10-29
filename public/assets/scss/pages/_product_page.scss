@@ -527,9 +527,9 @@
       border: 1px solid transparent;
 
       &.in-stock {
-        background-color: #E6F7F1;
-        color: #166A4C;
-        border: 1px solid #A6E3CD;
+        background-color: #C9F24D;
+        color: #07112C;
+        // border: 1px solid #A6E3CD;
       }
 
       &.out-of-stock {
@@ -563,7 +563,7 @@
       &:hover {
         border-color: #DADADA;
         color: #234BF3;
-        background: #FAFAF9;
+        background: #F7F9FE;
       }
 
       &.wishlist-active {
@@ -590,7 +590,7 @@
       &:hover {
         border-color: #E2E8ED;
         color: #2044CD;
-        background: #E9F9F4;
+        background: #EDF2FF;
       }
     }
 
@@ -657,8 +657,8 @@
     }
 
     .variation-keyword-tag {
-      background-color: #E9F9F4;
-      color: #2044CD;
+      background-color: #EDF2FF;
+      color: #07112C;
       padding: 4px 10px;
       border-radius: 999px;
       font-size: 11px;
@@ -679,7 +679,7 @@
       font-size: calc(22px + (28 - 22) * ((100vw - 320px) / (1920 - 320)));
       line-height: 1.3;
       font-weight: 700;
-      color: #2B2B2B;
+      color: #07112C;
       margin-bottom: 8px;
     }
 
@@ -741,7 +741,7 @@
         flex-wrap: wrap;
         gap: 8px;
         align-items: center;
-        color: #2044CD;
+        color: var(--product-card-name);
         font-size: 26px;
         line-height: 22.6px;
 
@@ -1604,7 +1604,7 @@
 
         &.active {
           border: 2px solid #234BF3;
-          background-color: #E9F9F4;
+          background-color: #EDF2FF;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         }
 
@@ -1645,7 +1645,7 @@
           .variation-price-strong {
             font-size: 14px;
             font-weight: 600;
-            color: #2B2B2B;
+            color: #07112C;
             line-clamp: 2;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -1682,12 +1682,12 @@
           font-size: 12px;
 
           &.in-stock {
-            color: #2ECC71;
+            color: #047135;
             text-wrap: nowrap;
           }
 
           &.out-of-stock {
-            color: #dc3545;
+            color: #D3101C;
             text-wrap: nowrap;
           }
         }
@@ -1752,7 +1752,7 @@
       align-items: center;
       width: 100%;
       gap: 8px;
-      background: #FAFAF9;
+      background: #F7F9FE;
       border: 1px solid #E2E8ED;
       padding: 8px;
       border-radius: 8px;
@@ -1769,7 +1769,7 @@
 
         strong {
           font-weight: 600;
-          color: #2B2B2B;
+          color: #07112C;
         }
       }
     }
@@ -1947,11 +1947,11 @@
           @include common.flex_common;
           min-height: 44px;
           padding: 0 1em;
-          border: 1px solid #F57C00;
-          background-color: #F57C00;
-          color: #fefefe;
+          border: 1px solid var(--theme-color);
+          background-color: #EDF2FF;
+          color: var(--theme-color);
           text-align: center;
-          border-radius: 10px;
+          border-radius: var(--btn-buy-now-border-radius);
           font-weight: 600;
           font-size: 15px;
           line-height: 20px;
@@ -1962,10 +1962,10 @@
           flex: 1 0 auto;
 
           &:hover {
-            background-color: #F57C00 !important;
-            border-color: #F57C00 !important;
-            color: #FFFFFF !important;
-            box-shadow: 0 4px 12px 0 #F57C0025 !important;
+            background-color: var(--btn-buy-now-bg-hover) !important;
+            border-color: var(--btn-buy-now-bg-hover) !important;
+            color: var(--btn-buy-now-text-hover);
+            // box-shadow: 0 4px 12px 0 #F57C0025 !important;
           }
 
           &:disabled {
@@ -1997,7 +1997,7 @@
           background: var(--btn-add-cart-bg);
           color: var(--btn-add-cart-text);
           border: 1px solid var(--btn-add-cart-border);
-          border-radius: 10px;
+          border-radius: var(--btn-add-cart-border-radius);
           font-size: 15px;
           font-weight: 600;
           text-transform: capitalize;
@@ -2321,9 +2321,9 @@
         align-items: center;
         position: relative;
         flex: 1 1 auto;
-        background-color: #FAFAF9;
-        border: 1px solid #E2E2E2;
-        border-radius: 8px;
+        background-color: var(--input-bg);
+        border: 1px solid var(--input-border);
+        border-radius: var(--input-border-radius);
         padding: 0 12px;
         transition: all 0.2s ease;
         height: clamp(38px, calc(38px + (44 - 38) * ((100vw - 320px) / (1920 - 320))), 44px);
@@ -2334,14 +2334,14 @@
 
         .pincode-input-icon {
           font-size: 18px;
-          color: #6F6F6F;
+          color: var(--input-placeholder);
           flex-shrink: 0;
         }
 
         .pincode-input {
           flex: 1;
           border: none;
-          background: #FAFAF9;
+          background: var(--input-bg);
           padding: 8px;
           font-size: 16px;
           width: 100%;
@@ -2349,7 +2349,7 @@
           outline: none;
 
           &::placeholder {
-            color: #9E9E9E;
+            color: var(--input-placeholder);
             font-size: 16px;
           }
 
@@ -2358,7 +2358,7 @@
 
             &::placeholder {
               // color: #111111 !important;
-              color: #9e9e9e !important;
+              color: var(--input-placeholder-focus) !important;
             }
           }
         }
@@ -2411,7 +2411,7 @@
         padding: 0 12px;
         border-radius: 8px;
         border: 1px solid #E2E2E2;
-        background-color: #FAFAF9;
+        background-color: #F7F9FE;
         font-size: 14px;
         outline: none;
 
@@ -3045,7 +3045,7 @@
           background: var(--btn-add-cart-bg);
           color: var(--btn-add-cart-text);
           border: 1px solid var(--btn-add-cart-border);
-          border-radius: 10px;
+          border-radius: var(--btn-add-cart-border-radius);
           font-size: 15px;
           font-weight: 600;
           text-transform: capitalize;
@@ -3712,11 +3712,11 @@
     @include common.flex_common;
     min-height: 44px;
     padding: 0 1em;
-    border: 1px solid #F57C00;
-    background-color: #F57C00;
-    color: #fefefe;
+    border: 1px solid var(--theme-color);
+    background-color: #EDF2FF;
+    color: var(--theme-color);
     text-align: center;
-    border-radius: 10px;
+    border-radius: var(--btn-buy-now-border-radius);
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
@@ -3727,10 +3727,10 @@
     flex: 1 0 auto;
 
     &:hover {
-      background-color: #F57C00 !important;
-      border-color: #F57C00 !important;
-      color: #FFFFFF !important;
-      box-shadow: 0 4px 12px 0 #F57C0025 !important;
+      background-color: var(--btn-buy-now-bg-hover) !important;
+      border-color: var(--btn-buy-now-bg-hover) !important;
+      color: var(--btn-buy-now-text-hover);
+      // box-shadow: 0 4px 12px 0 #F57C0025 !important;
     }
 
     .label-short {
@@ -3756,7 +3756,7 @@
     background: var(--btn-add-cart-bg);
     color: var(--btn-add-cart-text);
     border: 1px solid var(--btn-add-cart-border);
-    border-radius: 10px;
+    border-radius: var(--btn-add-cart-border-radius);
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
@@ -4669,9 +4669,9 @@
     display: flex;
     align-items: center;
     position: relative;
-    background-color: #FAFAF9;
-    border: 1px solid #E2E2E2;
-    border-radius: 8px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: var(--input-border-radius);
     padding: 0 12px;
     transition: all 0.2s ease;
     height: clamp(38px, calc(38px + (44 - 38) * ((100vw - 320px) / (1920 - 320))), 44px);
@@ -4689,13 +4689,13 @@
     .pincode-input {
       flex: 1;
       border: none;
-      background: #FAFAF9;
+      background: var(--input-bg);
       padding: 8px;
       font-size: 16px;
       outline: none;
 
       &::placeholder {
-        color: #9E9E9E;
+        color: var(--input-placeholder);
         font-size: 16px;
       }
 
@@ -4703,7 +4703,7 @@
         box-shadow: none;
 
         &::placeholder {
-          color: #9e9e9e !important;
+          color: var(--input-placeholder-focus) !important;
         }
       }
     }
@@ -4790,7 +4790,7 @@
 
 /* ── Global shimmer utility (used by sticky Add to Cart, etc.) ──
    NOTE: This must be outside page-specific wrappers, otherwise selectors like
-   `.product-section .right-box-contain .shimmer` won't match the fixed
+   `.product-section  .shimmer` won't match the fixed
    sticky bar markup. */
 @keyframes shimmer-ltr {
   0% {

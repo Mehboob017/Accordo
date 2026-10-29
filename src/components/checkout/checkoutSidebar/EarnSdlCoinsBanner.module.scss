@@ -38,8 +38,8 @@
   justify-content: center;
   text-align: center;
   gap: 16px;
-  background-color: var(--fffbeb);
-  border: 1px solid var(--f59e0b);
+  background-color: #FFEDE3;
+  border: 1px solid #F29768;
 }
 
 .bannerLeft {
@@ -66,7 +66,7 @@
 .title {
   font-size: 13px;
   font-weight: 500;
-  color: var(--2b2b2b);
+  color: var(--07112C);
   line-height: 1.2;
   text-align: center;
 }
@@ -122,6 +122,7 @@
 }
 
 @keyframes sdlCoinPulse {
+
   0%,
   100% {
     transform: scale(1);

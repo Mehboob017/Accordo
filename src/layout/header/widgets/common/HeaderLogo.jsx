@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import ThemeOptionContext from '@/helper/themeOptionsContext';
 import Avatar from '@/components/common/Avatar';
-import Dhootapapeshwar from '../../../../../public/assets/images/logo/ac-logo-white.png';
+import Dhootapapeshwar from '../../../../../public/assets/images/logo/ac-logo.png';
 import { RiMenuLine } from 'react-icons/ri';
 import { usePathname } from 'next/navigation';
 

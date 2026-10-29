@@ -11,7 +11,7 @@
   .ugc-grid {
     margin-top: 20px;
 
-  .slick-track {
+    .slick-track {
       margin-left: 0;
     }
   }
@@ -22,7 +22,8 @@
    =========================== */
 .ugc-card {
   background: var(--white);
-  border-radius: 16px;
+  --product-card-border-radius: 12px;
+  border-radius: var(--product-card-border-radius);
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.3s ease;
@@ -77,12 +78,10 @@
     left: 0;
     right: 0;
     height: 55%;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.72) 0%,
-      rgba(0, 0, 0, 0.35) 50%,
-      transparent 100%
-    );
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.72) 0%,
+        rgba(0, 0, 0, 0.35) 50%,
+        transparent 100%);
     pointer-events: none;
     z-index: 1;
   }
@@ -158,11 +157,11 @@
 
   /* ---------- Mini product card ---------- */
   &__product {
-    --ugc-card-product-bg: #E7F6F6;
+    --ugc-card-product-bg: #EDF2FF;
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: var(--ugc-card-product-bg, #E7F6F6);
+    background-color: var(--ugc-card-product-bg, #EDF2FF);
     padding: 10px 15px;
     border-radius: 12px;
     overflow: hidden;
@@ -174,7 +173,7 @@
     height: 40px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
     border-radius: 12px;
     overflow: hidden;
 
@@ -522,6 +521,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

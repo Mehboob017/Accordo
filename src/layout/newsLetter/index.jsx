@@ -5,7 +5,7 @@ import CustomModal from '@/components/common/CustomModal';
 import Btn from '@/elements/buttons/Btn';
 import newsLetterImage from '../../../public/assets/images/newsletter/3.jpg';
 import Cookies from 'js-cookie';
-import Logo from '../../../public/assets/images/logo/sdl_logo.gif';
+import Logo from '../../../public/assets/images/logo/ac-logo.png';
 
 const NewsLetterModal = () => {
   const [modal, setModal] = useState(true);

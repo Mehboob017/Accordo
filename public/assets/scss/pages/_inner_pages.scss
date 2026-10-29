@@ -2301,7 +2301,7 @@
           $gap: calc(2px + (5 - 2) * ((100vw - 320px) / (1920 - 320))));
         align-items: center;
         // background-color: var(--light-gray);
-        background-color: var(--white);
+        background-color: #FFFFFF;
         padding: calc(15px + (27 - 15) * ((100vw - 320px) / (1920 - 320))) calc(15px + (27 - 15) * ((100vw - 320px) / (1920 - 320))) calc(15px + (27 - 15) * ((100vw - 320px) / (1920 - 320))) calc(40px + (41 - 30) * ((100vw - 320px) / (1920 - 320)));
         position: relative;
         border-radius: 10px;
@@ -2318,11 +2318,11 @@
           @include common.center(vertical);
           position: absolute;
           left: -21px;
-          background-color: var(--theme-color);
+          background-color: #EDF2FF;
           padding: 13px;
           border-radius: 7px;
           display: inherit;
-          color: var(--white);
+          color: var(--theme-color);
 
           body[dir='rtl'] & {
             left: unset;
@@ -3490,7 +3490,7 @@
 
                 .recent-post-card__title-link {
                   display: block;
-                  color: #2b2b2b;
+                  color: #07112C;
                 }
 
                 .recent-post-card__title {
@@ -3903,7 +3903,7 @@
 
         h3 {
           margin: 4px 0 6px;
-          color: #2b2b2b;
+          color: #07112C;
           font-weight: 600;
           line-height: 130%;
           text-transform: capitalize;
@@ -4085,7 +4085,7 @@
         a {
           h3 {
             // color: var(--theme-color);
-            color: #2b2b2b;
+            color: #07112C;
           }
         }
 
@@ -4958,7 +4958,7 @@
         font-weight: 600;
         text-transform: uppercase;
         font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
-        background-color: var(--e9f9f4);
+        background-color: var(--EDF2FF);
       }
 
       .reviewer-name {
@@ -4969,7 +4969,7 @@
         }
 
         h6 {
-          color: var(--2b2b2b);
+          color: var(--07112C);
           margin-top: 6px;
         }
       }

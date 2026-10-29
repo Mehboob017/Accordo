@@ -26,16 +26,16 @@
   position: relative;
   // background-color: var(--light-gray, #f5f5f5);
   // border: 1px solid var(--border-color, #e5e5e5);
-  background-color: #FAFAF9;
-  border: 1px solid #E2E2E2;
-  border-radius: 8px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: var(--input-border-radius);
   padding: 0 12px;
   transition: all 0.2s ease;
   height: 44px;
 
   &:focus-within {
     // border-color: var(--theme-color);
-    border-color: #234BF3 !important;
+    border-color: var(--input-border-focus) !important;
     background-color: var(--input-bg-focus);
     // box-shadow: 0 0 0 3px rgba(13, 164, 135, 0.1); 
   }
@@ -50,7 +50,7 @@
     flex: 1;
     border: none;
     // background: transparent;
-    background: #FAFAF9;
+    background: var(--input-bg);
     padding: 8px;
     font-size: 16px;
     outline: none;
@@ -163,7 +163,7 @@
   right: 0;
   max-height: 350px;
   overflow-y: auto;
-  background-color: var(--white, #fff);
+  background-color: #EDF2FF;
   border: 1px solid var(--border-color, #e5e5e5);
   border-top: none;
   border-bottom-left-radius: 8px;
@@ -199,7 +199,7 @@
   color: #262626;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  background-color: var(--light-gray, #f9f9f9);
+  background-color: #EDF2FF;
   border-bottom: 1px solid var(--border-color, #e5e5e5);
 
   svg {
@@ -287,7 +287,7 @@
 }
 
 .search-highlight {
-  color: #2b2b2b;
+  color: #07112C;
   font-weight: 600;
   padding: 0 1px;
 }

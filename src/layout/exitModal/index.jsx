@@ -4,7 +4,7 @@ import { ModalHeader } from 'reactstrap';
 import CustomModal from '@/components/common/CustomModal';
 import newsLetterImage from '../../../public/assets/images/newsletter/3.jpg';
 import { useTranslation } from '@/utils/translations';
-import Logo from '../../../public/assets/images/logo/sdl_logo.gif';
+import Logo from '../../../public/assets/images/logo/ac-logo.png';
 import Cookies from 'js-cookie';
 
 const ExitModal = () => {

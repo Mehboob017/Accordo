@@ -18,14 +18,14 @@
   transition: all 0.2s ease;
 
   &.checked {
-    background-color: var(--e9f9f4);
+    background-color: var(--EDF2FF);
     border: 2px solid var(--234BF3);
   }
 
   &:hover:not(:disabled) {
     background: var(--light-gray);
     border-color: var(--theme-color);
-    background: var(--e9f9f4);
+    background: var(--EDF2FF);
     border-color: var(--234BF3);
   }
 

@@ -94,8 +94,8 @@
 :root {
   --subtle-text: #6f6f6f;
   --6f6f6f: #6f6f6f;
-  --2b2b2b: #2b2b2b;
-  --e9f9f4: #e9f9f4;
+  --07112C: #07112C;
+  --EDF2FF: #EDF2FF;
   --e2e2e2: #e2e2e2;
   --fdecea: #fdecea;
   --f5f5f0: #f5f5f0;
@@ -106,20 +106,27 @@
   --9a9a9a: #9a9a9a;
   --4a4a4a: #4a4a4a;
   --234BF3: #234BF3;
-  --page-bg-color: #FAFAF9;
+  --page-bg-color: #F7F9FE;
 
   // product card variables
-  --product-card-bg: #fefefe;
-  --product-card-name: #2B2B2B;
+  // --product-card-bg: #fefefe;
+  --product-card-bg: #FFFFFF;
+  --product-card-name: #07112C;
   --product-card-size: #6f6f6f;
+  --product-card-border-radius: 12px;
 
-  --footer-title-color: #2b2b2b;
-  --footer-text-color: #6f6f6f;
+  --footer-title-color: #07112C;
+  --footer-text-color: #535E75;
+  // --footer-title-color: #07112C;
+  // --footer-text-color: #6f6f6f;
 
   // In Stock badge colors
-  --product-card-instock-bg: #E6F7F1;
-  --product-card-instock-text: #166A4C;
-  --product-card-instock-stroke: #A6E3CD;
+  // --product-card-instock-bg: #E6F7F1;
+  --product-card-instock-bg: #C9F24D;
+  // --product-card-instock-text: #166A4C;
+  --product-card-instock-text: #07112C;
+  // --product-card-instock-stroke: #A6E3CD;
+  --product-card-instock-stroke: #C9F24D;
 
   // Out of Stock badge colors
   --product-card-outstock-bg: rgba(220, 53, 69, 0.1);
@@ -127,16 +134,17 @@
   --product-card-outstock-stroke: rgba(220, 53, 69, 0.2);
 
   // ratings
-  --product-card-rating-count: #4A4A4A;
+  --product-card-rating-count: #07112C;
   --product-card-rating-star: #FFC107;
-  --product-card-rating-total: #9E9E9E;
+  --product-card-rating-total: #535E75;
 
   // price
-  --product-card-discounted-price: #2B2B2B;
-  --product-card-selling-price: #6f6f6f;
-  --product-card-disc-percent: #F57C00;
-  --product-card-disc-percent-bg: #FFF4E5;
-  --product-card-inclusive-tax: #6F6F6F;
+  --product-card-discounted-price: #07112C;
+  --product-card-selling-price: #535E75;
+  --product-card-disc-percent: #DD7A44;
+  --product-card-disc-percent-bg: #FFEDE3;
+  // --product-card-inclusive-tax: #6F6F6F;
+  --product-card-inclusive-tax: #535E75;
 
   // tags
   --product-card-featured-text: #C17900;
@@ -146,21 +154,24 @@
 
   // wishlist
   --wishlist-border: #6F6F6F;
-  --wishlist-filled: #E53935;
+  --wishlist-filled: #EF2D2E;
   --wishlist-filled-bg: #FDF3F2;
 
   // Product action buttons
-  --btn-buy-now-bg: #FF8C42;
-  --btn-buy-now-bg-hover: #FF7829;
+  --btn-buy-now-bg: #EDF2FF;
+  --btn-buy-now-bg-hover: #234BF3;
   --btn-buy-now-shadow-hover: rgba(255, 120, 41, 0.25);
-  --btn-buy-now-text: #fefefe;
-  --btn-buy-now-border: #FF8C42;
+  --btn-buy-now-text: #234BF3;
+  --btn-buy-now-text-hover: #FFFFFF;
+  --btn-buy-now-border: #234BF3;
+  --btn-buy-now-border-radius: 8px;
 
   --btn-add-cart-bg: #234BF3;
   --btn-add-cart-bg-hover: #2044CD;
   --btn-add-cart-shadow-hover: rgba(13, 164, 134, 0.25);
   --btn-add-cart-text: #fefefe;
   --btn-add-cart-border: #234BF3;
+  --btn-add-cart-border-radius: 8px;
 
   --btn-out-stock-bg: #F4F4F3;
   --btn-out-stock-text: #9E9E9E;
@@ -171,9 +182,10 @@
   --btn-notify-text: #fefefe;
   --btn-notify-border: #234BF3;
 
-  --btn-qty-bg: #E9F9F4;
+  // --btn-qty-bg: #EDF2FF;
+  --btn-qty-bg: #EDF2FF;
   --btn-qty-bg-hover: #0c9178;
-  --btn-qty-text: #2B2B2B;
+  --btn-qty-text: #07112C;
   --btn-qty-border: #234BF3;
   --btn-qty-value-bg: #fefefe;
   --btn-qty-value-text: #2044CD;

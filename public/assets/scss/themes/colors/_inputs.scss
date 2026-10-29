@@ -6,10 +6,11 @@
 .theme-customer {
 
   // Default State
-  --input-bg: #fefefe;
-  --input-text: #2B2B2B;
-  --input-border: #DADADA;
-  --input-placeholder: #9E9E9E; //TO BE CHANGED LATER
+  --input-bg: #EDF2FF;
+  --input-text: #07112C;
+  --input-border: #D4DEF3;
+  --input-border-radius: 8px;
+  --input-placeholder: #535E75; //TO BE CHANGED LATER
   --input-shadow: none;
 
   // Hover State
@@ -17,22 +18,22 @@
 
   // Focus State
   --input-border-focus: #234BF3;
-  --input-bg-focus: #fefefe;
-  --input-text-focus: #2B2B2B;
+  --input-bg-focus: #EDF2FF;
+  --input-text-focus: #07112C;
   --input-placeholder-focus: #111111;
 
   // Filled State
-  --input-bg-filled: #FAFAF9;
-  --input-border-filled: #DADADA;
-  --input-text-filled: #2B2B2B;
-  --input-placeholder-filled: #2B2B2B;
+  --input-bg-filled: #F7F9FE;
+  --input-border-filled: #D4DEF3;
+  --input-text-filled: #07112C;
+  --input-placeholder-filled: #07112C;
 
   // Error State
-  --input-border-invalid: #E53935;
-  --input-bg-invalid: #FDECEA;
-  --input-text-invalid: #8A1F1C;
-  --input-text-invalid-focus: #8A1F1C;
-  --input-placeholder-invalid: #8A1F1C;
+  --input-border-invalid: #EF2D2E;
+  --input-bg-invalid: #FEE2DE;
+  --input-text-invalid: #AB0D15;
+  --input-text-invalid-focus: #AB0D15;
+  --input-placeholder-invalid: #AB0D15;
 
   // Disabled State
   --input-bg-disabled: #F4F4F3;
@@ -75,10 +76,11 @@
 .input-common {
   // border: 1px solid var(--input-border);
   border-color: var(--input-border) !important;
-  // background: var(--input-bg);
+  background: var(--input-bg) !important;
   color: var(--input-text);
   font-weight: 500 !important;
   font-size: 16px !important;
+  border-radius: var(--input-border-radius);
 
   &::placeholder {
     color: var(--input-placeholder) !important;
@@ -112,7 +114,7 @@
 
   &.is-invalid {
     border-color: var(--input-border-invalid) !important;
-    // background: var(--input-bg-invalid) !important;
+    background: var(--input-bg-invalid) !important;
     box-shadow: var(--input-shadow-invalid) !important;
 
     &::placeholder {
@@ -150,7 +152,7 @@
 }
 
 .message-error {
-  color: #E74C3C !important;
+  color: #AB0D15 !important;
 }
 
 select.input-common:focus,

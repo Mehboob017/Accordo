@@ -319,7 +319,7 @@
       .name {
         font-size: 14px;
         font-weight: 600;
-        color: var(--2b2b2b);
+        color: var(--07112C);
         margin-bottom: 0px;
         line-height: 1.3;
         display: -webkit-box;
@@ -1219,11 +1219,11 @@
               @include common.flex_common;
               min-height: 44px;
               padding: 0 1em;
-              border: 1px solid #F57C00;
-              background-color: #F57C00;
-              color: #fefefe;
+              border: 1px solid var(--btn-buy-now-border);
+              background-color: var(--btn-buy-now-bg);
+              color: var(--btn-buy-now-text);
               text-align: center;
-              border-radius: 10px;
+              border-radius: var(--btn-buy-now-border-radius);
               font-weight: 600;
               font-size: 15px;
               line-height: 20px;
@@ -1234,10 +1234,9 @@
               flex: 1 0 auto;
 
               &:hover {
-                background-color: #F57C00 !important;
-                border-color: #F57C00 !important;
-                color: #FFFFFF !important;
-                box-shadow: 0 4px 12px 0 #F57C0025 !important;
+                background-color: var(--btn-buy-now-bg-hover) !important;
+                border-color: var(--btn-buy-now-bg-hover) !important;
+                color: var(--btn-buy-now-text-hover) !important;
               }
 
               &:disabled {
@@ -1273,7 +1272,7 @@
               background: var(--btn-add-cart-bg);
               color: var(--btn-add-cart-text);
               border: 1px solid var(--btn-add-cart-border);
-              border-radius: 10px;
+              border-radius: var(--btn-add-cart-border-radius);
               font-size: 15px;
               font-weight: 600;
               text-transform: capitalize;
@@ -2841,7 +2840,7 @@
   padding: calc(7px + (14 - 7) * ((100vw - 320px) / (1920 - 320)));
   position: relative;
   background-color: var(--light-gray);
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
   transition: all 0.25s ease-in-out;
   border: 1px solid var(--e2e2e2);

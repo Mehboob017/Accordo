@@ -129,15 +129,15 @@
   display: flex;
   align-items: center;
   position: relative;
-  background-color: var(--white);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: var(--input-border-radius);
   overflow: hidden;
   transition: all 0.2s ease;
   padding: 0;
 
   &:focus-within {
-    border-color: #234BF3;
+    border-color: var(--input-border-focus);
     background-color: var(--input-bg-focus);
     // box-shadow: 0 0 0 3px rgba(var(--theme-color-rgb), 0.1);
   }
@@ -276,7 +276,7 @@
   color: #262626;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  background-color: var(--light-gray);
+  background-color: #EDF2FF;
   border-bottom: 1px solid var(--border-color);
 
   .clear-recent-btn {
@@ -368,7 +368,7 @@
 }
 
 .store-search-container .search-highlight {
-  color: #2b2b2b;
+  color: #07112C;
   font-weight: 600;
 }
 

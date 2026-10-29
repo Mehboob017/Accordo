@@ -121,7 +121,7 @@
   &__colon {
     font-size: clamp(14px, calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320))), 15px);
     font-weight: 600;
-    color: #2b2b2b;
+    color: #07112C;
     line-height: 1.4;
   }
 
@@ -170,7 +170,7 @@
     transition: background-color 0.2s ease, border 0s ease, color 0s ease;
 
     &:hover {
-      background-color: #fafaf9;
+      background-color: #F7F9FE;
       outline: 1px solid var(--border-color);
       color: var(--theme-color);
     }

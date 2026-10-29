@@ -450,7 +450,7 @@ const ProductBox1Cart = ({
           </div>
         ) : (
           <div className="dual-cart-buttons">
-            {showBuyNow && (
+            {/* {showBuyNow && (
               <button
                 className="btn-buy-now"
                 onClick={handleBuyNow}
@@ -472,7 +472,7 @@ const ProductBox1Cart = ({
                   )}
                 </span>
               </button>
-            )}
+            )} */}
 
             {/* Add to Cart button OR Quantity controls */}
             {isOpen && !isBook && productQty >= 1 ? (

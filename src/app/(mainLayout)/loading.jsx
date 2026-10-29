@@ -1,5 +1,5 @@
 import Loader from '@/layout/loader';
 
-export default function Loadingtest() {
+export default function Loading() {
   return <Loader />;
 }

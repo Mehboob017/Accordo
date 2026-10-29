@@ -2,7 +2,8 @@
 
 import React, { useContext, useEffect, useRef } from 'react';
 import { Col, Row } from 'reactstrap';
-import TopbarSlider from './TopbarSlider';
+import TopbarMarquee from './TopbarMarquee';
+// import TopbarSlider from './TopbarSlider';
 import HeaderGetApp from './HeaderGetApp';
 import { usePathname } from 'next/navigation';
 // import Link from 'next/link';
@@ -31,34 +32,24 @@ const HeaderTopBar = ({ isHidden }) => {
       className={`header-top header-top-bar ${pathName === '/checkout' ? 'd-none' : ''} ${isHidden ? 'is-hidden' : ''}`}
       ref={addClass}
     >
-      <div className="container-fluid-lg header-top-bar__inner">
+      <div className=" header-top-bar__inner">
         <Row className="align-items-center">
-          <TopbarSlider />
-          <Col xs={5} sm={3} xxl={3}>
+          <Col xs={12}>
+            {/* <TopbarSlider /> */}
+            <TopbarMarquee />
+          </Col>
+          {/* <Col xs={5} sm={3} xxl={3}>
             <ul className="about-list right-nav-about">
               <li className="right-nav-list d-none d-sm-inline-block">
                 <a href="/find-the-store" className="text-reset text-nowrap">
-                   Find Store
+                  Find Store
                 </a>
               </li>
-              {/* <li className="right-nav-list d-none d-sm-inline-block">
-                <a href="#" className="text-reset text-nowrap">
-                  Track Order
-                </a>
-              </li> */}
               <li className="right-nav-list">
                 <HeaderGetApp />
               </li>
-              {/* <li className="right-nav-list d-lg-flex align-items-center d-none">
-                <a
-                  href="/contact-us"
-                  className="text-reset text-nowrap d-flex align-items-center gap-1"
-                >
-                  <RiPhoneLine className="text-white" /> Contact Us
-                </a>
-              </li> */}
             </ul>
-          </Col>
+          </Col> */}
         </Row>
       </div>
     </div>

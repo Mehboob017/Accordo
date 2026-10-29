@@ -69,11 +69,11 @@ $transition-speed: 0.2s;
   color: $text-dark;
 
   &:hover {
-    background: #e9f9f4;
+    background: #EDF2FF;
   }
 
   &.active {
-    background: #e9f9f4;
+    background: #EDF2FF;
     color: $primary-color;
 
     &::after {
@@ -109,4 +109,3 @@ $transition-speed: 0.2s;
     padding: 6px 10px;
   }
 }
-

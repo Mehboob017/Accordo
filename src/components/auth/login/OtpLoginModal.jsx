@@ -47,7 +47,7 @@ import CameraModal from './components/CameraModal';
 import ProfilePickerModal from './components/ProfilePickerModal';
 
 // Assets
-import BrandLogo from '../../../../public/assets/images/logo/sdl_logo.gif';
+import BrandLogo from '../../../../public/assets/images/logo/ac-logo.png';
 import playstoreImage from '../../../../public/assets/images/icon/play-store.png';
 import appstoreImage from '../../../../public/assets/images/icon/app-store.png';
 import { useUser } from '@/utils/hooks/useUser';

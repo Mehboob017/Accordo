@@ -17,7 +17,7 @@ const CustomHeading = (props) => {
         <h2 className="mb-3">{title}</h2>
         {/* {svgUrl && <span className={`title-leaf ${svgClass}`}>{svgUrl}</span>} */}
         {subTitle && (
-          <p style={{ color: '#2b2b2b', lineHeight: '1.6' }}>{subTitle}</p>
+          <p style={{ color: '#07112C', lineHeight: '1.6' }}>{subTitle}</p>
         )}
       </div>
       {props.children && props.children}

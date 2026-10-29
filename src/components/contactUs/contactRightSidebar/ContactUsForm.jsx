@@ -178,6 +178,7 @@ const ContactUsForm = () => {
                 placeholder: t('EnterPincode'),
                 toplabel: 'Pincode',
                 require: 'true',
+                className: 'input-common contact-us-form-input',
                 type: 'tel',
                 inputMode: 'numeric',
                 maxLength: 6,
@@ -193,6 +194,7 @@ const ContactUsForm = () => {
                 placeholder: t('EnterSubject'),
                 toplabel: 'Subject',
                 require: 'false',
+                className: 'input-common contact-us-form-input',
                 colprops: { xxl: 6, lg: 12, sm: 6 },
                 onInput: (e) =>
                   (e.target.value = e.target.value.replace(/[^a-zA-Z\s]/g, '')),

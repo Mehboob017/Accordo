@@ -47,7 +47,7 @@
     margin: 0;
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--2b2b2b);
+    color: var(--07112C);
   }
 
   .closeBtn {
@@ -112,7 +112,7 @@
       margin: 0 0 4px;
       font-size: 1.125rem;
       font-weight: 600;
-      color: var(--2b2b2b);
+      color: var(--07112C);
     }
 
     p {
@@ -123,7 +123,7 @@
 
     .loginLink {
       font-size: 0.875rem;
-      color: var(--2b2b2b);
+      color: var(--07112C);
       font-weight: 500;
       text-decoration: underline;
     }
@@ -156,13 +156,13 @@
 
       &:hover,
       &:active {
-        background-color: var(--e9f9f4);
+        background-color: var(--EDF2FF);
         color: var(--234BF3);
       }
 
       &.active {
         border-left: 3px solid var(--theme-color);
-        background-color: var(--e9f9f4, #e9f9f4);
+        background-color: var(--EDF2FF, #EDF2FF);
         color: var(--234BF3, #234BF3);
 
         .navLinkLeft {
@@ -188,7 +188,7 @@
 
         .navIcon {
           font-size: 1.25rem;
-          color: var(--2b2b2b2);
+          color: var(--07112C2);
           display: flex;
           transition: color 0.2s ease;
         }
@@ -202,7 +202,7 @@
 
       .navChevron {
         font-size: 1.25rem;
-        color: var(--2b2b2b2);
+        color: var(--07112C2);
         transition: all 0.2s ease;
       }
     }
@@ -224,7 +224,7 @@
 
     &:hover,
     &:active {
-      background: var(--e9f9f4);
+      background: var(--EDF2FF);
       color: var(--234BF3);
 
       .icon-wrapper svg,
@@ -241,7 +241,7 @@
 
     .icon-wrapper svg {
       font-size: 1.25rem;
-      color: var(--2b2b2b);
+      color: var(--07112C);
       transition: color 0.2s ease;
     }
 
@@ -252,7 +252,7 @@
 
     .chevron svg {
       font-size: 1.25rem;
-      color: var(--2b2b2b);
+      color: var(--07112C);
       transition: color 0.2s ease;
     }
   }
@@ -272,7 +272,7 @@
     padding: 14px;
     border: none;
     // border-radius: 12px;
-    // background-color: var(--e9f9f4);
+    // background-color: var(--EDF2FF);
     // color: var(--234BF3);
     font-size: 1rem;
     font-weight: 600;

@@ -137,7 +137,7 @@ header {
             .dropdown-item {
               position: relative;
               margin-left: 15px;
-              color: #6f6f6f;
+              color: var(--subtitle-color);
 
               .menu-label {
                 background-color: #ffa53b;
@@ -571,6 +571,7 @@ header {
 
       .nav-item {
         &.dropdown {
+
           >a,
           >button,
           >.dropdown-toggle {
@@ -1313,7 +1314,8 @@ header {
           transition: all 0.3s ease-in-out;
           z-index: 0;
           cursor: pointer;
-          color: #6f6f6f;
+          // color: #6f6f6f;
+          color: var(--subtitle-color);
 
           body[dir='rtl'] & {
             text-align: right;
@@ -1328,7 +1330,7 @@ header {
           }
 
           &:active {
-            color: #2b2b2b;
+            color: #07112C;
           }
 
           &::after {
@@ -1525,7 +1527,7 @@ header {
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 24px;
-            color: #2b2b2b;
+            color: #07112C;
             position: relative;
 
             body[dir='rtl'] & {
@@ -1681,7 +1683,7 @@ header {
             }
 
             .dropdown-item {
-              color: #6f6f6f;
+              color: var(--subtitle-color);
               font-size: 14px;
 
               body[dir='rtl'] & {
@@ -1725,7 +1727,7 @@ header {
               }
 
               &:active {
-                color: #6f6f6f;
+                color: var(--subtitle-color);
                 background-color: transparent;
               }
             }

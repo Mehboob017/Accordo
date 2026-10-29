@@ -1,8 +1,9 @@
 import React, { useContext, useMemo, useState, useEffect } from 'react';
+import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import CartContext from '@/helper/cartContext';
 import ThemeOptionContext from '@/helper/themeOptionsContext';
-import { RiShoppingCartLine } from 'react-icons/ri';
+// import { RiShoppingCartLine } from 'react-icons/ri';
 
 const HeaderCartData = dynamic(() => import('./HeaderCartData'), {
   ssr: false,
@@ -17,7 +18,7 @@ const HeaderCart = () => {
       ? themeOption?.general?.cart_style
       : 'cart_sidebar';
   }, [themeOption]);
-  
+
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -30,7 +31,7 @@ const HeaderCart = () => {
 
   return (
     <li className="right-side right-side--cart">
-      <div 
+      <div
         className="onhover-dropdown header-badge header-cart-box"
         onMouseEnter={() => setIsMounted(true)}
       >
@@ -45,9 +46,33 @@ const HeaderCart = () => {
           }}
         >
           <span className="header-icon-wrap">
-            <RiShoppingCartLine className="header-icon" />
-            {cartCount > 0 && (
+            <Image
+              src="/assets/images/accordo-svg-icons/ac-cart.svg"
+              alt="Cart"
+              width={24}
+              height={24}
+              className="header-icon"
+            />
+            {cartCount > 0 ? (
               <span className="header-icon-badge">{cartCount}</span>
+            ) : (
+              <span
+                className="header-icon-badge header-icon-badge--empty"
+                aria-label="Cart is empty"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="header-badge-plus"
+                >
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </span>
             )}
           </span>
           <span className="header-icon-label">Cart</span>

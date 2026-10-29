@@ -12,7 +12,7 @@ const BlogImageDetails = ({ Blog }) => {
       <h1
         className="blog-title mb-2 h2"
         style={{
-          color: '#2b2b2b',
+          color: '#07112C',
           fontWeight: '600',
           lineHeight: '130%',
           fontSize: 'calc(22px + (28 - 22) * ((100vw - 320px) / (1920 - 320)))',

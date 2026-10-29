@@ -36,7 +36,7 @@ const extractYouTubeId = (url) => {
 
 /** Thumbnail-strip tile for a YouTube video — shows static YT thumbnail + play badge. */
 const YouTubeThumbTile = memo(({ videoId }) => (
-  <div style={{ position: 'relative', width: '100%', aspectRatio: '1', background: '#2b2b2b', overflow: 'hidden', borderRadius: 'inherit' }}>
+  <div style={{ position: 'relative', width: '100%', aspectRatio: '1', background: '#07112C', overflow: 'hidden', borderRadius: 'inherit' }}>
     <Image
       unoptimized
       src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
@@ -60,7 +60,7 @@ YouTubeThumbTile.displayName = 'YouTubeThumbTile';
 const YouTubeMainTile = memo(({ videoId, isPlaying, onPlay }) => {
   if (isPlaying) {
     return (
-      <div style={{ position: 'relative', width: '100%', aspectRatio: '1', background: '#2b2b2b' }}>
+      <div style={{ position: 'relative', width: '100%', aspectRatio: '1', background: '#07112C' }}>
         <iframe
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
           src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
@@ -74,7 +74,7 @@ const YouTubeMainTile = memo(({ videoId, isPlaying, onPlay }) => {
 
   return (
     <div
-      style={{ position: 'relative', width: '100%', aspectRatio: '1', cursor: 'pointer', background: '#2b2b2b', overflow: 'hidden' }}
+      style={{ position: 'relative', width: '100%', aspectRatio: '1', cursor: 'pointer', background: '#07112C', overflow: 'hidden' }}
       onClick={onPlay}
       role="button"
       tabIndex={0}

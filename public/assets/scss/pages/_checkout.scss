@@ -227,7 +227,7 @@
 
             svg {
               font-size: 20px;
-              color: var(--2b2b2b);
+              color: var(--07112C);
             }
 
             body[dir='rtl'] & {
@@ -351,7 +351,7 @@
 
                 &.address-selected {
                   border-color: var(--theme-color);
-                  background-color: var(--e9f9f4);
+                  background-color: var(--EDF2FF);
                 }
 
                 .form-check {
@@ -392,7 +392,7 @@
                     width: calc(85% + (75 - 85) * ((100vw - 320px) / (1920 - 320)));
 
                     .address-label {
-                      color: var(--2b2b2b);
+                      color: var(--07112C);
                       font-weight: 600;
                       font-size: 14px;
                     }
@@ -1045,5 +1045,5 @@
   border: 1px solid var(--234BF3);
   border-radius: 30px;
   padding: 6px 10px;
-  background-color: var(--e9f9f4);
+  background-color: var(--EDF2FF);
 }

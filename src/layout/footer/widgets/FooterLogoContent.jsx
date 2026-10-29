@@ -29,7 +29,7 @@ const FooterLogoContent = () => {
         </div>
 
         <div className="footer-logo-contain">
-          <p className="text-content-color" style={{ color: '#6f6f6f' }}>
+          <p className="text-content-color" style={{ color: '#535E75' }}>
             Shree Dhootapapeshwar Limited built on Saiddhantik Ayurved and with over 150 years of manufacturing excellence in  crafting Authentic, Standardised, Efficacious and Safe Ayurvedic formulations, with over 350 classical medicines guided by expertise and trusted by Ayurved physicians.
           </p>
           {/* <ul className="address">

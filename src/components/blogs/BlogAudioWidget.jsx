@@ -571,7 +571,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
               style={{
                 fontSize: '15px',
                 fontWeight: 600,
-                color: '#2b2b2b',
+                color: '#07112C',
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',
                 whiteSpace: 'nowrap',
@@ -735,7 +735,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
               style={{
                 fontSize: '10px',
                 fontWeight: 500,
-                color: '#2b2b2b',
+                color: '#07112C',
                 display: 'block',
                 marginBottom: '6px',
               }}

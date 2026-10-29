@@ -25,6 +25,7 @@
     "formik": "^2.4.6",
     "framer-motion": "^12.42.2",
     "js-cookie": "^3.0.5",
+    "lottie-react": "^3.1.2",
     "next": "^15.2.4",
     "patch-package": "^8.0.0",
     "react": "^19.0.0",

@@ -52,7 +52,7 @@
     }
 
     &:global(.active) {
-      color: #2b2b2b;
+      color: #07112C;
       font-weight: 500;
     }
 
@@ -135,7 +135,7 @@
   margin-top: 16px;
   border-radius: 12px;
   padding: 16px;
-  background: #e9f9f4;
+  background: #EDF2FF;
 }
 
 .available-coupons {
@@ -199,10 +199,10 @@
 .offer-description {
   font-size: 12px;
   font-weight: 600;
-  color: #2b2b2b;
+  color: #07112C;
   margin: 0;
   line-height: 18px;
-  border-bottom: 1px solid #2B2B2B09;
+  border-bottom: 1px solid #07112C09;
 }
 
 .offer-benefit {
@@ -452,7 +452,7 @@
 }
 
 .details-trending-section {
-  // background: #fafaf9;
+  // background: #F7F9FE;
 }
 
 .details-faq-section {
@@ -476,7 +476,7 @@
 }
 
 .details-review-section {
-  // background: #fafaf9;
+  // background: #F7F9FE;
 }
 
 .head {
@@ -801,7 +801,7 @@
   margin-bottom: 1rem;
   font-size: 18px;
   line-height: 24px;
-  color: #2b2b2b;
+  color: #07112C;
   font-weight: 600;
 }
 
@@ -815,7 +815,7 @@
 .tabs-scroll-wrap {
   overflow-x: auto;
   border: 1px solid #ececec;
-  background: #e9f9f4;
+  background: #EDF2FF;
 
   // &::-webkit-scrollbar {
   //   height: 5px;
@@ -851,12 +851,12 @@
   &:hover {
     // color: #f57c00;
     // border-bottom-color: #f57c00;
-    // background-color: #e9f9f4;
+    // background-color: #EDF2FF;
 
     &:hover:not(.tab-btn-active) {
-      color: #f57c00;
-      border-bottom-color: #f57c00;
-      background-color: #f57b002b;
+      color: var(--theme-color);
+      border-bottom-color: var(--theme-color);
+      background-color: #C6D7FE;
     }
   }
 
@@ -870,9 +870,9 @@
   // border-bottom-color: #234BF3;
   // font-weight: 600;
   color: white;
-  border-bottom-color: #f57c00;
+  border-bottom-color: var(--theme-color);
   font-weight: 600;
-  background: #f57c00;
+  background: var(--theme-color);
 }
 
 .tabs-panels-container {

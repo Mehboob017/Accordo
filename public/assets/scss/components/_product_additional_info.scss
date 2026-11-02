@@ -165,12 +165,12 @@
     border-radius: 8px;
     border: none;
     background-color: transparent;
-    color: #6f6f6f;
+    color: #535E75;
     font-size: 20px;
     transition: background-color 0.2s ease, border 0s ease, color 0s ease;
 
     &:hover {
-      background-color: #F7F9FE;
+      background-color: #EDF2FF;
       outline: 1px solid var(--border-color);
       color: var(--theme-color);
     }

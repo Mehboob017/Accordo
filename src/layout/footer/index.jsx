@@ -49,11 +49,11 @@ const MainFooter = () => {
           <SubFooter2 />
           <SubFooter />
         </div>
-        <div className="home-bottom-footer-space" style={{
+        {/* <div className="home-bottom-footer-space" style={{
           backgroundColor: '#f5f5f4',
         }}>
           <KeywordsSection keywords={keywords} />
-        </div>
+        </div> */}
       </footer>
     </>
   );

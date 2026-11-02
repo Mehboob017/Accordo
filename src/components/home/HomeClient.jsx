@@ -15,6 +15,7 @@ import WrapperComponent from '../common/WrapperComponent';
 // const BestSellerProducts = dynamic(() => import('@/components/home').then(mod => mod.BestSellerProducts), { ssr: false });
 
 const HeroCarousel = dynamic(() => import('@/components/home').then(mod => mod.HeroCarousel));
+const ShopByCategory = dynamic(() => import('@/components/home').then(mod => mod.ShopByCategory));
 const BestSellerProducts = dynamic(() => import('@/components/home').then(mod => mod.BestSellerProducts), {
   loading: () => <SkBestSeller count={4} />,
 });
@@ -88,6 +89,11 @@ export default function HomeClient({ sliderSettings }) {
 
       <Suspense fallback={<HeroSkeleton />}>
         <HeroCarousel />
+      </Suspense>
+
+      {/* ── Shop by Category — directly below hero ── */}
+      <Suspense fallback={null}>
+        <ShopByCategory />
       </Suspense>
 
       <Suspense fallback={<SkBestSeller count={4} />}>

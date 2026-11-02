@@ -246,7 +246,7 @@ const ProductBox1 = ({
                       <span
                         style={{
                           fontSize: 14,
-                          color: '#6f6f6f',
+                          color: '#535E75',
                           lineHeight: 1,
                         }}
                       >
@@ -262,7 +262,7 @@ const ProductBox1 = ({
                         <span
                           style={{
                             fontSize: 14,
-                            color: '#6f6f6f',
+                            color: '#535E75',
                             lineHeight: 1,
                           }}
                         >
@@ -281,7 +281,7 @@ const ProductBox1 = ({
                           <span
                             style={{
                               fontSize: 14,
-                              color: '#6f6f6f',
+                              color: '#535E75',
                               lineHeight: 1,
                             }}
                           >

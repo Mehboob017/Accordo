@@ -580,7 +580,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
             >
               Listen to the article
             </span>
-            <p style={{ fontSize: '12px', color: '#6f6f6f', margin: '0px' }}>Text to speech</p>
+            <p style={{ fontSize: '12px', color: '#535E75', margin: '0px' }}>Text to speech</p>
           </div>
 
           <div

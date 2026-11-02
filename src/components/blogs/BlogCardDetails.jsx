@@ -123,7 +123,7 @@ const BlogCardDetails = ({ Blog, sidebarType, categorySlug, rawBlog, onVideoSele
         {...styleObj[sidebarVariant]?.colClass}
         className={`${styleObj[sidebarVariant]?.class || ''}`}
       >
-        <div className="blog-detail-container" style={{ backgroundColor: '#fefefe', borderRadius: '12px', border: '1px solid #e2e2e2', padding: '20px', boxShadow: '0 8px 24px rgba(0, 0, 0, 0.05)' }}>
+        <div className="blog-detail-container" style={{ backgroundColor: '#fefefe', borderRadius: '12px', border: '1px solid #D4DEF3', padding: '20px', boxShadow: '0 8px 24px rgba(0, 0, 0, 0.05)' }}>
           <div className="blog-image-contain pb-3">
             <div
               style={{
@@ -148,7 +148,7 @@ const BlogCardDetails = ({ Blog, sidebarType, categorySlug, rawBlog, onVideoSele
                         borderRadius: '50%',
                         overflow: 'hidden',
                         flexShrink: 0,
-                        border: '1px solid #e2e2e2',
+                        border: '1px solid #D4DEF3',
                       }}
                     >
                       <img
@@ -169,9 +169,9 @@ const BlogCardDetails = ({ Blog, sidebarType, categorySlug, rawBlog, onVideoSele
                 </li>
 
                 <li>
-                  <div className="user-list" style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px', color: '#6f6f6f' }}>
+                  <div className="user-list" style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px', color: '#535E75' }}>
                     <RiCalendarLine />
-                    <span style={{ color: '#6f6f6f' }}> {dateFormat(Blog?.created_at)}</span>
+                    <span style={{ color: '#535E75' }}> {dateFormat(Blog?.created_at)}</span>
                   </div>
                 </li>
               </ul>

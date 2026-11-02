@@ -105,7 +105,7 @@ header {
   }
 
   .primary-nav-bar {
-    // background-color: #F7F9FE;
+    // background-color: #EDF2FF;
     background-color: #F7F9FE;
     // border-top: 1px solid var(--border-color);
     border-top: 1px solid #D4DEF3;
@@ -113,7 +113,7 @@ header {
     position: relative;
     // z-index: 9;
 
-    @include breakpoints.mq-max(2xl) {
+    @include breakpoints.mq-max(xl) {
       display: none;
     }
 
@@ -456,8 +456,9 @@ header {
   }
 
   .header-top {
-    padding: 6px 0;
-    background-color: var(--theme-color);
+    padding: 8px 0;
+    background-color: var(--dark-bg);
+    color: var(--dark-bg-text);
     // need to revert this on 16th of august
     // background: linear-gradient(135deg,
     //     #EA5F1F 0%,
@@ -1132,6 +1133,22 @@ header {
             }
 
             // Show a divider between Search and Wishlist
+            &.right-side--location {
+              display: flex;
+              align-items: center;
+              padding-right: 20px;
+
+              body[dir='rtl'] & {
+                padding-right: unset;
+                padding-left: 20px;
+              }
+
+              @media (max-width: 991px) {
+                display: none;
+                padding-right: 0;
+              }
+            }
+
             @media (max-width: 1200px) {
               &.right-side--search {
                 &::before {
@@ -1348,7 +1365,7 @@ header {
               .header-cart-box .header-icon-wrap .header-icon-badge {
                 background-color: #c9f24d;
                 color: #07112C;
-                border: 1.5px solid #07112C;
+                // border: 1px solid #07112C;
                 font-weight: 700;
                 font-size: 10px;
                 box-sizing: border-box;
@@ -1402,29 +1419,30 @@ header {
             .login-signup-pill {
               padding: 8px 6px;
               // background: var(--btn-qty-bg);
-              background: var(--theme-color);
+              background: var(--light-btn);
               border-radius: 10px;
               cursor: pointer;
               font-size: 14px;
               font-weight: 500;
-              color: #2044CD;
+              color: var(--light-btn-text);
               transition: all 0.3s ease;
               height: 44px;
 
               &:hover {
-                background: #2044CD;
+                background: var(--theme-color);
+                color: '#ffffff'
               }
 
               .delivery-icon {
                 .login-signup-icon {
                   font-size: 20px;
-                  color: var(--btn-primary-text);
+                  color: var(--light-btn-text);
                 }
 
                 .login-signup-text {
                   font-size: 14px;
                   font-weight: 500;
-                  color: var(--btn-primary-text);
+                  color: var(--light-btn-text);
                 }
               }
             }
@@ -2758,7 +2776,7 @@ header {
             margin-left: 6px;
           }
 
-          @include breakpoints.mq-max(2xl) {
+          @include breakpoints.mq-max(xl) {
             margin-right: 0;
 
             body[dir='rtl'] & {
@@ -2772,7 +2790,7 @@ header {
           font-size: 16px;
           font-weight: 600;
 
-          @include breakpoints.mq-max(2xl) {
+          @include breakpoints.mq-max(xl) {
             display: none;
           }
         }
@@ -3204,7 +3222,7 @@ header {
         margin-right: calc(16px + (29 - 16) * ((100vw - 320px) / (1920 - 320)));
       }
 
-      @include breakpoints.mq-max(2xl) {
+      @include breakpoints.mq-max(xl) {
         @include common.flex_common($dis: flex,
           $align: center,
           $justify: space-between);
@@ -3788,7 +3806,7 @@ header {
       .user-detail {
         margin-left: 15px;
 
-        @include breakpoints.mq-max(2xl) {
+        @include breakpoints.mq-max(xl) {
           display: none;
         }
 
@@ -3819,7 +3837,7 @@ header {
       margin-right: auto;
     }
 
-    @include breakpoints.mq-max(2xl) {
+    @include breakpoints.mq-max(xl) {
       display: none;
     }
 
@@ -4573,7 +4591,7 @@ header {
         margin-right: calc(16px + (29 - 16) * ((100vw - 320px) / (1920 - 320)));
       }
 
-      @include breakpoints.mq-max(2xl) {
+      @include breakpoints.mq-max(xl) {
         @include common.flex_common($dis: flex,
           $align: center,
           $justify: space-between);
@@ -5227,7 +5245,7 @@ header {
       .user-detail {
         margin-left: 15px;
 
-        @include breakpoints.mq-max(2xl) {
+        @include breakpoints.mq-max(xl) {
           display: none;
         }
 
@@ -5253,7 +5271,7 @@ header {
     align-items: center;
     margin-left: auto;
 
-    @include breakpoints.mq-max(2xl) {
+    @include breakpoints.mq-max(xl) {
       display: none;
     }
 
@@ -5549,7 +5567,7 @@ header {
 
   .empty-icon {
     font-size: 30px;
-    color: var(--e2e2e2);
+    color: var(--D4DEF3);
     width: 70px;
     height: 70px;
     @include common.flex_common;
@@ -6199,7 +6217,7 @@ header {
 // Logged-in user chip (icon + name + chevron)
 .top-nav .navbar-top .rightside-box .right-side-menu {
   .delivery-login-box.header-user-chip {
-    background: var(--theme-color, #0da487);
+    background: var(--theme-color);
     border-radius: var(--btn-add-cart-border-radius);
     padding: 8px 10px;
     // box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
@@ -6351,7 +6369,7 @@ header.basic-header-redesign {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   header.basic-header-redesign {
     .primary-nav-bar--redesign:not(.d-none) {
       display: block !important;
@@ -6359,13 +6377,13 @@ header.basic-header-redesign {
   }
 }
 
-@media (max-width: 1299.98px) {
+@media (max-width: 1199.98px) {
   .primary-nav-bar--redesign {
     display: none !important;
   }
 }
 
-@media (max-width: 1399.98px) {
+@media (max-width: 1199.98px) {
   header.basic-header-redesign {
     .basic-header-redesign__top-wrap {
       padding-bottom: 0;

@@ -58,7 +58,9 @@ Dadar (West), Mumbai,- 400028
           className={`highlight-item${item.label === 'Address' ? ' highlight-item--address' : ''}`}
           key={item.id}
         >
-          <span className="highlight-icon">{item.icon}</span>
+          <div className='highlight-icon-wrapper'>
+            <span className="highlight-icon">{item.icon}</span>
+          </div>
           {/* <div className="highlight-content">
             <h5 className="highlight-title">{item.label}</h5>
             {item.value ? (

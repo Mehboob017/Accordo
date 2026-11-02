@@ -49,12 +49,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // border-left: 1px solid var(--e2e2e2); 
+  // border-left: 1px solid var(--D4DEF3); 
   padding-left: 2rem;
 
   @media (max-width: 991px) {
     border-left: none;
-    // border-top: 1px solid var(--e2e2e2);
+    // border-top: 1px solid var(--D4DEF3);
     padding-left: 0;
     padding-top: 2rem;
     margin-top: 2rem;
@@ -97,7 +97,7 @@
 /* Horizontal line between sections */
 .sectionDivider {
   border: 0;
-  border-top: 1px solid var(--e2e2e2);
+  border-top: 1px solid var(--D4DEF3);
   margin: 2rem 0;
 }
 

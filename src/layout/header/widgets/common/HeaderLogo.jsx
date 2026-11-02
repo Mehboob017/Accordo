@@ -5,20 +5,22 @@ import Avatar from '@/components/common/Avatar';
 import Dhootapapeshwar from '../../../../../public/assets/images/logo/ac-logo.png';
 import { RiMenuLine } from 'react-icons/ri';
 import { usePathname } from 'next/navigation';
+import HeaderLocation from './HeaderLocation';
 
-const HeaderLogo = () => {
+const HeaderLogo = ({ showLocation = true }) => {
   const [logo, setLogo] = useState(Dhootapapeshwar);
   const { mobileSideBar, setMobileSideBar } = useContext(ThemeOptionContext);
   const pathName = usePathname();
+
   useEffect(() => {
     let logo = Dhootapapeshwar;
-    // console.log(logo);
     setLogo(logo);
   }, [pathName, Dhootapapeshwar]);
+
   return (
-    <>
+    <div className="navbar-top-left">
       <button
-        className={`navbar-toggler d-xxl-none d-inline navbar-menu-button me-2 header-menu-trigger ${pathName === '/checkout' ? 'd-none' : ''}`}
+        className={`navbar-toggler d-xl-none d-inline navbar-menu-button me-2 header-menu-trigger ${pathName === '/checkout' ? 'd-none' : ''}`}
         type="button"
         aria-label="Toggle menu"
       >
@@ -29,7 +31,7 @@ const HeaderLogo = () => {
           <RiMenuLine />
         </span>
       </button>
-      <a href="/" className="web-logo nav-logo ">
+      <a href="/" className="web-logo nav-logo">
         <Avatar
           data={logo}
           placeHolder={Dhootapapeshwar}
@@ -40,7 +42,14 @@ const HeaderLogo = () => {
           unoptimized
         />
       </a>
-    </>
+
+      {showLocation && pathName !== '/checkout' && (
+        <div className="header-location-box d-none d-lg-flex align-items-center">
+          <span className="header-logo-divider" aria-hidden="true" />
+          <HeaderLocation />
+        </div>
+      )}
+    </div>
   );
 };
 

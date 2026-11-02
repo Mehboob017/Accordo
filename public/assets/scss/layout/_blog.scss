@@ -35,11 +35,12 @@
         display: flex !important;
         align-items: stretch;
       }
+
       .slick-slide {
         height: auto;
         display: flex !important;
-  
-        > div {
+
+        >div {
           width: 100%;
           display: flex;
         }
@@ -80,7 +81,7 @@
         height: auto;
         display: flex !important;
 
-        > div {
+        >div {
           width: 100%;
           display: flex;
         }
@@ -217,7 +218,7 @@
   top: 1rem;
   right: 1rem;
   z-index: 2;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #D4DEF3;
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
@@ -271,10 +272,10 @@
   // border-bottom-left-radius: 0px;
   // border-bottom-right-radius: 0px;
   overflow: hidden;
-  border: 1px solid var(--e2e2e2);
+  border: 1px solid var(--D4DEF3);
   width: 100%;
 
-  &:hover{
+  &:hover {
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
   }
 
@@ -348,6 +349,7 @@
       }
     }
   }
+
   // .blog-bookmark-button
   .feature-blog-bookmark {
     position: absolute;
@@ -487,7 +489,7 @@
         padding: 8px 16px;
         border-radius: 7px;
         background-color: #f3f4f3;
-        color: #6f6f6f;
+        color: #535E75;
         transition: all 0.3s ease-in-out;
 
         &:hover {
@@ -495,11 +497,12 @@
           color: white;
         }
       }
+
       a {
         padding: 8px 16px;
         border-radius: 7px;
         background-color: #f3f4f3;
-        color: #6f6f6f;
+        color: #535E75;
         transition: all 0.3s ease-in-out;
 
         &:hover {
@@ -633,11 +636,9 @@
       }
 
       .blog-list {
-        @include common.flex_common(
-          $dis: flex,
+        @include common.flex_common($dis: flex,
           $align: center,
-          $justify: flex-start
-        );
+          $justify: flex-start);
         margin-top: 15px;
         gap: calc(14px + (22 - 14) * ((100vw - 320px) / (1920 - 320)));
 
@@ -683,22 +684,25 @@
   }
 }
 
-.lc-3{
+.lc-3 {
   // display: -webkit-box;
   // -webkit-line-clamp: 3;
   // -webkit-box-orient: vertical;
   // overflow: hidden;
-  color: #6f6f6f;
+  color: #535E75;
 }
+
 .feature-blog-card {
   display: flex;
   flex-direction: column;
   width: 100%;
+
   .feature-blog-detail {
     display: flex;
     flex-direction: column;
     flex: 1;
   }
+
   .feature-blog-meta-row {
     margin-top: auto;
   }

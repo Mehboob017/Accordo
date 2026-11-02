@@ -482,14 +482,14 @@ const HeaderCartData = ({ cartStyle }) => {
                                 </span>{' '}
                                 <span
                                   style={{
-                                    color: '#e2e2e2',
+                                    color: '#D4DEF3',
                                   }}
                                 >
                                   |
                                 </span>{' '}
                                 <span
                                   style={{
-                                    color: '#6f6f6f',
+                                    color: '#535E75',
                                     fontWeight: '400',
                                     fontSize: '13px',
                                   }}

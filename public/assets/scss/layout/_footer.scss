@@ -100,6 +100,8 @@ footer {
           line-height: 1.8;
           margin-bottom: 0;
           width: 100%;
+          overflow-wrap: break-word;
+          word-break: normal;
           // text-align: justify;
           // @include breakpoints.mq-max(xl) {
           //   width: 100%;
@@ -395,7 +397,7 @@ footer {
     }
 
     .footer-contact {
-      margin-top: calc(13px + (20 - 13) * ((100vw - 320px) / (1920 - 320)));
+      margin-top: 0;
 
       ul {
         li {
@@ -481,16 +483,40 @@ footer {
           }
 
           &.footer-newsletter {
-            padding: 0;
-            border: none;
-            border-radius: 0;
-            background-color: transparent;
+            padding: 20px 22px;
+            border: 1px solid #D4DEF3;
+            border-radius: 12px;
+            background-color: var(--light-btn);
+            list-style: none;
+
+            @include breakpoints.mq-max(sm) {
+              padding: 18px;
+              border-radius: 14px;
+            }
 
             &.newsletter-promo {
-              h5 {
-                font-weight: 400;
-                font-size: clamp(12px, calc(12px + 2 * (100vw - 320px) / 1120), 14px);
-                color: var(--footer-text-color);
+              .newsletter-title {
+                font-weight: 600;
+                font-size: 20px;
+                color: var(--text);
+                margin-bottom: 6px;
+                line-height: 1.25;
+
+                @include breakpoints.mq-max(sm) {
+                  font-size: 18px;
+                }
+              }
+
+              .newsletter-desc {
+                font-size: 14px;
+                color: var(--sub-text);
+                line-height: 1.45;
+                margin-bottom: 18px;
+
+                @include breakpoints.mq-max(sm) {
+                  font-size: 13px;
+                  margin-bottom: 14px;
+                }
               }
 
               .newsletter-form {
@@ -501,21 +527,32 @@ footer {
                 }
 
                 .footer-input-group {
-                  background: transparent;
-                  border: 1px solid var(--btn-out-stock-border);
-                  border-radius: 8px;
+                  background: #FFFFFF;
+                  border: 1px solid #DFE6F5;
+                  border-radius: 10px;
                   overflow: hidden;
-                  transition: border-color 0.2s ease;
+                  display: flex;
+                  align-items: center;
+                  padding: 4px 4px 4px 12px;
+                  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
                   &:focus-within {
-                    border-color: var(--btn-add-cart-bg);
+                    border-color: #234BF3;
+                    box-shadow: 0 0 0 3px rgba(35, 75, 243, 0.12);
                   }
 
                   .input-group-text {
-                    margin-left: 4px;
+                    margin-left: 0;
+                    padding: 0;
                     border: none;
                     background-color: transparent;
-                    color: var(--content-color);
+                    color: #5A6A80;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                      font-size: 18px;
+                    }
                   }
 
                   .btn {
@@ -524,35 +561,44 @@ footer {
 
                   input {
                     border: none;
-                    padding-left: 2px;
-                    padding-right: 2px;
-                    border-radius: 8px 0 0 8px;
-                    color: var(--title-color);
-                    font-size: 16px !important;
+                    padding-left: 10px;
+                    padding-right: 8px;
+                    border-radius: 0;
+                    background-color: transparent;
+                    color: #1E293B;
+                    font-size: 14px !important;
 
                     &:focus {
                       outline: none;
                       box-shadow: none;
+                      background-color: transparent;
                     }
 
                     &::placeholder {
-                      color: var(--content-color);
-                      // font-size: 16px !important;
+                      color: #94A3B8;
                     }
                   }
 
                   .subscribe-btn {
-                    background-color: var(--btn-add-cart-bg);
-                    border-color: var(--btn-add-cart-bg);
-                    font-weight: 600;
-                    width: 44px;
-                    height: 44px;
-                    padding: 10px 12px;
-                    border-radius: 8px 8px 8px 8px;
+                    background-color: #234BF3;
+                    border-color: #234BF3;
+                    color: #ffffff;
+                    width: 40px;
+                    height: 40px;
+                    min-width: 40px;
+                    padding: 0;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                      font-size: 20px;
+                    }
 
                     &:hover {
-                      background-color: var(--btn-add-cart-bg-hover);
-                      border-color: var(--btn-add-cart-bg-hover);
+                      background-color: #1a41dd;
+                      border-color: #1a41dd;
                     }
                   }
                 }
@@ -560,7 +606,7 @@ footer {
                 .newsletter-error-message {
                   width: 100%;
                   text-align: left;
-                  margin-top: 8px;
+                  margin-top: 6px;
                 }
               }
             }
@@ -678,6 +724,12 @@ footer {
       @include breakpoints.mq-max(sm) {
         flex: 1 1 100% !important;
         max-width: 100% !important;
+      }
+
+      .highlight-icon-wrapper {
+        background-color: var(--light-btn);
+        border-radius: 8px;
+        padding: 4px;
       }
 
       .highlight-icon {
@@ -904,7 +956,7 @@ footer {
               // );
               width: 20px;
               height: 20px;
-              color: var(--content-color);
+              color: var(--theme-color, #234BF3);
               transition: all 0.3s ease-in-out;
             }
           }

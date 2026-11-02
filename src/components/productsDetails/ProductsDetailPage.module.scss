@@ -39,10 +39,10 @@
   }
 
   :global(.breadcrumb-item) {
-    color: #6f6f6f;
+    color: #535E75;
 
     a {
-      color: #6f6f6f;
+      color: #535E75;
       text-decoration: none;
       transition: color 0.2s;
 
@@ -69,7 +69,7 @@
   flex-direction: column;
   gap: 4px;
   background-color: var(--ffffff);
-  border: 1px solid var(--e2e2e2);
+  border: 1px solid var(--D4DEF3);
   border-radius: 8px;
   padding: 16px;
   // margin-top: 20px;
@@ -216,7 +216,7 @@
 .offer-code-label {
   font-size: 11px;
   line-height: 21px;
-  color: #6f6f6f;
+  color: #535E75;
   // text-decoration: underline;
   // text-underline-offset: 2px;
   font-weight: 400;
@@ -452,7 +452,7 @@
 }
 
 .details-trending-section {
-  // background: #F7F9FE;
+  // background: #EDF2FF;
 }
 
 .details-faq-section {
@@ -476,7 +476,7 @@
 }
 
 .details-review-section {
-  // background: #F7F9FE;
+  // background: #EDF2FF;
 }
 
 .head {
@@ -840,7 +840,7 @@
 .tab-btn {
   border: 0;
   background: transparent;
-  color: #6f6f6f;
+  color: #535E75;
   padding: 10px 16px;
   font-size: 14px;
   line-height: 25px;

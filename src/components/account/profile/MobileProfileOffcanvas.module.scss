@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 16px;
-  border-bottom: 1px solid var(--e2e2e2);
+  border-bottom: 1px solid var(--D4DEF3);
 
   .title {
     margin: 0;
@@ -64,7 +64,7 @@
     transition: background-color 0.2s;
 
     &:hover {
-      background-color: var(--e2e2e2);
+      background-color: var(--D4DEF3);
     }
   }
 }
@@ -83,7 +83,7 @@
   align-items: center;
   gap: 16px;
   padding: 16px;
-  border-bottom: 1px solid var(--e2e2e2);
+  border-bottom: 1px solid var(--D4DEF3);
 
   .avatarWrapper {
     flex-shrink: 0;
@@ -260,7 +260,7 @@
 
 .offcanvasFooter {
   padding: 16px;
-  border-top: 1px solid var(--e2e2e2);
+  border-top: 1px solid var(--D4DEF3);
   background-color: var(--ffffff);
 
   .logoutBtn {

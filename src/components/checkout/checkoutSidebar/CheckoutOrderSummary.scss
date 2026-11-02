@@ -6,7 +6,7 @@ $border-color: var(--border-color);
 
 .order-summary-section {
   background-color: var(--ffffff);
-  border: 1px solid var(--e2e2e2);
+  border: 1px solid var(--D4DEF3);
   border-radius: 8px;
   padding: 16px;
   margin-top: 20px;
@@ -31,7 +31,7 @@ $border-color: var(--border-color);
     align-items: center;
     gap: 12px;
     padding: 7px 0;
-    border-bottom: 1px solid var(--e2e2e2);
+    border-bottom: 1px solid var(--D4DEF3);
 
     &:nth-last-child(2),
     &:last-child {
@@ -62,7 +62,7 @@ $border-color: var(--border-color);
     &.total {
       // padding-top: 18px;
       // margin: 10px 0;
-      border-top: 1.5px dashed var(--e2e2e2);
+      border-top: 1.5px dashed var(--D4DEF3);
 
       .label {
         color: var(--07112C);

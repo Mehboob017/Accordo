@@ -6,15 +6,16 @@ import { useHeaderMenu } from '@/utils/hooks/useHeaderMenu';
 
 const PRIMARY_NAV_TITLES = [
   'Home',
-  'Shop Online',
-  'Best Sellers',
-  'Combo Pack',
+  'Shop All',
   'Shop by Category',
-  'Shop by Health Concerns',
+  'Best Sellers',
+  'Deals',
+  'AI Negotiations',
+  'For Business',
   'About Us',
-  'Blogs',
-  'Media',
-  'Careers',
+  // 'Blogs',
+  // 'Media',
+  'Contact Us',
 ];
 
 const MainHeaderMenu = () => {

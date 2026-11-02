@@ -361,7 +361,7 @@ const PdpProductInfo = ({
                 {rawMrp !== rawDis && (
                   <>
                     <span style={{
-                      fontSize: 15, color: '#6f6f6f', lineHeight: 1
+                      fontSize: 15, color: '#535E75', lineHeight: 1
                     }}>M.R.P.</span>{" "}
                     <del className="text-content">{convertCurrency(rawMrp)}</del>
                     {discount ? <span className="offer-top">{discount}% Off</span> : null}
@@ -372,7 +372,7 @@ const PdpProductInfo = ({
               // CASE 2: Doctor Product + Unverified User (ONLY MRP SHOWS)
               <>
                 <span style={{
-                  fontSize: 15, color: '#6f6f6f', lineHeight: 1
+                  fontSize: 15, color: '#535E75', lineHeight: 1
                 }}>M.R.P.</span>{" "}
                 {convertCurrency(rawMrp)}
               </>
@@ -384,7 +384,7 @@ const PdpProductInfo = ({
               {rawMrp !== rawDis && (
                 <>
                   <span style={{
-                    fontSize: 15, color: '#6f6f6f', lineHeight: 1
+                    fontSize: 15, color: '#535E75', lineHeight: 1
                   }}>M.R.P.</span>{" "}
                   <del className="text-content">{convertCurrency(rawMrp)}</del>
                   {discount ? <span className="offer-top">{discount}% Off</span> : null}

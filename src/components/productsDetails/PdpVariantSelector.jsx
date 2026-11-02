@@ -114,7 +114,7 @@ const PdpVariantSelector = ({
                           <span
                             style={{
                               fontSize: 14,
-                              color: '#6f6f6f',
+                              color: '#535E75',
                               lineHeight: 1,
                             }}
                           >
@@ -137,7 +137,7 @@ const PdpVariantSelector = ({
                                 <span
                                   style={{
                                     fontSize: 14,
-                                    color: '#6f6f6f',
+                                    color: '#535E75',
                                     lineHeight: 1,
                                   }}
                                 >
@@ -230,7 +230,7 @@ const PdpVariantSelector = ({
     //                             <span
     //                               style={{
     //                                 fontSize: 14,
-    //                                 color: '#6f6f6f',
+    //                                 color: '#535E75',
     //                                 lineHeight: 1,
     //                               }}
     //                             >
@@ -250,7 +250,7 @@ const PdpVariantSelector = ({
     //                       <span
     //                         style={{
     //                           fontSize: 14,
-    //                           color: '#6f6f6f',
+    //                           color: '#535E75',
     //                           lineHeight: 1,
     //                         }}
     //                       >
@@ -274,7 +274,7 @@ const PdpVariantSelector = ({
     //                           <span
     //                             style={{
     //                               fontSize: 14,
-    //                               color: '#6f6f6f',
+    //                               color: '#535E75',
     //                               lineHeight: 1,
     //                             }}
     //                           >

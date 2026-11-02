@@ -1,4 +1,5 @@
 import ShopByHealthConcerns from './HealthConcerns';
+import ShopByCategory from './ShopByCategory';
 import BestSellerProducts from './BestSellerProducts';
 // import ShopByDepartment from './ShopByDepartment';
 import ShopByIngredients from './ShopByIngredients';
@@ -17,6 +18,7 @@ import StaticBannerCarousel from './StaticBannerCarousel';
 
 export {
   HeroCarousel,
+  ShopByCategory,
   ShopByHealthConcerns,
   BestSellerProducts,
   // ShopByDepartment,

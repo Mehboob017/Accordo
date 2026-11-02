@@ -24,7 +24,7 @@ const BlogImageDetails = ({ Blog }) => {
       {(Blog?.seo_title || Blog?.sub_title) && (
         <p
           className="blog-subtitle mb-0"
-          style={{ color: '#6f6f6f', lineHeight: '160%' }}
+          style={{ color: '#535E75', lineHeight: '160%' }}
         >
           {Blog?.seo_title || Blog?.sub_title}
         </p>

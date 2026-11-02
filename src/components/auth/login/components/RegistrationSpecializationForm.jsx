@@ -95,7 +95,7 @@ const RegistrationSpecializationForm = ({
                                   backgroundSize: 'contain',
                                   backgroundRepeat: 'no-repeat',
                                   backgroundPosition: 'center',
-                                  // border: '1px solid #e2e2e2',
+                                  // border: '1px solid #D4DEF3',
                                 }
                                 : undefined
                             }

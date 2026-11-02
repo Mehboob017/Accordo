@@ -3,13 +3,14 @@ import ThemeOptionContext from '@/helper/themeOptionsContext';
 import {
   RiFacebookFill,
   RiInstagramLine,
-  RiPinterestLine,
   RiTwitterFill,
   RiYoutubeFill,
 } from 'react-icons/ri';
 
 const FooterSocial = () => {
   const { themeOption } = useContext(ThemeOptionContext);
+
+  const iconStyle = { color: 'var(--theme-color, #234BF3)' };
 
   return (
     <>
@@ -23,8 +24,9 @@ const FooterSocial = () => {
               target="_blank"
               rel="noreferrer"
               aria-label="Facebook"
+              style={iconStyle}
             >
-              <RiFacebookFill />
+              <RiFacebookFill style={iconStyle} />
             </a>
           </li>
           {/* )} */}
@@ -35,8 +37,9 @@ const FooterSocial = () => {
               target="_blank"
               rel="noreferrer"
               aria-label="Twitter"
+              style={iconStyle}
             >
-              <RiTwitterFill />
+              <RiTwitterFill style={iconStyle} />
             </a>
           </li>
           {/* )} */}
@@ -47,8 +50,9 @@ const FooterSocial = () => {
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
+              style={iconStyle}
             >
-              <RiInstagramLine />
+              <RiInstagramLine style={iconStyle} />
             </a>
           </li>
           {/* )} */}
@@ -59,8 +63,9 @@ const FooterSocial = () => {
               target="_blank"
               rel="noreferrer"
               aria-label="YouTube"
+              style={iconStyle}
             >
-              <RiYoutubeFill />
+              <RiYoutubeFill style={iconStyle} />
             </a>
           </li>
           {/* )} */}

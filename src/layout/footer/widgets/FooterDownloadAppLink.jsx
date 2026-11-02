@@ -9,7 +9,8 @@ const FooterDownloadAppLink = () => {
   const { themeOption } = useContext(ThemeOptionContext);
   return (
     <>
-      {themeOption?.footer?.app_store_url ||
+      {/* Download App commented */}
+      {/* {themeOption?.footer?.app_store_url ||
         themeOption?.footer?.play_store_url ? (
         <li className="social-app mb-0">
           <div className="mb-2" style={{ color: '#535E75', fontWeight: 600 }}>Download App :</div>
@@ -50,7 +51,10 @@ const FooterDownloadAppLink = () => {
         </li>
       ) : (
         ''
-      )}
+      )} */}
+      {/* <li className="social-app mb-0 mt-3" style={{ listStyle: 'none' }}>
+        <PreferredSource />
+      </li> */}
     </>
   );
 };

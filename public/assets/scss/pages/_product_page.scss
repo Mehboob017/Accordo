@@ -512,7 +512,7 @@
 
       strong {
         font-weight: 500;
-        color: #6F6F6F;
+        color: #535E75;
         margin-right: 4px;
       }
     }
@@ -547,8 +547,8 @@
 
     .variation-icon-btn {
       background: #fefefe;
-      border: 1px solid #E2E2E2;
-      color: #6F6F6F;
+      border: 1px solid #D4DEF3;
+      color: #535E75;
       border-radius: 50%;
       width: 36px;
       height: 36px;
@@ -563,7 +563,7 @@
       &:hover {
         border-color: #DADADA;
         color: #234BF3;
-        background: #F7F9FE;
+        background: #EDF2FF;
       }
 
       &.wishlist-active {
@@ -575,8 +575,8 @@
 
     .variation-share-wrapper {
       background: #fefefe;
-      border: 1px solid #E2E2E2;
-      color: #6F6F6F;
+      border: 1px solid #D4DEF3;
+      color: #535E75;
       border-radius: 50%;
       width: 36px;
       height: 36px;
@@ -810,7 +810,7 @@
       }
 
       p {
-        color: #6F6F6F;
+        color: #535E75;
         font-weight: normal;
         line-height: 1.5;
         margin: 0;
@@ -1588,7 +1588,7 @@
 
       .variation-radio-card {
         position: relative;
-        border: 1px solid #E2E2E2;
+        border: 1px solid #D4DEF3;
         border-radius: 10px;
         padding: 12px;
         background-color: #fefefe;
@@ -1673,7 +1673,7 @@
 
           .variation-price-discount {
             font-size: 13px;
-            color: #6F6F6F;
+            color: #535E75;
             font-weight: 700;
           }
         }
@@ -1752,7 +1752,7 @@
       align-items: center;
       width: 100%;
       gap: 8px;
-      background: #F7F9FE;
+      background: #EDF2FF;
       border: 1px solid #E2E8ED;
       padding: 8px;
       border-radius: 8px;
@@ -1764,7 +1764,7 @@
 
       &__text {
         font-size: 12px;
-        color: #6F6F6F;
+        color: #535E75;
         line-height: 1.4;
 
         strong {
@@ -2410,8 +2410,8 @@
         // height: calc(38px + (42 - 38) * ((100vw - 320px) / (1920 - 320)));
         padding: 0 12px;
         border-radius: 8px;
-        border: 1px solid #E2E2E2;
-        background-color: #F7F9FE;
+        border: 1px solid #D4DEF3;
+        background-color: #EDF2FF;
         font-size: 14px;
         outline: none;
 
@@ -4682,7 +4682,7 @@
 
     .pincode-input-icon {
       font-size: 18px;
-      color: #6F6F6F;
+      color: #535E75;
       flex-shrink: 0;
     }
 

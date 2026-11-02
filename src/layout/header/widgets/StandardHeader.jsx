@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { Col, Row } from 'reactstrap';
 import HeaderLogo from './common/HeaderLogo';
+// import HeaderLocation from './common/HeaderLocation';
 import ResponsiveSearch from './common/ResponsiveSearch';
 import { useHeaderScroll } from '@/utils/HeaderScroll';
 import ThemeOptionContext from '@/helper/themeOptionsContext';
@@ -23,6 +24,7 @@ const StandardHeader = () => {
             <Col xs={12}>
               <div className="navbar-top">
                 <HeaderLogo />
+                {/* <HeaderLocation /> */}
                 <ResponsiveSearch />
                 <StandardSearchBar />
                 <StandardRightSide />

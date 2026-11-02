@@ -6,9 +6,9 @@ const STATIC_TOP_LEVEL_TITLES = ['Home'];
 const API_TOP_LEVEL_TITLES = [
   'Shop by Category',
   'Shop by Herbs',
-  'Shop by Health Concerns',
+  'For Business',
   'About Us',
-  'Blogs',
+  // 'Blogs',
 ];
 
 const STATIC_FALLBACK_TITLES = ['About Us'];
@@ -17,7 +17,7 @@ const STATIC_FALLBACK_TITLES = ['About Us'];
 const STATIC_TRAILING_MENUS = [
   {
     id: 'shop-online',
-    title: 'Shop Online',
+    title: 'Shop All',
     customClass: 'nav-item',
     path: '/collections',
   },
@@ -29,9 +29,15 @@ const STATIC_TRAILING_MENUS = [
   },
   {
     id: 'shop-by-combo',
-    title: 'Combo Pack',
+    title: 'Deals',
     customClass: 'nav-item',
     path: '/collections?tags=combo',
+  },
+  {
+    id: 'ai-negotiations',
+    title: 'AI Negotiations',
+    customClass: 'nav-item',
+    path: '/ai-negotiations',
   },
 ];
 
@@ -42,40 +48,40 @@ const STATIC_NEW_MENUS = [
     customClass: 'nav-item',
     path: '/about-us',
   },
+  // {
+  //   id: 'media',
+  //   title: 'Media',
+  //   customClass: 'nav-item dropdown',
+  //   customChildren: false,
+  //   children: [
+  //     {
+  //       title: 'Press',
+  //       type: 'link',
+  //       path: '/press',
+  //     },
+  //     {
+  //       title: 'Events',
+  //       type: 'link',
+  //       path: '/events',
+  //     },
+  //   ],
+  // },
   {
-    id: 'media',
-    title: 'Media',
-    customClass: 'nav-item dropdown',
-    customChildren: false,
-    children: [
-      {
-        title: 'Press',
-        type: 'link',
-        path: '/press',
-      },
-      {
-        title: 'Events',
-        type: 'link',
-        path: '/events',
-      },
-    ],
-  },
-  {
-    id: 'careers',
-    title: 'Careers',
-    // customClass: 'nav-item nav-item-careers',
+    id: 'contact-us',
+    title: 'Contact Us',
     customClass: 'nav-item',
-    path: '/careers',
+    path: '/contact-us',
   },
 ];
 
 const DYNAMIC_MENU_TITLES = {
   'shop by category': 'Shop by Category',
   'shop by herbs': 'Shop by Herbs',
-  'shop by health concern': 'Shop by Health Concerns',
-  'shop by health concerns': 'Shop by Health Concerns',
-  'shop by health interest': 'Shop by Health Concerns',
-  'shop by health interests': 'Shop by Health Concerns',
+  'shop by health concern': 'For Business',
+  'shop by health concerns': 'For Business',
+  'shop by health interest': 'For Business',
+  'shop by health interests': 'For Business',
+  'for business': 'For Business',
   'about us': 'About Us',
   blog: 'Blogs',
   blogs: 'Blogs',
@@ -209,8 +215,30 @@ const buildHeaderMenu = (baseMenu = [], apiMenu = []) => {
       : null;
   }).filter(Boolean);
 
-  // Added STATIC_NEW_MENUS so that PrimaryNavBar has the objects available to map
-  return [...staticMenus, ...dynamicMenus, ...STATIC_TRAILING_MENUS, ...STATIC_NEW_MENUS];
+  const allMenus = [...staticMenus, ...dynamicMenus, ...STATIC_TRAILING_MENUS, ...STATIC_NEW_MENUS];
+
+  const orderPriority = [
+    'Home',
+    'Shop All',
+    'Shop by Category',
+    'Best Sellers',
+    'Deals',
+    'AI Negotiations',
+    'For Business',
+    'About Us',
+    // 'Blogs',
+    // 'Media',
+    'Contact Us',
+  ];
+
+  return allMenus.sort((a, b) => {
+    const idxA = orderPriority.indexOf(a?.title);
+    const idxB = orderPriority.indexOf(b?.title);
+    if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+    if (idxA !== -1) return -1;
+    if (idxB !== -1) return 1;
+    return 0;
+  });
 };
 
 export const useHeaderMenu = (options = {}) => {

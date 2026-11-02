@@ -55,7 +55,7 @@
   position: relative;
   width: 100%;
   max-width: 500px;
-  min-width: 350px;
+  min-width: 331px;
   margin: 0 auto;
 }
 
@@ -124,7 +124,7 @@
 
   .search-icon {
     font-size: 18px;
-    color: #6F6F6F;
+    color: #535E75;
     // color: var(--content-color, #767676);
     flex-shrink: 0;
   }
@@ -379,7 +379,7 @@
 
   .enhanced-search-container {
     max-width: 100%;
-    min-width: 350px;
+    min-width: 331px;
     margin: 0;
   }
 }

@@ -25,7 +25,7 @@
       overflow: hidden;
       background: #f5f5f5;
       flex-shrink: 0;
-      border: 1px solid var(--e2e2e2);
+      border: 1px solid var(--D4DEF3);
 
       img {
         width: 100%;
@@ -90,7 +90,7 @@
       justify-content: center;
 
       .input-group {
-        border: 1px solid var(--e2e2e2);
+        border: 1px solid var(--D4DEF3);
         background-color: var(--ffffff);
         border-radius: 6px;
         padding: 3px 2px;
@@ -198,6 +198,6 @@
   }
 
   .order-items {
-    // border-bottom: 1px solid var(--e2e2e2);
+    // border-bottom: 1px solid var(--D4DEF3);
   }
 }

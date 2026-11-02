@@ -203,7 +203,7 @@
 
   .dashboard-left-sidebar {
     background-color: var(--ffffff, #fefefe);
-    border: 1px solid var(--e2e2e2, #e2e2e2);
+    border: 1px solid var(--D4DEF3, #D4DEF3);
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
     overflow: hidden;
@@ -391,7 +391,7 @@
           margin-top: fluid-scale(10, 14);
           text-align: center;
           padding-bottom: fluid-scale(12, 16);
-          border-bottom: 1px solid var(--e2e2e2, #e2e2e2);
+          border-bottom: 1px solid var(--D4DEF3, #D4DEF3);
 
           h3 {
             font-size: 16px;
@@ -404,7 +404,7 @@
 
           h6 {
             font-size: fluid-scale(13, 14);
-            color: var(--content-color, var(--6f6f6f));
+            color: var(--content-color, var(--535E75));
             font-weight: 400;
             margin: 0;
 
@@ -479,7 +479,7 @@
           svg {
             font-size: fluid-scale(16, 18);
             margin-right: 10px;
-            color: var(--6f6f6f, var(--6f6f6f));
+            color: var(--535E75, var(--535E75));
             transition: color 0.2s ease;
 
             body[dir='rtl'] & {
@@ -529,7 +529,7 @@
 
           svg {
             font-size: fluid-scale(16, 18);
-            color: var(--6f6f6f);
+            color: var(--535E75);
             transition: color 0.2s ease;
           }
         }
@@ -545,7 +545,7 @@
         width: auto;
         padding-top: 16px;
         margin: 0 15px 8px;
-        border-top: 1px solid var(--e2e2e2);
+        border-top: 1px solid var(--D4DEF3);
 
         .btn {
           padding: 8px 16px;
@@ -618,7 +618,7 @@
     ========================================== */
     .total-box {
       background-color: var(--ffffff);
-      border: 1px solid var(--e2e2e2);
+      border: 1px solid var(--D4DEF3);
       border-radius: 12px;
       padding: 16px 20px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
@@ -725,7 +725,7 @@
         /* Neutral Chip */
         .neutral-chip {
           background-color: var(--f5f5f0);
-          border: 1px solid var(--e2e2e2);
+          border: 1px solid var(--D4DEF3);
           padding: 10px 16px;
 
           .chip-top {
@@ -756,7 +756,7 @@
       ========================================== */
     .data-table-container {
       background-color: #fefefe;
-      border: 1px solid var(--e2e2e2);
+      border: 1px solid var(--D4DEF3);
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
       overflow: hidden;
@@ -769,7 +769,7 @@
           background-color: #F5F5F0;
 
           tr {
-            border-bottom: 1px solid var(--e2e2e2);
+            border-bottom: 1px solid var(--D4DEF3);
 
             th {
               color: var(--ffffff);
@@ -785,7 +785,7 @@
 
         tbody {
           tr {
-            border-bottom: 1px solid var(--e2e2e2);
+            border-bottom: 1px solid var(--D4DEF3);
             transition: background-color 0.2s ease;
 
             &:last-child {
@@ -875,7 +875,7 @@
 
               &.status-pending {
                 background-color: #F5F5F0;
-                border: 1px solid var(--e2e2e2);
+                border: 1px solid var(--D4DEF3);
                 color: var(--4a4a4a);
               }
 
@@ -900,7 +900,7 @@
       PAGINATION OVERRIDES
       ========================================== */
     .custome-pagination {
-      border-top: 1px solid var(--e2e2e2);
+      border-top: 1px solid var(--D4DEF3);
       padding-top: 20px;
       display: flex;
       justify-content: center;
@@ -924,7 +924,7 @@
             font-size: 13px;
             font-weight: 400;
             background-color: #fefefe;
-            border: 1px solid var(--e2e2e2);
+            border: 1px solid var(--D4DEF3);
             color: var(--4a4a4a);
             transition: all 0.2s ease;
 
@@ -944,11 +944,11 @@
 
           &.disabled .page-link {
             background-color: #fefefe;
-            color: var(--e2e2e2);
+            color: var(--D4DEF3);
             cursor: not-allowed;
 
             &:hover {
-              border-color: var(--e2e2e2);
+              border-color: var(--D4DEF3);
             }
           }
         }
@@ -963,7 +963,7 @@
       .profile-wireframe-card {
         width: 100%;
         background-color: var(--white, #fefefe);
-        border: 1px solid var(--border-color, #e2e2e2);
+        border: 1px solid var(--border-color, #D4DEF3);
         border-radius: 12px;
         padding: 20px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -1106,7 +1106,7 @@
         align-items: center;
         background-color: var(--ffffff);
         padding: 16px 20px;
-        border: 1px solid var(--e2e2e2);
+        border: 1px solid var(--D4DEF3);
         border-radius: 12px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
         gap: 20px;
@@ -1128,7 +1128,7 @@
 
           .greeting-subtext {
             font-size: 14px;
-            color: var(--6f6f6f, #6f6f6f);
+            color: var(--535E75, #535E75);
             margin-bottom: 6px;
             font-weight: 400;
           }
@@ -1244,7 +1244,7 @@
 
           .stat-box {
             background-color: var(--f5f5f0, #f5f5f0);
-            border: 1px solid var(--e2e2e2, #e2e2e2);
+            border: 1px solid var(--D4DEF3, #D4DEF3);
             border-radius: 8px;
             padding: 12px 20px;
             min-width: 110px;
@@ -1437,7 +1437,7 @@
 
         .btn-light {
           background-color: var(--white, #fefefe);
-          border-color: var(--border-color, #e2e2e2);
+          border-color: var(--border-color, #D4DEF3);
           color: var(--title-color, #333);
           font-weight: 500;
           transition: all 0.3s ease;
@@ -1451,7 +1451,7 @@
       .wireframe-field {
         .qualification-btn {
           font-weight: 400;
-          border: 1px solid var(--e2e2e2);
+          border: 1px solid var(--D4DEF3);
           border-radius: 8px;
 
           &.active {
@@ -1471,7 +1471,7 @@
         .form-select,
         .input-group-text {
           background-color: var(--white, #fefefe);
-          border: 1px solid var(--border-color, #e2e2e2);
+          border: 1px solid var(--border-color, #D4DEF3);
           border-radius: 8px;
           padding: 10px 12px;
           font-weight: 500;
@@ -1508,7 +1508,7 @@
           .country-code-select {
             max-width: 70px;
             font-weight: 600;
-            border: 1px solid var(--border-color, #e2e2e2);
+            border: 1px solid var(--border-color, #D4DEF3);
             border-radius: 8px 0 0 8px;
             background: var(--light-gray, #f8f8f8);
             border-right: none;
@@ -2114,7 +2114,7 @@
       ========================================================================== */
       .address-header-card {
         background: var(--ffffff);
-        border: 1px solid var(--e2e2e2);
+        border: 1px solid var(--D4DEF3);
         border-radius: 12px;
         padding: 16px 20px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
@@ -2156,7 +2156,7 @@
         ========================================================================== */
       .address-box {
         background: var(--ffffff);
-        border: 1px solid var(--e2e2e2);
+        border: 1px solid var(--D4DEF3);
         border-radius: 12px;
         padding: 16px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
@@ -2188,13 +2188,13 @@
             font-size: 11px;
             font-weight: 600;
             background: var(--f5f5f0);
-            border: 1px solid var(--e2e2e2);
-            color: var(--6f6f6f);
+            border: 1px solid var(--D4DEF3);
+            color: var(--535E75);
             text-transform: capitalize;
 
             svg {
               font-size: 12px;
-              color: var(--6f6f6f);
+              color: var(--535E75);
             }
 
             /* Default Card Badge */
@@ -2229,7 +2229,7 @@
               width: 28px;
               height: 28px;
               border-radius: 8px;
-              border: 1px solid var(--e2e2e2);
+              border: 1px solid var(--D4DEF3);
               background: #fefefe;
               transition: all 0.3s ease;
               padding: 0;
@@ -2240,7 +2240,7 @@
 
               /* Edit Button */
               &.edit-btn {
-                color: var(--6f6f6f);
+                color: var(--535E75);
 
                 &:hover {
                   background: var(--EDF2FF);
@@ -2303,7 +2303,7 @@
             width: 100%;
             padding: 8px 16px;
             border-radius: 8px;
-            border: 1px solid var(--e2e2e2);
+            border: 1px solid var(--D4DEF3);
             background: #fefefe;
             font-size: 12px;
             font-weight: 500;
@@ -2324,7 +2324,7 @@
         ========================================================================== */
       .add-new-address-card {
         background: #fefefe;
-        border: 1.5px dashed var(--e2e2e2);
+        border: 1.5px dashed var(--D4DEF3);
         border-radius: 12px;
         min-height: 160px;
         cursor: pointer;
@@ -2374,14 +2374,14 @@
         ========================================================================== */
       .no-data-added {
         background: #fefefe;
-        border: 1px solid var(--e2e2e2);
+        border: 1px solid var(--D4DEF3);
         border-radius: 12px;
         text-align: center;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
         padding: 40px 20px;
 
         .empty-icon {
-          color: var(--e2e2e2);
+          color: var(--D4DEF3);
           font-size: 36px;
           margin-bottom: 16px;
         }
@@ -2394,7 +2394,7 @@
         }
 
         p {
-          color: var(--6f6f6f);
+          color: var(--535E75);
           // font-size: 13px;
         }
       }
@@ -2783,7 +2783,7 @@
               border-radius: 50px;
               cursor: pointer;
               background-color: #0e997e26;
-              border: 1px solid var(--e2e2e2);
+              border: 1px solid var(--D4DEF3);
 
               &:before,
               &:after {
@@ -3076,7 +3076,7 @@
         .item-count {
           font-size: 12px;
           // color: variables.$text-muted;
-          color: var(--6f6f6f);
+          color: var(--535E75);
         }
       }
 
@@ -3271,7 +3271,7 @@
 
         .order-rating {
           font-size: 14px;
-          color: var(--6f6f6f);
+          color: var(--535E75);
         }
       }
 
@@ -3347,7 +3347,7 @@
             overflow: hidden;
             background: #f5f5f5;
             flex-shrink: 0;
-            border: 1px solid var(--e2e2e2);
+            border: 1px solid var(--D4DEF3);
 
             img {
               width: 100%;
@@ -3601,7 +3601,7 @@
 
   .offcanvas-header {
     flex-shrink: 0;
-    border-bottom: 1px solid var(--e2e2e2);
+    border-bottom: 1px solid var(--D4DEF3);
 
     .offcanvas-title {
       display: flex;
@@ -3621,7 +3621,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid var(--e2e2e2);
+        border: 1px solid var(--D4DEF3);
       }
 
       .header-text {
@@ -3641,7 +3641,7 @@
         .item-count {
           font-size: 13px;
           font-weight: 400;
-          color: var(--6f6f6f);
+          color: var(--535E75);
           margin-top: 5px;
         }
       }
@@ -3661,7 +3661,7 @@
       overflow-y: auto;
       overflow-x: hidden;
       min-height: 0;
-      background-color: #F7F9FE;
+      background-color: #EDF2FF;
       padding-block: 12px;
 
       &::-webkit-scrollbar-track {
@@ -3803,7 +3803,7 @@
         right: 0;
         margin-bottom: 8px;
         background: #fff;
-        border: 1px solid var(--e2e2e2);
+        border: 1px solid var(--D4DEF3);
         border-radius: 12px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
         z-index: 10;
@@ -3816,7 +3816,7 @@
           background-color: var(--ffffff);
           border-radius: 12px;
           transition: background 0.2s ease;
-          border: 1px solid var(--e2e2e2);
+          border: 1px solid var(--D4DEF3);
 
           &:last-child {
             border-bottom: none;

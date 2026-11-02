@@ -75,7 +75,7 @@ const HeaderCart = () => {
               </span>
             )}
           </span>
-          <span className="header-icon-label">Cart</span>
+          {/* <span className="header-icon-label">Cart</span> */}
         </button>
         {isMounted && <HeaderCartData cartStyle={cartStyle} />}
       </div>

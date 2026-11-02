@@ -72,7 +72,10 @@ const FooterNewsletter = () => {
   return (
     <>
       <li className="footer-newsletter newsletter-promo">
-        <h5 className="mb-3 text-content">Subscribe to our newsletter</h5>
+        <h4 className="newsletter-title">{t('Stay Updated')}</h4>
+        <p className="newsletter-desc">
+          {t('Get the latest offers, New product launches & industry insights')}
+        </p>
         <Form
           className="newsletter-form"
           onSubmit={handleSubmit(onSubmit)}

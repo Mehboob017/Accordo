@@ -21,12 +21,12 @@ const ClassicHeaderMenu = () => {
     setLogo(Dhootapapeshwar);
   }, [Dhootapapeshwar]);
   return (
-    <div className="header-nav-middle d-xxl-none">
+    <div className="header-nav-middle d-xl-none">
       <div className="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
         <div
           // className={`offcanvas offcanvas-collapse order-xl-2 ${mobileSideBar ? 'show' : ''}`}
           // id="primaryMenu"
-          className={`offcanvas offcanvas-start offcanvas-xxl order-xl-2 primary-header-offcanvas ${mobileSideBar ? 'show' : ''}`}
+          className={`offcanvas offcanvas-start offcanvas-xl order-xl-2 primary-header-offcanvas ${mobileSideBar ? 'show' : ''}`}
           id="primaryMenu"
         >
           <div className="offcanvas-header navbar-shadow">
@@ -62,7 +62,7 @@ const ClassicHeaderMenu = () => {
                 <div className="text-center mb-1 fs-6 app-promo-text-title">Dhootapapeshwar App is LIVE!</div>
                 <p className="text-center app-promo-text-description">Download & Signup, to get {signupBonusCoins} SDL Points.</p>
               </div>
-              <div className="d-flex d-xxl-none justify-content-center gap-2 flex-nowrap">
+              <div className="d-flex d-xl-none justify-content-center gap-2 flex-nowrap">
                 {themeOption?.footer?.play_store_url && (
                   <div className="position-relative sidebar-appstore-image">
                     <Link

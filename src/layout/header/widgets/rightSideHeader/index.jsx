@@ -12,7 +12,6 @@ import ThemeOptionContext from '@/helper/themeOptionsContext';
 import StandardSearchBar from './StandardSearchBar';
 import { useUser } from '@/utils/hooks/useUser';
 
-
 const RightSideHeader = ({ noContactUs, wishListIcon }) => {
   const { isAuthenticated } = useUser();
   const router = useRouter();
@@ -22,6 +21,7 @@ const RightSideHeader = ({ noContactUs, wishListIcon }) => {
   return (
     <div className="rightside-box">
       {pathName !== '/checkout' && <ResponsiveSearch />}
+
       <ul className="right-side-menu">
         <li className={`right-side right-side--search ${pathName === '/checkout' ? '' : ''}`}>
           <div className="delivery-login-box">

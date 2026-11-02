@@ -29,30 +29,12 @@ const FooterLogoContent = () => {
         </div>
 
         <div className="footer-logo-contain">
-          <p className="text-content-color" style={{ color: '#535E75' }}>
-            Shree Dhootapapeshwar Limited built on Saiddhantik Ayurved and with over 150 years of manufacturing excellence in  crafting Authentic, Standardised, Efficacious and Safe Ayurvedic formulations, with over 350 classical medicines guided by expertise and trusted by Ayurved physicians.
+          <p className="text-content-color" style={{ color: 'var(--text)', fontWeight: 'bold', marginBottom: '8px', fontSize: '16px' }}>
+            Building and industrial supplies. Smarter deals. Local delivery.
           </p>
-          {/* <ul className="address">
-              {themeOption?.footer?.about_address && (
-                <li>
-                  <RiHomeLine />
-                  <Link href="https://www.google.com/maps" target="_blank">
-                    {themeOption?.footer?.about_address}
-                  </Link>
-                </li>
-              )}
-              {themeOption?.footer?.about_email && (
-                <li>
-                  <RiMailLine />
-                  <Link
-                    href={`mailto:${themeOption?.footer?.about_email}`}
-                    target="_blank"
-                  >
-                    {themeOption?.footer?.about_email}
-                  </Link>
-                </li>
-              )}
-            </ul> */}
+          <p className="text-content-color" style={{ color: '#535E75', lineHeight: '1.6' }}>
+            Get fast access to high quality electrical supplies — wires, cables, switches, motors and more. With AI assisted negotiation on eligible orders get a smarter deal.
+          </p>
         </div>
       </div>
     </Col>

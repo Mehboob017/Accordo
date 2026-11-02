@@ -274,7 +274,7 @@ const UGCCard = ({ data, onPlay, index, eagerLoad = false }) => {
                     <span
                       style={{
                         fontSize: 13,
-                        color: '#6f6f6f',
+                        color: '#535E75',
                         lineHeight: 1,
                       }}
                     >

@@ -65,7 +65,7 @@ const HeaderWishList = ({ wishListIcon }) => {
               <span className="header-icon-badge">{wishlistCount}</span>
             )}
           </span>
-          <span className="header-icon-label">Wishlist</span>
+          {/* <span className="header-icon-label">Wishlist</span> */}
         </Link>
       </li>
 

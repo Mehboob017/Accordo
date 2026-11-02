@@ -2912,7 +2912,7 @@
   background-color: #fefefe;
   border-radius: 12px;
   padding: 20px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #D4DEF3;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 
   .faq-top-box {
@@ -2920,7 +2920,7 @@
     background-color: #fefefe;
     border-radius: 12px;
     padding: 28px 18px;
-    // border: 1px solid #e2e2e2;
+    // border: 1px solid #D4DEF3;
     // box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 
     .faq-box-icon {
@@ -3018,7 +3018,7 @@
         border: none;
         overflow: hidden;
         z-index: 0;
-        border: 1px solid #e2e2e2;
+        border: 1px solid #D4DEF3;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 
         .accordion-header {
@@ -3363,12 +3363,12 @@
 
     .left-accordion-box {
       .accordion-item {
-        // border: 1px solid #e2e2e2;
+        // border: 1px solid #D4DEF3;
         padding: calc(18px + (25 - 18) * ((100vw - 320px) / (1920 - 320)));
         // background-color: var(--light-gray);
         background-color: #fefefe;
         border-radius: 12px;
-        border: 1px solid #e2e2e2;
+        border: 1px solid #D4DEF3;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 
         +.accordion-item {
@@ -3520,7 +3520,7 @@
                   border-radius: 50%;
                   overflow: hidden;
                   flex-shrink: 0;
-                  border: 1px solid #e2e2e2;
+                  border: 1px solid #D4DEF3;
 
                   img {
                     width: 100% !important;
@@ -3705,7 +3705,7 @@
                   overflow: hidden;
                   position: relative;
                   background-color: #f3f4f3;
-                  color: #6f6f6f;
+                  color: #535E75;
 
                   &::after {
                     @include common.pos;
@@ -3869,7 +3869,7 @@
           display: flex;
           align-items: center;
           // color: var(--content-color);
-          color: #6f6f6f;
+          color: #535E75;
           text-transform: uppercase;
           font-size: 13px;
           gap: 5px;
@@ -3919,7 +3919,7 @@
       p {
         line-height: 1.8;
         // color: var(--content-color);
-        color: #6f6f6f;
+        color: #535E75;
         opacity: 85%;
         margin-bottom: 0;
         -webkit-line-clamp: 2;
@@ -3934,7 +3934,7 @@
           -webkit-box-orient: vertical;
           display: -webkit-box;
           overflow: hidden;
-          color: #6f6f6f;
+          color: #535E75;
           opacity: 85%;
           margin-bottom: 6px;
 
@@ -4160,7 +4160,7 @@
       p {
         line-height: 1.8;
         // color: var(--content-color);
-        color: #6f6f6f;
+        color: #535E75;
         margin-bottom: 0;
         line-height: 160%;
         -webkit-line-clamp: 2;
@@ -4869,7 +4869,7 @@
     background-color: #fefefe;
     border-radius: 12px;
     box-shadow: 0 0px 14px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--e2e2e2);
+    border: 1px solid var(--D4DEF3);
     z-index: 0;
     position: relative;
     overflow: hidden;
@@ -7604,7 +7604,7 @@
     margin: 0 auto;
     font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
     line-height: 1.4;
-    color: var(--6f6f6f);
+    color: var(--535E75);
   }
 
   &.category-no-data {

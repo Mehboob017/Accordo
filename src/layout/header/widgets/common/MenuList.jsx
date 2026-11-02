@@ -89,9 +89,10 @@ const getLinkColumns = (menu) => {
 const MENU_TITLES_WITH_CHILD_THUMBS = [
   'Shop by Herbs',
   'Shop by Health Concerns',
+  'For Business',
 ];
 
-const MENU_TITLES_WITH_THUMB_GRID = ['Shop by Health Concerns'];
+const MENU_TITLES_WITH_THUMB_GRID = ['Shop by Health Concerns', 'For Business'];
 
 const SHOP_BY_CATEGORY_TITLE = 'Shop by Category';
 
@@ -494,3 +495,4 @@ const MenuList = ({
 };
 
 export default MenuList;
+

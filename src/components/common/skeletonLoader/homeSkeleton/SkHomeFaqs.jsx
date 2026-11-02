@@ -37,7 +37,7 @@ const SkHomeFaqs = ({ count = 5 }) => {
                       width: '100%',
                       backgroundColor: '#fefefe',
                       borderRadius: 7,
-                      border: '1px solid #e2e2e2',
+                      border: '1px solid #D4DEF3',
                       boxShadow: '0 8px 24px rgba(0, 0, 0, 0.05)',
                       padding: '16px 20px',
                       display: 'flex',

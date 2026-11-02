@@ -233,7 +233,7 @@ const ShowProduct = ({
                             <span
                               style={{
                                 fontSize: 13,
-                                color: '#6f6f6f',
+                                color: '#535E75',
                                 lineHeight: 1,
                               }}
                             >
@@ -257,7 +257,7 @@ const ShowProduct = ({
                           <span
                             style={{
                               fontSize: 13,
-                              color: '#6f6f6f',
+                              color: '#535E75',
                               lineHeight: 1,
                             }}
                           >
@@ -272,7 +272,7 @@ const ShowProduct = ({
                           <span
                             style={{
                               fontSize: 13,
-                              color: '#6f6f6f',
+                              color: '#535E75',
                               lineHeight: 1,
                             }}
                           >

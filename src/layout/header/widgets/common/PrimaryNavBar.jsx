@@ -5,28 +5,18 @@ import MenuList from './MenuList';
 import { useHeaderMenu } from '@/utils/hooks/useHeaderMenu';
 import { usePathname } from 'next/navigation';
 
-// const PRIMARY_NAV_TITLES = [
-//   'Home',
-//   'About Us',
-//   'Shop by Category',
-//   'Shop by Herbs',
-//   'Shop by Health Concerns',
-//   'Blogs',
-//   'Shop by Best Seller',
-//   'Shop by Combo',
-// ];
-
 const PRIMARY_NAV_TITLES = [
   'Home',
-  'Shop Online',
-  'Best Sellers',
-  'Combo Pack',
+  'Shop All',
   'Shop by Category',
-  'Shop by Health Concerns',
+  'Best Sellers',
+  'Deals',
+  'AI Negotiations',
+  'For Business',
   'About Us',
-  'Blogs',
-  'Media',
-  'Careers',
+  // 'Blogs',
+  // 'Media',
+  'Contact Us',
 ];
 
 const PrimaryNavBar = () => {
@@ -52,12 +42,11 @@ const PrimaryNavBar = () => {
               <MenuList
                 menu={menu}
                 key={menu.id || i}
-                // customClass={`${menu.customClass || 'nav-item'}${menu.id === 'careers' || menu.title === 'Careers' ? ' nav-item-careers' : ''}`.trim()}
                 customClass={menu.customClass}
                 anchorClass={
-                  menu.children && menu.children.length > 0 // <-- Checks if it actually has dropdown items
+                  menu.children && menu.children.length > 0
                     ? 'nav-link dropdown-toggle'
-                    : 'nav-link' // <-- Blogs gets this plain link class
+                    : 'nav-link'
                 }
                 level={0}
                 isOpen={isOpen}

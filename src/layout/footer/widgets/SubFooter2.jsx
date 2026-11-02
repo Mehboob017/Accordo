@@ -1,50 +1,36 @@
 import React, { useContext } from 'react';
-import Image from 'next/image';
 import ThemeOptionContext from '@/helper/themeOptionsContext';
 import FooterSocial from './FooterSocial';
-import paymentImage from '../../../../public/assets/images/payment/2.png';
-import amazonLogo from '../../../../public/assets/images/ecommerceSite/Amazon_logo1.webp';
-import flipkartLogo from '../../../../public/assets/images/ecommerceSite/flipkart1.svg';
-import aPharmacyLogo from '../../../../public/assets/images/ecommerceSite/a-pharmacy1.png';
-import oneMgLogo from '../../../../public/assets/images/ecommerceSite/1mg.png';
-import netmedsLogo from '../../../../public/assets/images/ecommerceSite/netmeds.png';
-import zeptoLogo from '../../../../public/assets/images/ecommerceSite/Zepto_Logo.png';
 
-const SubFooter = () => {
+const SubFooter2 = () => {
   const { themeOption } = useContext(ThemeOptionContext);
   return (
-    <div translate="no" className="sub-footer  no-mobile-gap" >
-      {/* {themeOption?.footer?.footer_copyright && (
-        <div className="reserve">
-          <h6 className="text-content">
-            &copy; {new Date().getFullYear()} Dhootapapeshwar. All rights reserved.
-          </h6>
-        </div>
-      )} */}
-
+    <div translate="no" className="sub-footer no-mobile-gap">
       <FooterSocial />
 
-      <div className="ecommerce-sites">
-        <div className="text-content fw-semibold">Available on : </div>
-        <div className="ecommerce-sites-content">
-          <Image src={flipkartLogo} alt="Flipkart" height={18} width={54} />
-          <Image src={amazonLogo} alt="Amazon" height={18} width={54} />
-          <Image src={netmedsLogo} alt="Netmeds" height={18} width={54} />
-          <Image src={oneMgLogo} alt="1mg" height={18} width={54} />
-          <Image src={aPharmacyLogo} alt="A Pharmacy" height={18} width={54} />
-          {/* <Image src={zeptoLogo} alt="Zepto" height={18} width={54} /> */}
-        </div>
-      </div>
-
-      <div className="payment">
-        <div className="text-content fw-semibold">Supported :</div>
-        <Image src={paymentImage} alt="payment" height={35} width={302} />
-      </div>
-      {/* <FooterSocial /> */}
-
-
+      <h6 className="text-content-color my-md-1 term-policy">
+        <a href="/disclaimer" target="_blank" rel="noreferrer">
+          Disclaimer
+        </a>{' '}
+        |{' '}
+        <a href="/privacy-policy" target="_blank" rel="noreferrer">
+          Privacy Policy
+        </a>{' '}
+        |{' '}
+        <a href="/return-policy" target="_blank" rel="noreferrer">
+          Return & Refund Policy
+        </a>{' '}
+        |{' '}
+        <a href="/grievance-policy" target="_blank" rel="noreferrer">
+          Grievance Policy
+        </a>{' '}
+        |{' '}
+        <a href="/terms-and-conditions" target="_blank" rel="noreferrer">
+          Terms & Conditions
+        </a>
+      </h6>
     </div>
   );
 };
 
-export default SubFooter;
+export default SubFooter2;

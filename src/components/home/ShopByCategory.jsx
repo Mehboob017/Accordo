@@ -7,7 +7,7 @@ import CustomHeading from '@/components/common/CustomHeading';
 import { Col, Row } from 'reactstrap';
 import styles from './ShopByCategory.module.scss';
 
-// ─── Placeholder categories — exactly 7 categories matching the design ───────
+// ─── Placeholder categories — 8 categories matching the design ───────────────
 const CATEGORIES = [
   {
     uid: '1',
@@ -58,11 +58,18 @@ const CATEGORIES = [
     bgColor: '#FFEEDF',
     image: '/assets/images/category/wire-coil.png',
   },
+  {
+    uid: '8',
+    name: 'Solar & Power',
+    slug: 'solar-power',
+    bgColor: '#F2FCD6',
+    image: '/assets/images/category/wire-coil.png',
+  },
 ];
 
 const ShopByCategory = () => {
-  // Enforce limit of 7 categories
-  const categories = CATEGORIES.slice(0, 7);
+  // Enforce limit of 8 categories
+  const categories = CATEGORIES.slice(0, 8);
 
   if (!categories.length) return null;
 
@@ -87,7 +94,7 @@ const ShopByCategory = () => {
         </Col>
       </Row>
 
-      {/* ── 7 Categories Grid (4 in a row on mobile) ── */}
+      {/* ── 8 Categories Grid (4 in a row on mobile) ── */}
       <div className={styles['category-grid']}>
         {categories.map((category) => (
           <Link

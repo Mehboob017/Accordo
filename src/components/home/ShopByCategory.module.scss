@@ -24,7 +24,7 @@
 }
 
 // ── Category Grid ──────────────────────────────────────────────────────────
-// Desktop & tablet: all 7 items arranged in a single balanced row
+// Desktop & tablet: all 8 items arranged in a single balanced row
 // Mobile (< 768px): exactly 4 items per row
 .category-grid {
   display: flex;
@@ -35,7 +35,7 @@
 
   // Medium screens / tablets
   @media (max-width: 991px) {
-    gap: 12px;
+    gap: 10px;
   }
 
   // Mobile: 4 categories per row
@@ -94,7 +94,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 
   @media (max-width: 1200px) {
@@ -102,7 +102,7 @@
   }
 
   @media (max-width: 991px) {
-    max-width: 85px;
+    max-width: 78px;
   }
 
   @media (max-width: 767px) {

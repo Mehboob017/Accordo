@@ -101,6 +101,21 @@ const ProductBox1 = ({
       : '/collections';
   }, [productDetail?.slug]);
 
+  const companyName = useMemo(() => {
+    return (
+      productDetail?.brand?.name ||
+      productDetail?.companyName ||
+      productDetail?.company_name ||
+      productDetail?.brand_name ||
+      productDetail?.brandName ||
+      (typeof productDetail?.brand === 'string' ? productDetail?.brand : null) ||
+      productDetail?.manufacturedBy?.companyName ||
+      productDetail?.manufacturer?.companyName ||
+      productDetail?.marketedBy?.companyName ||
+      null
+    );
+  }, [productDetail]);
+
   const imageSource = useMemo(() => {
     const rawUrl =
       getProductImageUrl(imgUrl) ||
@@ -154,8 +169,8 @@ const ProductBox1 = ({
                 }
                 className="img-fluid h-100 product-image-preloaded"
                 draggable={false}
-                height={400}
-                width={400}
+                height={188}
+                width={249}
                 loading="lazy"
                 decoding="async"
               />
@@ -176,6 +191,12 @@ const ProductBox1 = ({
       </div>
       <div className="product-detail">
         <div className="product-detail--wrapper">
+          {/* {companyName && ( */}
+          <span className="product-company-name">
+            {/* {companyName} */}
+            Dhootapapeshwar
+          </span>
+          {/* )} */}
           <h3 style={{ fontSize: 'inherit' }}>
             <Link title={productDetail?.name} href={productHref} prefetch={false} className="name">
               {productDetail?.name}
@@ -210,7 +231,7 @@ const ProductBox1 = ({
                           </span>{' '}
                           ({formatReviewCount(ratingData.reviewCount)})
                         </span>
-                        <span
+                        {/* <span
                           id={reviewTooltipId}
                           className="d-inline-flex align-items-center"
                           style={{
@@ -230,7 +251,7 @@ const ProductBox1 = ({
                           style={{ fontSize: 12 }}
                         >
                           Average Rating Across Marketplaces & SDL India
-                        </UncontrolledTooltip>
+                        </UncontrolledTooltip> */}
                       </div>
                     </div>
                   )}
@@ -273,21 +294,23 @@ const ProductBox1 = ({
                     ) : (
                       // 2B: Sale price is different from MRP -> Show both + conditional discount
                       <>
-                        <div className="disc-price">
-                          {convertToRupees(displayPrices.salePrice)}
-                        </div>
+                        <div className="price-group d-flex align-items-center gap-2">
+                          <div className="disc-price">
+                            {convertToRupees(displayPrices.salePrice)}
+                          </div>
 
-                        <div className="selling-price">
-                          <span
-                            style={{
-                              fontSize: 14,
-                              color: '#535E75',
-                              lineHeight: 1,
-                            }}
-                          >
-                            M.R.P.
-                          </span>{' '}
-                          {convertToRupees(displayPrices.price)}
+                          <div className="selling-price">
+                            {/* <span
+                              style={{
+                                fontSize: 14,
+                                color: '#535E75',
+                                lineHeight: 1,
+                              }}
+                            >
+                              M.R.P.
+                            </span>{' '} */}
+                            {convertToRupees(displayPrices.price)}
+                          </div>
                         </div>
 
                         {displayPrices.discount > 0 && (

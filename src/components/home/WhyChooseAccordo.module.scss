@@ -1,0 +1,155 @@
+// ── Why Choose Accordo.ai Section Styles ──────────────────────────────────────
+
+.why-choose-section {
+  position: relative;
+  background-color: var(--white, #ffffff);
+}
+
+.heading-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 28px;
+  }
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--content-color, #64748b);
+  line-height: 1.5;
+
+  @media (min-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+// ── 5 Feature Items Row ───────────────────────────────────────────────────────
+.features-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 991px) {
+    gap: 16px;
+  }
+
+  // Tablet & Mobile layout
+  @media (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 16px;
+  }
+}
+
+// ── Individual Feature Card ───────────────────────────────────────────────────
+.feature-card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.25s ease;
+
+  @media (max-width: 767px) {
+    flex: 0 0 calc(33.333% - 12px);
+    max-width: calc(33.333% - 12px);
+  }
+
+  @media (max-width: 575px) {
+    flex: 0 0 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+
+    .icon-bubble {
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+      transform: scale(1.03);
+    }
+  }
+}
+
+// ── Soft Blue Circular Icon Bubble ───────────────────────────────────────────
+.icon-bubble {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #edf2ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  color: #234bf3;
+  transition: all 0.25s ease;
+
+  @media (max-width: 1199px) {
+    width: 104px;
+    height: 104px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 991px) {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: 575px) {
+    width: 76px;
+    height: 76px;
+    margin-bottom: 12px;
+  }
+
+  svg {
+    width: 44px;
+    height: 44px;
+
+    @media (max-width: 1199px) {
+      width: 38px;
+      height: 38px;
+    }
+
+    @media (max-width: 991px) {
+      width: 32px;
+      height: 32px;
+    }
+
+    @media (max-width: 575px) {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+// ── Feature Label ─────────────────────────────────────────────────────────────
+.label {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.4px;
+  color: #07112c;
+  text-transform: uppercase;
+  max-width: 150px;
+  margin: 0;
+
+  @media (max-width: 991px) {
+    font-size: 12px;
+    max-width: 130px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 11px;
+    letter-spacing: 0.2px;
+    max-width: 120px;
+  }
+}
+

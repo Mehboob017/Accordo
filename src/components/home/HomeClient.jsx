@@ -16,6 +16,8 @@ import WrapperComponent from '../common/WrapperComponent';
 
 const HeroCarousel = dynamic(() => import('@/components/home').then(mod => mod.HeroCarousel));
 const ShopByCategory = dynamic(() => import('@/components/home').then(mod => mod.ShopByCategory));
+const SaveAndShop = dynamic(() => import('@/components/home').then(mod => mod.SaveAndShop));
+const WhyChooseAccordo = dynamic(() => import('@/components/home').then(mod => mod.WhyChooseAccordo));
 const BestSellerProducts = dynamic(() => import('@/components/home').then(mod => mod.BestSellerProducts), {
   loading: () => <SkBestSeller count={4} />,
 });
@@ -94,6 +96,16 @@ export default function HomeClient({ sliderSettings }) {
       {/* ── Shop by Category — directly below hero ── */}
       <Suspense fallback={null}>
         <ShopByCategory />
+      </Suspense>
+
+      {/* ── More Ways to Save & Shop ── */}
+      <Suspense fallback={null}>
+        <SaveAndShop />
+      </Suspense>
+
+      {/* ── Why Choose Accordo.ai ── */}
+      <Suspense fallback={null}>
+        <WhyChooseAccordo />
       </Suspense>
 
       <Suspense fallback={<SkBestSeller count={4} />}>

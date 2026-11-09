@@ -18,10 +18,12 @@ const HeroCarousel = dynamic(() => import('@/components/home').then(mod => mod.H
 const ShopByCategory = dynamic(() => import('@/components/home').then(mod => mod.ShopByCategory));
 const SaveAndShop = dynamic(() => import('@/components/home').then(mod => mod.SaveAndShop));
 const WhyChooseAccordo = dynamic(() => import('@/components/home').then(mod => mod.WhyChooseAccordo));
+const TopBrandsMarquee = dynamic(() => import('@/components/home').then(mod => mod.TopBrandsMarquee));
 const BestSellerProducts = dynamic(() => import('@/components/home').then(mod => mod.BestSellerProducts), {
   loading: () => <SkBestSeller count={4} />,
 });
 const StaticBannerCarousel = dynamic(() => import('@/components/home').then(mod => mod.StaticBannerCarousel));
+const StaticBannerSection = dynamic(() => import('@/components/home').then(mod => mod.StaticBannerSection));
 const ShopByIngredients = dynamic(() => import('@/components/home').then(mod => mod.ShopByIngredients));
 const ShopByHealthConcerns = dynamic(() => import('@/components/home').then(mod => mod.ShopByHealthConcerns));
 
@@ -103,10 +105,7 @@ export default function HomeClient({ sliderSettings }) {
         <SaveAndShop />
       </Suspense>
 
-      {/* ── Why Choose Accordo.ai ── */}
-      <Suspense fallback={null}>
-        <WhyChooseAccordo />
-      </Suspense>
+
 
       <Suspense fallback={<SkBestSeller count={4} />}>
         <BestSellerProducts />
@@ -128,15 +127,30 @@ export default function HomeClient({ sliderSettings }) {
         <NewProfileSection />
       </Suspense> */}
 
-      <Suspense fallback={<BestSellerSkeleton count={4} />}>
+      {/* <Suspense fallback={<BestSellerSkeleton count={4} />}>
         <ShopByIngredients />
-      </Suspense>
+      </Suspense> */}
 
       <Suspense fallback={<SkHealthConcern count={10} sliderSettings={sliderSettings} />}>
         <ShopByHealthConcerns />
       </Suspense>
 
-      <Suspense fallback={<SkReviews />}>
+      {/* ── Static Banner Section (below Deals by Category) ── */}
+      <Suspense fallback={<HeroSkeleton />}>
+        <StaticBannerSection />
+      </Suspense>
+
+      {/* ── Why Choose Accordo.ai ── */}
+      <Suspense fallback={null}>
+        <WhyChooseAccordo />
+      </Suspense>
+
+      {/* ── Top Brands We Work With (Infinite Marquee) ── */}
+      <Suspense fallback={null}>
+        <TopBrandsMarquee />
+      </Suspense>
+
+      {/* <Suspense fallback={<SkReviews />}>
         <Reviews />
       </Suspense>
 
@@ -150,7 +164,7 @@ export default function HomeClient({ sliderSettings }) {
 
       <Suspense fallback={<SkHomeFaqs />}>
         <HomeFaqs />
-      </Suspense>
+      </Suspense> */}
 
       <style jsx global>{`
         .skeleton-shimmer {

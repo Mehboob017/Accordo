@@ -55,7 +55,7 @@ export default async function Home() {
     <HydrationBoundary state={dehydrate(queryClient)}>
       <SeoJsonLd schemas={schemas} />
       <HomeClient sliderSettings={sliderSettings} />
-      <HomeSeoContent />
+      {/* <HomeSeoContent /> */}
     </HydrationBoundary>
   );
 }

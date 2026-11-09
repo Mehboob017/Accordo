@@ -8,10 +8,10 @@ import WrapperComponent from '../common/WrapperComponent';
 import CustomHeading from '@/components/common/CustomHeading';
 import { LeafSVG } from '@/components/common/CommonSVG';
 import ProductBox1 from '@/components/common/productBox/productBox1/ProductBox1';
-import Btn from '@/elements/buttons/Btn';
 import { useBestSellers, useHome } from '@/utils/hooks/useHome';
 import { normalizeProductForCard } from '@/utils/fallbackProducts';
 import SkBestSeller from '@/components/common/skeletonLoader/homeSkeleton/SkBestSeller';
+import styles from './BestSellerProducts.module.scss';
 
 const getResolvedProduct = (product) => {
   if (!product) return null;
@@ -87,8 +87,9 @@ const BestSellerProducts = ({
 
   return (
     <WrapperComponent classes={{ sectionClass }} noRowCol={true}>
-      <Row className="align-items-center">
-        <Col xs={12} lg={8}>
+      {/* ── Heading + Clean Text Link View All (matches ShopByCategory) ── */}
+      <Row className="align-items-center mb-1">
+        <Col xs={9} sm={10}>
           <CustomHeading
             customClass="mb-0"
             title={title}
@@ -97,11 +98,13 @@ const BestSellerProducts = ({
           />
         </Col>
 
-        <Col lg={4} className="d-none d-lg-flex justify-content-end">
-          <Link prefetch={false} href={resolvedViewAllHref}>
-            <Btn color="primary" size="md">
-              {viewAllText}
-            </Btn>
+        <Col xs={3} sm={2} className="text-end">
+          <Link
+            prefetch={false}
+            href={resolvedViewAllHref}
+            className={styles['view-all-link']}
+          >
+            {viewAllText}
           </Link>
         </Col>
       </Row>
@@ -120,14 +123,6 @@ const BestSellerProducts = ({
                 </Col>
               ))}
             </Row>
-          </div>
-
-          <div className="d-flex d-lg-none justify-content-center mt-4">
-            <Link prefetch={false} href={resolvedViewAllHref}>
-              <Btn color="primary" size="md">
-                {viewAllText}
-              </Btn>
-            </Link>
           </div>
         </Col>
       </Row>

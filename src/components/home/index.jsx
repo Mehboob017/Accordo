@@ -2,6 +2,7 @@ import ShopByHealthConcerns from './HealthConcerns';
 import ShopByCategory from './ShopByCategory';
 import SaveAndShop from './SaveAndShop';
 import WhyChooseAccordo from './WhyChooseAccordo';
+import TopBrandsMarquee from './TopBrandsMarquee';
 import BestSellerProducts from './BestSellerProducts';
 // import ShopByDepartment from './ShopByDepartment';
 import ShopByIngredients from './ShopByIngredients';
@@ -16,6 +17,7 @@ import HomeFaqs from './HomeFaqs';
 import HomeSeoContent from './HomeSeoContent';
 import NewProfileSection from '../aboutUs/NewProfileSection';
 import StaticBannerCarousel from './StaticBannerCarousel';
+import StaticBannerSection from './StaticBannerSection';
 // import EventsListCarousel from './EventsListCarousel';
 
 export {
@@ -23,6 +25,7 @@ export {
   ShopByCategory,
   SaveAndShop,
   WhyChooseAccordo,
+  TopBrandsMarquee,
   ShopByHealthConcerns,
   BestSellerProducts,
   // ShopByDepartment,
@@ -37,5 +40,6 @@ export {
   HomeFaqs,
   HomeSeoContent,
   StaticBannerCarousel,
+  StaticBannerSection,
   // EventsListCarousel,
 };

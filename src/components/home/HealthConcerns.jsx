@@ -139,14 +139,19 @@ const ShopByHealthConcerns = () => {
       }}
       noRowCol={true}
     >
-      <Row>
-        <Col>
+      {/* ── Heading + View All ── */}
+      <Row className="align-items-center mb-1">
+        <Col xs={9} sm={10}>
           <CustomHeading
             customClass="mb-0"
-            title="Shop by Health Concerns"
-            subTitle="Explore trusted Ayurvedic care for every health condition"
-            svgUrl={<LeafSVG className="icon-width" />}
+            title="DEALS BY CATEGORY"
+            subTitle="Find the right electrical supplies for every project."
           />
+        </Col>
+        <Col xs={3} sm={2} className="text-end">
+          <Link prefetch={false} href="/collections" className={styles['view-all-link']}>
+            View All
+          </Link>
         </Col>
       </Row>
 

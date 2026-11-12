@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
+import Image from 'next/image';
 import { Controller } from 'react-hook-form';
 import { Form, FormGroup, Input, Label } from 'reactstrap';
 import { RiEdit2Line } from 'react-icons/ri';
 import Btn from '@/elements/buttons/Btn';
+import defaultBannerImage from '../../../../../public/assets/images/save-shop/shop-banner1.png';
 
 const OtpVerificationForm = ({
   otpControl,
@@ -25,6 +27,7 @@ const OtpVerificationForm = ({
   resetOtp,
   phoneInputRef,
   clearOtpServerError,
+  bannerImage,
 }) => {
   useEffect(() => {
     // console.log('[OtpForm] Error-focus effect: otpValidationState=', otpValidationState, '| otpDigits=', otpDigits);
@@ -44,6 +47,18 @@ const OtpVerificationForm = ({
 
   return (
     <div className="otp-login-top-section">
+      {bannerImage !== false && (
+        <div className="otp-login-banner">
+          <Image
+            src={bannerImage || defaultBannerImage}
+            alt="Verify OTP Banner"
+            width={500}
+            height={160}
+            className="otp-banner-image img-fluid"
+            priority
+          />
+        </div>
+      )}
       <Form className="otp-step" onSubmit={handleOtpSubmit(handleVerify)}>
         <div className="otp-welcome-card">
           <div className="d-flex justify-content-center align-items-center gap-2 otp-sent-text">

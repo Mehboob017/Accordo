@@ -127,7 +127,7 @@ const ImageMagnifier = ({
       height: `${overlayHeight}px`,
       overflow: 'hidden',
       border: '2px solid #ddd',
-      backgroundColor: '#fefefe',
+      backgroundColor: '#F7F9FE',
       zIndex: 100,
       boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
       borderRadius: '4px',

@@ -57,11 +57,31 @@
       flex-direction: column;
       min-height: 0;
 
+      >.otp-login-banner {
+        margin: -16px -16px 16px -16px;
+        width: calc(100% + 32px);
+      }
+
       // When registration form is active, remove padding and ensure proper layout
       &:has(.responsive-form-scrollable) {
         padding: 0;
         // overflow: hidden; 
         // Prevent overflow, let child handle scrolling
+      }
+    }
+
+    .otp-login-banner {
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+
+      .otp-banner-image,
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 180px;
+        object-fit: cover;
+        display: block;
       }
     }
 
@@ -376,7 +396,7 @@
       z-index: 2;
       font-size: 12px;
       font-weight: 600;
-      color: #fefefe;
+      color: #F7F9FE;
       text-align: center;
       pointer-events: none;
       line-height: 1;
@@ -566,7 +586,7 @@
         font-weight: 700;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: #fefefe;
+        color: #F7F9FE;
         text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
         white-space: nowrap;
         overflow: hidden;

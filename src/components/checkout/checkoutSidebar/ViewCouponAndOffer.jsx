@@ -1036,7 +1036,7 @@ export default function ViewCouponAndOffer({
             launchSpeed={0.5}
             effectCount={1}
             opacityDeltaMultiplier={1.9}
-            colors={['#22c55e', '#84cc16', '#facc15', '#fefefe', '#10b981']}
+            colors={['#22c55e', '#84cc16', '#facc15', '#F7F9FE', '#10b981']}
             style={confettiPlacement.style}
           />
         </div>

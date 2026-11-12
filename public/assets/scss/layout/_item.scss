@@ -3,6 +3,7 @@
 ==========================**/
 @use '../utils/variables';
 @use '../utils/mixin/common';
+
 .button-item {
   @include common.flex_common;
   @include common.center(vertical);
@@ -13,10 +14,8 @@
   z-index: 1;
 
   .item-btn {
-    @include common.pseudowh(
-      $width: calc(41px + (50 - 41) * ((100vw - 320px) / (1920 - 320))),
-      $height: calc(41px + (50 - 41) * ((100vw - 320px) / (1920 - 320)))
-    );
+    @include common.pseudowh($width: calc(41px + (50 - 41) * ((100vw - 320px) / (1920 - 320))),
+      $height: calc(41px + (50 - 41) * ((100vw - 320px) / (1920 - 320))));
     padding: 0;
 
     &:hover {
@@ -25,7 +24,7 @@
 
     &:first-child {
       &:active {
-        color: #fefefe;
+        color: #F7F9FE;
         background-color: transparent;
         border-color: transparent;
       }
@@ -102,7 +101,7 @@
       font-weight: 600;
       font-size: 13px;
 
-      + li {
+      +li {
         margin-left: -10px;
 
         body[dir='rtl'] & {
@@ -119,11 +118,11 @@
   }
 
   .item-button {
-    background-color: #fefefe !important;
+    background-color: #F7F9FE !important;
     color: var(--theme-color) !important;
 
     &:hover {
-      background-color: #fefefe !important;
+      background-color: #F7F9FE !important;
       color: var(--theme-color) !important;
     }
   }

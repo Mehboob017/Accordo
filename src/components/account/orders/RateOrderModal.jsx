@@ -959,7 +959,7 @@ const RateOrderModal = ({ isOpen, onClose, order, onSubmit }) => {
             '#00e676',
             '#00b0ff',
             '#d500f9',
-            '#fefefe',
+            '#F7F9FE',
           ]}
         />
       )}
@@ -1133,6 +1133,6 @@ export default RateOrderModal;
   launchSpeed={0.5}
   opacityDeltaMultiplier={0.9}
   style={confettiPlacement.style}
-  colors={['#0da487', '#6ed1bd', '#f3c95f', '#fefefe']}
+  colors={['#0da487', '#6ed1bd', '#f3c95f', '#F7F9FE']}
 />; */
 }

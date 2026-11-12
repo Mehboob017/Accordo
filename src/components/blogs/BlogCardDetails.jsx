@@ -123,7 +123,7 @@ const BlogCardDetails = ({ Blog, sidebarType, categorySlug, rawBlog, onVideoSele
         {...styleObj[sidebarVariant]?.colClass}
         className={`${styleObj[sidebarVariant]?.class || ''}`}
       >
-        <div className="blog-detail-container" style={{ backgroundColor: '#fefefe', borderRadius: '12px', border: '1px solid #D4DEF3', padding: '20px', boxShadow: '0 8px 24px rgba(0, 0, 0, 0.05)' }}>
+        <div className="blog-detail-container" style={{ backgroundColor: '#F7F9FE', borderRadius: '12px', border: '1px solid #D4DEF3', padding: '20px', boxShadow: '0 8px 24px rgba(0, 0, 0, 0.05)' }}>
           <div className="blog-image-contain pb-3">
             <div
               style={{
@@ -333,7 +333,7 @@ const BlogCardDetails = ({ Blog, sidebarType, categorySlug, rawBlog, onVideoSele
                 right: '0',
                 background: 'transparent',
                 border: 'none',
-                color: '#fefefe',
+                color: '#F7F9FE',
                 fontSize: '48px',
                 cursor: 'pointer',
                 width: '48px',

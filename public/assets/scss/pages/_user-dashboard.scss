@@ -202,7 +202,7 @@
   }
 
   .dashboard-left-sidebar {
-    background-color: var(--ffffff, #fefefe);
+    background-color: var(--ffffff, #F7F9FE);
     border: 1px solid var(--D4DEF3, #D4DEF3);
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
@@ -297,7 +297,7 @@
           top: 10px;
           right: 10px;
           z-index: 2;
-          background-color: var(--white, #fefefe);
+          background-color: var(--white, #F7F9FE);
           border-radius: 50%;
           color: var(--content-color, #4a4a4a);
           font-size: 14px;
@@ -365,7 +365,7 @@
             bottom: 0;
             left: 55%;
             z-index: 2;
-            background-color: var(--white, #fefefe);
+            background-color: var(--white, #F7F9FE);
             border-radius: 50%;
             color: var(--content-color, #4a4a4a);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -461,14 +461,14 @@
           // Fixed Active State Nesting Rule Selector Bug
           &.active,
           &.show {
-            border-left-color: var(--234BF3, #234BF3);
+            border-left-color: #234BF3;
             font-weight: 600;
-            background-color: var(--EDF2FF, #EDF2FF);
+            background-color: #EDF2FF;
             color: var(--234BF3, #234BF3);
 
             body[dir='rtl'] & {
               border-left-color: transparent;
-              border-right-color: var(--234BF3, #234BF3);
+              border-right-color: #234BF3;
             }
 
             svg {
@@ -662,7 +662,10 @@
             }
 
             &:nth-child(1) span {
-              background-color: var(--234BF3); // Earned
+              // background-color: var(--234BF3); // Earned
+              // background-color: #047135; // Earned
+              background-color: var(--success-color); // Earned
+
             }
 
             &:nth-child(2) span {
@@ -670,7 +673,7 @@
             }
 
             &:nth-child(3) span {
-              background-color: #dc2626; // Refunded
+              background-color: var(--red); // Refunded
             }
 
             &:nth-child(4) span {
@@ -755,7 +758,7 @@
       TRANSACTION TABLE
       ========================================== */
     .data-table-container {
-      background-color: #fefefe;
+      background-color: #F7F9FE;
       border: 1px solid var(--D4DEF3);
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
@@ -821,7 +824,7 @@
             }
 
             .desc-secondary {
-              color: var(--9e9e9e);
+              color: var(--subtitle-color);
               font-size: 11px;
               font-weight: 400;
             }
@@ -833,7 +836,8 @@
             font-weight: 700;
 
             &.amount-earned {
-              color: var(--234BF3);
+              // color: var(--234BF3);
+              color: var(--success-color);
             }
 
             &.amount-redeemed {
@@ -862,9 +866,12 @@
               line-height: 1;
 
               &.status-earned {
-                background-color: #EDF2FF;
-                border: 1px solid var(--234BF3);
-                color: var(--234BF3);
+                // background-color: #EDF2FF;
+                // border: 1px solid var(--234BF3);
+                // color: var(--234BF3);
+                background-color: rgba(4, 113, 53, 0.1);
+                border: 1px solid var(--success-color);
+                color: var(--success-color);
               }
 
               &.status-redeemed {
@@ -923,7 +930,7 @@
             border-radius: 8px;
             font-size: 13px;
             font-weight: 400;
-            background-color: #fefefe;
+            background-color: #F7F9FE;
             border: 1px solid var(--D4DEF3);
             color: var(--4a4a4a);
             transition: all 0.2s ease;
@@ -938,12 +945,12 @@
           &.active .page-link {
             background-color: var(--234BF3) !important;
             border-color: var(--234BF3) !important;
-            color: #fefefe !important;
+            color: #F7F9FE !important;
             font-weight: 700 !important;
           }
 
           &.disabled .page-link {
-            background-color: #fefefe;
+            background-color: #F7F9FE;
             color: var(--D4DEF3);
             cursor: not-allowed;
 
@@ -962,7 +969,7 @@
       // ==========================================
       .profile-wireframe-card {
         width: 100%;
-        background-color: var(--white, #fefefe);
+        background-color: var(--white, #F7F9FE);
         border: 1px solid var(--border-color, #D4DEF3);
         border-radius: 12px;
         padding: 20px;
@@ -1162,15 +1169,15 @@
             }
 
             &.pending {
-              background-color: #fff5eb;
-              color: #e65100;
-              border: 1px solid #e65100;
+              background-color: #FFF2F0;
+              color: #EF2D2E;
+              border: 1px solid #EF2D2E;
             }
 
             &.rejected {
               background-color: #fdecea;
-              color: #d32f2f;
-              border: 1px solid #d32f2f;
+              color: var(--red);
+              border: 1px solid var(--red);
             }
           }
 
@@ -1188,7 +1195,7 @@
 
               .note-label {
                 font-weight: 700;
-                color: #d32f2f;
+                color: var(--red);
               }
             }
           }
@@ -1219,7 +1226,7 @@
               padding: 0;
               margin: 0 3px;
               /* Clean even spacing on left/right */
-              color: #d32f2f;
+              color: var(--red);
               text-decoration: underline;
               font-weight: 600;
               cursor: pointer;
@@ -1436,7 +1443,7 @@
         }
 
         .btn-light {
-          background-color: var(--white, #fefefe);
+          background-color: var(--white, #F7F9FE);
           border-color: var(--border-color, #D4DEF3);
           color: var(--title-color, #333);
           font-weight: 500;
@@ -1470,7 +1477,7 @@
         .form-control,
         .form-select,
         .input-group-text {
-          background-color: var(--white, #fefefe);
+          background-color: var(--white, #F7F9FE);
           border: 1px solid var(--border-color, #D4DEF3);
           border-radius: 8px;
           padding: 10px 12px;
@@ -1637,7 +1644,7 @@
         border-radius: 10px;
         padding: 1.75rem 1rem;
         text-align: center;
-        background-color: var(--white, #fefefe);
+        background-color: var(--white, #F7F9FE);
         transition: border-color 0.2s ease;
         cursor: pointer;
         position: relative;
@@ -1756,7 +1763,7 @@
 
         &:hover {
           background: var(--theme-color, #0da487);
-          color: var(--white, #fefefe);
+          color: var(--white, #F7F9FE);
         }
       }
 
@@ -2126,17 +2133,17 @@
         }
 
         .header-subtext {
-          color: var(--9e9e9e);
+          color: var(--subtitle-color);
           font-size: 12px;
         }
 
         .add-new-btn {
           background: var(--234BF3);
-          color: #fefefe;
+          color: #F7F9FE;
           font-weight: 600;
           font-size: 13px;
           border-radius: 8px;
-          box-shadow: 0 4px 10px rgba(31, 166, 122, 0.25);
+          // box-shadow: 0 4px 10px rgba(31, 166, 122, 0.25);
           border: none;
           padding: 8px 16px;
           transition: background 0.3s ease;
@@ -2146,7 +2153,7 @@
           }
 
           svg {
-            color: #fefefe;
+            color: #F7F9FE;
           }
         }
       }
@@ -2230,7 +2237,7 @@
               height: 28px;
               border-radius: 8px;
               border: 1px solid var(--D4DEF3);
-              background: #fefefe;
+              background: #F7F9FE;
               transition: all 0.3s ease;
               padding: 0;
 
@@ -2304,7 +2311,7 @@
             padding: 8px 16px;
             border-radius: 8px;
             border: 1px solid var(--D4DEF3);
-            background: #fefefe;
+            background: #F7F9FE;
             font-size: 12px;
             font-weight: 500;
             color: var(--4a4a4a);
@@ -2323,7 +2330,7 @@
         Add New Address Card (Dashed) - Ready to use if implemented
         ========================================================================== */
       .add-new-address-card {
-        background: #fefefe;
+        background: #F7F9FE;
         border: 1.5px dashed var(--D4DEF3);
         border-radius: 12px;
         min-height: 160px;
@@ -2373,7 +2380,7 @@
         Empty State
         ========================================================================== */
       .no-data-added {
-        background: #fefefe;
+        background: #F7F9FE;
         border: 1px solid var(--D4DEF3);
         border-radius: 12px;
         text-align: center;
@@ -2381,7 +2388,7 @@
         padding: 40px 20px;
 
         .empty-icon {
-          color: var(--D4DEF3);
+          color: var(--title-color);
           font-size: 36px;
           margin-bottom: 16px;
         }
@@ -2402,12 +2409,12 @@
       /* Empty State CTA Button Override */
       .btn-primary {
         background: #234BF3 !important;
-        color: #fefefe !important;
+        color: #F7F9FE !important;
         font-weight: 700;
         font-size: 14px;
         border-radius: 8px;
         border: none;
-        box-shadow: 0 4px 10px rgba(31, 166, 122, 0.25);
+        // box-shadow: 0 4px 10px rgba(31, 166, 122, 0.25);
         padding: 10px 20px;
         transition: background 0.3s ease;
 
@@ -3250,7 +3257,7 @@
           width: 35px;
           height: 35px;
           border-radius: 6px;
-          background: #75837926;
+          background: var(--EDF2FF);
           color: var(--theme-color);
           display: flex;
           align-items: center;
@@ -3291,8 +3298,8 @@
         font-size: 12px;
         font-weight: 600;
         text-decoration: none;
-        border: 1px solid var(--border-color);
-        background: rgba(23, 137, 60, 0.1);
+        border: 1px solid var(--EDF2FF);
+        background: var(--EDF2FF);
 
         svg {
           font-weight: 600;
@@ -4273,7 +4280,7 @@
     li {
       position: relative;
       width: 100%;
-      background-color: #fefefe;
+      background-color: #F7F9FE;
       border-radius: 0;
       padding: calc(13px + (17 - 13) * ((100vw - 320px) / (1920 - 320))) 0 calc(13px + (17 - 13) * ((100vw - 320px) / (1920 - 320))) calc(21px + (31 - 21) * ((100vw - 320px) / (1920 - 320)));
 
@@ -4290,13 +4297,13 @@
         height: 0;
         border-top: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320))) solid transparent;
         border-bottom: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320))) solid transparent;
-        border-left: 17px solid #fefefe;
+        border-left: 17px solid #F7F9FE;
         transition: border-color 0.2s ease;
 
         body[dir='rtl'] & {
           right: unset;
           left: -16px;
-          border-right: 17px solid #fefefe;
+          border-right: 17px solid #F7F9FE;
           border-left: unset;
         }
 

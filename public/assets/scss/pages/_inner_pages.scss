@@ -2301,7 +2301,7 @@
           $gap: calc(2px + (5 - 2) * ((100vw - 320px) / (1920 - 320))));
         align-items: center;
         // background-color: var(--light-gray);
-        background-color: #FFFFFF;
+        background-color: #F7F9FE;
         padding: calc(15px + (27 - 15) * ((100vw - 320px) / (1920 - 320))) calc(15px + (27 - 15) * ((100vw - 320px) / (1920 - 320))) calc(15px + (27 - 15) * ((100vw - 320px) / (1920 - 320))) calc(40px + (41 - 30) * ((100vw - 320px) / (1920 - 320)));
         position: relative;
         border-radius: 10px;
@@ -2909,7 +2909,7 @@
   margin-bottom: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320)));
   z-index: 0;
   position: relative;
-  background-color: #fefefe;
+  background-color: var(--section-bg-color);
   border-radius: 12px;
   padding: 20px;
   border: 1px solid #D4DEF3;
@@ -2917,7 +2917,7 @@
 
   .faq-top-box {
     text-align: center;
-    background-color: #fefefe;
+    background-color: #F7F9FE;
     border-radius: 12px;
     padding: 28px 18px;
     // border: 1px solid #D4DEF3;
@@ -3014,16 +3014,16 @@
       .accordion-item {
         width: 100%;
         border-radius: 7px;
-        background-color: #fefefe;
+        background-color: #F7F9FE;
         border: none;
         overflow: hidden;
         z-index: 0;
         border: 1px solid #D4DEF3;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        // box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 
         .accordion-header {
           .accordion-button {
-            background-color: #fefefe;
+            background-color: #F7F9FE;
             font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
             font-weight: 500;
             line-height: 1.5;
@@ -3366,10 +3366,10 @@
         // border: 1px solid #D4DEF3;
         padding: calc(18px + (25 - 18) * ((100vw - 320px) / (1920 - 320)));
         // background-color: var(--light-gray);
-        background-color: #fefefe;
+        background-color: #F7F9FE;
         border-radius: 12px;
         border: 1px solid #D4DEF3;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        // box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 
         +.accordion-item {
           margin-top: 20px;
@@ -3377,7 +3377,7 @@
 
         .accordion-header {
           .accordion-button {
-            background-color: #fefefe;
+            background-color: #F7F9FE;
             color: var(--title-color);
             font-weight: 700;
             padding: 0;
@@ -3407,7 +3407,7 @@
 
         .accordion-collapse {
           // background-color: var(--light-gray);
-          background-color: #fefefe;
+          background-color: #F7F9FE;
 
           .accordion-body {
             padding: 0;
@@ -3999,7 +3999,7 @@
         @include common.remixicon;
         @include common.flex_common;
         @include common.pseudowh($width: 33px, $height: 33px);
-        color: #fefefe;
+        color: #F7F9FE;
         top: 8px;
         right: 8px;
         background-color: var(--theme-color);
@@ -4866,7 +4866,7 @@
 
   .reviewer-box {
     padding: 20px;
-    background-color: #fefefe;
+    background-color: #F7F9FE;
     border-radius: 12px;
     box-shadow: 0 0px 14px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--D4DEF3);
@@ -5285,7 +5285,7 @@
               @include common.pos;
               top: 0;
               left: 0;
-              background: var(--theme-color);
+              // background: var(--theme-color);
               z-index: -1;
               opacity: 0.1;
             }

@@ -4,6 +4,7 @@
 @use '../utils/variables';
 @use '../utils/mixin/common';
 @use '../utils/mixin/breakpoints';
+
 .banner-contain {
   border-radius: 5px;
   overflow: hidden;
@@ -48,11 +49,9 @@
             background: linear-gradient(90deg, #2395e8 15.92%, #4eb5ff 49.57%);
 
             .bank-coupon {
-              background: linear-gradient(
-                90deg,
-                #2395e8 15.92%,
-                #4eb5ff 49.57%
-              );
+              background: linear-gradient(90deg,
+                  #2395e8 15.92%,
+                  #4eb5ff 49.57%);
 
               &::after {
                 @include common.pos;
@@ -63,11 +62,9 @@
                 border-radius: 5px;
                 transition: all 0.3s ease;
                 background: #4eb5ff;
-                background: linear-gradient(
-                  90deg,
-                  #4eb5ff 15.92%,
-                  #2395e8 49.57%
-                );
+                background: linear-gradient(90deg,
+                    #4eb5ff 15.92%,
+                    #2395e8 49.57%);
               }
             }
           }
@@ -88,20 +85,16 @@
           }
 
           .bank-footer {
-            background: linear-gradient(
-              85.8deg,
-              #ffb321 -4.64%,
-              #ff584d 109.73%,
-              #ff8c75 131.73%
-            );
-
-            .bank-coupon {
-              background: linear-gradient(
-                85.8deg,
+            background: linear-gradient(85.8deg,
                 #ffb321 -4.64%,
                 #ff584d 109.73%,
-                #ff8c75 131.73%
-              );
+                #ff8c75 131.73%);
+
+            .bank-coupon {
+              background: linear-gradient(85.8deg,
+                  #ffb321 -4.64%,
+                  #ff584d 109.73%,
+                  #ff8c75 131.73%);
 
               &::after {
                 @include common.pos;
@@ -112,12 +105,10 @@
                 border-radius: 5px;
                 transition: all 0.3s ease;
                 background: #ffb321;
-                background: linear-gradient(
-                  -90deg,
-                  rgba(255, 140, 117, 0) -4.64%,
-                  rgba(255, 88, 77, 0.1) 109.73,
-                  #ffb321 131.73%
-                );
+                background: linear-gradient(-90deg,
+                    rgba(255, 140, 117, 0) -4.64%,
+                    rgba(255, 88, 77, 0.1) 109.73,
+                    #ffb321 131.73%);
               }
             }
           }
@@ -133,13 +124,11 @@
     overflow: hidden;
 
     .bank-header {
-      background: linear-gradient(
-        76.68deg,
-        #e6e6e6 -9.39%,
-        #fafafa 78.76%,
-        #f0f0f0 101.45%,
-        #fefefe 112.78%
-      );
+      background: linear-gradient(76.68deg,
+          #e6e6e6 -9.39%,
+          #fafafa 78.76%,
+          #f0f0f0 101.45%,
+          #F7F9FE 112.78%);
       padding: calc(21px + (35 - 21) * ((100vw - 320px) / (1920 - 320)));
       display: flex;
       align-items: center;
@@ -155,9 +144,7 @@
             color: #bb0032;
             font-weight: 700;
             margin-bottom: 7px;
-            font-size: calc(
-              22px + (31 - 22) * ((100vw - 320px) / (1920 - 320))
-            );
+            font-size: calc(22px + (31 - 22) * ((100vw - 320px) / (1920 - 320)));
 
             &.bank-offer-2 {
               color: #239bf0;
@@ -169,14 +156,10 @@
           }
 
           h5 {
-            font-size: calc(
-              14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
-            );
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
 
             &.valid {
-              margin-top: calc(
-                22px + (69 - 22) * ((100vw - 320px) / (1920 - 320))
-              );
+              margin-top: calc(22px + (69 - 22) * ((100vw - 320px) / (1920 - 320)));
             }
           }
         }
@@ -184,17 +167,14 @@
     }
 
     .bank-footer {
-      padding: calc(7px + (17 - 7) * ((100vw - 320px) / (1920 - 320)))
-        calc(13px + (26 - 13) * ((100vw - 320px) / (1920 - 320)));
+      padding: calc(7px + (17 - 7) * ((100vw - 320px) / (1920 - 320))) calc(13px + (26 - 13) * ((100vw - 320px) / (1920 - 320)));
       color: var(--white);
       display: flex;
       align-items: center;
-      background: linear-gradient(
-        85.8deg,
-        #bb0032 -4.64%,
-        #ff584d 109.73%,
-        #ff8c75 131.73%
-      );
+      background: linear-gradient(85.8deg,
+          #bb0032 -4.64%,
+          #ff584d 109.73%,
+          #ff8c75 131.73%);
 
       h4 {
         font-weight: 500;
@@ -227,11 +207,9 @@
         overflow: hidden;
         transition: all 0.3s ease;
         z-index: 0;
-        background: linear-gradient(
-          85.8deg,
-          #ff584d -4.64%,
-          rgba(187, 0, 50, 0.1) 131.73%
-        );
+        background: linear-gradient(85.8deg,
+            #ff584d -4.64%,
+            rgba(187, 0, 50, 0.1) 131.73%);
 
         &::after {
           @include common.pos;
@@ -242,11 +220,9 @@
           border-radius: 5px;
           transition: all 0.3s ease;
           background: #ff584d;
-          background: linear-gradient(
-            85.8deg,
-            rgba(187, 0, 50, 0.1) 131.73%,
-            #ff584d -4.64%
-          );
+          background: linear-gradient(85.8deg,
+              rgba(187, 0, 50, 0.1) 131.73%,
+              #ff584d -4.64%);
         }
 
         html.dark & {
@@ -270,10 +246,10 @@
 }
 
 .banner-furniture {
-  > .row {
+  >.row {
     direction: ltr;
 
-    > div {
+    >div {
       @media (min-width: 1400px) {
         margin-left: 16.6666666667%;
       }

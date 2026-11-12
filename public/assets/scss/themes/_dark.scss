@@ -27,36 +27,30 @@
             .accordion-button {
               span {
                 background: rgba(246, 247, 248, 0.05);
-                background-image: linear-gradient(
-                  135deg,
-                  #3f4242 0%,
-                  rgba(237, 238, 241, 0.1) 20%,
-                  #3f4242 40%,
-                  #3f4242 100%
-                );
+                background-image: linear-gradient(135deg,
+                    #3f4242 0%,
+                    rgba(237, 238, 241, 0.1) 20%,
+                    #3f4242 40%,
+                    #3f4242 100%);
               }
             }
           }
 
           .placeholder {
             background: rgba(246, 247, 248, 0.05);
-            background-image: linear-gradient(
-              135deg,
-              #3f4242 0%,
-              rgba(237, 238, 241, 0.1) 20%,
-              #3f4242 40%,
-              #3f4242 100%
-            );
-
-            &::after {
-              background: rgba(246, 247, 248, 0.05);
-              background-image: linear-gradient(
-                135deg,
+            background-image: linear-gradient(135deg,
                 #3f4242 0%,
                 rgba(237, 238, 241, 0.1) 20%,
                 #3f4242 40%,
-                #3f4242 100%
-              );
+                #3f4242 100%);
+
+            &::after {
+              background: rgba(246, 247, 248, 0.05);
+              background-image: linear-gradient(135deg,
+                  #3f4242 0%,
+                  rgba(237, 238, 241, 0.1) 20%,
+                  #3f4242 40%,
+                  #3f4242 100%);
             }
           }
         }
@@ -73,13 +67,11 @@
       .card-name {
         h5 {
           background: rgba(246, 247, 248, 0.05);
-          background-image: linear-gradient(
-            135deg,
-            #3f4242 0%,
-            rgba(237, 238, 241, 0.1) 20%,
-            #3f4242 40%,
-            #3f4242 100%
-          );
+          background-image: linear-gradient(135deg,
+              #3f4242 0%,
+              rgba(237, 238, 241, 0.1) 20%,
+              #3f4242 40%,
+              #3f4242 100%);
         }
       }
     }
@@ -87,13 +79,11 @@
     .coupon-content {
       p {
         background: rgba(246, 247, 248, 0.05);
-        background-image: linear-gradient(
-          135deg,
-          #3f4242 0%,
-          rgba(237, 238, 241, 0.1) 20%,
-          #3f4242 40%,
-          #3f4242 100%
-        );
+        background-image: linear-gradient(135deg,
+            #3f4242 0%,
+            rgba(237, 238, 241, 0.1) 20%,
+            #3f4242 40%,
+            #3f4242 100%);
       }
     }
   }
@@ -106,44 +96,40 @@
 .skeleton-compare {
   .placeholder {
     background: rgba(246, 247, 248, 0.05);
-    background-image: linear-gradient(
-      135deg,
-      rgba(246, 247, 248, 0.05) 0%,
-      rgba(237, 238, 241, 0.1) 20%,
-      rgba(246, 247, 248, 0.05) 40%,
-      rgba(246, 247, 248, 0.05) 100%
-    );
+    background-image: linear-gradient(135deg,
+        rgba(246, 247, 248, 0.05) 0%,
+        rgba(237, 238, 241, 0.1) 20%,
+        rgba(246, 247, 248, 0.05) 40%,
+        rgba(246, 247, 248, 0.05) 100%);
   }
 
   .compare-part {
     .img-section {
       .compare-img {
         background: rgba(246, 247, 248, 0.05);
-        background-image: linear-gradient(
-          135deg,
-          rgba(246, 247, 248, 0.05) 0%,
-          rgba(237, 238, 241, 0.1) 20%,
-          rgba(246, 247, 248, 0.05) 40%,
-          rgba(246, 247, 248, 0.05) 100%
-        );
+        background-image: linear-gradient(135deg,
+            rgba(246, 247, 248, 0.05) 0%,
+            rgba(237, 238, 241, 0.1) 20%,
+            rgba(246, 247, 248, 0.05) 40%,
+            rgba(246, 247, 248, 0.05) 100%);
       }
     }
   }
 }
 
 .common-skeleton {
+
   .img-box,
   ul {
+
     .placeholder,
     .img {
       background: rgba(246, 247, 248, 0.05);
-      background-image: linear-gradient(
-        135deg,
-        rgba(246, 247, 248, 0.05) 0%,
-        rgba(237, 238, 241, 0.1) 20%,
-        rgba(246, 247, 248, 0.05) 40%,
-        rgba(246, 247, 248, 0.05) 100%
-      );
+      background-image: linear-gradient(135deg,
+          rgba(246, 247, 248, 0.05) 0%,
+          rgba(237, 238, 241, 0.1) 20%,
+          rgba(246, 247, 248, 0.05) 40%,
+          rgba(246, 247, 248, 0.05) 100%);
     }
   }
 }
@@ -151,13 +137,11 @@
 .skeleton-vertical {
   .offer-image {
     background: rgba(246, 247, 248, 0.05);
-    background-image: linear-gradient(
-      135deg,
-      rgba(246, 247, 248, 0.05) 0%,
-      rgba(237, 238, 241, 0.1) 20%,
-      rgba(246, 247, 248, 0.05) 40%,
-      rgba(246, 247, 248, 0.05) 100%
-    );
+    background-image: linear-gradient(135deg,
+        rgba(246, 247, 248, 0.05) 0%,
+        rgba(237, 238, 241, 0.1) 20%,
+        rgba(246, 247, 248, 0.05) 40%,
+        rgba(246, 247, 248, 0.05) 100%);
   }
 
   &.offer-product {
@@ -165,26 +149,22 @@
       a {
         .name {
           background: rgba(246, 247, 248, 0.05);
-          background-image: linear-gradient(
-            135deg,
-            rgba(246, 247, 248, 0.05) 0%,
-            rgba(237, 238, 241, 0.1) 20%,
-            rgba(246, 247, 248, 0.05) 40%,
-            rgba(246, 247, 248, 0.05) 100%
-          );
+          background-image: linear-gradient(135deg,
+              rgba(246, 247, 248, 0.05) 0%,
+              rgba(237, 238, 241, 0.1) 20%,
+              rgba(246, 247, 248, 0.05) 40%,
+              rgba(246, 247, 248, 0.05) 100%);
         }
       }
 
       span,
       .vertical-price {
         background: rgba(246, 247, 248, 0.05);
-        background-image: linear-gradient(
-          135deg,
-          rgba(246, 247, 248, 0.05) 0%,
-          rgba(237, 238, 241, 0.1) 20%,
-          rgba(246, 247, 248, 0.05) 40%,
-          rgba(246, 247, 248, 0.05) 100%
-        );
+        background-image: linear-gradient(135deg,
+            rgba(246, 247, 248, 0.05) 0%,
+            rgba(237, 238, 241, 0.1) 20%,
+            rgba(246, 247, 248, 0.05) 40%,
+            rgba(246, 247, 248, 0.05) 100%);
       }
     }
   }
@@ -192,42 +172,37 @@
 
 .skeleton-seller {
   .contain-name {
+
     h3,
     .product-label {
       background: rgba(246, 247, 248, 0.05);
-      background-image: linear-gradient(
-        135deg,
-        rgba(246, 247, 248, 0.05) 0%,
-        rgba(237, 238, 241, 0.1) 20%,
-        rgba(246, 247, 248, 0.05) 40%,
-        rgba(246, 247, 248, 0.05) 100%
-      );
+      background-image: linear-gradient(135deg,
+          rgba(246, 247, 248, 0.05) 0%,
+          rgba(237, 238, 241, 0.1) 20%,
+          rgba(246, 247, 248, 0.05) 40%,
+          rgba(246, 247, 248, 0.05) 100%);
     }
   }
 
   .vendor-text,
   .saller-contact {
     background: rgba(246, 247, 248, 0.05);
-    background-image: linear-gradient(
-      135deg,
-      rgba(246, 247, 248, 0.05) 0%,
-      rgba(237, 238, 241, 0.1) 20%,
-      rgba(246, 247, 248, 0.05) 40%,
-      rgba(246, 247, 248, 0.05) 100%
-    );
+    background-image: linear-gradient(135deg,
+        rgba(246, 247, 248, 0.05) 0%,
+        rgba(237, 238, 241, 0.1) 20%,
+        rgba(246, 247, 248, 0.05) 40%,
+        rgba(246, 247, 248, 0.05) 100%);
   }
 }
 
 .skeleton {
   *:empty {
     background-color: rgba(246, 247, 248, 0.05);
-    background-image: linear-gradient(
-      135deg,
-      #3f4242 0%,
-      rgba(237, 238, 241, 0.1) 20%,
-      #3f4242 40%,
-      #3f4242 100%
-    );
+    background-image: linear-gradient(135deg,
+        #3f4242 0%,
+        rgba(237, 238, 241, 0.1) 20%,
+        #3f4242 40%,
+        #3f4242 100%);
   }
 }
 
@@ -327,12 +302,10 @@
 .skeleton-body {
   .skeleton-text-wrap {
     .placeholder {
-      background: linear-gradient(
-        90deg,
-        rgba(29, 29, 34, 0.41) 8%,
-        #2a2d2d 18%,
-        rgba(29, 29, 29, 0.41) 33%
-      );
+      background: linear-gradient(90deg,
+          rgba(29, 29, 34, 0.41) 8%,
+          #2a2d2d 18%,
+          rgba(29, 29, 29, 0.41) 33%);
     }
   }
 
@@ -414,13 +387,14 @@
 }
 
 .btn-animation {
+
   &:active,
   &:hover {
     color: #fff !important;
   }
 }
 
-.product-box .product-image .product-option li + li:after {
+.product-box .product-image .product-option li+li:after {
   background-color: #ddd;
 }
 
@@ -444,6 +418,7 @@
   }
 
   .btn-add-cart {
+
     &:hover,
     &:active,
     &:first-child:active {
@@ -751,10 +726,11 @@ header {
 }
 
 .back-to-top {
+
   a,
   button {
     i {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 }
@@ -878,7 +854,7 @@ header {
     li {
       &.progtrckr-done {
         &:before {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -978,7 +954,7 @@ header {
 }
 
 .form-floating {
-  > .form-control {
+  >.form-control {
     border-color: #777777;
   }
 }
@@ -1008,7 +984,7 @@ header {
       .accordion-item {
         .accordion-header {
           .accordion-button {
-            color: #fefefe;
+            color: #F7F9FE;
           }
         }
       }
@@ -1021,7 +997,7 @@ header {
     .modal-content {
       .modal-header {
         .btn-close {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -1029,6 +1005,7 @@ header {
 }
 
 .summery-box {
+
   .summery-header,
   .summery-contain,
   .summery-total {
@@ -1065,9 +1042,9 @@ header {
   }
 
   .delivery-address-box {
-    > div {
+    >div {
       .label {
-        color: #fefefe;
+        color: #F7F9FE;
       }
     }
   }
@@ -1082,24 +1059,25 @@ header {
 }
 
 .theme-form-floating {
-  > .form-control {
+  >.form-control {
+
     &:focus,
     &:not(:placeholder-shown) {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 }
 
 .tooltip {
   .tooltip-inner {
-    color: #fefefe;
+    color: #F7F9FE;
   }
 }
 
 .theme-form-floating {
-  > .form-select {
+  >.form-select {
     background-color: #2a2d2d;
-    color: #fefefe;
+    color: #F7F9FE;
     border-color: #777777;
   }
 }
@@ -1115,24 +1093,24 @@ header {
             .cart_qty {
               button {
                 background-color: #2a2d2d;
-                color: #fefefe;
+                color: #F7F9FE;
               }
 
               input {
-                color: #fefefe;
+                color: #F7F9FE;
               }
             }
           }
 
           &.price {
             h5 {
-              color: #fefefe;
+              color: #F7F9FE;
             }
           }
 
           &.subtotal {
             h5 {
-              color: #fefefe;
+              color: #F7F9FE;
             }
           }
 
@@ -1142,7 +1120,7 @@ header {
                 ul {
                   li {
                     &.name {
-                      color: #fefefe;
+                      color: #F7F9FE;
                     }
                   }
                 }
@@ -1166,7 +1144,7 @@ header {
     .coupon-cart {
       .coupon-box {
         .btn-apply {
-          color: #fefefe;
+          color: #F7F9FE;
         }
 
         .form-control {
@@ -1193,7 +1171,7 @@ header {
                   a {
                     .category-name {
                       span {
-                        color: #fefefe;
+                        color: #F7F9FE;
                       }
                     }
                   }
@@ -1206,7 +1184,7 @@ header {
                 li {
                   &:hover {
                     a {
-                      color: #fefefe;
+                      color: #F7F9FE;
                     }
                   }
                 }
@@ -1223,7 +1201,7 @@ header {
       background-color: #1d1d22;
 
       h3 {
-        color: #fefefe;
+        color: #F7F9FE;
       }
     }
   }
@@ -1259,7 +1237,7 @@ header {
     .page-item {
       &.active {
         .page-link {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
 
@@ -1277,17 +1255,17 @@ header {
     &:hover {
       .blog-detail {
         label {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
 
     .blog-image {
       label {
-        color: #fefefe;
+        color: #F7F9FE;
 
         i {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -1296,10 +1274,10 @@ header {
 
 .btn,
 .btn-animation {
-  color: #fefefe;
+  color: #F7F9FE;
 
   &:hover {
-    color: #fefefe;
+    color: #F7F9FE;
   }
 }
 
@@ -1330,11 +1308,11 @@ header {
 .title-flex {
   .timing-box {
     .name {
-      color: #fefefe;
+      color: #F7F9FE;
     }
 
     .timing {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 }
@@ -1364,6 +1342,7 @@ header {
 
 .home-contain {
   .home-detail {
+
     h1,
     h2 {
       color: #222222 !important;
@@ -1412,6 +1391,7 @@ header {
 }
 
 footer {
+
   &::after,
   &::before {
     filter: invert(1);
@@ -1486,7 +1466,7 @@ footer {
 
 .service-contain {
   .service-box {
-    + .service-box {
+    +.service-box {
       &::before {
         border-color: rgba(193, 193, 193, 0.5);
       }
@@ -1505,7 +1485,7 @@ footer {
     .newsletter-contain {
       .newsletter-detail {
         h2 {
-          color: #fefefe;
+          color: #F7F9FE;
         }
 
         .input-box {
@@ -1514,7 +1494,7 @@ footer {
           }
 
           .sub-btn {
-            color: #fefefe;
+            color: #F7F9FE;
           }
         }
       }
@@ -1530,22 +1510,22 @@ footer {
 
 .button-item {
   .item-btn {
-    color: #fefefe;
+    color: #F7F9FE;
   }
 }
 
 .item-section {
   .close-button {
-    color: #fefefe;
+    color: #F7F9FE;
   }
 
   h6 {
-    color: #fefefe;
+    color: #F7F9FE;
   }
 
   .items-image {
     li {
-      background-color: #fefefe;
+      background-color: #F7F9FE;
     }
   }
 }
@@ -1555,14 +1535,15 @@ footer {
     li {
       &.active {
         &::before {
-          background-color: #fefefe;
+          background-color: #F7F9FE;
         }
       }
 
       a {
+
         .icli,
         span {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -1588,14 +1569,14 @@ header {
 
   .timer-notification {
     h6 {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 
   .header-top {
     .about-list {
       li {
-        + li {
+        +li {
           &::after {
             background-color: rgba(221, 221, 221, 0.3);
           }
@@ -1610,7 +1591,7 @@ header {
         }
       }
 
-      > li {
+      >li {
         .theme-form-select {
           .dropdown-menu {
             background-color: #1d1d22;
@@ -1633,7 +1614,7 @@ header {
   .navbar-expand-xl {
     .dropdown-menu {
       .dropdown-item {
-        color: #fefefe;
+        color: #F7F9FE;
 
         small {
           &.text-muted {
@@ -1649,7 +1630,7 @@ header {
       .navbar-nav {
         .nav-link {
           .label-menu {
-            color: #fefefe;
+            color: #F7F9FE;
           }
         }
       }
@@ -1666,7 +1647,7 @@ header {
         li {
           color: #dddddd;
 
-          + li {
+          +li {
             &:after {
               background-color: rgba(221, 221, 221, 0.3);
             }
@@ -1686,7 +1667,7 @@ header {
 
               li {
                 .dropdown-item {
-                  color: #fefefe;
+                  color: #F7F9FE;
                 }
               }
             }
@@ -1711,7 +1692,7 @@ header {
         .search-box {
           .input-group {
             button {
-              color: #fefefe;
+              color: #F7F9FE;
             }
           }
         }
@@ -1754,7 +1735,7 @@ header {
           5px 20px 40px 0 rgba(137, 137, 137, 0.05);
 
         span {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -1807,7 +1788,7 @@ header {
           button {
             .locat-name {
               background-color: #2a2d2d;
-              color: #fefefe;
+              color: #F7F9FE;
             }
           }
         }
@@ -1870,7 +1851,7 @@ header {
     .onhover-div-login {
       .user-box-name {
         li {
-          + li {
+          +li {
             border-color: rgba(119, 119, 119, 0.65);
           }
         }
@@ -1922,8 +1903,8 @@ header {
       }
 
       .cart-list {
-        > li {
-          + li {
+        >li {
+          +li {
             border-color: rgba(119, 119, 119, 0.44);
           }
 
@@ -1935,6 +1916,7 @@ header {
               }
 
               .header-button-group {
+
                 .delete-button,
                 .edit-button {
                   border: 1px solid rgba(119, 119, 119, 0.4);
@@ -1958,7 +1940,7 @@ header {
       .onhover-div-login {
         .user-box-name {
           li {
-            + li {
+            +li {
               border-color: #777777a6;
             }
           }
@@ -1969,8 +1951,8 @@ header {
 
   .header-top {
     .about-list {
-      > li {
-        + li {
+      >li {
+        +li {
           &::after {
             background-color: rgba(255, 255, 255, 0.3);
           }
@@ -2006,6 +1988,7 @@ header {
   background-color: #1d1d22;
 
   .summary-total {
+
     &::before,
     &::after {
       background-color: #1d1d22;
@@ -2050,7 +2033,7 @@ header {
 
   .dropdown-category {
     span {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 
@@ -2066,7 +2049,7 @@ header {
 
       .searchbar-box-2 {
         .search-button {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
 
@@ -2086,21 +2069,19 @@ header {
       .fire {
         .fire-main {
           .main-fire {
-            background-image: radial-gradient(
-              farthest-corner at 10px 0,
-              #ddd 0%,
-              #fefefe 95%
-            );
+            background-image: radial-gradient(farthest-corner at 10px 0,
+                #ddd 0%,
+                #F7F9FE 95%);
           }
 
           .particle-fire {
-            background-color: #fefefe;
+            background-color: #F7F9FE;
           }
         }
       }
 
       span {
-        color: #fefefe;
+        color: #F7F9FE;
       }
     }
   }
@@ -2123,7 +2104,7 @@ header {
     .dropdown-dollar {
       .dropdown {
         .dropdown-toggle {
-          color: #fefefe;
+          color: #F7F9FE;
 
           i {
             color: #dddddd;
@@ -2137,7 +2118,7 @@ header {
         li {
           .header-icon {
             .badge-number {
-              color: #fefefe;
+              color: #F7F9FE;
             }
           }
         }
@@ -2155,7 +2136,7 @@ header {
         }
 
         .header-icon .badge-number {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -2190,7 +2171,7 @@ header {
     h3 {
       span {
         &.brand-name {
-          color: #fefefe;
+          color: #F7F9FE;
 
           &::before {
             border-color: #222222;
@@ -2216,7 +2197,7 @@ header {
 .label-flex {
   .discount {
     label {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 }
@@ -2229,7 +2210,7 @@ header {
       }
 
       .hot-deal {
-        color: #fefefe;
+        color: #F7F9FE;
       }
     }
   }
@@ -2246,6 +2227,7 @@ header {
 .banner-contain-3 {
   .banner-detail {
     &.banner-details-dark {
+
       h3,
       h4,
       h6 {
@@ -2257,12 +2239,12 @@ header {
       li {
         .delivery-box {
           .check-icon {
-            color: #fefefe;
+            color: #F7F9FE;
           }
 
           .check-contain {
             h5 {
-              color: #fefefe;
+              color: #F7F9FE;
             }
           }
         }
@@ -2283,7 +2265,7 @@ header {
       }
 
       &.delivery-contain {
-        color: #fefefe;
+        color: #F7F9FE;
       }
     }
   }
@@ -2340,7 +2322,7 @@ header {
 .product-list {
   &.sidebar-product {
     li {
-      + li {
+      +li {
         &:after {
           border-color: rgba(119, 119, 119, 0.3);
         }
@@ -2392,7 +2374,7 @@ header {
 
   .circle-box {
     .shape-text {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 
@@ -2419,7 +2401,7 @@ header {
           background-color: #1d1d22;
 
           i {
-            color: #fefefe;
+            color: #F7F9FE;
           }
         }
       }
@@ -2449,7 +2431,7 @@ header {
   .product-header {
     .product-header-top {
       .label-new {
-        color: #fefefe;
+        color: #F7F9FE;
       }
     }
   }
@@ -2590,7 +2572,7 @@ header {
 
               &.active {
                 button {
-                  color: #fefefe;
+                  color: #F7F9FE;
                   background-color: var(--theme-color);
                 }
               }
@@ -2698,7 +2680,7 @@ header {
 
 .compare-section {
   .compare-row {
-    > div {
+    >div {
       &:first-child {
         .compare-part {
           border-color: rgba(119, 119, 119, 0.44);
@@ -2762,7 +2744,7 @@ header {
         li {
           a {
             &.active {
-              color: #fefefe;
+              color: #F7F9FE;
             }
           }
         }
@@ -2790,7 +2772,7 @@ header {
 .category-box {
   &:hover {
     h5 {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 }
@@ -2807,8 +2789,8 @@ header {
 
 .shop-section {
   .top-filter-category {
-    > .row {
-      > div {
+    >.row {
+      >div {
         border-right-color: rgba(119, 119, 119, 0.35);
       }
     }
@@ -2817,7 +2799,7 @@ header {
   .show-button {
     .filter-button {
       a {
-        color: #fefefe;
+        color: #F7F9FE;
       }
     }
   }
@@ -2843,7 +2825,7 @@ header {
           .accordion-header {
             .accordion-button {
               background-color: #2a2d2d;
-              color: #fefefe;
+              color: #F7F9FE;
 
               &::before {
                 background-color: #1d1d22;
@@ -2876,7 +2858,7 @@ header {
 
           .nav-link {
             &.active {
-              color: #fefefe;
+              color: #F7F9FE;
             }
 
             img {
@@ -3021,9 +3003,10 @@ header {
 }
 
 .irs {
+
   .irs-to,
   .irs-from {
-    color: #fefefe;
+    color: #F7F9FE;
   }
 
   .irs-max,
@@ -3088,7 +3071,7 @@ header {
 
 .notification-list {
   li {
-    + li {
+    +li {
       border-top-color: rgba(119, 119, 119, 0.4);
     }
 
@@ -3151,7 +3134,7 @@ header {
             .order-detail {
               h4 {
                 span {
-                  color: #fefefe;
+                  color: #F7F9FE;
                 }
               }
             }
@@ -3166,7 +3149,7 @@ header {
           .valid-detail {
             .date {
               h3 {
-                color: #fefefe;
+                color: #F7F9FE;
               }
             }
 
@@ -3179,7 +3162,7 @@ header {
 
           .card-number {
             h4 {
-              color: #fefefe;
+              color: #F7F9FE;
             }
           }
         }
@@ -3188,7 +3171,7 @@ header {
           .name-detail {
             .name {
               h5 {
-                color: #fefefe;
+                color: #F7F9FE;
               }
             }
           }
@@ -3198,7 +3181,7 @@ header {
           background-color: rgba(42, 45, 45, 0.8);
 
           a {
-            color: #fefefe;
+            color: #F7F9FE;
           }
         }
       }
@@ -3206,16 +3189,16 @@ header {
 
     .dashboard-address {
       .address-box {
-        > div {
+        >div {
           .label {
-            color: #fefefe;
+            color: #F7F9FE;
           }
 
           .address-table {
             table {
               tr {
                 td {
-                  color: #fefefe;
+                  color: #F7F9FE;
                 }
               }
             }
@@ -3229,7 +3212,7 @@ header {
         .profile-name-detail {
           h3 {
             span {
-              color: #fefefe;
+              color: #F7F9FE;
             }
           }
         }
@@ -3240,7 +3223,7 @@ header {
           tbody {
             tr {
               td {
-                color: #fefefe;
+                color: #F7F9FE;
               }
             }
           }
@@ -3267,7 +3250,7 @@ header {
     .contact-detail {
       .contact-detail-box {
         .contact-icon {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -3276,10 +3259,10 @@ header {
 
 .newsletter-form {
   .form-control {
-    color: #fefefe;
+    color: #F7F9FE;
 
     &::placeholder {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 }
@@ -3324,7 +3307,7 @@ header {
               a {
                 &:hover {
                   span {
-                    color: #fefefe;
+                    color: #F7F9FE;
                   }
                 }
 
@@ -3357,13 +3340,13 @@ header {
 
 .counter {
   input {
-    color: #fefefe;
+    color: #F7F9FE;
   }
 
   .qty-right-plus,
   .qty-left-minus {
     &:hover {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 }
@@ -3379,7 +3362,7 @@ header {
     tbody {
       tr {
         &:nth-child(even) {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -3389,15 +3372,16 @@ header {
 .theme-option {
   .setting-box {
     .setting-button {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 
   .back-to-top {
+
     a,
     button {
       i {
-        color: #fefefe;
+        color: #F7F9FE;
       }
     }
   }
@@ -3420,7 +3404,7 @@ header {
 
       ul {
         li {
-          background-color: #fefefe;
+          background-color: #F7F9FE;
 
           .counter {
             p {
@@ -3434,17 +3418,17 @@ header {
     .coming-contain {
       .coming-form {
         .form-control {
-          background-color: #fefefe;
+          background-color: #F7F9FE;
 
           &:focus {
             border-color: transparent;
-            background-color: #fefefe;
+            background-color: #F7F9FE;
             color: var(--content-color);
           }
         }
 
         .coming-button {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -3468,7 +3452,7 @@ header {
 
         &:focus {
           background-color: #1d1d22;
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -3525,9 +3509,9 @@ header {
         .switch-radio {
           .form-check-input {
             &:checked {
-              + label {
+              +label {
                 &:before {
-                  background-color: #fefefe;
+                  background-color: #F7F9FE;
                 }
               }
             }
@@ -3558,7 +3542,7 @@ header {
       .time {
         ul {
           li {
-            + li {
+            +li {
               &::before {
                 color: #222;
               }
@@ -3634,7 +3618,7 @@ header {
           .select-wight {
             .select-form-wight {
               background-color: #1d1d22;
-              color: #fefefe;
+              color: #F7F9FE;
               border: 1px solid transparent;
 
               &:focus {
@@ -3689,6 +3673,7 @@ header {
 
 .banner-contain-3 {
   .banner-detail {
+
     h5,
     h4 {
       color: #222;
@@ -3738,7 +3723,7 @@ footer {
   .top-nav {
     span {
       .icli {
-        color: #fefefe;
+        color: #F7F9FE;
       }
     }
 
@@ -3753,10 +3738,11 @@ footer {
 
       .location-box-2 {
         button {
+
           .icli,
           span,
           .down-arrow {
-            color: #fefefe;
+            color: #F7F9FE;
           }
         }
       }
@@ -3766,9 +3752,10 @@ footer {
   .navbar-top {
     .support-box {
       .support-number {
+
         h2,
         h4 {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -3797,7 +3784,7 @@ footer {
 
         .icli {
           @include breakpoints.mq-max(xl) {
-            color: #fefefe;
+            color: #F7F9FE;
           }
         }
       }
@@ -3805,7 +3792,7 @@ footer {
 
     .option-list-2 {
       li {
-        + li {
+        +li {
           &::after {
             @include breakpoints.mq-max(xl) {
               background-color: rgba(255, 255, 255, 0.2);
@@ -3820,15 +3807,15 @@ footer {
 
           .icli {
             @include breakpoints.mq-max(xl) {
-              color: #fefefe;
+              color: #F7F9FE;
             }
           }
 
           .badge-number {
-            color: #fefefe;
+            color: #F7F9FE;
 
             @include breakpoints.mq-max(xl) {
-              background-color: #fefefe;
+              background-color: #F7F9FE;
               color: var(--theme-color);
             }
           }
@@ -3880,7 +3867,7 @@ footer {
 
 .irs {
   .irs-single {
-    color: #fefefe;
+    color: #F7F9FE;
   }
 }
 
@@ -3898,10 +3885,10 @@ footer {
 
     .bank-footer {
       h4 {
-        color: #fefefe;
+        color: #F7F9FE;
 
         input {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }
@@ -3915,7 +3902,7 @@ footer {
       border: 1px solid #222222;
       color: #222222;
 
-      + li {
+      +li {
         &::after {
           color: #222222;
         }
@@ -3927,7 +3914,7 @@ footer {
 .offer-section {
   .offer-box {
     h2 {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 }
@@ -3938,13 +3925,13 @@ footer {
       li {
         &.light-bg {
           &::after {
-            background-color: #fefefe;
+            background-color: #F7F9FE;
           }
         }
 
         a {
           &.footer-link-color {
-            color: #fefefe;
+            color: #F7F9FE;
           }
         }
       }
@@ -3954,11 +3941,11 @@ footer {
       li {
         a {
           &:hover {
-            color: #fefefe;
+            color: #F7F9FE;
           }
 
           &::before {
-            background-color: #fefefe;
+            background-color: #F7F9FE;
           }
         }
       }
@@ -3994,7 +3981,7 @@ footer {
 
     form {
       .form-control {
-        background-color: #fefefe;
+        background-color: #F7F9FE;
       }
     }
   }
@@ -4046,6 +4033,7 @@ footer {
 
 .vendor-detail-box-2 {
   .share-contact {
+
     .vendor-share,
     .vendor-contect {
       h5 {
@@ -4056,7 +4044,7 @@ footer {
 
   .vendor-name {
     h3 {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 }
@@ -4080,7 +4068,7 @@ footer {
     }
 
     h5 {
-      color: #fefefe;
+      color: #F7F9FE;
     }
   }
 }
@@ -4095,19 +4083,17 @@ footer {
 
 .banner-contain-2 {
   .banner-detail-2 {
-    > div {
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.2) 24.21%,
-        rgba(255, 255, 255, 0.2) 75.22%
-      );
+    >div {
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.2) 24.21%,
+          rgba(255, 255, 255, 0.2) 75.22%);
 
       h2 {
         color: #222222;
       }
 
       h3 {
-        color: #fefefe;
+        color: #F7F9FE;
       }
     }
   }
@@ -4263,6 +4249,7 @@ footer {
     }
 
     .service-detail {
+
       h6,
       h3 {
         color: #fff;
@@ -4278,15 +4265,15 @@ footer {
 .checkout-section-2 {
   .left-sidebar-checkout {
     .checkout-detail-box {
-      > ul {
-        > li {
+      >ul {
+        >li {
           .checkout-box {
             background-color: #1d1d22;
             box-shadow: 0 0 8px rgba(119, 119, 119, 0.122);
 
             .checkout-detail {
               .delivery-address-box {
-                > div {
+                >div {
                   .label {
                     color: #fff;
                   }
@@ -4434,7 +4421,7 @@ footer {
         }
 
         .input-group-text {
-          color: #fefefe;
+          color: #F7F9FE;
         }
       }
     }

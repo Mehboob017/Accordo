@@ -246,20 +246,24 @@ const PdpCartActions = ({ productState, setProductState }) => {
             Out of Stock
           </Btn>
         ) : (
-          <div className="dual-cart-buttons dynamic-checkout d-none d-lg-flex">
-            <Btn
+          <div className="dual-cart-buttons dynamic-checkout d-none d-lg-flex w-100">
+            {/* <Btn
               className="btn-buy-now btn btn-md scroll-button"
               onClick={handleBuyNow}
               // title={isBuyingNow ? 'Loading...' : 'Buy Now'}
               disabled={isCartUpdating || isBuyingNow}
             >
               {isBuyingNow ? <span className="btn-spinner" /> : 'Buy Now'}
-            </Btn>
+            </Btn> */}
 
             {isOpen && !isBook && productQty >= 1 ? (
               <div
-                className="qty-inline-box"
-                style={{ opacity: isCartUpdating ? 0.6 : 1 }}
+                className="qty-inline-box w-100"
+                style={{
+                  opacity: isCartUpdating ? 0.6 : 1,
+                  flex: '1 1 100%',
+                  width: '100%',
+                }}
               >
                 <Btn
                   type="button"
@@ -283,7 +287,8 @@ const PdpCartActions = ({ productState, setProductState }) => {
               !isBook && (
                 <Btn
                   color="primary"
-                  className="btn-add-cart addcart-button shimmer"
+                  className="btn-add-cart addcart-button shimmer w-100"
+                  style={{ flex: '1 1 100%', width: '100%' }}
                   onClick={handleAddToCart}
                   disabled={isCartUpdating || isBuyingNow}
                 >

@@ -7,7 +7,7 @@ $border-color: var(--border-color);
 .order-summary-section {
   margin-top: 0px;
   padding: 20px;
-  background-color: #fefefe;
+  background-color: #F7F9FE;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
   border: 1px solid $border-color;
@@ -47,7 +47,7 @@ $border-color: var(--border-color);
 
     &.discount {
       .value {
-        color: $success-green;
+        color: var(--theme-color);
         font-weight: 600;
       }
     }

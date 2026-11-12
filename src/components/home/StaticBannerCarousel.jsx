@@ -14,8 +14,10 @@ export const STATIC_BANNER_SLIDES = [
   {
     id: 'static-banner-1',
     title: 'Immunity Support',
-    desktopImage: '/assets/images/static-banners/1920-x-576-for-desktop-screens.webp',
-    mobileImage: '/assets/images/static-banners/768-x-384-for-mobile-screens.webp',
+    desktopImage: '/assets/images/accordo-test-image/slide1.png',
+    mobileImage: '/assets/images/accordo-test-image/slide1.png',
+    // desktopImage: '/assets/images/static-banners/1920-x-576-for-desktop-screens.webp',
+    // mobileImage: '/assets/images/static-banners/768-x-384-for-mobile-screens.webp',
     alt: 'Immunity Support',
     url: '/products/swamala-compound',
     isExternal: false,
@@ -23,30 +25,32 @@ export const STATIC_BANNER_SLIDES = [
   {
     id: 'static-banner-2',
     title: 'Swamala Classic',
-    desktopImage: '/assets/images/static-banners/Final .webp',
-    mobileImage: '/assets/images/static-banners/Untitled design.webp',
+    desktopImage: '/assets/images/accordo-test-image/slide2.png',
+    mobileImage: '/assets/images/accordo-test-image/slide2.png',
+    // desktopImage: '/assets/images/static-banners/Final .webp',
+    // mobileImage: '/assets/images/static-banners/Untitled design.webp',
     alt: 'Swamala Classic',
     url: '/products/swamala-classic',
     isExternal: false,
   },
-  {
-    id: 'static-banner-3',
-    title: 'Swamala Compound SF',
-    desktopImage: '/assets/images/static-banners/Jab sehat ka ho mamla, Daily do chammach SWamala.webp',
-    mobileImage: '/assets/images/static-banners/Naturally Sweetened with Dates.webp',
-    alt: 'Swamala Compound SF',
-    url: '/products/swamala-compound-sf',
-    isExternal: false,
-  },
-  {
-    id: 'static-banner-4',
-    title: 'Swamala Classic SF',
-    desktopImage: '/assets/images/static-banners/swamala-classic-sf.webp',
-    mobileImage: '/assets/images/static-banners/768-x-384-for-mobile-screen.webp',
-    alt: 'Swamala Classic SF',
-    url: '/products/swamala-classic-sf',
-    isExternal: false,
-  }
+  // {
+  //   id: 'static-banner-3',
+  //   title: 'Swamala Compound SF',
+  //   desktopImage: '/assets/images/static-banners/Jab sehat ka ho mamla, Daily do chammach SWamala.webp',
+  //   mobileImage: '/assets/images/static-banners/Naturally Sweetened with Dates.webp',
+  //   alt: 'Swamala Compound SF',
+  //   url: '/products/swamala-compound-sf',
+  //   isExternal: false,
+  // },
+  // {
+  //   id: 'static-banner-4',
+  //   title: 'Swamala Classic SF',
+  //   desktopImage: '/assets/images/static-banners/swamala-classic-sf.webp',
+  //   mobileImage: '/assets/images/static-banners/768-x-384-for-mobile-screen.webp',
+  //   alt: 'Swamala Classic SF',
+  //   url: '/products/swamala-classic-sf',
+  //   isExternal: false,
+  // }
 ];
 
 const BannerSlide = React.forwardRef(({ slide, isFirst, ...props }, ref) => {

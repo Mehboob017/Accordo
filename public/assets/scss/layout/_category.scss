@@ -4,6 +4,7 @@
 @use '../utils/variables';
 @use '../utils/mixin/common';
 @use '../utils/mixin/breakpoints';
+
 .category-box {
   background-color: var(--light-gray);
   margin: 0px auto;
@@ -59,10 +60,8 @@
   }
 
   img {
-    @include common.pseudowh(
-      $width: calc(38px + (45 - 38) * ((100vw - 320px) / (1920 - 320))),
-      $height: calc(38px + (45 - 38) * ((100vw - 320px) / (1920 - 320)))
-    );
+    @include common.pseudowh($width: calc(38px + (45 - 38) * ((100vw - 320px) / (1920 - 320))),
+      $height: calc(38px + (45 - 38) * ((100vw - 320px) / (1920 - 320))));
     object-fit: contain;
     margin: 0 auto;
 
@@ -102,7 +101,7 @@
 
         .category-box-name {
           h6 {
-            color: #fefefe;
+            color: #F7F9FE;
           }
         }
       }
@@ -112,7 +111,7 @@
       a {
         .category-box-name {
           h6 {
-            color: #fefefe;
+            color: #F7F9FE;
           }
         }
       }
@@ -254,11 +253,9 @@
         ul {
           li {
             .counter {
-              font-size: calc(
-                16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))
-              );
+              font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
 
-              > div {
+              >div {
                 line-height: 1;
               }
             }
@@ -319,8 +316,8 @@
             }
           }
 
-          > div,
-          > ul {
+          >div,
+          >ul {
             margin: 0;
           }
         }
@@ -507,7 +504,7 @@
     }
 
     .category-box-view {
-      > a {
+      >a {
         width: 100%;
         height: 130px;
 

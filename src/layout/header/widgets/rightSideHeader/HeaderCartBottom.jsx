@@ -1008,7 +1008,7 @@ const HeaderCartBottom = ({
                 }}
                 style={{
                   backgroundColor: 'var(--theme-color)',
-                  color: '#fefefe',
+                  color: '#F7F9FE',
                 }}
               >
                 Shop Now

@@ -60,7 +60,7 @@
   width: calc(34px + 6 * (100vw - 320px) / 1600);
   height: calc(34px + 6 * (100vw - 320px) / 1600);
   border-radius: 999px;
-  background: #fefefe;
+  background: #F7F9FE;
   color: #234BF3;
   display: flex !important;
   align-items: center;
@@ -74,11 +74,11 @@
   &:hover {
     border-color: #234BF3;
     background: #234BF3;
-    color: #fefefe;
+    color: #F7F9FE;
   }
 
   &:focus {
-    background: #fefefe;
+    background: #F7F9FE;
     color: #234BF3;
   }
 }

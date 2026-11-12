@@ -68,8 +68,8 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  background-color: var(--ffffff);
-  border: 1px solid var(--D4DEF3);
+  background-color: #F7F9FE;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 16px;
   // margin-top: 20px;
@@ -139,7 +139,8 @@
 }
 
 .available-coupons {
-  background: #eef6ff;
+  background: var(--white);
+  border: 1px solid var(--border-color);
 }
 
 .offers-heading {
@@ -169,7 +170,7 @@
 .offer-card {
   display: flex;
   align-items: stretch;
-  background: #fefefe;
+  background: #F7F9FE;
   border-radius: 10px;
   border: 1px solid #c9e4d5;
   border-left: none;
@@ -303,8 +304,8 @@
 
 .coupon-code-pill {
   border-radius: 999px;
-  background: #dff0ff;
-  color: #1a4f8b;
+  background: #EDF2FF;
+  color: var(--theme-color);
   padding: 3px 8px;
   font-size: 10px;
   line-height: 1.2;
@@ -512,7 +513,7 @@
 .review-heading-line {
   height: 1px;
   flex: 1;
-  background: color-mix(in srgb, var(--theme-color) 80%, #fefefe 20%);
+  background: color-mix(in srgb, var(--theme-color) 80%, #F7F9FE 20%);
 }
 
 .review-heading-leaf {
@@ -640,7 +641,7 @@
   height: 100%;
   border-radius: inherit;
   background: var(--theme-color);
-  background: #0da487;
+  // background: #0da487;
   transition: width 0.35s ease;
 }
 
@@ -656,7 +657,7 @@
 }
 
 .review-score-card {
-  background: color-mix(in srgb, var(--theme-color) 12%, #fefefe 88%);
+  background: color-mix(in srgb, var(--theme-color) 12%, #F7F9FE 88%);
   border-radius: 34px;
   min-height: 280px;
   padding: 20px;
@@ -721,8 +722,8 @@
 .review-cta-card {
   min-height: 250px;
   border-radius: 34px;
-  border: 1px solid color-mix(in srgb, var(--theme-color) 30%, #fefefe 70%);
-  background: #fefefe;
+  border: 1px solid color-mix(in srgb, var(--theme-color) 30%, #F7F9FE 70%);
+  background: #F7F9FE;
   padding: 34px 26px;
   display: flex;
   flex-direction: column;
@@ -792,7 +793,7 @@
 }
 
 .details-card {
-  background: #fefefe00;
+  background: #F7F9FE00;
   overflow: hidden;
   height: 100%;
 }
@@ -808,7 +809,7 @@
 .details-content {
   border: 1px solid #ececec;
   border-radius: 12px;
-  background: #fefefe;
+  background: #F7F9FE;
   overflow: hidden;
 }
 

@@ -220,7 +220,7 @@
             border: 1px solid #D4DEF3;
             border-radius: 100%;
             padding: 6px;
-            background-color: #fefefe;
+            background-color: #F7F9FE;
             @include common.flex_common;
             color: var(--theme-color);
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
@@ -243,7 +243,7 @@
           .checkout-box {
             padding: calc(14px + (29 - 14) * ((100vw - 320px) / (1920 - 320)));
             border: 1px solid #D4DEF3;
-            background-color: #fefefe;
+            background-color: #F7F9FE;
             border-radius: 12px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
             margin-left: 66px;

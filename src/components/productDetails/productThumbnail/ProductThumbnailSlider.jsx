@@ -451,7 +451,7 @@ const ProductThumbnailSlider = ({ productState, slug, magnifierConfig = {} }) =>
                                 preload="metadata"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                               />
-                              <span style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.28)', color: '#fefefe' }}>
+                              <span style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.28)', color: '#F7F9FE' }}>
                                 <RiPlayCircleFill size={24} />
                               </span>
                             </div>

@@ -446,7 +446,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
     //   ref={widgetRef}
     //   style={{
     //     position: 'relative',
-    //     background: '#fefefe',
+    //     background: '#F7F9FE',
     //     border: '1px solid #0da487',
     //     borderRadius: '10px',
     //     padding: '8px 10px',
@@ -462,7 +462,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
       style={{
         position: 'relative',
         background: `
-          linear-gradient(#fefefe, #fefefe),
+          linear-gradient(#F7F9FE, #F7F9FE),
           linear-gradient(90deg, #234BF3 0%, #5eead4 50%, #0d6efd 100%)
         `,
         border: '1.5px solid transparent',
@@ -537,7 +537,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            background: '#fefefe',
+            background: '#F7F9FE',
             border: '1px solid #e2e8f0',
             borderRadius: '50%',
             cursor: isSupported ? 'pointer' : 'not-allowed',
@@ -630,7 +630,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
             alignItems: 'center',
             justifyContent: 'center',
             borderRadius: '50%',
-            color: '#fefefe',
+            color: '#F7F9FE',
             flexShrink: 0,
             width: '18px',
             height: '18px',
@@ -651,7 +651,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
             right: 0,
             marginTop: '8px',
             padding: '10px',
-            background: '#fefefe',
+            background: '#F7F9FE',
             borderRadius: '10px',
             border: '1px solid #e2e8f0',
             boxShadow: '0 8px 24px rgba(15, 23, 42, 0.15)',
@@ -755,7 +755,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
                     fontWeight: 500,
                     border: speed === value ? `2px solid ${themeColor}` : '1px solid #e2e8f0',
                     borderRadius: '6px',
-                    background: speed === value ? '#f0fdfa' : '#fefefe',
+                    background: speed === value ? '#f0fdfa' : '#F7F9FE',
                     color: speed === value ? themeColor : '#475569',
                     cursor: isSupported ? 'pointer' : 'not-allowed',
                   }}
@@ -791,7 +791,7 @@ const BlogAudioWidget = ({ title, subtitle, content }) => {
                     fontWeight: 500,
                     border: pitch === value ? `2px solid ${themeColor}` : '1px solid #e2e8f0',
                     borderRadius: '6px',
-                    background: pitch === value ? '#f0fdfa' : '#fefefe',
+                    background: pitch === value ? '#f0fdfa' : '#F7F9FE',
                     color: pitch === value ? themeColor : '#475569',
                     cursor: isSupported ? 'pointer' : 'not-allowed',
                   }}

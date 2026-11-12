@@ -314,12 +314,12 @@
   transition: background-color 0.15s ease;
 
   &:not(:last-child) {
-    border-bottom: 1px solid var(--border-color-light);
+    border-bottom: 1px solid #EDF2FF;
   }
 
   &:hover,
   &.is-focused {
-    background-color: #efefef;
+    background-color: #EDF2FF;
   }
 
   .suggestion-icon {

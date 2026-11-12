@@ -28,7 +28,7 @@ $border-color: var(--border-color);
     }
 
     &.failed .step-indicator .circle {
-      background: var(--step-color, #ef4444);
+      background: var(--step-color, --red);
       color: #fff;
     }
 

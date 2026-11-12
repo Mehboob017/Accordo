@@ -65,6 +65,7 @@ const OtpLoginModal = ({
   onLoginSuccess,
   isUpgradeMode = false,
   isReapplyMode = false,
+  bannerImage,
 }) => {
   const { themeOption } = useContext(ThemeOptionContext);
   const { signupBonusCoins } = useContext(CartContext);
@@ -817,6 +818,7 @@ const OtpLoginModal = ({
             phoneInputRef={authFlow.phoneInputRef}
             setTurnstileToken={setTurnstileToken}
             isTurnstileRequired={turnstileRequired}
+            bannerImage={bannerImage}
           />
         );
       case 2:
@@ -847,6 +849,7 @@ const OtpLoginModal = ({
               setOtpServerError('');
               setOtpValidationState('idle');
             }}
+            bannerImage={bannerImage}
           />
         );
       case 3:
@@ -936,7 +939,7 @@ const OtpLoginModal = ({
           {renderContent()}
 
           {/* Bottom Section with Logo and App Download Buttons */}
-          {authFlow.step !== 3 && authFlow.step !== 4 && (
+          {/* {authFlow.step !== 3 && authFlow.step !== 4 && (
             <div className="otp-login-bottom-section">
               <div className="otp-logo text-center mb-2">
                 <Image
@@ -994,7 +997,7 @@ const OtpLoginModal = ({
                   </div>
                 )}
             </div>
-          )}
+          )} */}
         </div>
       </ResponsiveModal>
 

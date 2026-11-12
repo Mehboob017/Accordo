@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Controller } from 'react-hook-form';
 import { Form, FormGroup, Input, InputGroup, Label } from 'reactstrap';
 import Btn from '@/elements/buttons/Btn';
@@ -7,6 +8,7 @@ import { AllCountryCode } from '@/data/AllCountryCode';
 import { RiCheckboxCircleFill, RiCheckboxFill } from 'react-icons/ri';
 import { Turnstile } from "@marsidev/react-turnstile";
 import { isTurnstileRequired } from '@/utils/constants';
+import defaultBannerImage from '../../../../../public/assets/images/save-shop/shop-banner1.png';
 
 const PhoneNumberForm = ({
   phoneControl,
@@ -18,6 +20,7 @@ const PhoneNumberForm = ({
   phoneInputRef,
   setTurnstileToken,
   isTurnstileRequired: propIsTurnstileRequired,
+  bannerImage,
 }) => {
   const showTurnstile =
     propIsTurnstileRequired !== undefined
@@ -25,6 +28,18 @@ const PhoneNumberForm = ({
       : isTurnstileRequired();
   return (
     <div className="otp-login-top-section">
+      {bannerImage !== false && (
+        <div className="otp-login-banner">
+          <Image
+            src={bannerImage || defaultBannerImage}
+            alt="Login Banner"
+            width={500}
+            height={160}
+            className="otp-banner-image img-fluid"
+            priority
+          />
+        </div>
+      )}
       <Form className="otp-step" onSubmit={handlePhoneSubmit(handleSendOtp)}>
         <div className="otp-welcome-card">
           <h4 className="otp-welcome-title mb-1">

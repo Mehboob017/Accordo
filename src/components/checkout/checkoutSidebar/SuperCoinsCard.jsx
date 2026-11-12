@@ -198,9 +198,8 @@ const SuperCoinsCard = ({
       <button
         ref={cardRef}
         type="button"
-        className={`${styles.supercoinsCard} ${isApplied ? styles.checked : ''} ${
-          isResetHighlighted ? styles.resetHighlight : ''
-        }`}
+        className={`${styles.supercoinsCard} ${isApplied ? styles.checked : ''} ${isResetHighlighted ? styles.resetHighlight : ''
+          }`}
         onClick={handleChange}
         disabled={disabled}
       >
@@ -219,7 +218,7 @@ const SuperCoinsCard = ({
               launchSpeed={0.5}
               opacityDeltaMultiplier={0.9}
               style={confettiPlacement.style}
-              colors={['#0da487', '#6ed1bd', '#f3c95f', '#fefefe']}
+              colors={['#0da487', '#6ed1bd', '#f3c95f', '#F7F9FE']}
             />
           </div>
         )}
@@ -240,11 +239,10 @@ const SuperCoinsCard = ({
               <span className={styles.coinCounter}>
                 {coinCounterState.isAnimating ? (
                   <span
-                    className={`${styles.coinCounterTrack} ${
-                      coinCounterState.direction === 'down'
+                    className={`${styles.coinCounterTrack} ${coinCounterState.direction === 'down'
                         ? styles.slideDown
                         : styles.slideUp
-                    }`}
+                      }`}
                   >
                     {animatedCoinValues.map((value, index) => (
                       <span

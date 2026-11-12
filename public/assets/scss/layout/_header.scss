@@ -293,7 +293,7 @@ header {
   }
 
   .timer-notification {
-    color: #fefefe;
+    color: #F7F9FE;
     display: block;
     text-align: start;
     margin-block: 4px;
@@ -463,8 +463,8 @@ header {
     // background: linear-gradient(135deg,
     //     #EA5F1F 0%,
     //     #EA5F1E 25%,
-    //     #FEFEFE 50%,
-    //     #FEFEFE 50%,
+    //     #F7F9FE 50%,
+    //     #F7F9FE 50%,
     //     #108A42 75%,
     //     #108A42 100%);
 
@@ -498,7 +498,7 @@ header {
         $align: center,
         $justify: flex-end);
       height: 100%;
-      color: #fefefe;
+      color: #F7F9FE;
 
       .select-dropdown {
         span {
@@ -523,7 +523,7 @@ header {
             @include common.pos;
             @include common.pseudowh($width: 2px, $height: 90%);
             left: -13px;
-            background-color: rgba(#fefefe, 0.3);
+            background-color: rgba(#F7F9FE, 0.3);
 
             body[dir='rtl'] & {
               left: unset;
@@ -584,7 +584,7 @@ header {
               @include common.remixicon;
               @include common.center(vertical);
               right: 0;
-              color: #fefefe;
+              color: #F7F9FE;
 
               body[dir='rtl'] & {
                 right: unset;
@@ -713,7 +713,7 @@ header {
   @at-root .header-app-promo {
     position: relative;
     background-color: var(--theme-color);
-    color: #fefefe;
+    color: #F7F9FE;
     padding: 8px 0 14px;
     z-index: 9;
 
@@ -734,7 +734,7 @@ header {
       width: 32px;
       height: 32px;
       border-radius: 8px;
-      background-color: #fefefe;
+      background-color: #F7F9FE;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -752,14 +752,14 @@ header {
       margin: 0;
       font-size: 14px;
       font-weight: 500;
-      color: #fefefe;
+      color: #F7F9FE;
     }
 
     &__cta {
       white-space: nowrap;
       padding-inline: 18px;
       font-size: 14px;
-      color: #fefefe;
+      color: #F7F9FE;
     }
 
     &::after {
@@ -998,7 +998,7 @@ header {
 
             button {
               background-color: #ffa53b;
-              color: #fefefe;
+              color: #F7F9FE;
               padding: 14px 20px;
               border-radius: 5px;
               border: 1px solid #ffa53b;
@@ -1430,7 +1430,7 @@ header {
 
               &:hover {
                 background: var(--theme-color);
-                color: '#ffffff'
+                color: #ffffff;
               }
 
               .delivery-icon {
@@ -1442,7 +1442,7 @@ header {
                 .login-signup-text {
                   font-size: 14px;
                   font-weight: 500;
-                  color: var(--light-btn-text);
+                  // color: var(--light-btn-text);
                 }
               }
             }
@@ -1793,7 +1793,7 @@ header {
               height: calc(22px + (28 - 22) * ((100vw - 320px) / (1920 - 320)));
               border-radius: 100%;
               background-color: var(--theme-color);
-              color: #fefefe;
+              color: #F7F9FE;
 
               body[dir='rtl'] & {
                 right: unset;
@@ -2500,7 +2500,7 @@ header {
         @include common.flex_common;
         padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) calc(16px + (31 - 16) * ((100vw - 320px) / (1920 - 320)));
         background: var(--theme-color);
-        color: #fefefe;
+        color: #F7F9FE;
         border-radius: 5px;
         border: none;
 
@@ -5567,7 +5567,7 @@ header {
 
   .empty-icon {
     font-size: 30px;
-    color: var(--D4DEF3);
+    color: var(--title-color);
     width: 70px;
     height: 70px;
     @include common.flex_common;
@@ -6021,12 +6021,12 @@ header {
 //         svg {
 //           margin: 0 auto;
 //           font-size: calc(20px + (22 - 20) * ((100vw - 320px) / (1920 - 320)));
-//           color: #fefefe;
+//           color: #F7F9FE;
 //         }
 
 //         span {
 //           display: block;
-//           color: #fefefe;
+//           color: #F7F9FE;
 //         }
 //       }
 //     }
@@ -6126,7 +6126,7 @@ header {
     // --- Active State Styling ---
     &.active {
       .menu-link {
-        color: var(--white, #fefefe);
+        color: var(--white, #F7F9FE);
 
         .icon-wrapper {
           // Creates a subtle, elegant highlight pill behind the active icon
@@ -6134,13 +6134,13 @@ header {
 
           svg {
             transform: scale(1.1); // Slight pop effect
-            color: var(--white, #fefefe);
+            color: var(--white, #F7F9FE);
           }
         }
 
         .tab-title {
           font-weight: 700;
-          color: var(--white, #fefefe);
+          color: var(--white, #F7F9FE);
         }
       }
     }
@@ -6287,7 +6287,7 @@ header {
 /* Basic header redesign, scoped to avoid side effects on other pages/components */
 header.basic-header-redesign {
   .top-nav.top-header.sticky-header {
-    // background: linear-gradient(180deg, #fefefe 0%, #fcfdfb 100%);
+    // background: linear-gradient(180deg, #F7F9FE 0%, #fcfdfb 100%);
     background: linear-gradient(180deg, #F7F9FE 0%, #F7F9FE 100%);
     // border-bottom: 1px solid rgba(variables.$title-color, 0.06);
     box-shadow: 0 12px 28px rgba(variables.$title-color, 0.05);
@@ -6449,7 +6449,7 @@ header.basic-header-redesign {
         display: flex;
         padding: 16px 20px;
         border-bottom: 1px solid var(--border-color);
-        background: linear-gradient(180deg, #fefefe 0%, #f8fcfb 100%);
+        background: linear-gradient(180deg, #F7F9FE 0%, #f8fcfb 100%);
       }
 
       .offcanvas-body {

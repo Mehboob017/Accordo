@@ -2392,9 +2392,9 @@
         .offer-top {
           font-weight: 500;
           padding: 5px calc(px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
-          background-color: rgba(variables.$danger-color, 0.1);
+          background-color: #EF2D2E;
           border-radius: 5px;
-          color: variables.$danger-color;
+          color: #ffffff;
           display: inline-block;
           margin-bottom: 0;
           margin-left: 12px;
@@ -3358,7 +3358,7 @@
     .modal-header {
       .btn-close {
         @include breakpoints.mq-max(lg) {
-          background-color: #fefefe;
+          background-color: #F7F9FE;
           color: var(--theme-color);
 
           html.dark & {
@@ -3456,7 +3456,7 @@
         .input-group-text {
           padding: 12px calc(19px + (24 - 19) * ((100vw - 320px) / (1920 - 320)));
           background-color: var(--theme-color);
-          color: #fefefe;
+          color: #F7F9FE;
           font-size: 14px;
           border: unset;
           border-radius: 0;
@@ -5713,9 +5713,9 @@
           .offer-top {
             font-weight: 500;
             padding: 5px calc(px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
-            background-color: rgba(variables.$danger-color, 0.1);
+            background-color: #EF2D2E;
             border-radius: 5px;
-            color: variables.$danger-color;
+            color: #ffffff;
             display: inline-block;
             margin-bottom: 0;
             margin-left: 12px;

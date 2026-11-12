@@ -64,7 +64,7 @@ const ResponsiveModal = ({
           style={{
             position: 'sticky',
             top: 0,
-            backgroundColor: 'var(--white, #fefefe)',
+            backgroundColor: 'var(--white, #F7F9FE)',
             zIndex: 10,
             borderBottom: '1px solid var(--border-color, #eee)',
           }}

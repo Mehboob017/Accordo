@@ -4,8 +4,8 @@
 .pd-additional-info {
   margin-top: 14px;
   border-radius: 12px;
-  background-color: #fefefe;
-  border: 1px solid #cecece;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
   width: 100%;
 
   html.dark & {
@@ -24,7 +24,7 @@
     transition: background-color 0.25s cubic-bezier(0.32, 0.72, 0, 1);
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0.02);
+      // background-color: rgba(0, 0, 0, 0.02);
 
       html.dark & {
         background-color: rgba(255, 255, 255, 0.04);
@@ -196,7 +196,7 @@
     padding: 8px;
     border-radius: 10px;
     border: 1px solid #e2e8ed;
-    background-color: #fefefe;
+    background-color: #F7F9FE;
     text-decoration: none;
     color: inherit;
     transition: border-color 0.2s ease, background-color 0.2s ease;

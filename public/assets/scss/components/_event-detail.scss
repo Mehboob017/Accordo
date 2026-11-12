@@ -441,7 +441,7 @@ $transition-speed: 0.3s;
   .event-hero-content {
     position: relative;
     z-index: 2;
-    color: #fefefe;
+    color: #F7F9FE;
     max-width: 700px;
 
     .event-badge {
@@ -596,7 +596,7 @@ $transition-speed: 0.3s;
       }
 
       .btn-read-more {
-        // background: #fefefe;
+        // background: #F7F9FE;
         // color: var(--title-color);
         // margin-right: 10px;
         min-width: 150px;
@@ -621,7 +621,7 @@ $transition-speed: 0.3s;
 // Navigation Tabs
 // =====================================================
 .event-nav-tabs-wrapper {
-  background: #fefefe;
+  background: #F7F9FE;
   border-bottom: none;
   position: sticky;
   top: 115px;
@@ -658,7 +658,7 @@ $transition-speed: 0.3s;
           letter-spacing: 0.6px;
           border: none;
           font-weight: 600;
-          background-color: #fefefe;
+          background-color: #F7F9FE;
           position: relative;
 
           &::after {
@@ -1217,7 +1217,7 @@ $transition-speed: 0.3s;
           text-transform: uppercase;
           letter-spacing: 0.5px;
           margin-bottom: 2px;
-          color: #fefefe;
+          color: #F7F9FE;
 
           @include breakpoints.mq-max(lg) {
             font-size: 16px;
@@ -1765,7 +1765,7 @@ $transition-speed: 0.3s;
   align-items: center;
   gap: 16px;
   padding: 16px 24px;
-  background: #fefefe;
+  background: #F7F9FE;
   border: 1px solid $border-color;
   border-radius: 12px;
   text-decoration: none;

@@ -163,7 +163,7 @@
   right: 0;
   max-height: 350px;
   overflow-y: auto;
-  background-color: #EDF2FF;
+  background-color: #F7F9FE;
   border: 1px solid var(--border-color, #e5e5e5);
   border-top: none;
   border-bottom-left-radius: 8px;
@@ -216,12 +216,12 @@
   transition: background-color 0.15s ease;
 
   &:not(:last-child) {
-    border-bottom: 1px solid var(--border-color-light, #f0f0f0);
+    border-bottom: 1px solid #EDF2FF;
   }
 
   &:hover,
   &.is-focused {
-    background-color: #efefef;
+    background-color: #EDF2FF;
   }
 
   &.is-focused {

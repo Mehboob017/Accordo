@@ -526,7 +526,7 @@
         .accordion-item {
           border: none;
           width: 100%;
-          background-color: #fefefe;
+          background-color: #F7F9FE;
           border: 1px solid #D4DEF3;
           box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
           border-radius: 12px;
@@ -602,7 +602,7 @@
           .accordion-header {
             .accordion-button {
               // background-color: var(--page-bg-color);
-              background-color: #fefefe;
+              background-color: #F7F9FE;
               font-size: 18px;
               padding: 0 0 8px 0;
               font-weight: 600;
@@ -1015,7 +1015,7 @@
 
             html.dark & {
               background-color: #2a2d2d;
-              box-shadow: 0 6px 10px 4px #fefefe0d;
+              box-shadow: 0 6px 10px 4px #F7F9FE0d;
               border: 1px solid rgba(119, 119, 119, 0.4);
             }
 
@@ -1363,7 +1363,7 @@
 
             html.dark & {
               background-color: #2a2d2d;
-              box-shadow: 0 6px 10px 4px #fefefe0d;
+              box-shadow: 0 6px 10px 4px #F7F9FE0d;
               border: 1px solid rgba(119, 119, 119, 0.4);
             }
 

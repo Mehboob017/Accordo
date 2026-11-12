@@ -527,7 +527,7 @@ const ReviewModal = ({ modal, setModal, productState, refetch }) => {
             '#00e676',
             '#00b0ff',
             '#d500f9',
-            '#fefefe',
+            '#F7F9FE',
           ]}
         />
       )}

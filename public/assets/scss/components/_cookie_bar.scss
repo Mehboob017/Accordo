@@ -4,6 +4,7 @@
 @use '../utils/variables';
 @use '../utils/mixin/common';
 @use '../utils/mixin/breakpoints';
+
 .cookie-bar-box {
   background: var(--white);
   position: fixed;
@@ -37,10 +38,8 @@
       @include common.flex_common;
 
       img {
-        @include common.pseudowh(
-          $width: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320))),
-          $height: auto
-        );
+        @include common.pseudowh($width: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320))),
+          $height: auto);
         margin-right: 10px;
       }
     }
@@ -80,7 +79,7 @@
 
       &.ok-button {
         background-color: var(--theme-color);
-        color: #fefefe;
+        color: #F7F9FE;
       }
     }
   }

@@ -179,7 +179,7 @@ const SingleBlog = ({ categorySlug, blogSlug }) => {
                 right: '0',
                 background: 'transparent',
                 border: 'none',
-                color: '#fefefe',
+                color: '#F7F9FE',
                 fontSize: '48px',
                 cursor: 'pointer',
                 width: '48px',

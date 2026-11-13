@@ -6381,6 +6381,11 @@ header.basic-header-redesign {
     .primary-nav-bar--redesign:not(.d-none) {
       display: block !important;
     }
+
+    .header-nav-middle,
+    .header-menu-trigger {
+      display: none !important;
+    }
   }
 }
 

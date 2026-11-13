@@ -14,6 +14,7 @@ export default {
                         standard: [
                             'html',
                             'body',
+                            /^d-/,
                             /^active/,
                             /^show/,
                             /^fade/,

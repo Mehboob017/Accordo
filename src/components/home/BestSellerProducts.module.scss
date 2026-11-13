@@ -1,5 +1,29 @@
 // ── Best Seller Products Section Styles ───────────────────────────────────
 
+// 5-column grid for best sellers
+.five-col-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 575px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+}
+
 .view-all-link {
   font-size: 14px;
   font-weight: 600;

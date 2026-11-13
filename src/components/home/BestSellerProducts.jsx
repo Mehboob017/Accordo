@@ -26,7 +26,7 @@ const BestSellerProducts = ({
   sectionClass = 'best-seller-products-section section-b-space',
   viewAllHref = '/collections',
   viewAllText = 'View All',
-  maxItems = 4,
+  maxItems = 5,
   fetchFromHome = true,
 }) => {
   const hasExternalProducts = Array.isArray(products);
@@ -112,17 +112,17 @@ const BestSellerProducts = ({
       <Row>
         <Col>
           <div className="product-slider-placeholder">
-            <Row className="g-sm-4 g-3 product-list-section">
-              {relatedProductList.slice(0, 4).map((product, i) => (
-                <Col xl={3} lg={4} md={6} xs={6} key={i}>
+            <div className={styles['five-col-grid']}>
+              {relatedProductList.slice(0, 5).map((product, i) => (
+                <div key={i}>
                   <ProductBox1
                     imgUrl={product?.product_thumbnail}
                     productDetail={{ ...product }}
                     classObj={{ productBoxClass: 'product-box-3' }}
                   />
-                </Col>
+                </div>
               ))}
-            </Row>
+            </div>
           </div>
         </Col>
       </Row>

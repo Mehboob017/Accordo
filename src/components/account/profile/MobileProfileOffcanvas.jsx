@@ -39,12 +39,12 @@ const menuItems = [
     icon: <RiFileTextLine />,
     path: '/account/orders',
   },
-  {
-    id: 'points',
-    title: 'SDL Points',
-    icon: <RiCoinLine />,
-    path: '/account/coins',
-  },
+  // {
+  //   id: 'points',
+  //   title: 'SDL Points',
+  //   icon: <RiCoinLine />,
+  //   path: '/account/coins',
+  // },
   {
     id: 'addresses',
     title: 'Saved Addresses',
@@ -165,7 +165,7 @@ const MobileProfileOffcanvas = ({ isOpen, onClose }) => {
               </li>
             ))}
 
-            {!userData?.isDoctor && (
+            {/* {!userData?.isDoctor && (
               <li className={styles.navItem}>
                 <button
                   type="button"
@@ -183,7 +183,7 @@ const MobileProfileOffcanvas = ({ isOpen, onClose }) => {
                   <RiArrowRightSLine className={styles.navChevron} />
                 </button>
               </li>
-            )}
+            )} */}
           </ul>
         </nav>
       </>

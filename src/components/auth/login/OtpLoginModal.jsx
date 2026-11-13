@@ -195,7 +195,7 @@ const OtpLoginModal = ({
       email: '',
       gender: '',
       profilePhoto: undefined,
-      role: undefined,
+      role: 'Customer',
       registrationNumber: '',
       degreeCertificate: undefined,
       registrationCertificate: undefined,
@@ -643,7 +643,7 @@ const OtpLoginModal = ({
       const phoneNum = `${phoneData.countryCode}${phoneData.phone}`;
 
       const payload = {
-        role: isEditDoctorMode ? 'Doctor' : data.role,
+        role: isEditDoctorMode ? 'Doctor' : data.role || 'Customer',
         firstName: data.firstName || userData?.firstName || '',
         lastName: data.lastName || userData?.lastName || '',
         email: data.email || userData?.email || '',

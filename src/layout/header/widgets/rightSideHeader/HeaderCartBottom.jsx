@@ -927,7 +927,7 @@ const HeaderCartBottom = ({
               />
             </div>
 
-            {billDetails?.canApplySuperCoins && previewMaxUsableCoins > 0 && (
+            {/* {billDetails?.canApplySuperCoins && previewMaxUsableCoins > 0 && (
               <div className="mb-3" style={{ padding: '0 16px' }}>
                 <SuperCoinsCard
                   key={`supercoins-${previewMaxUsableCoins}`}
@@ -940,7 +940,7 @@ const HeaderCartBottom = ({
                   disabled={isCouponLoading || isCartPreviewBusy}
                 />
               </div>
-            )}
+            )} */}
 
             {/* Coupon Section */}
             <div style={{ padding: '0 16px' }}>
@@ -976,13 +976,13 @@ const HeaderCartBottom = ({
               </div>
             )}
 
-            {billDetails?.earnableSdlCoins > 0 && (
+            {/* {billDetails?.earnableSdlCoins > 0 && (
               <div style={{ padding: '16px 16px 0' }}>
                 <EarnSdlCoinsBanner
                   totalCoins={billDetails?.earnableSdlCoins}
                 />
               </div>
-            )}
+            )} */}
 
             {/* show Order Summary only if there are eligible cart items */}
             {hasEligibleCartProducts && billDetails && (

@@ -67,7 +67,7 @@ const NavTabTitles = ({
         ))}
 
         {/* Register as Vaidya */}
-        <UpgradeProfile />
+        {/* <UpgradeProfile /> */}
 
         {userData?.uid && !isUserLoading && (
           <NavItem className="logout-cls">

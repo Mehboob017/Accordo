@@ -240,8 +240,8 @@ const SuperCoinsCard = ({
                 {coinCounterState.isAnimating ? (
                   <span
                     className={`${styles.coinCounterTrack} ${coinCounterState.direction === 'down'
-                        ? styles.slideDown
-                        : styles.slideUp
+                      ? styles.slideDown
+                      : styles.slideUp
                       }`}
                   >
                     {animatedCoinValues.map((value, index) => (
@@ -276,7 +276,7 @@ const SuperCoinsCard = ({
         </div>
       </button>
 
-      <UncontrolledTooltip
+      {/* <UncontrolledTooltip
         placement="top"
         target={infoIconId}
         className="supercoins-custom-tooltip"
@@ -293,7 +293,7 @@ const SuperCoinsCard = ({
             1 SDL Coin = ₹{formatCoinValue(safeCoinValue)}
           </div>
         </div>
-      </UncontrolledTooltip>
+      </UncontrolledTooltip> */}
     </div>
   );
 };

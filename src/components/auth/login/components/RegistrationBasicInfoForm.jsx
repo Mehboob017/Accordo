@@ -201,7 +201,7 @@ const RegistrationBasicInfoForm = ({
           </FormGroup>
         </Col>
 
-        <Col md={12}>
+        {/* <Col md={12}>
           <FormGroup className="otp-form-group">
             <Label className="form-label mb-2">
               Role <span className="text-danger">*</span>
@@ -244,7 +244,7 @@ const RegistrationBasicInfoForm = ({
               </FormFeedback>
             )}
           </FormGroup>
-        </Col>
+        </Col> */}
       </Row>
     </>
   );

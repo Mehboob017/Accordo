@@ -1465,35 +1465,64 @@
             background-color: var(--234BF3);
             color: var(--ffffff);
             font-weight: 600;
-            box-shadow: 0 4px 10px rgba(31, 166, 122, 0.25);
+            // box-shadow: 0 4px 10px rgba(31, 166, 122, 0.25);
           }
         }
 
         .form-label {
-          color: var(--content-color, #6b7280);
-          letter-spacing: 0.5px;
+          display: block;
+          margin-bottom: 0.25rem !important;
+          font-size: 16px;
+          font-weight: 500;
+          color: var(--title-color, #07112C);
+          letter-spacing: normal;
+          text-transform: none;
+
+          .required-dot,
+          .text-danger {
+            margin-left: 2px;
+            color: var(--red, #EF2D2E);
+          }
         }
 
         .form-control,
         .form-select,
         .input-group-text {
-          background-color: var(--white, #F7F9FE);
-          border: 1px solid var(--border-color, #D4DEF3);
-          border-radius: 8px;
+          background-color: var(--input-bg, #F7F9FE);
+          border: 1px solid var(--input-border, #D4DEF3);
+          border-radius: var(--input-border-radius, 8px);
           padding: 10px 12px;
           font-weight: 500;
-          color: var(--title-color, #111);
+          font-size: 16px;
+          color: var(--input-text, #07112C);
           transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
+          &::placeholder {
+            color: var(--input-placeholder, #535E75);
+            font-size: 16px;
+            font-weight: 500;
+          }
+
           &:focus {
-            border-color: var(--theme-color, #0da487);
-            box-shadow: 0 0 0 2px rgba(13, 164, 135, 0.15);
+            outline: none;
+            border-color: var(--input-border-focus, #234BF3);
+            box-shadow: var(--input-shadow-focus, 0 0 0 2px rgba(35, 75, 243, 0.15));
+          }
+
+          &.is-invalid {
+            border-color: var(--input-border-invalid, #EF2D2E) !important;
+            background-color: var(--input-bg-invalid, #FEE2DE) !important;
+
+            &::placeholder {
+              color: var(--input-placeholder-invalid, #AB0D15) !important;
+            }
           }
 
           &:disabled {
-            background-color: var(--light-gray, #f8f8f8);
-            color: var(--content-color, #6b7280);
-            cursor: not-allowed;
+            background-color: var(--input-bg-disabled, #F4F4F3);
+            color: var(--input-text-disabled, #9E9E9E);
+            border-color: var(--input-border-disabled, #E5E5E5);
+            cursor: var(--input-cursor-disabled, not-allowed);
           }
         }
       }
@@ -1514,11 +1543,13 @@
 
           .country-code-select {
             max-width: 70px;
-            font-weight: 600;
-            border: 1px solid var(--border-color, #D4DEF3);
-            border-radius: 8px 0 0 8px;
-            background: var(--light-gray, #f8f8f8);
-            border-right: none;
+            font-weight: 500;
+            font-size: 16px;
+            border: 1px solid var(--input-border-disabled, #E5E5E5) !important;
+            border-radius: 8px 0 0 8px !important;
+            background: var(--input-bg-disabled, #F4F4F3) !important;
+            color: var(--input-text-disabled, #9E9E9E) !important;
+            border-right: none !important;
 
             &:focus {
               box-shadow: none;
@@ -1527,11 +1558,12 @@
           }
 
           .form-control {
-            border-radius: 0 8px 8px 0;
+            border-radius: 0 8px 8px 0 !important;
 
-            // Remove left border radius if next to country code
+            // Remove right border radius if next to send OTP button
             &:not(:last-child) {
-              border-radius: 0;
+              border-radius: 0 !important;
+              border-right: none !important;
             }
           }
 
@@ -1542,7 +1574,7 @@
             padding: 0 16px;
             border-left: none;
             font-weight: 500;
-            border-radius: 0 8px 8px 0;
+            border-radius: 0 8px 8px 0 !important;
             cursor: pointer;
             transition: all 0.2s ease;
             min-width: 100px;
@@ -3710,7 +3742,7 @@
       align-items: center;
       gap: 0.5rem;
       cursor: pointer;
-      box-shadow: 0 4px 10px rgba(31, 166, 122, 0.25);
+      // box-shadow: 0 4px 10px rgba(31, 166, 122, 0.25);
       transition: all 0.2s ease;
     }
 

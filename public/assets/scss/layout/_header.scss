@@ -1431,6 +1431,11 @@ header {
               &:hover {
                 background: var(--theme-color);
                 color: #ffffff;
+
+                .login-signup-icon {
+                  // font-size: 20px/;
+                  color: #ffffff;
+                }
               }
 
               .delivery-icon {

@@ -123,14 +123,14 @@ const CheckoutOrderSummary = ({ summary = {} }) => {
           </div>
         )}
 
-        {superCoinDiscount > 0 && (
+        {/* {superCoinDiscount > 0 && (
           <div
             className={`summary-row ${superCoinDiscount > 0 ? 'discount' : ''}`}
           >
             <span className="label">SDL Points discount</span>
             <span className="value">- {formatInr(superCoinDiscount)}</span>
           </div>
-        )}
+        )} */}
 
         {totalGst > 0 && (
           <div className="summary-row">

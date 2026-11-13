@@ -20,40 +20,16 @@
     gap: 12px;
   }
 
-  // Mobile: native horizontal scroll-snap with preview of next card
+  // Mobile: stack vertically instead of horizontal scroll
   @media (max-width: 767px) {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    gap: 12px;
-    padding: 4px 12px 12px 12px;
-    margin: -4px -12px 0 -12px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; // Firefox
-
-    &::-webkit-scrollbar {
-      display: none; // Chrome, Safari, Edge
-    }
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 }
 
 .banner-card-wrapper {
   min-width: 0;
   width: 100%;
-
-  @media (max-width: 767px) {
-    flex: 0 0 84%;
-    min-width: 84%;
-    max-width: 84%;
-    scroll-snap-align: start;
-  }
-
-  @media (max-width: 480px) {
-    flex: 0 0 86%;
-    min-width: 86%;
-    max-width: 86%;
-  }
 }
 
 // ── Banner Card Item ───────────────────────────────────────────────────────

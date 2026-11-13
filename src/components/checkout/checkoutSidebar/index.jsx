@@ -810,7 +810,7 @@ const CheckoutSidebar = ({
             </div>
           )}
 
-          {billDetails?.canApplySuperCoins && (
+          {/* {billDetails?.canApplySuperCoins && (
             <div className="mt-3">
               <SuperCoinsCard
                 isApplied={isSuperCoinsApplied}
@@ -821,7 +821,7 @@ const CheckoutSidebar = ({
                 disabled={isCheckoutUiLoading}
               />
             </div>
-          )}
+          )} */}
 
           <div className="mt-3">
             <PrescriptionConsent
@@ -899,11 +899,11 @@ const CheckoutSidebar = ({
             </>
           )}
 
-          {shouldShowEarnCoinsBanner && (
+          {/* {shouldShowEarnCoinsBanner && (
             <div className="mt-3">
               <EarnSdlCoinsBanner totalCoins={coinBannerTotalCoins} />
             </div>
-          )}
+          )} */}
 
           {billDetails && (
             <div className="mt-3">

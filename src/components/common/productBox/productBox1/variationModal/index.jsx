@@ -337,10 +337,10 @@ const VariationModal = ({
                 </div>
                 <div className="modal-bottom-cart d-none d-lg-block">
                   <div className="dual-cart-buttons">
-                    <VariationBuyNow
+                    {/* <VariationBuyNow
                       cloneVariation={cloneVariation}
                       setVariationModal={setVariationModal}
-                    />
+                    /> */}
                     {!isBook && isOpen ? (
                       <div className="qty-inline-box">
                         <button
@@ -408,10 +408,10 @@ const VariationModal = ({
         </div>
         <div className="variation-modal-footer d-lg-none">
           <div className="dual-cart-buttons">
-            <VariationBuyNow
+            {/* <VariationBuyNow
               cloneVariation={cloneVariation}
               setVariationModal={setVariationModal}
-            />
+            /> */}
             {!isBook && isOpen ? (
               <div className="qty-inline-box">
                 <button

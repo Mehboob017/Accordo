@@ -13,12 +13,12 @@ export const sidebarMenu = [
     icon: <RiFileTextLine />,
     path: '/account/orders',
   },
-  {
-    id: 'points',
-    title: 'SDL Points',
-    icon: <RiCoinLine />,
-    path: '/account/coins',
-  },
+  // {
+  //   id: 'points',
+  //   title: 'SDL Points',
+  //   icon: <RiCoinLine />,
+  //   path: '/account/coins',
+  // },
   {
     id: 'addresses',
     title: 'Saved Addresses',

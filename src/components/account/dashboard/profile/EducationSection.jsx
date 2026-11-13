@@ -184,10 +184,7 @@ const EducationSection = ({ isEditing, value, onChange }) => {
         {/* ── Qualification Tab Buttons ───────────────────────────── */}
         <Col md={12}>
           <FormGroup className="wireframe-field mb-0">
-            <Label
-              className="form-label mb-2 text-uppercase font-weight-bold"
-              style={{ fontSize: '12px' }}
-            >
+            <Label className="form-label mb-2">
               Qualification
             </Label>
             <div className="d-flex gap-2">
@@ -215,16 +212,13 @@ const EducationSection = ({ isEditing, value, onChange }) => {
         {showCollegeField && (
           <Col md={12}>
             <FormGroup className="wireframe-field mb-0 mt-2">
-              <Label
-                className="form-label mb-1 text-uppercase font-weight-bold"
-                style={{ fontSize: '12px' }}
-              >
+              <Label className="form-label mb-1">
                 College Name
-                {/* <span className="text-danger">*</span> */}
+                {/* <span className="text-danger required-dot">*</span> */}
               </Label>
               <Input
                 type="text"
-                className="form-control"
+                className="form-control input-common contact-us-form-input"
                 placeholder="Enter college name"
                 value={fields.collegeName}
                 onChange={(e) =>
@@ -261,16 +255,13 @@ const EducationSection = ({ isEditing, value, onChange }) => {
         {isMaster && (
           <Col md={12}>
             <FormGroup className="wireframe-field mb-0 mt-2">
-              <Label
-                className="form-label mb-1 text-uppercase font-weight-bold"
-                style={{ fontSize: '12px' }}
-              >
+              <Label className="form-label mb-1">
                 Expertise
-                {/* <span className="text-danger">*</span> */}
+                {/* <span className="text-danger required-dot">*</span> */}
               </Label>
               <Input
                 type="text"
-                className="form-control"
+                className="form-control input-common contact-us-form-input"
                 placeholder="Enter area of expertise (comma separated)"
                 value={fields.specialist}
                 onChange={(e) =>

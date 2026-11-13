@@ -211,7 +211,7 @@
   &:focus-visible {
     background: var(--btn-primary-bg-hover) !important;
     color: var(--btn-primary-text-hover) !important;
-    box-shadow: 0 4px 4px 0 var(--btn-primary-shadow-hover) !important;
+    // box-shadow: 0 4px 4px 0 var(--btn-primary-shadow-hover) !important;
     border: 1px solid var(--btn-primary-border-hover) !important;
   }
 
@@ -239,7 +239,7 @@
   &:focus-visible {
     background: var(--btn-secondary-bg-hover) !important;
     color: var(--btn-secondary-text-hover) !important;
-    box-shadow: 0 4px 4px 0 var(--btn-secondary-shadow-hover) !important;
+    // box-shadow: 0 4px 4px 0 var(--btn-secondary-shadow-hover) !important;
     border: 1px solid var(--btn-secondary-border) !important;
   }
 

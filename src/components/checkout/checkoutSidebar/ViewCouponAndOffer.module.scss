@@ -23,7 +23,7 @@
 .triggerButton {
   width: 100%;
   border: 1px solid var(--D4DEF3);
-  background: var(--ffffff);
+  background: var(--white);
   padding: 14px 16px;
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@
   transition: background-color 0.2s ease;
 
   &:hover {
-    background: #EDF2FF;
+    // background: #EDF2FF;
     border-color: var(--234BF3);
   }
 }

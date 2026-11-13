@@ -252,11 +252,8 @@ const ProfileInformation = () => {
         <Row className="gx-3 gy-2">
           <Col md={6}>
             <FormGroup className="wireframe-field">
-              <Label
-                className="form-label mb-1 text-uppercase font-weight-bold"
-                style={{ fontSize: '12px' }}
-              >
-                First Name {isEditing && <span className="text-danger">*</span>}
+              <Label className="form-label mb-1">
+                First Name {isEditing && <span className="text-danger required-dot">*</span>}
               </Label>
               <Controller
                 name="firstName"
@@ -264,25 +261,23 @@ const ProfileInformation = () => {
                 render={({ field }) => (
                   <Input
                     {...field}
-                    className="text-capitalize form-control"
+                    placeholder="Enter your first name"
+                    className="text-capitalize form-control input-common contact-us-form-input"
                     disabled={!isEditing}
                     invalid={!!errors.firstName}
                   />
                 )}
               />
               {errors.firstName && (
-                <FormFeedback>{errors.firstName.message}</FormFeedback>
+                <FormFeedback className="message-error">{errors.firstName.message}</FormFeedback>
               )}
             </FormGroup>
           </Col>
 
           <Col md={6}>
             <FormGroup className="wireframe-field">
-              <Label
-                className="form-label mb-1 text-uppercase font-weight-bold"
-                style={{ fontSize: '12px' }}
-              >
-                Last Name {isEditing && <span className="text-danger">*</span>}
+              <Label className="form-label mb-1">
+                Last Name {isEditing && <span className="text-danger required-dot">*</span>}
               </Label>
               <Controller
                 name="lastName"
@@ -290,94 +285,29 @@ const ProfileInformation = () => {
                 render={({ field }) => (
                   <Input
                     {...field}
-                    className="text-capitalize form-control"
+                    placeholder="Enter your last name"
+                    className="text-capitalize form-control input-common contact-us-form-input"
                     disabled={!isEditing}
                     invalid={!!errors.lastName}
                   />
                 )}
               />
               {errors.lastName && (
-                <FormFeedback>{errors.lastName.message}</FormFeedback>
+                <FormFeedback className="message-error">{errors.lastName.message}</FormFeedback>
               )}
             </FormGroup>
           </Col>
 
           <Col md={6}>
-            <FormGroup className="wireframe-field">
-              <Label
-                className="form-label mb-1 text-uppercase font-weight-bold"
-                style={{ fontSize: '12px' }}
-              >
-                Email
-              </Label>
-              <Controller
-                name="email"
-                control={control}
-                render={({ field }) => (
-                  <Input
-                    {...field}
-                    type="email"
-                    placeholder="Not added"
-                    className="form-control"
-                    disabled={!isEditing}
-                    invalid={!!errors.email}
-                  />
-                )}
-              />
-              {errors.email && (
-                <FormFeedback>{errors.email.message}</FormFeedback>
-              )}
-            </FormGroup>
-          </Col>
-
-          <Col md={6}>
-            <FormGroup className="wireframe-field">
-              <Label
-                className="form-label mb-1 text-uppercase font-weight-bold"
-                style={{ fontSize: '12px' }}
-              >
-                Gender
-              </Label>
-              <Controller
-                name="gender"
-                control={control}
-                render={({ field }) => (
-                  <Input
-                    type="select"
-                    {...field}
-                    className="form-select"
-                    disabled={!isEditing}
-                  >
-                    <option value="">Select Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                  </Input>
-                )}
-              />
-            </FormGroup>
-          </Col>
-
-          <Col md={12}>
             <FormGroup className="wireframe-field profile-phone-group m-0">
-              <div className="d-flex justify-content-between align-items-center mb-1">
-                <Label
-                  className="form-label m-0 text-uppercase font-weight-bold"
-                  style={{ fontSize: '12px' }}
-                >
-                  Mobile Number{' '}
-                  {isEditing && <span className="text-danger">*</span>}
-                </Label>
-                {/* {!isEditing && (
-                  <small className="text-muted">
-                    <i className="ri-lock-line"></i> Non-editable
-                  </small>
-                )} */}
-              </div>
+              <Label className="form-label mb-1">
+                Mobile Number{' '}
+                {isEditing && <span className="text-danger required-dot">*</span>}
+              </Label>
 
               <div className="phone-input-row">
                 <InputGroup className="phone-input-group">
-                  <Input type="select" className="country-code-select" disabled>
+                  <Input type="select" className="country-code-select input-common contact-us-form-input" disabled>
                     <option value="+91">+91</option>
                   </Input>
                   <Controller
@@ -388,7 +318,8 @@ const ProfileInformation = () => {
                         {...field}
                         type="tel"
                         maxLength={10}
-                        className="form-control"
+                        placeholder="Enter your phone number"
+                        className="form-control input-common contact-us-form-input"
                         disabled={
                           !isEditing || (otp.otpSent && !otp.otpVerified)
                         }
@@ -415,7 +346,7 @@ const ProfileInformation = () => {
                 </InputGroup>
               </div>
               {errors.phone && (
-                <div className="text-danger small mt-1">
+                <div className="text-danger message-error small mt-1">
                   {errors.phone.message}
                 </div>
               )}
@@ -441,6 +372,56 @@ const ProfileInformation = () => {
               </div>
             )}
           </Col>
+
+          <Col md={6}>
+            <FormGroup className="wireframe-field m-0">
+              <Label className="form-label mb-1">
+                Email
+              </Label>
+              <Controller
+                name="email"
+                control={control}
+                render={({ field }) => (
+                  <Input
+                    {...field}
+                    type="email"
+                    placeholder="Enter your email"
+                    className="form-control input-common contact-us-form-input"
+                    disabled={!isEditing}
+                    invalid={!!errors.email}
+                  />
+                )}
+              />
+              {errors.email && (
+                <FormFeedback className="message-error">{errors.email.message}</FormFeedback>
+              )}
+            </FormGroup>
+          </Col>
+
+          {/* <Col md={6}>
+            <FormGroup className="wireframe-field">
+              <Label className="form-label mb-1">
+                Gender
+              </Label>
+              <Controller
+                name="gender"
+                control={control}
+                render={({ field }) => (
+                  <Input
+                    type="select"
+                    {...field}
+                    className="form-select input-common contact-us-form-input"
+                    disabled={!isEditing}
+                  >
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </Input>
+                )}
+              />
+            </FormGroup>
+          </Col> */}
         </Row>
       </div>
 

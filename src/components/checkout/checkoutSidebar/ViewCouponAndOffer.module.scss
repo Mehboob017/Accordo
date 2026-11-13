@@ -219,7 +219,7 @@
 }
 
 .modalBody {
-  background: #EDF2FF;
+  background: #f7f9fe;
   border-radius: 10px;
   padding: 14px;
 }
@@ -228,10 +228,11 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: #eef2f5;
+  background: #EDF2FF;
   border-radius: 10px;
   padding: 4px;
   margin-bottom: 12px;
+  border: 1px solid var(--border-color)
 }
 
 .tabIndicator {
@@ -240,8 +241,8 @@
   bottom: 4px;
   width: calc(50% - 4px);
   border-radius: 8px;
-  background: var(--white, #fff);
-  box-shadow: 0 4px 12px rgba(20, 30, 40, 0.08);
+  background: var(--theme-color);
+  // box-shadow: 0 4px 12px rgba(20, 30, 40, 0.08);
   transition: transform 0.24s ease;
 }
 
@@ -267,7 +268,7 @@
 }
 
 .tabButtonActive {
-  color: var(--title-color);
+  color: var(--white);
 }
 
 .tabContent {

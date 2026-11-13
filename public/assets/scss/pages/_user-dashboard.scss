@@ -3700,7 +3700,7 @@
       overflow-y: auto;
       overflow-x: hidden;
       min-height: 0;
-      background-color: #EDF2FF;
+      background-color: var(--ffffff);
       padding-block: 12px;
 
       &::-webkit-scrollbar-track {

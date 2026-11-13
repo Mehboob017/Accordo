@@ -6191,6 +6191,7 @@ header {
 
 // Hide header texts below 992px, keep only icons
 @media (max-width: 1200px) {
+
   .top-nav .navbar-top .rightside-box .right-side-menu {
 
     // Cart & Wishlist labels
@@ -6218,6 +6219,7 @@ header {
     }
   }
 }
+
 
 // Logged-in user chip (icon + name + chevron)
 .top-nav .navbar-top .rightside-box .right-side-menu {
